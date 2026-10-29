@@ -1,10 +1,15 @@
-"""Paper-trading BTC bot: Alpaca (data + paper orders) + EMA crossover + Gemini confirmation.
+"""Paper-trading BTC bot: Alpaca (data + paper orders) + multi-indicator score + Gemini confirmation.
 Runs once per call. Schedule it with GitHub Actions (see bot.yml).
 
+Entry score (0-4), one point each:
+  1. Fast EMA above slow EMA (short-term uptrend)
+  2. Price above the longer EMA (bigger-picture uptrend)
+  3. RSI between 45 and 70 (momentum, not overbought)
+  4. Recent volume at or above its recent average (real participation)
+
 Rules:
-- Buy: fast EMA is above slow EMA (uptrend) AND Gemini confirms. A fresh crossover is the
-  strongest case and is flagged to Gemini, but it is not required.
-- Sell: 2% stop loss, 2% take profit, or fast EMA falls below slow EMA.
+- Buy: score >= MIN_ENTRY_SCORE AND Gemini confirms.
+- Sell: stop loss, take profit, or score falls to EXIT_SCORE or lower.
 - Risk rules live in code, not in the LLM.
 """
 import json
@@ -21,9 +26,15 @@ GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash")  # check Googl
 TRADE_USD = 100          # fixed size per buy (paper money)
 STOP_LOSS_PCT = 0.02     # sell everything if the position is down 2% from entry
 TAKE_PROFIT_PCT = 0.02   # sell everything if the position is up 2% from entry
+
 EMA_FAST = 9
 EMA_SLOW = 21
-CROSS_LOOKBACK = 3       # a crossover within the last 3 candles counts as a fresh signal
+EMA_TREND = 50
+RSI_PERIOD = 14
+RSI_LOW, RSI_HIGH = 45, 70
+CROSS_LOOKBACK = 3       # a crossover within the last 3 candles counts as "fresh"
+MIN_ENTRY_SCORE = 3      # need at least 3 of 4 points to consider buying
+EXIT_SCORE = 1           # sell when the score drops to this or lower
 
 PAPER = "https://paper-api.alpaca.markets/v2"
 DATA = "https://data.alpaca.markets/v1beta3/crypto/us/bars"
@@ -50,6 +61,55 @@ def ema(values, period):
     return out
 
 
+def rsi(closes, period=14):
+    gains, losses = [], []
+    for i in range(1, len(closes)):
+        d = closes[i] - closes[i - 1]
+        gains.append(max(d, 0))
+        losses.append(max(-d, 0))
+    avg_g = sum(gains[:period]) / period
+    avg_l = sum(losses[:period]) / period
+    for i in range(period, len(gains)):
+        avg_g = (avg_g * (period - 1) + gains[i]) / period
+        avg_l = (avg_l * (period - 1) + losses[i]) / period
+    if avg_l == 0:
+        return 100.0
+    return 100 - 100 / (1 + avg_g / avg_l)
+
+
+def compute_indicators(bars):
+    closes = [b["c"] for b in bars]
+    vols = [b["v"] for b in bars]
+    fast = ema(closes, EMA_FAST)
+    slow = ema(closes, EMA_SLOW)
+    trend = ema(closes, EMA_TREND)
+    recent_vol = sum(vols[-3:]) / 3
+    base_vol = sum(vols[-23:-3]) / 20
+    vol_ratio = recent_vol / base_vol if base_vol > 0 else 1.0
+    fresh_cross = any(
+        fast[i - 1] <= slow[i - 1] and fast[i] > slow[i]
+        for i in range(len(closes) - CROSS_LOOKBACK, len(closes))
+    )
+    price = closes[-1]
+    checks = {
+        "fast_above_slow": fast[-1] > slow[-1],
+        "price_above_trend_ema": price > trend[-1],
+        "rsi_in_range": RSI_LOW <= rsi(closes, RSI_PERIOD) <= RSI_HIGH,
+        "volume_ok": vol_ratio >= 1.0,
+    }
+    return {
+        "price": price,
+        "ema_fast": fast[-1],
+        "ema_slow": slow[-1],
+        "ema_trend": trend[-1],
+        "rsi": rsi(closes, RSI_PERIOD),
+        "vol_ratio": vol_ratio,
+        "fresh_cross": fresh_cross,
+        "checks": checks,
+        "score": sum(checks.values()),
+    }
+
+
 def get_position():
     r = requests.get(f"{PAPER}/positions/BTCUSD", headers=HEADERS, timeout=20)
     if r.status_code == 404:
@@ -58,14 +118,25 @@ def get_position():
     return r.json()
 
 
-def gemini_confirms_buy(bars, fast_val, slow_val, fresh_cross):
+def gemini_confirms_buy(bars, ind):
+    summary = {
+        "price": round(ind["price"], 2),
+        f"ema{EMA_FAST}": round(ind["ema_fast"], 2),
+        f"ema{EMA_SLOW}": round(ind["ema_slow"], 2),
+        f"ema{EMA_TREND}": round(ind["ema_trend"], 2),
+        "rsi": round(ind["rsi"], 1),
+        "volume_vs_recent_avg": round(ind["vol_ratio"], 2),
+        "fresh_ema_crossover": ind["fresh_cross"],
+        "score_out_of_4": ind["score"],
+        "checks": ind["checks"],
+    }
     prompt = (
         "You are a cautious BTC trading assistant on a paper account.\n"
         f"Last 30 five-minute candles (oldest first): {json.dumps(bars[-30:])}\n"
-        f"EMA{EMA_FAST} = {fast_val:.2f}, EMA{EMA_SLOW} = {slow_val:.2f}. "
-        f"The fast EMA is above the slow EMA (uptrend). Fresh crossover in the last {CROSS_LOOKBACK} candles: {fresh_cross}. "
-        "A fresh crossover is the strongest setup, but a continuing uptrend can also be a valid entry.\n"
-        "Should we open a long position now? Say hold if the move looks weak, choppy, or already overextended.\n"
+        f"Indicator summary: {json.dumps(summary)}\n"
+        "The rules-based system says conditions look favorable for a long entry. "
+        "Confirm or veto it. Say hold if the move looks weak, choppy, overextended, "
+        "or if the indicators disagree with the price action.\n"
         'Reply with JSON only: {"action": "buy" | "hold", "reason": "<one sentence>"}.'
     )
     url = f"https://generativelanguage.googleapis.com/v1beta/models/{GEMINI_MODEL}:generateContent"
@@ -92,20 +163,15 @@ def place_order(side, **kwargs):
 
 def main():
     bars = get_bars()
-    closes = [b["c"] for b in bars]
-    price = closes[-1]
-    fast = ema(closes, EMA_FAST)
-    slow = ema(closes, EMA_SLOW)
-    bullish = fast[-1] > slow[-1]
-    recent_cross = any(
-        fast[i - 1] <= slow[i - 1] and fast[i] > slow[i]
-        for i in range(len(closes) - CROSS_LOOKBACK, len(closes))
-    )
+    ind = compute_indicators(bars)
+    price = ind["price"]
     position = get_position()
     print(
-        f"price={price:.2f} ema{EMA_FAST}={fast[-1]:.2f} ema{EMA_SLOW}={slow[-1]:.2f} "
-        f"bullish={bullish} fresh_cross={recent_cross} position={'yes' if position else 'no'}"
+        f"price={price:.2f} ema{EMA_FAST}={ind['ema_fast']:.2f} ema{EMA_SLOW}={ind['ema_slow']:.2f} "
+        f"ema{EMA_TREND}={ind['ema_trend']:.2f} rsi={ind['rsi']:.1f} vol_ratio={ind['vol_ratio']:.2f} "
+        f"fresh_cross={ind['fresh_cross']} score={ind['score']}/4 position={'yes' if position else 'no'}"
     )
+    print("checks:", ind["checks"])
 
     # Holding: exits are rule-based and ignore Gemini.
     if position:
@@ -116,8 +182,8 @@ def main():
             reason = f"STOP LOSS ({change:.1%})"
         elif change >= TAKE_PROFIT_PCT:
             reason = f"TAKE PROFIT ({change:.1%})"
-        elif not bullish:
-            reason = f"EMA BEARISH EXIT ({change:.1%})"
+        elif ind["score"] <= EXIT_SCORE:
+            reason = f"SIGNAL EXIT, score {ind['score']}/4 ({change:.1%})"
         if reason:
             order = place_order("sell", qty=position["qty"])
             print(f"{reason}. SELL order:", order["id"])
@@ -125,9 +191,9 @@ def main():
             print(f"Holding ({change:.1%}).")
         return
 
-    # Flat: need an uptrend (fast EMA above slow EMA), then Gemini must agree.
-    if bullish:
-        decision = gemini_confirms_buy(bars, fast[-1], slow[-1], recent_cross)
+    # Flat: need a good enough score, then Gemini must agree.
+    if ind["score"] >= MIN_ENTRY_SCORE:
+        decision = gemini_confirms_buy(bars, ind)
         print("Gemini:", decision)
         if str(decision.get("action", "hold")).lower() == "buy":
             order = place_order("buy", notional=str(TRADE_USD))
@@ -135,7 +201,7 @@ def main():
         else:
             print("Gemini said hold. No trade.")
     else:
-        print("Not in an uptrend (fast EMA below slow EMA). No trade.")
+        print(f"Score {ind['score']}/4 is below {MIN_ENTRY_SCORE}. No trade.")
 
 
 if __name__ == "__main__":
