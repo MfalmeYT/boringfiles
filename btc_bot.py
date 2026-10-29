@@ -2,7 +2,8 @@
 Runs once per call. Schedule it with GitHub Actions (see bot.yml).
 
 Rules:
-- Buy: fast EMA crossed above slow EMA within the last few candles AND Gemini confirms.
+- Buy: fast EMA is above slow EMA (uptrend) AND Gemini confirms. A fresh crossover is the
+  strongest case and is flagged to Gemini, but it is not required.
 - Sell: 2% stop loss, 2% take profit, or fast EMA falls below slow EMA.
 - Risk rules live in code, not in the LLM.
 """
@@ -57,12 +58,13 @@ def get_position():
     return r.json()
 
 
-def gemini_confirms_buy(bars, fast_val, slow_val):
+def gemini_confirms_buy(bars, fast_val, slow_val, fresh_cross):
     prompt = (
         "You are a cautious BTC trading assistant on a paper account.\n"
         f"Last 30 five-minute candles (oldest first): {json.dumps(bars[-30:])}\n"
         f"EMA{EMA_FAST} = {fast_val:.2f}, EMA{EMA_SLOW} = {slow_val:.2f}. "
-        f"The fast EMA just crossed above the slow EMA (bullish signal).\n"
+        f"The fast EMA is above the slow EMA (uptrend). Fresh crossover in the last {CROSS_LOOKBACK} candles: {fresh_cross}. "
+        "A fresh crossover is the strongest setup, but a continuing uptrend can also be a valid entry.\n"
         "Should we open a long position now? Say hold if the move looks weak, choppy, or already overextended.\n"
         'Reply with JSON only: {"action": "buy" | "hold", "reason": "<one sentence>"}.'
     )
@@ -123,9 +125,9 @@ def main():
             print(f"Holding ({change:.1%}).")
         return
 
-    # Flat: need a fresh bullish EMA cross, then Gemini must agree.
-    if bullish and recent_cross:
-        decision = gemini_confirms_buy(bars, fast[-1], slow[-1])
+    # Flat: need an uptrend (fast EMA above slow EMA), then Gemini must agree.
+    if bullish:
+        decision = gemini_confirms_buy(bars, fast[-1], slow[-1], recent_cross)
         print("Gemini:", decision)
         if str(decision.get("action", "hold")).lower() == "buy":
             order = place_order("buy", notional=str(TRADE_USD))
@@ -133,7 +135,7 @@ def main():
         else:
             print("Gemini said hold. No trade.")
     else:
-        print("No signal. No trade.")
+        print("Not in an uptrend (fast EMA below slow EMA). No trade.")
 
 
 if __name__ == "__main__":
