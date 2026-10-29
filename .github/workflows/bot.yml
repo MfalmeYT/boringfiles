@@ -1,8 +1,10 @@
 name: btc-paper-bot
 on:
-  schedule:
-    - cron: "*/5 * * * *"
-  workflow_dispatch:
+  workflow_dispatch:   # triggered from outside (cron-job.org) and by the manual "Run workflow" button
+
+concurrency:
+  group: btc-bot       # never run two copies at once
+  cancel-in-progress: false
 
 jobs:
   run:
@@ -18,4 +20,3 @@ jobs:
           ALPACA_KEY: ${{ secrets.ALPACA_KEY }}
           ALPACA_SECRET: ${{ secrets.ALPACA_SECRET }}
           GEMINI_KEY: ${{ secrets.GEMINI_KEY }}
-# For schedule.
