@@ -12,6 +12,7 @@ Rules:
 - Sell: stop loss, take profit, or score falls to EXIT_SCORE or lower.
 - Risk rules live in code, not in the LLM.
 """
+import datetime
 import json
 import os
 import sys
@@ -35,6 +36,9 @@ RSI_LOW, RSI_HIGH = 45, 70
 CROSS_LOOKBACK = 3       # a crossover within the last 3 candles counts as "fresh"
 MIN_ENTRY_SCORE = 3      # need at least 3 of 4 points to consider buying
 EXIT_SCORE = 1           # sell when the score drops to this or lower
+
+LOG_FILE = "bot_log.csv"
+RUN = {"action": "none", "note": ""}   # filled in during the run, written to the log at the end
 
 PAPER = "https://paper-api.alpaca.markets/v2"
 DATA = "https://data.alpaca.markets/v1beta3/crypto/us/bars"
@@ -154,6 +158,24 @@ def gemini_confirms_buy(bars, ind):
     return json.loads(text)
 
 
+def write_log():
+    """Append one line per run so all runs can be read in a single file."""
+    new = not os.path.exists(LOG_FILE)
+    row = [
+        datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M"),
+        RUN.get("price", ""),
+        RUN.get("score", ""),
+        RUN.get("failing", ""),
+        RUN.get("position", ""),
+        RUN.get("action", ""),
+        RUN.get("note", ""),
+    ]
+    with open(LOG_FILE, "a") as f:
+        if new:
+            f.write("time_utc,price,score,failing_checks,position,action,note\n")
+        f.write(",".join(str(x).replace(",", ";").replace("\n", " ") for x in row) + "\n")
+
+
 def place_order(side, **kwargs):
     body = {"symbol": "BTC/USD", "side": side, "type": "market", "time_in_force": "gtc", **kwargs}
     r = requests.post(f"{PAPER}/orders", headers=HEADERS, json=body, timeout=20)
@@ -172,6 +194,12 @@ def main():
         f"fresh_cross={ind['fresh_cross']} score={ind['score']}/4 position={'yes' if position else 'no'}"
     )
     print("checks:", ind["checks"])
+    RUN.update(
+        price=round(price, 2),
+        score=ind["score"],
+        failing="|".join(k for k, v in ind["checks"].items() if not v),
+        position="yes" if position else "no",
+    )
 
     # Holding: exits are rule-based and ignore Gemini.
     if position:
@@ -187,8 +215,10 @@ def main():
         if reason:
             order = place_order("sell", qty=position["qty"])
             print(f"{reason}. SELL order:", order["id"])
+            RUN.update(action="sell", note=reason)
         else:
             print(f"Holding ({change:.1%}).")
+            RUN.update(action="holding", note=f"{change:.1%}")
         return
 
     # Flat: need a good enough score, then Gemini must agree.
@@ -198,10 +228,13 @@ def main():
         if str(decision.get("action", "hold")).lower() == "buy":
             order = place_order("buy", notional=str(TRADE_USD))
             print("BUY order:", order["id"])
+            RUN.update(action="buy", note=decision.get("reason", ""))
         else:
             print("Gemini said hold. No trade.")
+            RUN.update(action="gemini_hold", note=decision.get("reason", ""))
     else:
         print(f"Score {ind['score']}/4 is below {MIN_ENTRY_SCORE}. No trade.")
+        RUN.update(action="no_trade", note=f"score below {MIN_ENTRY_SCORE}")
 
 
 if __name__ == "__main__":
@@ -209,4 +242,7 @@ if __name__ == "__main__":
         main()
     except Exception as e:  # fail loudly in the Actions log, never trade on errors
         print("ERROR:", e)
+        RUN.update(action="error", note=str(e)[:120])
+        write_log()
         sys.exit(1)
+    write_log()
