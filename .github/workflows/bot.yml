@@ -2,6 +2,9 @@ name: btc-paper-bot
 on:
   workflow_dispatch:   # triggered from outside (cron-job.org) and by the manual "Run workflow" button
 
+permissions:
+  contents: write      # lets the bot save its log file (bot_log.csv) back to the repo
+
 concurrency:
   group: btc-bot       # never run two copies at once
   cancel-in-progress: false
@@ -20,3 +23,10 @@ jobs:
           ALPACA_KEY: ${{ secrets.ALPACA_KEY }}
           ALPACA_SECRET: ${{ secrets.ALPACA_SECRET }}
           GEMINI_KEY: ${{ secrets.GEMINI_KEY }}
+      - name: Save log
+        if: always()
+        run: |
+          git config user.name "bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add bot_log.csv
+          git diff --cached --quiet || (git commit -m "log" && git pull --rebase && git push)
