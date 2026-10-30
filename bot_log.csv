@@ -59,3 +59,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-10-30 05:50,78514.24,2,rsi_in_range|volume_ok,no,error,404 Client Error: Not Found for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateCo
 2026-10-30 05:55,78418.8,3,volume_ok,no,error,404 Client Error: Not Found for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateCo
 2026-10-30 06:00,78392.94,3,volume_ok,no,error,404 Client Error: Not Found for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateCo
+2026-10-30 06:05,78392.47,3,volume_ok,no,error,404 Client Error: Not Found for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateCo
