@@ -8,7 +8,7 @@ Entry score (0-4), one point each:
   4. Recent volume at or above its recent average (real participation)
 
 Rules:
-- Buy: score >= MIN_ENTRY_SCORE AND Gemini confirms.
+- Buy: score >= MIN_ENTRY_SCORE AND Gemini approves after seeing all the indicators.
 - Sell: stop loss, take profit, or score falls to EXIT_SCORE or lower.
 - Risk rules live in code, not in the LLM.
 """
@@ -34,8 +34,8 @@ EMA_TREND = 50
 RSI_PERIOD = 14
 RSI_LOW, RSI_HIGH = 45, 70
 CROSS_LOOKBACK = 3       # a crossover within the last 3 candles counts as "fresh"
-MIN_ENTRY_SCORE = 3      # need at least 3 of 4 points to consider buying
-EXIT_SCORE = 1           # sell when the score drops to this or lower
+MIN_ENTRY_SCORE = 2      # need at least 2 of 4 points to ask Gemini; Gemini makes the final call
+EXIT_SCORE = 0           # sell on score alone only if all 4 checks fail (stop loss / take profit still apply)
 
 LOG_FILE = "bot_log.csv"
 RUN = {"action": "none", "note": ""}   # filled in during the run, written to the log at the end
@@ -138,8 +138,9 @@ def gemini_confirms_buy(bars, ind):
         "You are a cautious BTC trading assistant on a paper account.\n"
         f"Last 30 five-minute candles (oldest first): {json.dumps(bars[-30:])}\n"
         f"Indicator summary: {json.dumps(summary)}\n"
-        "The rules-based system says conditions look favorable for a long entry. "
-        "Confirm or veto it. Say hold if the move looks weak, choppy, overextended, "
+        f"The rules-based system flagged a possible long entry (score {ind['score']}/4, so some checks are failing). "
+        "You make the final call: weigh the indicators together with the actual price action and decide "
+        "whether this is a good entry right now. Say hold if the move looks weak, choppy, overextended, "
         "or if the indicators disagree with the price action.\n"
         'Reply with JSON only: {"action": "buy" | "hold", "reason": "<one sentence>"}.'
     )
