@@ -552,3 +552,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-10-31 22:55,77373.25,3,volume_ok,no,error,429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:ge
 2026-10-31 23:00,77373.25,3,volume_ok,no,error,429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:ge
 2026-10-31 23:05,77373.25,3,volume_ok,no,error,429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:ge
+2026-10-31 23:10,77373.25,3,volume_ok,no,gemini_hold,The recent price surge to 77;373.25 lacks volume confirmation; making the breakout vulnerable to a reversal.
