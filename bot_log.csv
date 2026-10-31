@@ -335,3 +335,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-10-31 04:55,77017.75,0,fast_above_slow|price_above_trend_ema|rsi_in_range|volume_ok,no,no_trade,score below 2
 2026-10-31 05:00,77054.73,0,fast_above_slow|price_above_trend_ema|rsi_in_range|volume_ok,no,no_trade,score below 2
 2026-10-31 05:05,77082.84,1,fast_above_slow|price_above_trend_ema|volume_ok,no,no_trade,score below 2
+2026-10-31 05:10,77157.28,3,fast_above_slow,no,error,404 Client Error: Not Found for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateCo
