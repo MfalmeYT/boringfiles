@@ -529,3 +529,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-10-31 21:00,77373.25,3,volume_ok,no,gemini_hold,The recent price surge to 77;373.25 lacks volume confirmation; indicating weak buying conviction and a risk of a quick pull-back.
 2026-10-31 21:05,77373.25,3,volume_ok,no,gemini_hold,While price is breaking out to new local highs; extremely low trading volume indicates a lack of buying conviction and increases the risk of a false breakout.
 2026-10-31 21:10,77373.25,3,volume_ok,no,error,503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:
+2026-10-31 21:15,77373.25,3,volume_ok,no,error,429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:ge
