@@ -565,3 +565,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-01 00:00,,,,,error,'BTC/USD'
 2026-11-01 00:05,,,,,error,list index out of range
 2026-11-01 00:10,77405.51,1,fast_above_slow|price_above_trend_ema|rsi_in_range,no,no_trade,score below 2
+2026-11-01 00:15,77398.99,1,fast_above_slow|price_above_trend_ema|rsi_in_range,no,no_trade,score below 2
