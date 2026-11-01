@@ -572,3 +572,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-01 00:35,77549.39,2,rsi_in_range|volume_ok,no,gemini_hold,The market is heavily overextended with an RSI of 93.7 and low volume; making a immediate long entry risky.
 2026-11-01 00:40,77520.01,2,rsi_in_range|volume_ok,no,error,429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:ge
 2026-11-01 00:45,77511.75,2,rsi_in_range|volume_ok,no,error,429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:ge
+2026-11-01 00:50,77535.55,2,rsi_in_range|volume_ok,no,error,429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:ge
