@@ -566,3 +566,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-01 00:05,,,,,error,list index out of range
 2026-11-01 00:10,77405.51,1,fast_above_slow|price_above_trend_ema|rsi_in_range,no,no_trade,score below 2
 2026-11-01 00:15,77398.99,1,fast_above_slow|price_above_trend_ema|rsi_in_range,no,no_trade,score below 2
+2026-11-01 00:20,77421.57,4,,no,error,429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:ge
