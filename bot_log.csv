@@ -807,3 +807,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-01 20:10,77792.46,4,,no,gemini_hold,Price action shows chop and an immediate rejection from recent highs; with the current price hovering below the 9-period EMA.
 2026-11-01 20:15,77792.46,4,,no,error,429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:ge
 2026-11-01 20:20,77792.46,4,,no,error,429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:ge
+2026-11-01 20:25,77792.46,4,,no,error,429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:ge
