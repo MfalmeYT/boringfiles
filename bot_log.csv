@@ -706,3 +706,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-01 11:45,77792.46,4,,no,error,429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:ge
 2026-11-01 11:50,77792.46,4,,no,error,429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:ge
 2026-11-01 11:55,77792.46,4,,no,gemini_hold,Price recently rejected off 77;871 resistance and is consolidating near short-term EMAs in a choppy range.
+2026-11-01 12:00,77792.46,4,,no,error,429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:ge
