@@ -563,3 +563,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-10-31 23:50,77373.25,3,volume_ok,no,gemini_hold,Although price is breaking out above recent highs; the extremely low volume signals weak participation and potential fakeout risk.
 2026-10-31 23:55,77373.25,3,volume_ok,no,error,429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:ge
 2026-11-01 00:00,,,,,error,'BTC/USD'
+2026-11-01 00:05,,,,,error,list index out of range
