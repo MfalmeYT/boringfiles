@@ -638,3 +638,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-01 06:05,77769.58,3,volume_ok,no,error,429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:ge
 2026-11-01 06:10,77851.09,2,rsi_in_range|volume_ok,no,error,429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:ge
 2026-11-01 06:15,77889.23,2,rsi_in_range|volume_ok,no,gemini_hold,The market appears overextended with an RSI of 73.0 and weak volume follow-through following the recent price spike.
+2026-11-01 06:20,77801.83,3,volume_ok,no,error,429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:ge
