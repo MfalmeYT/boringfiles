@@ -577,3 +577,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-01 01:00,77554.1,2,rsi_in_range|volume_ok,no,error,429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:ge
 2026-11-01 01:05,77559.21,3,rsi_in_range,no,error,429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:ge
 2026-11-01 01:10,77562.02,2,rsi_in_range|volume_ok,no,error,429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:ge
+2026-11-01 01:15,77565.74,2,rsi_in_range|volume_ok,no,error,429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:ge
