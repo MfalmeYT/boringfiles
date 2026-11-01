@@ -586,3 +586,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-01 01:45,77616.85,3,rsi_in_range,no,error,429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:ge
 2026-11-01 01:50,77580.53,4,,no,gemini_hold,Price is pulling back after a rejection at 77;671 with a long upper wick followed by a bearish candle.
 2026-11-01 01:55,77554.32,3,volume_ok,no,error,429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:ge
+2026-11-01 02:00,77593.41,3,volume_ok,no,error,429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:ge
