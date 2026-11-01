@@ -815,3 +815,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-01 20:50,77792.46,4,,no,error,429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:ge
 2026-11-01 20:55,77792.46,4,,no,gemini_hold,Price is currently trading below the 9 EMA within a tight; choppy range without clear directional momentum.
 2026-11-01 21:00,77792.46,4,,no,gemini_hold,Price is currently choppy and trading below the EMA9 after a sharp rejection from the 77870 resistance level.
+2026-11-01 21:05,77792.46,4,,no,error,429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:ge
