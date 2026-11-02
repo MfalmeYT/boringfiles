@@ -867,3 +867,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-02 01:10,78259.88,3,fast_above_slow,no,gemini_hold,Although price spiked upward; EMA9 remains below EMA21; indicating a lack of confirmed trend alignment in choppy conditions.
 2026-11-02 01:15,78362.92,3,fast_above_slow,no,gemini_hold,Although price has rebounded sharply; the fast EMA has not crossed above the slow EMA yet and volume decreased significantly on the latest push higher.
 2026-11-02 01:20,78276.88,4,,no,error,429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:ge
+2026-11-02 01:25,78469.34,3,volume_ok,no,gemini_hold,While price action forms clear higher highs with a fresh bullish EMA crossover; the move lacks volume confirmation.
