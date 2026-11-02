@@ -875,3 +875,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-02 01:50,78405.59,3,volume_ok,no,error,429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:ge
 2026-11-02 01:55,78338.1,4,,no,gemini_hold,Price is pulling back below the 9 EMA with back-to-back bearish candles; indicating short-term weakness.
 2026-11-02 02:00,78299.78,4,,no,error,429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:ge
+2026-11-02 02:05,78255.33,2,price_above_trend_ema|rsi_in_range,no,error,429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:ge
