@@ -851,3 +851,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-01 23:50,77792.46,4,,no,error,429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:ge
 2026-11-01 23:55,77792.46,4,,no,gemini_hold,Price is currently consolidating after a rejection near recent highs around 77;870 and remains below the 9 EMA; indicating a choppy range.
 2026-11-02 00:00,,,,,error,'BTC/USD'
+2026-11-02 00:05,,,,,error,list index out of range
