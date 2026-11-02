@@ -870,3 +870,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-02 01:25,78469.34,3,volume_ok,no,gemini_hold,While price action forms clear higher highs with a fresh bullish EMA crossover; the move lacks volume confirmation.
 2026-11-02 01:30,78379.19,3,volume_ok,no,gemini_hold,The latest candle shows a strong upper rejection wick near 78;524 on weak volume; suggesting potential exhaustion.
 2026-11-02 01:35,78404.63,3,volume_ok,no,gemini_hold,Price is struggling near resistance around 78;490 with prominent upper wicks and below-average volume.
+2026-11-02 01:40,78452.75,3,volume_ok,no,error,429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:ge
