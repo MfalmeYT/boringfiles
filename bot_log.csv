@@ -1144,3 +1144,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-03 00:15,76685.24,3,fast_above_slow,no,gemini_hold,The moving averages remain stacked in a bearish alignment with EMA9 below EMA21; indicating a lack of true momentum despite the recent price bounce.
 2026-11-03 00:20,76848.33,3,rsi_in_range,no,gemini_hold,Hold as RSI is overextended at 78.2; suggesting the recent fast move may be susceptible to a pullback.
 2026-11-03 00:25,76891.1,3,rsi_in_range,no,gemini_hold,The move is currently overextended with an RSI of 80.5; suggesting a high risk of a pullback despite the bullish EMA crossover.
+2026-11-03 00:30,76930.7,2,rsi_in_range|volume_ok,no,error,503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:
