@@ -1184,3 +1184,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-03 03:35,76624.07,0,fast_above_slow|price_above_trend_ema|rsi_in_range|volume_ok,no,no_trade,score below 2
 2026-11-03 03:40,76602.32,0,fast_above_slow|price_above_trend_ema|rsi_in_range|volume_ok,no,no_trade,score below 2
 2026-11-03 03:45,76623.41,0,fast_above_slow|price_above_trend_ema|rsi_in_range|volume_ok,no,no_trade,score below 2
+2026-11-03 03:50,76806.35,2,fast_above_slow|volume_ok,no,gemini_hold,The short-term EMAs remain in a bearish alignment and trading volume is virtually non-existent; making the recent price rebound unreliable.
