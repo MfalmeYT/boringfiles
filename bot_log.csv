@@ -1244,3 +1244,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-03 08:35,76594.9,3,price_above_trend_ema,no,gemini_hold,Price is trading below all key exponential moving averages following a swift rejection at higher levels; signaling weak upward momentum.
 2026-11-03 08:40,76594.9,3,price_above_trend_ema,no,gemini_hold,Price is currently trading below key EMAs and pulled back sharply in the latest candle; indicating lack of upward momentum.
 2026-11-03 08:45,76594.9,3,price_above_trend_ema,no,error,503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:
+2026-11-03 08:50,76594.9,3,price_above_trend_ema,no,error,503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:
