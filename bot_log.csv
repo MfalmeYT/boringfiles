@@ -1260,3 +1260,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-03 09:55,76594.9,3,price_above_trend_ema,no,error,503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:
 2026-11-03 10:00,76594.9,3,price_above_trend_ema,no,error,503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:
 2026-11-03 10:05,76594.9,3,price_above_trend_ema,no,error,503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:
+2026-11-03 10:10,76594.9,3,price_above_trend_ema,no,error,HTTPSConnectionPool(host='generativelanguage.googleapis.com'; port=443): Read timed out. (read timeout=30)
