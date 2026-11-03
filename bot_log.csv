@@ -1151,3 +1151,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-03 00:50,76982.28,2,rsi_in_range|volume_ok,no,gemini_hold,RSI is overextended at 75.0 and recent candles lack trading volume; suggesting a risk of momentum loss.
 2026-11-03 00:55,76914.88,3,volume_ok,no,gemini_hold,Extremely low volume and a recent upper-wick rejection near 77;130 signal a weak momentum setup despite favorable EMA alignment.
 2026-11-03 01:00,77002.15,2,rsi_in_range|volume_ok,no,gemini_hold,RSI is overbought at 71.5 and volume is extremely low at 0.17x average; indicating an overextended move lacking strong buying momentum.
+2026-11-03 01:05,77084.43,2,rsi_in_range|volume_ok,no,gemini_hold,The move appears overextended with an RSI above 74 and lacks volume confirmation to support further upside.
