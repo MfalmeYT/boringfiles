@@ -1358,3 +1358,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-03 18:05,76594.9,3,price_above_trend_ema,no,error,429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:ge
 2026-11-03 18:10,76594.9,3,price_above_trend_ema,no,gemini_hold,Price action remains weak and choppy below key moving averages despite the fast EMA crossover signal.
 2026-11-03 18:15,76594.9,3,price_above_trend_ema,no,error,429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:ge
+2026-11-03 18:20,76594.9,3,price_above_trend_ema,no,error,429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:ge
