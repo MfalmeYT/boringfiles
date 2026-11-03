@@ -1148,3 +1148,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-03 00:35,77006.43,3,rsi_in_range,no,gemini_hold,Price is severely overextended with an RSI of 84.9; increasing the risk of a sharp pullback despite strong momentum.
 2026-11-03 00:40,77001.18,3,rsi_in_range,no,gemini_hold,The market is significantly overextended with an RSI of 84.1; making a long entry risky despite the strong upward trend.
 2026-11-03 00:45,76916.35,3,rsi_in_range,no,gemini_hold,RSI is overbought at 72.2 and recent price action shows a strong pullback from the peak; suggesting potential for further consolidation or retracement.
+2026-11-03 00:50,76982.28,2,rsi_in_range|volume_ok,no,gemini_hold,RSI is overextended at 75.0 and recent candles lack trading volume; suggesting a risk of momentum loss.
