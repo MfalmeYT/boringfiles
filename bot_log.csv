@@ -1172,3 +1172,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-03 02:35,76883.94,3,fast_above_slow,no,gemini_hold,Although volume has increased; short-term momentum remains bearish with EMA9 below EMA21 following a recent pullback from intraday highs.
 2026-11-03 02:40,76835.05,2,fast_above_slow|price_above_trend_ema,no,error,429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:ge
 2026-11-03 02:45,76803.31,2,fast_above_slow|price_above_trend_ema,no,gemini_hold,Price is trading below all key EMAs with a bearish EMA alignment and weak recent price action.
+2026-11-03 02:50,76771.02,0,fast_above_slow|price_above_trend_ema|rsi_in_range|volume_ok,no,no_trade,score below 2
