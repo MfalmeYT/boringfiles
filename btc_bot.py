@@ -1,11 +1,10 @@
 """Paper-trading BTC bot: Alpaca (data + paper orders) + multi-indicator score + Gemini confirmation.
 Runs once per call. Schedule it with GitHub Actions (see bot.yml).
 
-Entry score (0-4), one point each:
+Entry score (0-3), one point each:
   1. Fast EMA above slow EMA (short-term uptrend)
   2. Price above the longer EMA (bigger-picture uptrend)
   3. RSI between 45 and 70 (momentum, not overbought)
-  4. Recent volume at or above its recent average (real participation)
 
 Rules:
 - Buy: score >= MIN_ENTRY_SCORE AND Gemini's confidence (1-6) >= MIN_CONFIDENCE.
@@ -22,7 +21,7 @@ import requests
 ALPACA_KEY = os.environ["ALPACA_KEY"]
 ALPACA_SECRET = os.environ["ALPACA_SECRET"]
 GEMINI_KEY = os.environ["GEMINI_KEY"]
-GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-3.6-flash")  # check Google's current model names
+GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-3.6-flash")
 
 TRADE_USD = 100          # fixed size per buy (paper money)
 STOP_LOSS_PCT = 0.02     # sell everything if the position is down 2% from entry
@@ -35,8 +34,8 @@ RSI_PERIOD = 14
 RSI_LOW, RSI_HIGH = 45, 70
 CROSS_LOOKBACK = 3       # a crossover within the last 3 candles counts as "fresh"
 MIN_CONFIDENCE = 3       # Gemini confidence (1-6) needed to buy; lower = more trades
-MIN_ENTRY_SCORE = 2      # need at least 2 of 4 points to ask Gemini; Gemini makes the final call
-EXIT_SCORE = 0           # sell on score alone only if all 4 checks fail (stop loss / take profit still apply)
+MIN_ENTRY_SCORE = 2      # need at least 2 of 3 points to ask Gemini; Gemini makes the final call
+EXIT_SCORE = 0           # sell on score alone only if all 3 checks fail (stop loss / take profit still apply)
 
 LOG_FILE = "bot_log.csv"
 RUN = {"action": "none", "note": ""}   # filled in during the run, written to the log at the end
@@ -84,13 +83,9 @@ def rsi(closes, period=14):
 
 def compute_indicators(bars):
     closes = [b["c"] for b in bars]
-    vols = [b["v"] for b in bars]
     fast = ema(closes, EMA_FAST)
     slow = ema(closes, EMA_SLOW)
     trend = ema(closes, EMA_TREND)
-    recent_vol = sum(vols[-3:]) / 3
-    base_vol = sum(vols[-23:-3]) / 20
-    vol_ratio = recent_vol / base_vol if base_vol > 0 else 1.0
     fresh_cross = any(
         fast[i - 1] <= slow[i - 1] and fast[i] > slow[i]
         for i in range(len(closes) - CROSS_LOOKBACK, len(closes))
@@ -100,7 +95,6 @@ def compute_indicators(bars):
         "fast_above_slow": fast[-1] > slow[-1],
         "price_above_trend_ema": price > trend[-1],
         "rsi_in_range": RSI_LOW <= rsi(closes, RSI_PERIOD) <= RSI_HIGH,
-        "volume_ok": vol_ratio >= 1.0,
     }
     return {
         "price": price,
@@ -108,7 +102,6 @@ def compute_indicators(bars):
         "ema_slow": slow[-1],
         "ema_trend": trend[-1],
         "rsi": rsi(closes, RSI_PERIOD),
-        "vol_ratio": vol_ratio,
         "fresh_cross": fresh_cross,
         "checks": checks,
         "score": sum(checks.values()),
@@ -130,16 +123,15 @@ def gemini_confirms_buy(bars, ind):
         f"ema{EMA_SLOW}": round(ind["ema_slow"], 2),
         f"ema{EMA_TREND}": round(ind["ema_trend"], 2),
         "rsi": round(ind["rsi"], 1),
-        "volume_vs_recent_avg": round(ind["vol_ratio"], 2),
         "fresh_ema_crossover": ind["fresh_cross"],
-        "score_out_of_4": ind["score"],
+        "score_out_of_3": ind["score"],
         "checks": ind["checks"],
     }
     prompt = (
         "You are a BTC trading assistant on a paper account used for testing a strategy.\n"
         f"Last 30 five-minute candles (oldest first): {json.dumps(bars[-30:])}\n"
         f"Indicator summary: {json.dumps(summary)}\n"
-        f"The rules-based system flagged a possible long entry (score {ind['score']}/4, so some checks are failing). "
+        f"The rules-based system flagged a possible long entry (score {ind['score']}/3). "
         "Position rules: the trade exits automatically at +2% (take profit) or -2% (stop loss). "
         "Estimate how likely this trade is to hit +2% before -2% from the current price, as a confidence "
         "score from 1 (very unlikely) to 6 (very likely). A 3 or 4 means roughly a coin flip. "
@@ -194,8 +186,8 @@ def main():
     position = get_position()
     print(
         f"price={price:.2f} ema{EMA_FAST}={ind['ema_fast']:.2f} ema{EMA_SLOW}={ind['ema_slow']:.2f} "
-        f"ema{EMA_TREND}={ind['ema_trend']:.2f} rsi={ind['rsi']:.1f} vol_ratio={ind['vol_ratio']:.2f} "
-        f"fresh_cross={ind['fresh_cross']} score={ind['score']}/4 position={'yes' if position else 'no'}"
+        f"ema{EMA_TREND}={ind['ema_trend']:.2f} rsi={ind['rsi']:.1f} "
+        f"fresh_cross={ind['fresh_cross']} score={ind['score']}/3 position={'yes' if position else 'no'}"
     )
     print("checks:", ind["checks"])
     RUN.update(
@@ -215,7 +207,7 @@ def main():
         elif change >= TAKE_PROFIT_PCT:
             reason = f"TAKE PROFIT ({change:.1%})"
         elif ind["score"] <= EXIT_SCORE:
-            reason = f"SIGNAL EXIT, score {ind['score']}/4 ({change:.1%})"
+            reason = f"SIGNAL EXIT, score {ind['score']}/3 ({change:.1%})"
         if reason:
             order = place_order("sell", qty=position["qty"])
             print(f"{reason}. SELL order:", order["id"])
@@ -242,7 +234,7 @@ def main():
             print("Gemini said hold. No trade.")
             RUN.update(action="gemini_hold", note=note)
     else:
-        print(f"Score {ind['score']}/4 is below {MIN_ENTRY_SCORE}. No trade.")
+        print(f"Score {ind['score']}/3 is below {MIN_ENTRY_SCORE}. No trade.")
         RUN.update(action="no_trade", note=f"score below {MIN_ENTRY_SCORE}")
 
 
