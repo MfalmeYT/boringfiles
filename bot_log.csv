@@ -1407,3 +1407,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-03 22:10,76594.9,2,price_above_trend_ema,no,error,503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:
 2026-11-03 22:15,76594.9,2,price_above_trend_ema,no,error,429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:ge
 2026-11-03 22:20,76594.9,2,price_above_trend_ema,no,error,429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:ge
+2026-11-03 22:25,76594.9,2,price_above_trend_ema,no,error,429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:ge
