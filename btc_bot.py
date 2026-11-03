@@ -22,7 +22,7 @@ import requests
 ALPACA_KEY = os.environ["ALPACA_KEY"]
 ALPACA_SECRET = os.environ["ALPACA_SECRET"]
 GEMINI_KEY = os.environ["GEMINI_KEY"]
-GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash")  # check Google's current model names
+GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-3.6-flash")  # check Google's current model names
 
 TRADE_USD = 100          # fixed size per buy (paper money)
 STOP_LOSS_PCT = 0.02     # sell everything if the position is down 2% from entry
