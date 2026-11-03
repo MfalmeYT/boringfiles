@@ -8,7 +8,7 @@ Entry score (0-4), one point each:
   4. Recent volume at or above its recent average (real participation)
 
 Rules:
-- Buy: score >= MIN_ENTRY_SCORE AND Gemini approves after seeing all the indicators.
+- Buy: score >= MIN_ENTRY_SCORE AND Gemini's confidence (1-6) >= MIN_CONFIDENCE.
 - Sell: stop loss, take profit, or score falls to EXIT_SCORE or lower.
 - Risk rules live in code, not in the LLM.
 """
@@ -22,7 +22,7 @@ import requests
 ALPACA_KEY = os.environ["ALPACA_KEY"]
 ALPACA_SECRET = os.environ["ALPACA_SECRET"]
 GEMINI_KEY = os.environ["GEMINI_KEY"]
-GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-3.6-flash")  # check Google's current model names
+GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash")  # check Google's current model names
 
 TRADE_USD = 100          # fixed size per buy (paper money)
 STOP_LOSS_PCT = 0.02     # sell everything if the position is down 2% from entry
@@ -34,6 +34,7 @@ EMA_TREND = 50
 RSI_PERIOD = 14
 RSI_LOW, RSI_HIGH = 45, 70
 CROSS_LOOKBACK = 3       # a crossover within the last 3 candles counts as "fresh"
+MIN_CONFIDENCE = 3       # Gemini confidence (1-6) needed to buy; lower = more trades
 MIN_ENTRY_SCORE = 2      # need at least 2 of 4 points to ask Gemini; Gemini makes the final call
 EXIT_SCORE = 0           # sell on score alone only if all 4 checks fail (stop loss / take profit still apply)
 
@@ -135,14 +136,16 @@ def gemini_confirms_buy(bars, ind):
         "checks": ind["checks"],
     }
     prompt = (
-        "You are a cautious BTC trading assistant on a paper account.\n"
+        "You are a BTC trading assistant on a paper account used for testing a strategy.\n"
         f"Last 30 five-minute candles (oldest first): {json.dumps(bars[-30:])}\n"
         f"Indicator summary: {json.dumps(summary)}\n"
         f"The rules-based system flagged a possible long entry (score {ind['score']}/4, so some checks are failing). "
-        "You make the final call: weigh the indicators together with the actual price action and decide "
-        "whether this is a good entry right now. Say hold if the move looks weak, choppy, overextended, "
-        "or if the indicators disagree with the price action.\n"
-        'Reply with JSON only: {"action": "buy" | "hold", "reason": "<one sentence>"}.'
+        "Position rules: the trade exits automatically at +2% (take profit) or -2% (stop loss). "
+        "Estimate how likely this trade is to hit +2% before -2% from the current price, as a confidence "
+        "score from 1 (very unlikely) to 6 (very likely). A 3 or 4 means roughly a coin flip. "
+        "Do not default to low scores out of caution; mixed indicators are normal and expected here. "
+        "Reserve scores of 1-2 for clear problems, such as a sharp ongoing drop or an exhausted spike.\n"
+        'Reply with JSON only: {"confidence": <integer 1-6>, "reason": "<one sentence>"}.'
     )
     url = f"https://generativelanguage.googleapis.com/v1beta/models/{GEMINI_MODEL}:generateContent"
     r = requests.post(
@@ -226,13 +229,18 @@ def main():
     if ind["score"] >= MIN_ENTRY_SCORE:
         decision = gemini_confirms_buy(bars, ind)
         print("Gemini:", decision)
-        if str(decision.get("action", "hold")).lower() == "buy":
+        try:
+            conf = int(decision.get("confidence", 0))
+        except (TypeError, ValueError):
+            conf = 0
+        note = f"conf {conf}: {decision.get('reason', '')}"
+        if conf >= MIN_CONFIDENCE:
             order = place_order("buy", notional=str(TRADE_USD))
             print("BUY order:", order["id"])
-            RUN.update(action="buy", note=decision.get("reason", ""))
+            RUN.update(action="buy", note=note)
         else:
             print("Gemini said hold. No trade.")
-            RUN.update(action="gemini_hold", note=decision.get("reason", ""))
+            RUN.update(action="gemini_hold", note=note)
     else:
         print(f"Score {ind['score']}/4 is below {MIN_ENTRY_SCORE}. No trade.")
         RUN.update(action="no_trade", note=f"score below {MIN_ENTRY_SCORE}")
