@@ -1179,3 +1179,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-03 03:10,76742.9,1,fast_above_slow|price_above_trend_ema|volume_ok,no,no_trade,score below 2
 2026-11-03 03:15,76792.4,1,fast_above_slow|price_above_trend_ema|volume_ok,no,no_trade,score below 2
 2026-11-03 03:20,76835.18,2,fast_above_slow|volume_ok,no,error,429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:ge
+2026-11-03 03:25,76811.5,1,fast_above_slow|price_above_trend_ema|volume_ok,no,no_trade,score below 2
