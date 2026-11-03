@@ -1307,3 +1307,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-03 13:50,76594.9,3,price_above_trend_ema,no,error,429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:ge
 2026-11-03 13:55,76594.9,3,price_above_trend_ema,no,error,429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:ge
 2026-11-03 14:00,76594.9,3,price_above_trend_ema,no,gemini_hold,Hold because price has dropped below all key EMAs with recent candles showing weakening momentum and a close near the low.
+2026-11-03 14:05,76594.9,3,price_above_trend_ema,no,error,429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:ge
