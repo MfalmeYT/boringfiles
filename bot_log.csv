@@ -1476,3 +1476,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-04 03:55,76287.2,1,fast_above_slow|price_above_trend_ema,no,no_trade,score below 2
 2026-11-04 04:00,76368.15,1,fast_above_slow|price_above_trend_ema,no,no_trade,score below 2
 2026-11-04 04:05,76543.93,1,fast_above_slow|price_above_trend_ema,no,no_trade,score below 2
+2026-11-04 04:10,76627.74,2,fast_above_slow,no,buy,conf 4: Price is showing a strong volume-backed recovery with consecutive higher lows and has reclaimed the 50 EMA.
