@@ -1427,3 +1427,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-03 23:50,76594.9,2,price_above_trend_ema,no,error,HTTPSConnectionPool(host='generativelanguage.googleapis.com'; port=443): Read timed out. (read timeout=30)
 2026-11-03 23:55,76594.9,2,price_above_trend_ema,no,error,429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:ge
 2026-11-04 00:00,,,,,error,'BTC/USD'
+2026-11-04 00:05,,,,,error,list index out of range
