@@ -1431,3 +1431,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-04 00:10,77423.67,2,rsi_in_range,no,gemini_hold,conf 2: RSI is at an extreme 100.0 indicating an exhausted spike; making a immediate pullback likely despite the fresh bullish EMA crossover.
 2026-11-04 00:15,77227.46,0,fast_above_slow|price_above_trend_ema|rsi_in_range,no,no_trade,score below 2
 2026-11-04 00:20,77142.05,0,fast_above_slow|price_above_trend_ema|rsi_in_range,no,no_trade,score below 2
+2026-11-04 00:25,77070.97,0,fast_above_slow|price_above_trend_ema|rsi_in_range,no,no_trade,score below 2
