@@ -15,6 +15,7 @@ import datetime
 import json
 import os
 import sys
+import time
 
 import requests
 
@@ -140,16 +141,29 @@ def gemini_confirms_buy(bars, ind):
         'Reply with JSON only: {"confidence": <integer 1-6>, "reason": "<one sentence>"}.'
     )
     url = f"https://generativelanguage.googleapis.com/v1beta/models/{GEMINI_MODEL}:generateContent"
-    r = requests.post(
-        url,
-        params={"key": GEMINI_KEY},
-        json={
-            "contents": [{"parts": [{"text": prompt}]}],
-            "generationConfig": {"responseMimeType": "application/json"},
-        },
-        timeout=30,
-    )
-    r.raise_for_status()
+    # Gemini sometimes returns temporary errors (503 overloaded, 429, 500, 504). Retry a few times.
+    for attempt, wait in enumerate([2, 5, 10, None]):
+        try:
+            r = requests.post(
+                url,
+                params={"key": GEMINI_KEY},
+                json={
+                    "contents": [{"parts": [{"text": prompt}]}],
+                    "generationConfig": {"responseMimeType": "application/json"},
+                },
+                timeout=30,
+            )
+            if r.status_code in (429, 500, 503, 504) and wait is not None:
+                print(f"Gemini returned {r.status_code}, retrying in {wait}s (attempt {attempt + 1})")
+                time.sleep(wait)
+                continue
+            r.raise_for_status()
+            break
+        except (requests.Timeout, requests.ConnectionError) as e:
+            if wait is None:
+                raise
+            print(f"Gemini connection problem ({e.__class__.__name__}), retrying in {wait}s")
+            time.sleep(wait)
     text = r.json()["candidates"][0]["content"]["parts"][0]["text"]
     return json.loads(text)
 
