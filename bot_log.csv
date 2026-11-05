@@ -2166,3 +2166,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-05 05:39,80497.89,2,fast_above_slow,no,buy,conf 4: Price has strongly recovered from the 80;300 support zone with three consecutive bullish candles pushing back above the 50 EMA; indicating positive short-term momentum.
 2026-11-05 05:40,80537.07,2,fast_above_slow,yes,holding,0.0%
 2026-11-05 05:41,80485.53,1,fast_above_slow|price_above_trend_ema,yes,holding,-0.1%
+2026-11-05 05:42,80442.48,1,fast_above_slow|price_above_trend_ema,yes,holding,-0.1%
