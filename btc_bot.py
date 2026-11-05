@@ -34,6 +34,7 @@ EMA_TREND = 50
 RSI_PERIOD = 14
 RSI_LOW, RSI_HIGH = 45, 70
 CROSS_LOOKBACK = 3       # a crossover within the last 3 candles counts as "fresh"
+GEMINI_COOLDOWN_MIN = 5   # ask Gemini at most once per this many minutes (candles are 5 min, so more is wasted)
 MIN_CONFIDENCE = 3       # Gemini confidence (1-6) needed to buy; lower = more trades
 MIN_ENTRY_SCORE = 2      # need at least 2 of 3 points to ask Gemini; Gemini makes the final call
 EXIT_SCORE = 0           # sell on score alone only if all 3 checks fail (stop loss / take profit still apply)
@@ -134,17 +135,15 @@ def gemini_confirms_buy(bars, ind):
         "score_out_of_3": ind["score"],
         "checks": ind["checks"],
     }
+    closes = [round(b["c"]) for b in bars[-12:]]
     prompt = (
-        "You are a BTC trading assistant on a paper account used for testing a strategy.\n"
-        f"Last 30 five-minute candles (oldest first): {json.dumps(bars[-30:])}\n"
-        f"Indicator summary: {json.dumps(summary)}\n"
-        f"The rules-based system flagged a possible long entry (score {ind['score']}/3). "
-        "Position rules: the trade exits automatically at +2% (take profit) or -2% (stop loss). "
-        "Estimate how likely this trade is to hit +2% before -2% from the current price, as a confidence "
-        "score from 1 (very unlikely) to 6 (very likely). A 3 or 4 means roughly a coin flip. "
-        "Do not default to low scores out of caution; mixed indicators are normal and expected here. "
-        "Reserve scores of 1-2 for clear problems, such as a sharp ongoing drop or an exhausted spike.\n"
-        'Reply with JSON only: {"confidence": <integer 1-6>, "reason": "<one sentence>"}.'
+        "BTC paper-trading entry check. Trade exits automatically at +2% (take profit) or -2% (stop loss).\n"
+        f"Last 12 five-minute closes, oldest first: {closes}\n"
+        f"Indicators: {json.dumps(summary)}\n"
+        "Estimate how likely this trade is to hit +2% before -2%, as a confidence score from 1 (very unlikely) "
+        "to 6 (very likely); 3-4 is a coin flip. Mixed indicators are normal, so don't default to low scores. "
+        "Use 1-2 only for clear problems like a sharp ongoing drop or an exhausted spike.\n"
+        'Reply with JSON only: {"confidence": <integer 1-6>, "reason": "<max 12 words>"}.'
     )
     url = f"https://generativelanguage.googleapis.com/v1beta/models/{GEMINI_MODEL}:generateContent"
     # Gemini sometimes returns temporary errors (503 overloaded, 429, 500, 504). Retry a few times.
@@ -155,7 +154,10 @@ def gemini_confirms_buy(bars, ind):
                 params={"key": GEMINI_KEY},
                 json={
                     "contents": [{"parts": [{"text": prompt}]}],
-                    "generationConfig": {"responseMimeType": "application/json"},
+                    "generationConfig": {
+                        "responseMimeType": "application/json",
+                        "thinkingConfig": {"thinkingLevel": "minimal"},  # thinking tokens are billed as output
+                    },
                 },
                 timeout=30,
             )
@@ -170,8 +172,29 @@ def gemini_confirms_buy(bars, ind):
                 raise
             print(f"Gemini connection problem ({e.__class__.__name__}), retrying in {wait}s")
             time.sleep(wait)
-    text = r.json()["candidates"][0]["content"]["parts"][0]["text"]
+    cands = r.json().get("candidates") or []
+    parts = (cands[0].get("content", {}).get("parts") or []) if cands else []
+    text = "".join(p.get("text", "") for p in parts if not p.get("thought"))
+    if not text.strip():
+        raise Exception("Gemini returned an empty reply")
     return json.loads(text)
+
+
+def minutes_since_last_gemini_call():
+    """Look in bot_log.csv for the last run that actually asked Gemini."""
+    if not os.path.exists(LOG_FILE):
+        return None
+    with open(LOG_FILE) as f:
+        lines = f.read().splitlines()
+    for line in reversed(lines):
+        c = line.split(",")
+        if len(c) >= 6 and c[5].strip() in ("gemini_hold", "buy"):
+            try:
+                t = datetime.datetime.strptime(c[0].strip(), "%Y-%m-%d %H:%M").replace(tzinfo=datetime.timezone.utc)
+            except ValueError:
+                return None
+            return (datetime.datetime.now(datetime.timezone.utc) - t).total_seconds() / 60
+    return None
 
 
 def write_log():
@@ -240,6 +263,11 @@ def main():
 
     # Flat: need a good enough score, then Gemini must agree.
     if ind["score"] >= MIN_ENTRY_SCORE:
+        ago = minutes_since_last_gemini_call()
+        if ago is not None and ago < GEMINI_COOLDOWN_MIN:
+            print(f"Gemini was asked {ago:.1f} min ago. Waiting for the next candle.")
+            RUN.update(action="no_trade", note="Gemini cooldown")
+            return
         decision = gemini_confirms_buy(bars, ind)
         print("Gemini:", decision)
         try:
