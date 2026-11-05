@@ -2320,3 +2320,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-05 08:13,80473.05,2,fast_above_slow,no,error,403 Client Error: Forbidden for url: https://paper-api.alpaca.markets/v2/orders
 2026-11-05 08:14,80445.46,1,fast_above_slow|price_above_trend_ema,no,no_trade,score below 2
 2026-11-05 08:15,80452.3,2,fast_above_slow,no,error,403 Client Error: Forbidden for url: https://paper-api.alpaca.markets/v2/orders
+2026-11-05 08:16,80439.27,1,fast_above_slow|price_above_trend_ema,no,no_trade,score below 2
