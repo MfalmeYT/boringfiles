@@ -3214,3 +3214,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-05 23:26,75835.59,2,fast_above_slow,no,error,Order buy rejected 403: {"available":"99.83";"balance":"99.83";"code":40310000;"message":"insufficient balance for USD (
 2026-11-05 23:27,75821.85,1,fast_above_slow|price_above_trend_ema,no,no_trade,score below 2
 2026-11-05 23:28,75846.82,2,fast_above_slow,no,error,Order buy rejected 403: {"available":"99.83";"balance":"99.83";"code":40310000;"message":"insufficient balance for USD (
+2026-11-05 23:29,75787.13,1,fast_above_slow|price_above_trend_ema,no,no_trade,score below 2
