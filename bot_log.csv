@@ -2277,3 +2277,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-05 07:30,80460.54,2,price_above_trend_ema,no,gemini_hold,conf 2: Price is experiencing a sharp pullback below all key EMAs on increasing sell volume; making an immediate long entry risky.
 2026-11-05 07:31,80404.25,1,price_above_trend_ema|rsi_in_range,no,no_trade,score below 2
 2026-11-05 07:32,80353.88,1,price_above_trend_ema|rsi_in_range,no,no_trade,score below 2
+2026-11-05 07:33,80332.84,1,price_above_trend_ema|rsi_in_range,no,no_trade,score below 2
