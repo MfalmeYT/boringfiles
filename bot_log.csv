@@ -1925,3 +1925,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-05 01:38,80421.23,1,fast_above_slow|price_above_trend_ema,no,no_trade,score below 2
 2026-11-05 01:39,80497.21,1,fast_above_slow|price_above_trend_ema,no,no_trade,score below 2
 2026-11-05 01:40,80590.47,2,fast_above_slow,no,buy,conf 4: Price has quickly recovered back above the 50 EMA with strong candle closes; though EMA9 has not yet crossed above EMA21.
+2026-11-05 01:41,80584.02,2,fast_above_slow,yes,holding,-0.0%
