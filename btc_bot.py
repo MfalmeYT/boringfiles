@@ -47,14 +47,20 @@ HEADERS = {"APCA-API-KEY-ID": ALPACA_KEY, "APCA-API-SECRET-KEY": ALPACA_SECRET}
 
 
 def get_bars():
+    # Ask for the NEWEST 100 candles (sort=desc), looking back 24h so there are always enough.
+    # (Without sort/start, Alpaca returns the oldest candles of the current UTC day and the data goes stale.)
+    start = (datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(hours=24)).strftime("%Y-%m-%dT%H:%M:%SZ")
     r = requests.get(
         DATA,
         headers=HEADERS,
-        params={"symbols": "BTC/USD", "timeframe": "5Min", "limit": 100},
+        params={"symbols": "BTC/USD", "timeframe": "5Min", "limit": 100, "sort": "desc", "start": start},
         timeout=20,
     )
-    r.raise_for_status()
-    bars = r.json()["bars"]["BTC/USD"]
+    if r.status_code >= 400:
+        raise Exception(f"Alpaca data {r.status_code}: {r.text[:200]}")
+    bars = list(reversed(r.json()["bars"].get("BTC/USD", [])))  # oldest first
+    if len(bars) < 60:
+        raise Exception(f"Only {len(bars)} candles returned, need 60+")
     return [{"t": b["t"], "o": b["o"], "h": b["h"], "l": b["l"], "c": b["c"], "v": b["v"]} for b in bars]
 
 
@@ -189,7 +195,8 @@ def write_log():
 def place_order(side, **kwargs):
     body = {"symbol": "BTC/USD", "side": side, "type": "market", "time_in_force": "gtc", **kwargs}
     r = requests.post(f"{PAPER}/orders", headers=HEADERS, json=body, timeout=20)
-    r.raise_for_status()
+    if r.status_code >= 400:
+        raise Exception(f"Order {side} rejected {r.status_code}: {r.text[:200]}")
     return r.json()
 
 
