@@ -1840,3 +1840,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-05 00:13,80602.1,2,rsi_in_range,no,gemini_hold,conf 2: An RSI of 100 accompanied by fading volume suggests an exhausted spike and a high likelihood of a near-term pullback before reaching a +2% target.
 2026-11-05 00:14,80651.97,2,rsi_in_range,no,gemini_hold,conf 2: The RSI is at an extreme 100.0 after a sharp short-term pump; indicating an exhausted spike with high risk of a quick pullback.
 2026-11-05 00:15,80631.28,2,rsi_in_range,no,gemini_hold,conf 2: RSI is extremely overbought at 100.0; indicating an exhausted spike with low volume that is vulnerable to a pullback before achieving a 2% gain.
+2026-11-05 00:16,80631.56,2,rsi_in_range,no,gemini_hold,conf 2: While the EMAs show a fresh bullish crossover; an extreme RSI reading of 100 indicates an overextended spike susceptible to a quick pull-back.
