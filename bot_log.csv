@@ -1834,3 +1834,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-05 00:07,80517.26,0,fast_above_slow|price_above_trend_ema|rsi_in_range,no,no_trade,score below 2
 2026-11-05 00:08,80469.99,0,fast_above_slow|price_above_trend_ema|rsi_in_range,no,no_trade,score below 2
 2026-11-05 00:09,80507.7,0,fast_above_slow|price_above_trend_ema|rsi_in_range,no,no_trade,score below 2
+2026-11-05 00:10,80572.62,2,rsi_in_range,no,gemini_hold,conf 2: An RSI of 100 signals an extreme; potentially exhausted spike; increasing the risk of an immediate pullback before reaching +2%.
