@@ -3393,3 +3393,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-06 02:25,76124.13,3,,no,error,Order buy rejected 403: {"available":"99.83";"balance":"99.83";"code":40310000;"message":"insufficient balance for USD (
 2026-11-06 02:26,76082.55,3,,no,error,Order buy rejected 403: {"available":"99.83";"balance":"99.83";"code":40310000;"message":"insufficient balance for USD (
 2026-11-06 02:27,76029.51,3,,no,gemini_hold,conf 2: Bearish EMA crossover and price below short EMAs suggest downward pressure
+2026-11-06 02:28,75959.72,1,fast_above_slow|price_above_trend_ema,no,no_trade,score below 2
