@@ -4215,3 +4215,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-06 16:09,75610.77,2,price_above_trend_ema,no,error,Order buy rejected 403: {"available":"99.83";"balance":"99.83";"code":40310000;"message":"insufficient balance for USD (
 2026-11-06 16:10,75579.85,2,price_above_trend_ema,no,error,Order buy rejected 403: {"available":"99.83";"balance":"99.83";"code":40310000;"message":"insufficient balance for USD (
 2026-11-06 16:11,75511.25,2,price_above_trend_ema,no,error,Order buy rejected 403: {"available":"99.83";"balance":"99.83";"code":40310000;"message":"insufficient balance for USD (
+2026-11-06 16:12,75479.75,2,price_above_trend_ema,no,gemini_hold,conf 2: Downtrend intact with price below all EMAs and falling closes
