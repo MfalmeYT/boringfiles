@@ -3908,3 +3908,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-06 11:02,75974.25,3,,no,no_trade,Gemini cooldown
 2026-11-06 11:03,75967.6,3,,no,no_trade,Gemini cooldown
 2026-11-06 11:04,75964.56,3,,no,gemini_hold,conf 2: Price rejected below EMA9 and EMA21 after a sharp drop
+2026-11-06 11:05,75972.45,3,,no,no_trade,Gemini cooldown
