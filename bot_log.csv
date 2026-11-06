@@ -4466,3 +4466,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-06 20:20,75648.36,2,price_above_trend_ema,no,gemini_hold,conf 2: Price rejected from peak; trading below all three EMAs with falling momentum
 2026-11-06 20:21,75671.68,2,price_above_trend_ema,no,no_trade,Gemini cooldown
 2026-11-06 20:22,75699.74,3,,no,no_trade,Gemini cooldown
+2026-11-06 20:23,75684.49,2,price_above_trend_ema,no,no_trade,Gemini cooldown
