@@ -3967,3 +3967,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-06 12:01,75956.49,3,,no,gemini_hold,conf 2: Price fell below EMA9 and EMA21 with RSI weakening.
 2026-11-06 12:02,76007.79,3,,no,no_trade,Gemini cooldown
 2026-11-06 12:03,76012.7,3,,no,no_trade,Gemini cooldown
+2026-11-06 12:04,76045.93,3,,no,no_trade,Gemini cooldown
