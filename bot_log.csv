@@ -4568,3 +4568,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-06 22:02,75904.3,3,,no,error,Order buy rejected 403: {"available":"99.83";"balance":"99.83";"code":40310000;"message":"insufficient balance for USD (
 2026-11-06 22:03,76054.36,2,rsi_in_range,no,gemini_hold,conf 2: RSI overbought above 70 after an exhausted price spike
 2026-11-06 22:04,75994.57,3,,no,no_trade,Gemini cooldown
+2026-11-06 22:05,75951.67,3,,no,no_trade,Gemini cooldown
