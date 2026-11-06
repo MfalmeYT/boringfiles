@@ -3330,3 +3330,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-06 01:22,76014.17,3,,no,gemini_hold,conf 2: Downtrending recent closes and price below EMA9/EMA21 signal weakness
 2026-11-06 01:23,75915.11,2,price_above_trend_ema,no,no_trade,Gemini cooldown
 2026-11-06 01:24,75917.42,2,price_above_trend_ema,no,no_trade,Gemini cooldown
+2026-11-06 01:25,75840.62,1,price_above_trend_ema|rsi_in_range,no,no_trade,score below 2
