@@ -4384,3 +4384,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-06 18:58,75710.54,3,,no,gemini_hold,conf 2: Price rejected at 75900; falling back below all short EMAs.
 2026-11-06 18:59,75703.81,2,price_above_trend_ema,no,no_trade,Gemini cooldown
 2026-11-06 19:00,75686.6,2,price_above_trend_ema,no,no_trade,Gemini cooldown
+2026-11-06 19:01,75695.62,2,price_above_trend_ema,no,no_trade,Gemini cooldown
