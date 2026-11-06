@@ -3920,3 +3920,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-06 11:14,75889.46,3,,no,gemini_hold,conf 2: Downtrending price below short EMAs with continuous lower closes.
 2026-11-06 11:15,75882.74,2,rsi_in_range,no,no_trade,Gemini cooldown
 2026-11-06 11:16,75890.68,2,fast_above_slow,no,no_trade,Gemini cooldown
+2026-11-06 11:17,75923.11,2,fast_above_slow,no,no_trade,Gemini cooldown
