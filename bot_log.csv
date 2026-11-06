@@ -3767,3 +3767,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-06 08:39,75525.24,2,price_above_trend_ema,no,no_trade,Gemini cooldown
 2026-11-06 08:40,75525.32,2,price_above_trend_ema,no,no_trade,Gemini cooldown
 2026-11-06 08:41,75553.29,3,,no,error,Order buy rejected 403: {"available":"99.83";"balance":"99.83";"code":40310000;"message":"insufficient balance for USD (
+2026-11-06 08:42,75592.01,3,,no,error,Order buy rejected 403: {"available":"99.83";"balance":"99.83";"code":40310000;"message":"insufficient balance for USD (
