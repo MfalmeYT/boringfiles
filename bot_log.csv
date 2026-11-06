@@ -3965,3 +3965,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-06 11:59,76001.79,3,,no,error,Order buy rejected 403: {"available":"99.83";"balance":"99.83";"code":40310000;"message":"insufficient balance for USD (
 2026-11-06 12:00,76031.63,3,,no,error,Order buy rejected 403: {"available":"99.83";"balance":"99.83";"code":40310000;"message":"insufficient balance for USD (
 2026-11-06 12:01,75956.49,3,,no,gemini_hold,conf 2: Price fell below EMA9 and EMA21 with RSI weakening.
+2026-11-06 12:02,76007.79,3,,no,no_trade,Gemini cooldown
