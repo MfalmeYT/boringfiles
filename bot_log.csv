@@ -3334,3 +3334,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-06 01:26,75792.69,0,fast_above_slow|price_above_trend_ema|rsi_in_range,no,no_trade,score below 2
 2026-11-06 01:27,75859.95,1,price_above_trend_ema|rsi_in_range,no,no_trade,score below 2
 2026-11-06 01:28,75978.04,3,,no,gemini_hold,conf 2: Price fell below EMA9 and EMA21 with bearish crossover forming.
+2026-11-06 01:29,75915.74,2,price_above_trend_ema,no,no_trade,Gemini cooldown
