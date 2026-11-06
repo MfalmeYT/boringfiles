@@ -3397,3 +3397,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-06 02:29,76036.02,3,,no,no_trade,Gemini cooldown
 2026-11-06 02:30,76069.9,3,,no,no_trade,Gemini cooldown
 2026-11-06 02:31,76067.12,3,,no,no_trade,Gemini cooldown
+2026-11-06 02:32,75990.22,2,price_above_trend_ema,no,gemini_hold,conf 2: Price below EMA50 with bear cross and downward momentum.
