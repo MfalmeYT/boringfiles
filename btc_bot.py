@@ -24,7 +24,8 @@ ALPACA_SECRET = os.environ["ALPACA_SECRET"]
 GEMINI_KEY = os.environ["GEMINI_KEY"]
 GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-3.6-flash")
 
-TRADE_USD = 100          # fixed size per buy (paper money)
+TRADE_USD = 100          # max size per buy; the bot buys less if your cash is lower
+MIN_TRADE_USD = 10       # skip buying if available cash is below this
 STOP_LOSS_PCT = 0.02     # sell everything if the position is down 2% from entry
 TAKE_PROFIT_PCT = 0.02   # sell everything if the position is up 2% from entry
 
@@ -116,6 +117,13 @@ def compute_indicators(bars):
     }
 
 
+def get_cash():
+    r = requests.get(f"{PAPER}/account", headers=HEADERS, timeout=20)
+    if r.status_code >= 400:
+        raise Exception(f"Account {r.status_code}: {r.text[:200]}")
+    return float(r.json().get("cash", 0))
+
+
 def get_position():
     r = requests.get(f"{PAPER}/positions/BTCUSD", headers=HEADERS, timeout=20)
     if r.status_code == 404:
@@ -188,7 +196,7 @@ def minutes_since_last_gemini_call():
         lines = f.read().splitlines()
     for line in reversed(lines):
         c = line.split(",")
-        if len(c) >= 6 and c[5].strip() in ("gemini_hold", "buy"):
+        if len(c) >= 6 and (c[5].strip() in ("gemini_hold", "buy") or (c[5].strip() == "error" and "Order buy rejected" in line)):
             try:
                 t = datetime.datetime.strptime(c[0].strip(), "%Y-%m-%d %H:%M").replace(tzinfo=datetime.timezone.utc)
             except ValueError:
@@ -268,6 +276,12 @@ def main():
             print(f"Gemini was asked {ago:.1f} min ago. Waiting for the next candle.")
             RUN.update(action="no_trade", note="Gemini cooldown")
             return
+        cash = get_cash()
+        buy_usd = int(min(TRADE_USD, cash * 0.99) * 100) / 100   # leave ~1% headroom for fees
+        if buy_usd < MIN_TRADE_USD:
+            print(f"Cash ${cash:.2f} is too low to buy. Skipping.")
+            RUN.update(action="no_trade", note=f"cash ${cash:.2f} too low to buy")
+            return
         decision = gemini_confirms_buy(bars, ind)
         print("Gemini:", decision)
         try:
@@ -276,7 +290,7 @@ def main():
             conf = 0
         note = f"conf {conf}: {decision.get('reason', '')}"
         if conf >= MIN_CONFIDENCE:
-            order = place_order("buy", notional=str(TRADE_USD))
+            order = place_order("buy", notional=str(buy_usd))
             print("BUY order:", order["id"])
             RUN.update(action="buy", note=note)
         else:
