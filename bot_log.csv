@@ -4472,3 +4472,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-06 20:26,75655.34,2,price_above_trend_ema,no,gemini_hold,conf 2: Price sits below all EMAs despite short-term average crossover
 2026-11-06 20:27,75634.93,1,fast_above_slow|price_above_trend_ema,no,no_trade,score below 2
 2026-11-06 20:28,75683.06,2,price_above_trend_ema,no,no_trade,Gemini cooldown
+2026-11-06 20:29,75703.86,3,,no,no_trade,Gemini cooldown
