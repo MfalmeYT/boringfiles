@@ -3915,3 +3915,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-06 11:09,75972.59,3,,no,gemini_hold,conf 2: Price dropping below EMA9 and EMA21 signals short-term downside momentum
 2026-11-06 11:10,75918.77,3,,no,no_trade,Gemini cooldown
 2026-11-06 11:11,75912.3,3,,no,no_trade,Gemini cooldown
+2026-11-06 11:12,75909.93,3,,no,no_trade,Gemini cooldown
