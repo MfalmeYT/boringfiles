@@ -4753,3 +4753,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-07 01:08,75841.16,2,fast_above_slow,yes,holding,0.0%
 2026-11-07 01:09,75830.65,2,fast_above_slow,yes,holding,-0.0%
 2026-11-07 01:10,75841.8,2,fast_above_slow,yes,holding,0.0%
+2026-11-07 01:11,75809.65,1,fast_above_slow|price_above_trend_ema,yes,holding,-0.0%
