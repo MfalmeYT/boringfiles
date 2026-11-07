@@ -5001,3 +5001,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-07 05:16,75832.66,2,fast_above_slow,no,buy,conf 4: Price holds above EMAs with stable RSI; but fast EMA lags.
 2026-11-07 05:17,75831.68,1,fast_above_slow|price_above_trend_ema,yes,holding,-0.0%
 2026-11-07 05:18,75827.42,1,fast_above_slow|price_above_trend_ema,yes,holding,-0.0%
+2026-11-07 05:19,75832.41,2,fast_above_slow,yes,holding,-0.0%
