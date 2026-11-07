@@ -5764,3 +5764,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-07 17:59,75749.57,3,,no,no_trade,cash $0.96 too low to buy
 2026-11-07 18:00,75740.65,3,,no,no_trade,cash $0.96 too low to buy
 2026-11-07 18:01,75742.17,3,,no,no_trade,cash $0.96 too low to buy
+2026-11-07 18:02,75738.25,2,price_above_trend_ema,no,no_trade,cash $0.96 too low to buy
