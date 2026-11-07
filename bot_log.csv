@@ -5508,3 +5508,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-07 13:43,75838.58,1,fast_above_slow|price_above_trend_ema,no,no_trade,score below 2
 2026-11-07 13:44,75842.82,1,fast_above_slow|price_above_trend_ema,no,no_trade,score below 2
 2026-11-07 13:45,75842.37,1,fast_above_slow|price_above_trend_ema,no,no_trade,score below 2
+2026-11-07 13:46,75873.61,2,fast_above_slow,no,buy,conf 4: Uptrend momentum building despite EMA crossover pending; moderate RSI leaves room.
