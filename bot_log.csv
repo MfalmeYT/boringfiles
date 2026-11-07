@@ -5383,3 +5383,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-07 11:38,75902.6,1,fast_above_slow|price_above_trend_ema,no,no_trade,score below 2
 2026-11-07 11:39,75938.73,2,fast_above_slow,no,buy,conf 3: EMA trend is bearish while price rebounds slightly; mixed signals.
 2026-11-07 11:40,75923.14,1,fast_above_slow|price_above_trend_ema,yes,holding,-0.1%
+2026-11-07 11:41,75932.16,1,fast_above_slow|price_above_trend_ema,yes,holding,-0.0%
