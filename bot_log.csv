@@ -5291,3 +5291,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-07 10:06,75974.07,1,fast_above_slow|price_above_trend_ema,no,no_trade,score below 2
 2026-11-07 10:07,75973.04,1,fast_above_slow|price_above_trend_ema,no,no_trade,score below 2
 2026-11-07 10:08,75984.1,2,fast_above_slow,no,buy,conf 3: EMA trend is mixed and fast EMA is below slow EMA.
+2026-11-07 10:09,75985.77,2,fast_above_slow,yes,holding,-0.0%
