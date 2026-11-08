@@ -39,6 +39,9 @@ GEMINI_COOLDOWN_MIN = 5   # ask Gemini at most once per this many minutes (candl
 MIN_CONFIDENCE = 3       # Gemini confidence (1-6) needed to buy; lower = more trades
 MIN_ENTRY_SCORE = 2      # need at least 2 of 3 points to ask Gemini; Gemini makes the final call
 EXIT_SCORE = 0           # sell on score alone only if all 3 checks fail (stop loss / take profit still apply)
+MIN_HOLD_MIN = 30        # no signal exit in the first 30 min after a buy (stop loss and take profit still apply)
+REENTRY_COOLDOWN_MIN = 60  # no new buy within 60 min after any sell (stops in-and-out churn)
+REQUIRE_FAST_ABOVE_SLOW = True  # never enter while the fast EMA is below the slow EMA
 
 LOG_FILE = "bot_log.csv"
 RUN = {"action": "none", "note": ""}   # filled in during the run, written to the log at the end
@@ -205,6 +208,23 @@ def minutes_since_last_gemini_call():
     return None
 
 
+def minutes_since_last_action(actions):
+    """Minutes since the last log row whose action is in `actions` (None if there is none)."""
+    if not os.path.exists(LOG_FILE):
+        return None
+    with open(LOG_FILE) as f:
+        lines = f.read().splitlines()
+    for line in reversed(lines):
+        c = line.split(",")
+        if len(c) >= 6 and c[5].strip() in actions:
+            try:
+                t = datetime.datetime.strptime(c[0].strip(), "%Y-%m-%d %H:%M").replace(tzinfo=datetime.timezone.utc)
+            except ValueError:
+                return None
+            return (datetime.datetime.now(datetime.timezone.utc) - t).total_seconds() / 60
+    return None
+
+
 def write_log():
     """Append one line per run so all runs can be read in a single file."""
     new = not os.path.exists(LOG_FILE)
@@ -259,7 +279,11 @@ def main():
         elif change >= TAKE_PROFIT_PCT:
             reason = f"TAKE PROFIT ({change:.1%})"
         elif ind["score"] <= EXIT_SCORE:
-            reason = f"SIGNAL EXIT, score {ind['score']}/3 ({change:.1%})"
+            held = minutes_since_last_action(("buy",))
+            if held is None or held >= MIN_HOLD_MIN:
+                reason = f"SIGNAL EXIT, score {ind['score']}/3 ({change:.1%})"
+            else:
+                print(f"Signal weak but held only {held:.0f} min (min hold {MIN_HOLD_MIN}). Holding.")
         if reason:
             order = place_order("sell", qty=position["qty"])
             print(f"{reason}. SELL order:", order["id"])
@@ -271,6 +295,15 @@ def main():
 
     # Flat: need a good enough score, then Gemini must agree.
     if ind["score"] >= MIN_ENTRY_SCORE:
+        if REQUIRE_FAST_ABOVE_SLOW and not ind["checks"]["fast_above_slow"]:
+            print("Short-term trend is not up (fast EMA below slow EMA). No trade.")
+            RUN.update(action="no_trade", note="short-term trend not up")
+            return
+        since_sell = minutes_since_last_action(("sell",))
+        if since_sell is not None and since_sell < REENTRY_COOLDOWN_MIN:
+            print(f"Sold {since_sell:.0f} min ago. Waiting {REENTRY_COOLDOWN_MIN} min before buying again.")
+            RUN.update(action="no_trade", note="re-entry cooldown")
+            return
         ago = minutes_since_last_gemini_call()
         if ago is not None and ago < GEMINI_COOLDOWN_MIN:
             print(f"Gemini was asked {ago:.1f} min ago. Waiting for the next candle.")
