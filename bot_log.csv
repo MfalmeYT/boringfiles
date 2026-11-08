@@ -6975,3 +6975,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-08 14:10,75850.83,1,fast_above_slow|price_above_trend_ema,no,no_trade,score below 2
 2026-11-08 14:11,75834.67,1,fast_above_slow|price_above_trend_ema,no,no_trade,score below 2
 2026-11-08 14:12,75841.51,1,fast_above_slow|price_above_trend_ema,no,no_trade,score below 2
+2026-11-08 14:13,75861.02,2,fast_above_slow,no,no_trade,cash $0.96 too low to buy
