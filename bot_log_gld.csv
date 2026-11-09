@@ -198,3 +198,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-09 17:46,376.01,3,,no,gemini_hold,conf 2: Downtrend in recent closes overrides positive EMA alignment and RSI.
 2026-11-09 17:47,376.06,3,,no,no_trade,Gemini cooldown
 2026-11-09 17:48,376.08,3,,no,no_trade,Gemini cooldown
+2026-11-09 17:49,376.0,3,,no,no_trade,Gemini cooldown
