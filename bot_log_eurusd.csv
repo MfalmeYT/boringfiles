@@ -502,3 +502,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-09 09:58,1.11878,2,rsi_in_range,no,no_trade,Gemini cooldown
 2026-11-09 09:59,1.11878,2,rsi_in_range,no,no_trade,Gemini cooldown
 2026-11-09 10:00,1.11926,2,rsi_in_range,no,no_trade,Gemini cooldown
+2026-11-09 10:01,,,,,error,OANDA candles 504: <!DOCTYPE html> <html> <head>     <meta charset="utf-8"/>     <title>Internal Server Error</title>   
