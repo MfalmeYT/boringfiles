@@ -231,3 +231,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-09 02:54,75162.15,3,,no,gemini_hold,conf 2: Price fell below EMA9 and EMA21 with momentum fading rapidly
 2026-11-09 02:55,75173.28,3,,no,no_trade,Gemini cooldown
 2026-11-09 02:56,75140.59,3,,no,no_trade,Gemini cooldown
+2026-11-09 02:57,75207.98,3,,no,no_trade,Gemini cooldown
