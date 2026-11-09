@@ -1,12 +1,12 @@
-name: btc-paper-bot
+name: trading-bot
 on:
   workflow_dispatch:   # triggered from outside (cron-job.org) and by the manual "Run workflow" button
 
 permissions:
-  contents: write      # lets the bot save its log file (bot_log.csv) back to the repo
+  contents: write      # lets the bot save its log files (bot_log*.csv) back to the repo
 
 concurrency:
-  group: btc-bot       # never run two copies at once
+  group: trading-bot   # never run two copies at once
   cancel-in-progress: false
 
 jobs:
@@ -18,15 +18,42 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install requests
-      - run: python btc_bot.py
+      - run: python trader.py
         env:
           ALPACA_KEY: ${{ secrets.ALPACA_KEY }}
           ALPACA_SECRET: ${{ secrets.ALPACA_SECRET }}
           GEMINI_KEY: ${{ secrets.GEMINI_KEY }}
-      - name: Save log
+          OANDA_TOKEN: ${{ secrets.OANDA_TOKEN }}
+          OANDA_ACCOUNT_ID: ${{ secrets.OANDA_ACCOUNT_ID }}
+          ALLOW_LIVE: ${{ secrets.ALLOW_LIVE }}
+          # Optional repository Variables (Settings > Secrets and variables > Actions > Variables):
+          TRADING_ENABLED: ${{ vars.TRADING_ENABLED }}
+          MAX_OPEN_POSITIONS: ${{ vars.MAX_OPEN_POSITIONS }}
+          ALPACA_ENV: ${{ vars.ALPACA_ENV }}
+          OANDA_ENV: ${{ vars.OANDA_ENV }}
+      - name: Save logs
         if: always()
         run: |
+          mkdir -p /tmp/newlines
+          # only the log files this run actually changed or created
+          for f in $(git status --porcelain | awk '{print $2}' | grep -E '^bot_log.*\.csv$' || true); do
+            tail -n 1 "$f" > "/tmp/newlines/$f"
+          done
+          [ -n "$(ls -A /tmp/newlines)" ] || exit 0
           git config user.name "bot"
           git config user.email "bot@users.noreply.github.com"
-          git add bot_log.csv
-          git diff --cached --quiet || (git commit -m "log" && git pull --rebase && git push)
+          for i in 1 2 3 4 5; do
+            git fetch origin main
+            git reset --hard origin/main
+            git clean -fq -- 'bot_log*.csv'
+            for nf in /tmp/newlines/*; do
+              name=$(basename "$nf")
+              [ -f "$name" ] || echo "time_utc,price,score,failing_checks,position,action,note" > "$name"
+              cat "$nf" >> "$name"
+              git add "$name"
+            done
+            git commit -m "log"
+            if git push origin HEAD:main; then exit 0; fi
+            sleep $((RANDOM % 5 + 2))
+          done
+          exit 1
