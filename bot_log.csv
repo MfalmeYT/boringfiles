@@ -736,3 +736,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-09 11:19,74645.29,2,rsi_in_range,no,gemini_hold,conf 2: RSI overbought above 70 after an exhausted price spike
 2026-11-09 11:20,74602.82,2,rsi_in_range,no,no_trade,Gemini cooldown
 2026-11-09 11:21,74627.13,2,rsi_in_range,no,no_trade,Gemini cooldown
+2026-11-09 11:22,74601.37,2,rsi_in_range,no,no_trade,Gemini cooldown
