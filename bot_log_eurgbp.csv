@@ -928,3 +928,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-09 17:04,,,,,error,OANDA candles 504: <!DOCTYPE html> <html> <head>     <meta charset="utf-8"/>     <title>Internal Server Error</title>   
 2026-11-09 17:05,0.83488,3,,yes,holding,-0.1%
 2026-11-09 17:06,0.83488,3,,yes,holding,-0.1%
+2026-11-09 17:07,0.83468,3,,no,sell,closed by broker stop/TP; P/L -0.8404
