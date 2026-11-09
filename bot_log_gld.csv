@@ -47,3 +47,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-09 15:15,377.22,2,rsi_in_range,no,no_trade,cash $0.96 too low to buy | holds: no positions | open orders: 1
 2026-11-09 15:16,377.26,2,rsi_in_range,no,gemini_hold,conf 2: Extremely overbought RSI and exhausted sudden price spike
 2026-11-09 15:17,377.34,2,rsi_in_range,no,no_trade,Gemini cooldown
+2026-11-09 15:18,377.32,2,rsi_in_range,no,no_trade,Gemini cooldown
