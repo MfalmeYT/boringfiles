@@ -863,3 +863,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-09 13:26,74570.07,3,,no,gemini_hold,conf 2: Price is below EMA9 and EMA21; showing short-term weakness.
 2026-11-09 13:27,74600.26,3,,no,no_trade,Gemini cooldown
 2026-11-09 13:28,74583.24,3,,no,no_trade,Gemini cooldown
+2026-11-09 13:29,74642.28,3,,no,no_trade,Gemini cooldown
