@@ -168,3 +168,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-09 17:16,376.15,3,,no,gemini_hold,conf 2: Downtrend over last 6 bars conflicts with bullish EMA indicators
 2026-11-09 17:17,376.14,3,,no,no_trade,Gemini cooldown
 2026-11-09 17:18,376.25,3,,no,no_trade,Gemini cooldown
+2026-11-09 17:19,376.19,3,,no,no_trade,Gemini cooldown
