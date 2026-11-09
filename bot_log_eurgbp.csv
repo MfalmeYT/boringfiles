@@ -846,3 +846,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-09 15:42,0.83506,3,,no,no_trade,re-entry cooldown
 2026-11-09 15:43,0.83506,3,,no,no_trade,re-entry cooldown
 2026-11-09 15:44,0.83506,3,,no,no_trade,re-entry cooldown
+2026-11-09 15:45,0.83523,2,rsi_in_range,no,buy,conf 4: Strong uptrend supported by EMAs; but RSI is slightly overbought.
