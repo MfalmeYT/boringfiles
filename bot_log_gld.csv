@@ -335,3 +335,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-09 20:11,379.26,2,rsi_in_range,no,no_trade,outside entry window
 2026-11-09 20:12,379.1,2,rsi_in_range,no,no_trade,outside entry window
 2026-11-09 20:13,379.0,2,rsi_in_range,no,no_trade,outside entry window
+2026-11-09 20:14,379.3,2,rsi_in_range,no,no_trade,outside entry window
