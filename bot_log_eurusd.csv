@@ -556,3 +556,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-09 10:52,1.11938,2,rsi_in_range,no,no_trade,Gemini cooldown
 2026-11-09 10:53,1.11938,2,rsi_in_range,no,gemini_hold,conf 2: RSI extremely overbought at 81.3 indicates an exhausted upward spike
 2026-11-09 10:54,1.11938,2,rsi_in_range,no,no_trade,Gemini cooldown
+2026-11-09 10:55,1.11938,2,rsi_in_range,no,no_trade,Gemini cooldown
