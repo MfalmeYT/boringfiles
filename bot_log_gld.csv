@@ -226,3 +226,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-09 18:21,375.74,3,,no,gemini_hold,conf 2: Downtrend across 12 closes contradicts long signal despite passing indicator checks
 2026-11-09 18:22,375.82,3,,no,no_trade,Gemini cooldown
 2026-11-09 18:24,375.78,3,,no,no_trade,Gemini cooldown
+2026-11-09 18:25,375.94,3,,no,no_trade,Gemini cooldown
