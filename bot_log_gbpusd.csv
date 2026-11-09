@@ -982,3 +982,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-09 17:58,1.34222,3,,no,no_trade,re-entry cooldown
 2026-11-09 17:59,1.34222,3,,no,no_trade,re-entry cooldown
 2026-11-09 18:00,1.34192,3,,no,no_trade,re-entry cooldown
+2026-11-09 18:01,1.34192,3,,no,buy,conf 4: Uptrend intact but price pulling back from recent 1.3425 high
