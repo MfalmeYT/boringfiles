@@ -29,3 +29,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-09 14:57,377.79,2,rsi_in_range,no,no_trade,Gemini cooldown
 2026-11-09 14:58,377.71,2,rsi_in_range,no,no_trade,Gemini cooldown
 2026-11-09 14:59,377.72,2,rsi_in_range,no,no_trade,Gemini cooldown
+2026-11-09 15:00,377.6,2,rsi_in_range,no,gemini_hold,conf 2: Overbought RSI 74.1 following an exhausted; parabolic price spike.
