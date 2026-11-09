@@ -517,3 +517,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-09 10:13,1.34176,2,rsi_in_range,yes,holding,0.1%
 2026-11-09 10:14,1.34176,2,rsi_in_range,yes,holding,0.1%
 2026-11-09 10:15,1.34191,2,rsi_in_range,yes,holding,0.1%
+2026-11-09 10:16,1.3419,2,rsi_in_range,no,sell,closed by broker stop/TP; P/L 1.0700
