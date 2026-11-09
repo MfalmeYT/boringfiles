@@ -130,9 +130,31 @@ def get_cash():
 def get_position():
     r = requests.get(f"{PAPER}/positions/BTCUSD", headers=HEADERS, timeout=20)
     if r.status_code == 404:
+        # Fallback: scan all positions in case Alpaca lists the symbol differently (BTCUSD vs BTC/USD)
+        r2 = requests.get(f"{PAPER}/positions", headers=HEADERS, timeout=20)
+        if r2.status_code < 400:
+            for p in r2.json():
+                if p.get("symbol", "").replace("/", "") == "BTCUSD":
+                    return p
         return None
     r.raise_for_status()
     return r.json()
+
+
+def describe_account():
+    """One-line summary of what is holding the cash, for the log."""
+    parts, n_open = [], "?"
+    try:
+        r = requests.get(f"{PAPER}/positions", headers=HEADERS, timeout=20)
+        if r.status_code < 400:
+            for p in r.json():
+                parts.append(f"{p['symbol']} {float(p['qty']):.6f} (${float(p.get('market_value', 0)):.2f})")
+        o = requests.get(f"{PAPER}/orders", headers=HEADERS, params={"status": "open"}, timeout=20)
+        if o.status_code < 400:
+            n_open = len(o.json())
+    except Exception as e:
+        return f"could not read account ({e.__class__.__name__})"
+    return "holds: " + ("; ".join(parts) or "no positions") + f" | open orders: {n_open}"
 
 
 def gemini_confirms_buy(bars, ind):
@@ -313,7 +335,7 @@ def main():
         buy_usd = int(min(TRADE_USD, cash * 0.99) * 100) / 100   # leave ~1% headroom for fees
         if buy_usd < MIN_TRADE_USD:
             print(f"Cash ${cash:.2f} is too low to buy. Skipping.")
-            RUN.update(action="no_trade", note=f"cash ${cash:.2f} too low to buy")
+            RUN.update(action="no_trade", note=f"cash ${cash:.2f} too low to buy | {describe_account()}")
             return
         decision = gemini_confirms_buy(bars, ind)
         print("Gemini:", decision)
