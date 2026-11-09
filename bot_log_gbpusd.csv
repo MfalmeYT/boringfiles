@@ -447,3 +447,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-09 09:03,1.34096,2,rsi_in_range,no,no_trade,re-entry cooldown
 2026-11-09 09:04,1.34096,2,rsi_in_range,no,no_trade,re-entry cooldown
 2026-11-09 09:05,1.34096,2,rsi_in_range,no,no_trade,re-entry cooldown
+2026-11-09 09:06,1.34096,2,rsi_in_range,no,gemini_hold,conf 2: Severe overbought RSI at 78.8 signals high risk of exhaustion pullback
