@@ -942,3 +942,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-09 14:45,74621.66,2,fast_above_slow,no,no_trade,short-term trend not up
 2026-11-09 14:46,74524.5,2,fast_above_slow,no,no_trade,short-term trend not up
 2026-11-09 14:47,74564.49,2,fast_above_slow,no,no_trade,short-term trend not up
+2026-11-09 14:48,74729.78,3,,no,no_trade,cash $0.96 too low to buy | holds: no positions | open orders: 1
