@@ -463,3 +463,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-09 09:19,1.3408,2,rsi_in_range,no,no_trade,Gemini cooldown
 2026-11-09 09:20,1.3408,2,rsi_in_range,no,no_trade,Gemini cooldown
 2026-11-09 09:21,1.3408,2,rsi_in_range,no,buy,conf 3: RSI overbought at 75.8 increases risk of immediate pullbacks
+2026-11-09 09:22,1.3408,2,rsi_in_range,yes,holding,-0.0%
