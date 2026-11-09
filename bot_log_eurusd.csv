@@ -480,3 +480,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-09 09:36,1.11883,2,rsi_in_range,no,no_trade,re-entry cooldown
 2026-11-09 09:37,1.11883,2,rsi_in_range,no,no_trade,re-entry cooldown
 2026-11-09 09:38,1.11883,2,rsi_in_range,no,gemini_hold,conf 2: RSI at 84.8 indicates severe overbought conditions risking a sharp pullback
+2026-11-09 09:39,1.11883,2,rsi_in_range,no,no_trade,Gemini cooldown
