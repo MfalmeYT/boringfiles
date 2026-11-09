@@ -323,3 +323,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-09 19:59,378.69,2,rsi_in_range,no,no_trade,Gemini cooldown
 2026-11-09 20:00,378.7,2,rsi_in_range,no,no_trade,outside entry window
 2026-11-09 20:01,379.19,2,rsi_in_range,no,no_trade,outside entry window
+2026-11-09 20:02,379.19,2,rsi_in_range,no,no_trade,outside entry window
