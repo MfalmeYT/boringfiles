@@ -493,3 +493,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-09 09:49,1.11878,2,rsi_in_range,no,no_trade,Gemini cooldown
 2026-11-09 09:50,1.11878,2,rsi_in_range,no,no_trade,Gemini cooldown
 2026-11-09 09:51,1.11878,2,rsi_in_range,no,no_trade,Gemini cooldown
+2026-11-09 09:53,1.11878,2,rsi_in_range,no,gemini_hold,conf 2: Overbought RSI at 83.3 signals high risk of immediate pullback.
