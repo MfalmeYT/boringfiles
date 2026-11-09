@@ -181,3 +181,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-09 17:29,376.12,3,,no,no_trade,Gemini cooldown
 2026-11-09 17:30,376.22,3,,no,no_trade,Gemini cooldown
 2026-11-09 17:31,376.22,3,,no,gemini_hold,conf 2: Downtrend over last 6 closes with price below 9 EMA
+2026-11-09 17:32,376.22,3,,no,no_trade,Gemini cooldown
