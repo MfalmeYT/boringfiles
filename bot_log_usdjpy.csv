@@ -991,3 +991,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-09 18:07,158.059,2,price_above_trend_ema,no,no_trade,re-entry cooldown
 2026-11-09 18:08,158.059,2,price_above_trend_ema,no,no_trade,re-entry cooldown
 2026-11-09 18:11,158.059,2,price_above_trend_ema,no,no_trade,re-entry cooldown
+2026-11-09 18:13,158.059,2,price_above_trend_ema,no,no_trade,re-entry cooldown
