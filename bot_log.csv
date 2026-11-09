@@ -900,3 +900,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-09 14:03,74480.11,2,price_above_trend_ema,no,gemini_hold,conf 2: Price fell below all key EMAs with a fresh down move
 2026-11-09 14:04,74506.17,3,,no,no_trade,Gemini cooldown
 2026-11-09 14:05,74527.01,3,,no,no_trade,Gemini cooldown
+2026-11-09 14:06,74493.94,2,fast_above_slow,no,no_trade,short-term trend not up
