@@ -772,3 +772,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-09 14:28,0.83456,3,,no,no_trade,re-entry cooldown
 2026-11-09 14:29,0.83456,3,,no,no_trade,re-entry cooldown
 2026-11-09 14:30,0.83441,3,,no,no_trade,re-entry cooldown
+2026-11-09 14:31,,,,,error,OANDA candles 504: <!DOCTYPE html> <html> <head>     <meta charset="utf-8"/>     <title>Internal Server Error</title>   
