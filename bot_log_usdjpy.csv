@@ -1829,3 +1829,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-10 09:14,157.948,1,fast_above_slow|price_above_trend_ema,no,no_trade,score below 2
 2026-11-10 09:15,158.134,3,,no,buy,conf 4: Strong breakout spike carries momentum but risks instant mean reversion pullback
 2026-11-10 09:16,158.134,3,,yes,holding,-0.0%
+2026-11-10 09:17,158.134,3,,yes,holding,-0.0%
