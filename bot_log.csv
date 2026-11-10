@@ -1993,3 +1993,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-10 08:24,74611.39,1,price_above_trend_ema|rsi_in_range,no,no_trade,score below 2
 2026-11-10 08:25,74636.69,2,price_above_trend_ema,no,gemini_hold,conf 2: Price sits below all EMAs after a consistent downward drift.
 2026-11-10 08:26,74655,2,price_above_trend_ema,no,no_trade,Gemini cooldown
+2026-11-10 08:27,74662.21,2,price_above_trend_ema,no,no_trade,Gemini cooldown
