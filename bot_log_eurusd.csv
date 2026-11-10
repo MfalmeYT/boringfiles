@@ -1825,3 +1825,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-10 09:10,1.12504,2,rsi_in_range,no,no_trade,re-entry cooldown
 2026-11-10 09:11,1.12504,2,rsi_in_range,no,no_trade,re-entry cooldown
 2026-11-10 09:12,1.12504,2,rsi_in_range,no,no_trade,re-entry cooldown
+2026-11-10 09:13,1.12504,2,rsi_in_range,no,gemini_hold,conf 2: RSI overbought at 77.4 with price stretched far above EMAs
