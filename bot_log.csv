@@ -2412,3 +2412,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-10 15:26,74337.88,3,,no,no_trade,cash $0.96 too low to buy | holds: no positions | open orders: 1
 2026-11-10 15:27,74242.06,3,,no,no_trade,cash $0.96 too low to buy | holds: no positions | open orders: 1
 2026-11-10 15:28,74164.01,3,,no,no_trade,cash $0.96 too low to buy | holds: no positions | open orders: 1
+2026-11-10 15:29,74041.65,2,price_above_trend_ema,no,gemini_hold,conf 2: Price below EMAs and rolling over; indicating weak upside momentum
