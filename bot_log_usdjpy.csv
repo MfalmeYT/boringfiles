@@ -2291,3 +2291,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-10 16:59,158.832,2,rsi_in_range,yes,holding,0.0%
 2026-11-10 17:00,158.766,2,rsi_in_range,yes,holding,-0.0%
 2026-11-10 17:01,,,,,error,OANDA candles 504: <!DOCTYPE html> <html> <head>     <meta charset="utf-8"/>     <title>Internal Server Error</title>   
+2026-11-10 17:02,158.766,2,rsi_in_range,yes,holding,-0.0%
