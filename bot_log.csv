@@ -2285,3 +2285,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-10 13:16,74181.74,2,price_above_trend_ema,no,gemini_hold,conf 2: Price rejected below trend EMA with recent bearish momentum.
 2026-11-10 13:17,74164.27,1,price_above_trend_ema|rsi_in_range,no,no_trade,score below 2
 2026-11-10 13:18,74136.9,0,fast_above_slow|price_above_trend_ema|rsi_in_range,no,no_trade,score below 2
+2026-11-10 13:19,74150.57,1,price_above_trend_ema|rsi_in_range,no,no_trade,score below 2
