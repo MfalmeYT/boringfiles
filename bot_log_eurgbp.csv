@@ -1317,3 +1317,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-10 00:42,0.83488,2,fast_above_slow,no,no_trade,short-term trend not up
 2026-11-10 00:43,0.83488,2,fast_above_slow,no,no_trade,short-term trend not up
 2026-11-10 00:44,0.83488,2,fast_above_slow,no,no_trade,short-term trend not up
+2026-11-10 00:45,0.83502,3,,no,no_trade,spread 0.00014 too wide vs target
