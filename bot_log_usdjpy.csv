@@ -2287,3 +2287,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-10 16:55,158.832,2,rsi_in_range,no,no_trade,re-entry cooldown
 2026-11-10 16:56,158.832,2,rsi_in_range,no,buy,conf 3: Strong uptrend aligned with EMAs; but RSI 78.6 indicates extreme overbought.
 2026-11-10 16:57,158.832,2,rsi_in_range,yes,holding,0.0%
+2026-11-10 16:58,158.832,2,rsi_in_range,yes,holding,0.0%
