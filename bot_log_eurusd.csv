@@ -1840,3 +1840,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-10 09:25,1.12314,3,,no,no_trade,Gemini cooldown
 2026-11-10 09:26,1.12314,3,,no,no_trade,Gemini cooldown
 2026-11-10 09:27,1.12314,3,,no,no_trade,Gemini cooldown
+2026-11-10 09:28,1.12314,3,,no,gemini_hold,conf 2: Price sharply pulled back below EMA9 despite trend checks passing
