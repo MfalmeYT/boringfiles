@@ -1303,3 +1303,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-10 00:28,0.83482,3,,no,no_trade,max 3 open positions reached
 2026-11-10 00:29,0.83482,3,,no,no_trade,max 3 open positions reached
 2026-11-10 00:30,0.83488,2,fast_above_slow,no,no_trade,short-term trend not up
+2026-11-10 00:31,0.83488,2,fast_above_slow,no,no_trade,short-term trend not up
