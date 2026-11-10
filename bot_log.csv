@@ -2269,3 +2269,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-10 13:00,74293.99,2,fast_above_slow,no,no_trade,short-term trend not up
 2026-11-10 13:01,74251.41,1,fast_above_slow|price_above_trend_ema,no,no_trade,score below 2
 2026-11-10 13:02,74184.69,1,fast_above_slow|price_above_trend_ema,no,no_trade,score below 2
+2026-11-10 13:03,74179.8,1,fast_above_slow|price_above_trend_ema,no,no_trade,score below 2
