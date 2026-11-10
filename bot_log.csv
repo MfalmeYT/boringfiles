@@ -1851,3 +1851,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-10 06:02,74643.05,2,price_above_trend_ema,no,gemini_hold,conf 2: Downtrending price below key EMAs with declining momentum neutralizes bullish signal
 2026-11-10 06:03,74679.23,2,price_above_trend_ema,no,no_trade,Gemini cooldown
 2026-11-10 06:04,74707.74,2,price_above_trend_ema,no,no_trade,Gemini cooldown
+2026-11-10 06:05,74674.66,2,price_above_trend_ema,no,no_trade,Gemini cooldown
