@@ -1754,3 +1754,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-10 07:59,0.8352,3,,no,no_trade,spread 0.00014 too wide vs target
 2026-11-10 08:00,0.83564,2,rsi_in_range,no,no_trade,spread 0.00013 too wide vs target
 2026-11-10 08:01,0.83564,2,rsi_in_range,no,no_trade,spread 0.00014 too wide vs target
+2026-11-10 08:02,0.83564,2,rsi_in_range,no,no_trade,spread 0.00013 too wide vs target
