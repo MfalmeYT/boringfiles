@@ -2469,3 +2469,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-10 19:57,0.83652,3,,yes,holding,-0.0%
 2026-11-10 19:58,0.83652,3,,yes,holding,-0.0%
 2026-11-10 19:59,0.83652,3,,yes,holding,-0.0%
+2026-11-10 20:00,,,,,error,OANDA candles 401: {"errorMessage":"Insufficient authorization to perform request."}
