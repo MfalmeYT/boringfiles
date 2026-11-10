@@ -2471,3 +2471,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-10 19:59,1.11642,0,fast_above_slow|price_above_trend_ema|rsi_in_range,no,no_trade,score below 2
 2026-11-10 20:00,,,,,error,OANDA candles 401: {"errorMessage":"Insufficient authorization to perform request."}
 2026-11-10 20:01,1.11656,0,fast_above_slow|price_above_trend_ema|rsi_in_range,no,no_trade,score below 2
+2026-11-10 20:02,1.11656,0,fast_above_slow|price_above_trend_ema|rsi_in_range,no,no_trade,score below 2
