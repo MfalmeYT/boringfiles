@@ -1991,3 +1991,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-10 08:22,74708.63,3,,no,no_trade,cash $0.96 too low to buy | holds: no positions | open orders: 1
 2026-11-10 08:23,74664.61,2,price_above_trend_ema,no,no_trade,cash $0.96 too low to buy | holds: no positions | open orders: 1
 2026-11-10 08:24,74611.39,1,price_above_trend_ema|rsi_in_range,no,no_trade,score below 2
+2026-11-10 08:25,74636.69,2,price_above_trend_ema,no,gemini_hold,conf 2: Price sits below all EMAs after a consistent downward drift.
