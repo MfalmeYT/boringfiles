@@ -1984,3 +1984,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-10 08:15,74687.34,2,price_above_trend_ema,no,no_trade,cash $0.96 too low to buy | holds: no positions | open orders: 1
 2026-11-10 08:16,74693.51,2,price_above_trend_ema,no,no_trade,cash $0.96 too low to buy | holds: no positions | open orders: 1
 2026-11-10 08:17,74661.5,2,price_above_trend_ema,no,gemini_hold,conf 2: Downtrending price below all EMAs and falling RSI signal strong risk
+2026-11-10 08:18,74646.96,2,price_above_trend_ema,no,no_trade,Gemini cooldown
