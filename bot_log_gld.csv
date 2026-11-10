@@ -761,3 +761,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-10 20:47,369.5,0,fast_above_slow|price_above_trend_ema|rsi_in_range,no,no_trade,outside entry window
 2026-11-10 20:48,369.6,0,fast_above_slow|price_above_trend_ema|rsi_in_range,no,no_trade,outside entry window
 2026-11-10 20:49,369.63,0,fast_above_slow|price_above_trend_ema|rsi_in_range,no,no_trade,outside entry window
+2026-11-10 20:50,369.69,0,fast_above_slow|price_above_trend_ema|rsi_in_range,no,no_trade,outside entry window
