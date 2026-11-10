@@ -2391,3 +2391,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-10 18:39,0.83653,3,,no,no_trade,re-entry cooldown
 2026-11-10 18:40,0.83653,3,,no,no_trade,re-entry cooldown
 2026-11-10 18:41,0.83653,3,,no,no_trade,re-entry cooldown
+2026-11-10 18:42,0.83653,3,,no,buy,conf 4: Bullish EMA alignment and RSI support thesis despite recent tight consolidation
