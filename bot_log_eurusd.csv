@@ -2604,3 +2604,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-10 23:13,1.11663,1,fast_above_slow|price_above_trend_ema,no,no_trade,score below 2
 2026-11-10 23:14,1.11663,1,fast_above_slow|price_above_trend_ema,no,no_trade,score below 2
 2026-11-10 23:15,1.11692,2,price_above_trend_ema,no,no_trade,spread 0.00018 too wide vs target
+2026-11-10 23:16,1.11692,2,price_above_trend_ema,no,buy,conf 4: Fresh bullish crossover with neutral RSI supports short-term upside momentum.
