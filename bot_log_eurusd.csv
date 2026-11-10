@@ -1858,3 +1858,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-10 09:43,1.12316,3,,no,buy,conf 3: Price dropped sharply below short EMAs despite longer trend holding
 2026-11-10 09:44,1.12316,3,,yes,holding,0.0%
 2026-11-10 09:45,1.1225,1,price_above_trend_ema|rsi_in_range,yes,holding,-0.0%
+2026-11-10 09:46,1.1225,1,price_above_trend_ema|rsi_in_range,yes,holding,-0.0%
