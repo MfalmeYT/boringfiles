@@ -1798,3 +1798,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-10 08:43,0.83555,2,rsi_in_range,no,no_trade,spread 0.00013 too wide vs target
 2026-11-10 08:44,0.83555,2,rsi_in_range,no,no_trade,spread 0.00014 too wide vs target
 2026-11-10 08:45,0.8359,2,rsi_in_range,no,buy,conf 3: Strong uptrend but RSI at 77.2 indicates overbought conditions.
+2026-11-10 08:46,0.8359,2,rsi_in_range,yes,holding,-0.0%
