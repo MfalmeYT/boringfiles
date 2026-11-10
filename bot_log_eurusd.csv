@@ -2450,3 +2450,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-10 19:38,1.11649,0,fast_above_slow|price_above_trend_ema|rsi_in_range,no,no_trade,score below 2
 2026-11-10 19:39,1.11649,0,fast_above_slow|price_above_trend_ema|rsi_in_range,no,no_trade,score below 2
 2026-11-10 19:40,1.11649,0,fast_above_slow|price_above_trend_ema|rsi_in_range,no,no_trade,score below 2
+2026-11-10 19:41,1.11649,0,fast_above_slow|price_above_trend_ema|rsi_in_range,no,no_trade,score below 2
