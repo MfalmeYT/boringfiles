@@ -4052,3 +4052,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-11 18:59,74448.51,3,,no,no_trade,cash $0.96 too low to buy | holds: no positions | open orders: 1
 2026-11-11 19:00,74416.2,3,,no,no_trade,cash $0.96 too low to buy | holds: no positions | open orders: 1
 2026-11-11 19:01,74367.76,3,,no,no_trade,cash $0.96 too low to buy | holds: no positions | open orders: 1
+2026-11-11 19:02,74361.5,3,,no,gemini_hold,conf 2: Price is below both short EMAs after a sharp recent drop
