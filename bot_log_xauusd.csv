@@ -390,3 +390,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-11 08:47,4060.42,3,,no,no_trade,Gemini cooldown
 2026-11-11 08:48,4060.42,3,,no,no_trade,Gemini cooldown
 2026-11-11 08:49,,,,,error,Order buy rejected 400: {"orderRejectTransaction":{"id":"191";"accountID":"101-001-40943751-001";"userID":40943751;"batc
+2026-11-11 08:50,4060.42,3,,no,no_trade,Gemini cooldown
