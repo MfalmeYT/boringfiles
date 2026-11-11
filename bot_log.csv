@@ -3648,3 +3648,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-11 12:02,73905.73,3,,no,no_trade,cash $0.96 too low to buy | holds: no positions | open orders: 1
 2026-11-11 12:03,73859.68,3,,no,no_trade,cash $0.96 too low to buy | holds: no positions | open orders: 1
 2026-11-11 12:04,73891.32,3,,no,no_trade,cash $0.96 too low to buy | holds: no positions | open orders: 1
+2026-11-11 12:05,73813.59,1,price_above_trend_ema|rsi_in_range,no,no_trade,score below 2
