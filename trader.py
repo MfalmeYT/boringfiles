@@ -41,14 +41,15 @@ REQUIRE_FAST_ABOVE_SLOW = True  # never enter while the fast EMA is below the sl
 MIN_CONFIDENCE = 3       # Gemini confidence (1-6) needed to buy
 MIN_TRADE_USD = 10       # crypto: skip buying if cash is below this
 
-def fx_pair(label, symbol, log, decimals, units=1000):
-    """A currency pair on OANDA. units = amount of the FIRST currency per trade (1000 = a 'micro lot')."""
+def fx_pair(label, symbol, log, decimals, units=10000):
+    """A currency pair on OANDA. units = amount of the FIRST currency per trade (10,000 on the practice account)."""
     return {
         "enabled": True, "label": label, "broker": "oanda", "symbol": symbol,
         "log": log, "session": "fx", "timeframe": "M15", "decimals": decimals,
         "cooldown_min": 15, "units": units,
         "min_hold_min": 90, "reentry_min": 180,
-        "exit": {"mode": "atr", "stop_mult": 2.0, "tp_mult": 2.0},
+        "exit": {"mode": "atr", "stop_mult": 2.0, "tp_mult": 3.0},   # target 1.5x the stop, so spreads eat less of each win
+        "min_confidence": 2,   # paper test: let more setups through, then compare results by confidence in the viewer
         "max_spread_frac": 0.25,
         "flatten_before_weekend": True,
     }
@@ -61,12 +62,15 @@ MARKETS = {
         "cooldown_min": 5, "size_usd": 45,   # Bitcoin and GLD share one Alpaca cash balance, so each uses a smaller slice
         "exit": {"mode": "pct", "stop": 0.02, "tp": 0.02},
     },
+    "xauusd": fx_pair("XAU/USD", "XAU_USD", "bot_log_xauusd.csv", decimals=2, units=1),   # spot gold on OANDA, 1 unit = 1 troy ounce
     "gld": {
-        "enabled": True, "label": "Gold (GLD ETF)", "broker": "alpaca_stock", "symbol": "GLD",
+        # The gold ETF is switched off now that gold is XAU/USD. Set "enabled" to True to bring it back.
+        "enabled": False, "label": "Gold (GLD ETF)", "broker": "alpaca_stock", "symbol": "GLD",
         "log": "bot_log_gld.csv", "session": "us_stocks", "timeframe": "15Min", "decimals": 2,
         "cooldown_min": 15, "size_usd": 45,
         "min_hold_min": 60, "reentry_min": 120,
-        "exit": {"mode": "atr", "stop_mult": 2.0, "tp_mult": 2.0},
+        "exit": {"mode": "atr", "stop_mult": 2.0, "tp_mult": 3.0},
+        "min_confidence": 2,
         "flatten_at_close": True,    # sell before the 4 PM close so nothing is held overnight
     },
     "usdjpy": fx_pair("USD/JPY", "USD_JPY", "bot_log_usdjpy.csv", decimals=3),
@@ -170,9 +174,33 @@ def session_state(session, now_utc):
 
 
 # ---------------------------------------------------------------- brokers
+def http_get(url, **kw):
+    """GET with a few retries for temporary gateway errors (429/502/503/504) and dropped connections."""
+    for wait in (1, 2, 4, None):
+        try:
+            r = requests.get(url, **kw)
+        except (requests.Timeout, requests.ConnectionError):
+            if wait is None:
+                raise
+            time.sleep(wait)
+            continue
+        if r.status_code in (429, 502, 503, 504) and wait is not None:
+            time.sleep(wait)
+            continue
+        return r
+
+
+class NotTradeable(Exception):
+    """The broker says this instrument can't be traded on this account (for example XAU_USD on some OANDA accounts)."""
+
+
 def _check(r, what):
     if r.status_code >= 400:
-        raise Exception(f"{what} {r.status_code}: {r.text[:200]}")
+        body = r.text or ""
+        if "INSTRUMENT_NOT_TRADEABLE" in body or "not tradeable" in body.lower():
+            raise NotTradeable(f"{what}: not tradeable on this account")
+        msg = "temporary gateway error (HTML page)" if "<html" in body[:300].lower() else body[:200]
+        raise Exception(f"{what} {r.status_code}: {msg}")
     return r
 
 
@@ -180,7 +208,7 @@ class AlpacaCrypto:
     server_exits = False
 
     def __init__(self, symbol):
-        key, secret = os.environ.get("ALPACA_KEY"), os.environ.get("ALPACA_SECRET")
+        key, secret = os.environ.get("ALPACA_KEY", "").strip(), os.environ.get("ALPACA_SECRET", "").strip()
         if not key or not secret:
             raise KeyError("ALPACA_KEY / ALPACA_SECRET")
         env = os.environ.get("ALPACA_ENV", "paper").strip().lower()
@@ -194,7 +222,7 @@ class AlpacaCrypto:
 
     def candles(self, timeframe, n=100):
         start = (datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(hours=24)).strftime("%Y-%m-%dT%H:%M:%SZ")
-        r = requests.get(
+        r = http_get(
             self.data_url, headers=self.headers, timeout=20,
             params={"symbols": self.symbol, "timeframe": timeframe, "limit": n, "sort": "desc", "start": start},
         )
@@ -206,10 +234,10 @@ class AlpacaCrypto:
         return None  # no spread data used for crypto
 
     def position(self):
-        r = requests.get(f"{self.trade_url}/positions/{self.pos_symbol}", headers=self.headers, timeout=20)
+        r = http_get(f"{self.trade_url}/positions/{self.pos_symbol}", headers=self.headers, timeout=20)
         if r.status_code == 404:
             # Fallback: scan all positions in case Alpaca lists the symbol differently (BTCUSD vs BTC/USD)
-            r2 = requests.get(f"{self.trade_url}/positions", headers=self.headers, timeout=20)
+            r2 = http_get(f"{self.trade_url}/positions", headers=self.headers, timeout=20)
             if r2.status_code < 400:
                 for p in r2.json():
                     if p.get("symbol", "").replace("/", "") == self.pos_symbol:
@@ -223,11 +251,11 @@ class AlpacaCrypto:
         """One-line summary of what is holding the cash, for the log."""
         parts, n_open = [], "?"
         try:
-            r = requests.get(f"{self.trade_url}/positions", headers=self.headers, timeout=20)
+            r = http_get(f"{self.trade_url}/positions", headers=self.headers, timeout=20)
             if r.status_code < 400:
                 for p in r.json():
                     parts.append(f"{p['symbol']} {float(p['qty']):.6f} (${float(p.get('market_value', 0)):.2f})")
-            o = requests.get(f"{self.trade_url}/orders", headers=self.headers, params={"status": "open"}, timeout=20)
+            o = http_get(f"{self.trade_url}/orders", headers=self.headers, params={"status": "open"}, timeout=20)
             if o.status_code < 400:
                 n_open = len(o.json())
         except Exception as e:
@@ -235,7 +263,7 @@ class AlpacaCrypto:
         return "holds: " + ("; ".join(parts) or "no positions") + f" | open orders: {n_open}"
 
     def cash(self):
-        r = _check(requests.get(f"{self.trade_url}/account", headers=self.headers, timeout=20), "Alpaca account")
+        r = _check(http_get(f"{self.trade_url}/account", headers=self.headers, timeout=20), "Alpaca account")
         return float(r.json().get("cash", 0))
 
     def _order(self, side, **kw):
@@ -270,7 +298,7 @@ class AlpacaStock(AlpacaCrypto):
 
     def candles(self, timeframe, n=100):
         start = (datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(days=10)).strftime("%Y-%m-%dT%H:%M:%SZ")
-        r = requests.get(
+        r = http_get(
             self.data_url, headers=self.headers, timeout=20,
             params={"symbols": self.symbol, "timeframe": timeframe, "limit": n, "sort": "desc",
                     "start": start, "feed": "iex", "adjustment": "raw"},
@@ -280,7 +308,7 @@ class AlpacaStock(AlpacaCrypto):
         return [{"t": b["t"], "o": b["o"], "h": b["h"], "l": b["l"], "c": b["c"], "v": b["v"]} for b in raw]
 
     def market_open(self):
-        r = _check(requests.get(f"{self.trade_url}/clock", headers=self.headers, timeout=20), "Alpaca clock")
+        r = _check(http_get(f"{self.trade_url}/clock", headers=self.headers, timeout=20), "Alpaca clock")
         return bool(r.json().get("is_open"))
 
 
@@ -288,7 +316,7 @@ class Oanda:
     server_exits = True
 
     def __init__(self, symbol):
-        token, acct = os.environ.get("OANDA_TOKEN"), os.environ.get("OANDA_ACCOUNT_ID")
+        token, acct = os.environ.get("OANDA_TOKEN", "").strip(), os.environ.get("OANDA_ACCOUNT_ID", "").strip()
         if not token or not acct:
             raise KeyError("OANDA_TOKEN / OANDA_ACCOUNT_ID")
         env = os.environ.get("OANDA_ENV", "practice").strip().lower()
@@ -299,7 +327,7 @@ class Oanda:
         self.acct, self.symbol = acct, symbol
 
     def _get(self, path, what, **params):
-        r = requests.get(f"{self.base}{path}", headers=self.headers, params=params, timeout=20)
+        r = http_get(f"{self.base}{path}", headers=self.headers, params=params, timeout=20)
         return _check(r, what)
 
     def candles(self, timeframe, n=100):
@@ -321,7 +349,7 @@ class Oanda:
                 "tradeable": bool(p.get("tradeable", True))}
 
     def position(self):
-        r = requests.get(f"{self.base}/v3/accounts/{self.acct}/positions/{self.symbol}", headers=self.headers, timeout=20)
+        r = http_get(f"{self.base}/v3/accounts/{self.acct}/positions/{self.symbol}", headers=self.headers, timeout=20)
         if r.status_code == 404:
             return None
         _check(r, "OANDA position")
@@ -578,7 +606,7 @@ def process_market(name, cfg, broker, pos, open_count, now):
     except (TypeError, ValueError):
         conf = 0
     note = f"conf {conf}: {decision.get('reason', '')}"
-    if conf < MIN_CONFIDENCE:
+    if conf < cfg.get("min_confidence", MIN_CONFIDENCE):
         run.update(action="gemini_hold", note=note)
         return run, open_count
     if not TRADING_ENABLED:
@@ -617,6 +645,9 @@ def main():
         try:
             positions[name] = b.position()
             open_count += 1 if positions[name] else 0
+        except NotTradeable as e:
+            positions[name] = "skip"
+            print(f"[{name}] skipped: {e}")
         except Exception as e:
             positions[name] = "error"
             print(f"[{name}] ERROR reading position: {e}")
@@ -625,13 +656,15 @@ def main():
 
     # phase 2: each market on its own, so one failure never blocks the others
     for name, b in brokers.items():
-        if positions.get(name) == "error":
+        if positions.get(name) in ("error", "skip"):
             continue
         cfg = active[name]
         try:
             run, open_count = process_market(name, cfg, b, positions[name], open_count, now)
             if run is not None:
                 write_log(cfg["log"], run)
+        except NotTradeable as e:
+            print(f"[{name}] skipped: {e}")
         except Exception as e:
             print(f"[{name}] ERROR:", e)
             write_log(cfg["log"], {"action": "error", "note": str(e)[:120]})
