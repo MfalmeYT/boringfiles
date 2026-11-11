@@ -2723,3 +2723,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-11 01:12,1.11629,1,price_above_trend_ema|rsi_in_range,no,sell,closed by broker stop/TP; P/L -0.7200
 2026-11-11 01:13,1.11657,1,price_above_trend_ema|rsi_in_range,no,no_trade,score below 2
 2026-11-11 01:14,1.11657,1,price_above_trend_ema|rsi_in_range,no,no_trade,score below 2
+2026-11-11 01:15,1.11614,0,fast_above_slow|price_above_trend_ema|rsi_in_range,no,no_trade,score below 2
