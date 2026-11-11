@@ -3642,3 +3642,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-11 16:38,159.847,2,rsi_in_range,no,no_trade,re-entry cooldown
 2026-11-11 16:39,159.847,2,rsi_in_range,no,no_trade,re-entry cooldown
 2026-11-11 16:40,159.847,2,rsi_in_range,no,buy,conf 2: RSI overbought at 80.2 with price momentum stalling near highs
+2026-11-11 16:41,159.847,2,rsi_in_range,yes,holding,0.0%
