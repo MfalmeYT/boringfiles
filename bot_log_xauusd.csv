@@ -475,3 +475,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-11 10:12,4050.62,2,price_above_trend_ema,no,no_trade,Gemini cooldown
 2026-11-11 10:13,4050.62,2,price_above_trend_ema,no,no_trade,Gemini cooldown
 2026-11-11 10:14,4050.62,2,price_above_trend_ema,no,no_trade,Gemini cooldown
+2026-11-11 10:15,4052.34,2,fast_above_slow,no,no_trade,short-term trend not up
