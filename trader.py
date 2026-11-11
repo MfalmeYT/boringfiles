@@ -62,17 +62,6 @@ MARKETS = {
         "cooldown_min": 5, "size_usd": 45,   # Bitcoin and GLD share one Alpaca cash balance, so each uses a smaller slice
         "exit": {"mode": "pct", "stop": 0.02, "tp": 0.02},
     },
-    "xauusd": fx_pair("XAU/USD", "XAU_USD", "bot_log_xauusd.csv", decimals=2, units=1),   # spot gold on OANDA, 1 unit = 1 troy ounce
-    "gld": {
-        # The gold ETF is switched off now that gold is XAU/USD. Set "enabled" to True to bring it back.
-        "enabled": False, "label": "Gold (GLD ETF)", "broker": "alpaca_stock", "symbol": "GLD",
-        "log": "bot_log_gld.csv", "session": "us_stocks", "timeframe": "15Min", "decimals": 2,
-        "cooldown_min": 15, "size_usd": 45,
-        "min_hold_min": 60, "reentry_min": 120,
-        "exit": {"mode": "atr", "stop_mult": 2.0, "tp_mult": 3.0},
-        "min_confidence": 2,
-        "flatten_at_close": True,    # sell before the 4 PM close so nothing is held overnight
-    },
     "usdjpy": fx_pair("USD/JPY", "USD_JPY", "bot_log_usdjpy.csv", decimals=3),
     "gbpusd": fx_pair("GBP/USD", "GBP_USD", "bot_log_gbpusd.csv", decimals=5),
     "eurusd": fx_pair("EUR/USD", "EUR_USD", "bot_log_eurusd.csv", decimals=5),
