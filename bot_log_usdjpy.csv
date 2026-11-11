@@ -3429,3 +3429,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-11 12:58,159.172,2,rsi_in_range,no,no_trade,re-entry cooldown
 2026-11-11 12:59,159.172,2,rsi_in_range,no,no_trade,re-entry cooldown
 2026-11-11 13:00,159.198,2,rsi_in_range,no,buy,conf 3: RSI overbought above 70 despite strong uptrend and EMA alignment
+2026-11-11 13:01,159.198,2,rsi_in_range,yes,holding,0.0%
