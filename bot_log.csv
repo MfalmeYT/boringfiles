@@ -4059,3 +4059,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-11 19:06,74259.41,3,,no,no_trade,Gemini cooldown
 2026-11-11 19:07,74272.59,3,,no,no_trade,cash $0.96 too low to buy | holds: no positions | open orders: 1
 2026-11-11 19:08,74273.59,3,,no,no_trade,cash $0.96 too low to buy | holds: no positions | open orders: 1
+2026-11-11 19:09,74232.43,2,rsi_in_range,no,no_trade,cash $0.96 too low to buy | holds: no positions | open orders: 1
