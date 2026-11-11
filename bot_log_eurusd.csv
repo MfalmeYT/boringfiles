@@ -3932,3 +3932,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-11 23:43,1.10955,1,fast_above_slow|price_above_trend_ema,no,no_trade,score below 2
 2026-11-11 23:44,1.10955,1,fast_above_slow|price_above_trend_ema,no,no_trade,score below 2
 2026-11-11 23:45,1.10956,2,price_above_trend_ema,no,buy,conf 4: Fresh bullish EMA crossover offset by price below 50 EMA resistance
+2026-11-11 23:46,1.10956,2,price_above_trend_ema,yes,holding,-0.0%
