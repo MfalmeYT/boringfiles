@@ -3324,3 +3324,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-11 06:38,73750.85,3,,no,no_trade,cash $0.96 too low to buy | holds: no positions | open orders: 1
 2026-11-11 06:39,73775.93,3,,no,no_trade,cash $0.96 too low to buy | holds: no positions | open orders: 1
 2026-11-11 06:40,73749.74,3,,no,no_trade,cash $0.96 too low to buy | holds: no positions | open orders: 1
+2026-11-11 06:41,73686.38,3,,no,gemini_hold,conf 2: Downtrending closes and price below 9/21 EMAs indicate weak momentum
