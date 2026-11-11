@@ -3917,3 +3917,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-11 23:28,0.83564,2,fast_above_slow,no,no_trade,short-term trend not up
 2026-11-11 23:29,0.83564,2,fast_above_slow,no,no_trade,short-term trend not up
 2026-11-11 23:30,0.83564,3,,no,buy,conf 4: Crossover and momentum are positive; but flat trend limits upside
+2026-11-11 23:31,0.83564,3,,yes,holding,-0.0%
