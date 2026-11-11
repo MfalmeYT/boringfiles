@@ -3417,3 +3417,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-11 12:46,0.83619,2,price_above_trend_ema,no,sell,closed by broker stop/TP; P/L -7.2616
 2026-11-11 12:47,0.83632,2,price_above_trend_ema,no,no_trade,re-entry cooldown
 2026-11-11 12:48,0.83632,2,price_above_trend_ema,no,no_trade,re-entry cooldown
+2026-11-11 12:49,0.83632,2,price_above_trend_ema,no,no_trade,re-entry cooldown
