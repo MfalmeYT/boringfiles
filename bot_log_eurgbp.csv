@@ -4660,3 +4660,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-12 11:51,,,,,error,Order buy cancelled: INSUFFICIENT_MARGIN
 2026-11-12 11:52,,,,,error,Order buy cancelled: INSUFFICIENT_MARGIN
 2026-11-12 11:53,,,,,error,Order buy cancelled: INSUFFICIENT_MARGIN
+2026-11-12 11:54,,,,,error,Order buy cancelled: INSUFFICIENT_MARGIN
