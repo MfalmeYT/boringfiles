@@ -4441,3 +4441,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-12 08:12,1.10855,1,fast_above_slow|price_above_trend_ema,no,no_trade,score below 2
 2026-11-12 08:13,1.10855,1,fast_above_slow|price_above_trend_ema,no,no_trade,score below 2
 2026-11-12 08:14,1.10855,1,fast_above_slow|price_above_trend_ema,no,no_trade,score below 2
+2026-11-12 08:15,1.10878,3,,no,buy,conf 5: Fresh bullish crossover with positive momentum across all key indicators
