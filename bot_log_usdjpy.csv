@@ -4772,3 +4772,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-12 13:43,159.742,2,fast_above_slow,no,no_trade,short-term trend not up
 2026-11-12 13:44,159.742,2,fast_above_slow,no,no_trade,short-term trend not up
 2026-11-12 13:45,,,,,error,Order buy cancelled: INSUFFICIENT_MARGIN
+2026-11-12 13:46,,,,,error,Order buy cancelled: INSUFFICIENT_MARGIN
