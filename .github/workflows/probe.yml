@@ -1,0 +1,21 @@
+name: tradelocker-probe
+on:
+  workflow_dispatch:   # manual only: click "Run workflow"
+
+permissions:
+  contents: read
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install tradelocker
+      - run: python probe_tl.py
+        env:
+          TL_USERNAME: ${{ secrets.TL_USERNAME }}
+          TL_PASSWORD: ${{ secrets.TL_PASSWORD }}
+          TL_SERVER: ${{ secrets.TL_SERVER }}
