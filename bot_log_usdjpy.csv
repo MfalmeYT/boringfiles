@@ -4818,3 +4818,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-12 14:29,,,,,error,Order buy cancelled: INSUFFICIENT_MARGIN
 2026-11-12 14:30,159.616,0,fast_above_slow|price_above_trend_ema|rsi_in_range,no,no_trade,score below 2
 2026-11-12 14:31,159.616,0,fast_above_slow|price_above_trend_ema|rsi_in_range,no,no_trade,score below 2
+2026-11-12 14:32,159.616,0,fast_above_slow|price_above_trend_ema|rsi_in_range,no,no_trade,score below 2
