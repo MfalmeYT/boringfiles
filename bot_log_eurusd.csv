@@ -4739,3 +4739,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-12 13:10,1.10876,1,fast_above_slow|price_above_trend_ema,yes,holding,-0.0%
 2026-11-12 13:11,1.10762,1,fast_above_slow|price_above_trend_ema,no,sell,closed by broker stop/TP; P/L -11.8000
 2026-11-12 13:12,1.10876,1,fast_above_slow|price_above_trend_ema,no,no_trade,score below 2
+2026-11-12 13:13,1.10876,1,fast_above_slow|price_above_trend_ema,no,no_trade,score below 2
