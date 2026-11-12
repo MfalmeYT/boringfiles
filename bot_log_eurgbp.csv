@@ -4542,3 +4542,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-12 09:53,0.83597,3,,no,no_trade,re-entry cooldown
 2026-11-12 09:54,,,,,error,Order buy cancelled: INSUFFICIENT_MARGIN
 2026-11-12 09:55,,,,,error,Order buy cancelled: INSUFFICIENT_MARGIN
+2026-11-12 09:56,,,,,error,Order buy cancelled: INSUFFICIENT_MARGIN
