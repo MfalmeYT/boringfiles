@@ -4473,3 +4473,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-12 08:44,,,,,error,Order buy cancelled: INSUFFICIENT_MARGIN
 2026-11-12 08:45,,,,,error,Order buy cancelled: INSUFFICIENT_MARGIN
 2026-11-12 08:46,,,,,error,Order buy cancelled: INSUFFICIENT_MARGIN
+2026-11-12 08:47,1.32696,3,,no,buy,conf 4: Uptrend intact with EMA support; but momentum is slowing near highs
