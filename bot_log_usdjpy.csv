@@ -4931,3 +4931,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-12 16:22,,,,,error,Order buy cancelled: INSUFFICIENT_MARGIN
 2026-11-12 16:23,,,,,error,Order buy cancelled: INSUFFICIENT_MARGIN
 2026-11-12 16:24,,,,,error,Order buy cancelled: INSUFFICIENT_MARGIN
+2026-11-12 16:25,159.912,3,,no,buy,conf 4: Strong trend alignment offset by slowing momentum near recent high
