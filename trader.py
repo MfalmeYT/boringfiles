@@ -62,6 +62,15 @@ MARKETS = {
         "cooldown_min": 5, "size_usd": 45,   # Bitcoin and GLD share one Alpaca cash balance, so each uses a smaller slice
         "exit": {"mode": "pct", "stop": 0.02, "tp": 0.02},
     },
+    # Gold, traded as PAXG/USD (a token backed by 1 oz of gold) on the same Alpaca paper account. Logged as "Gold USD".
+    # PAXG trades thinly, so it uses 15-min candles and looks back 48h to find enough of them.
+    "gold": {
+        "enabled": True, "label": "Gold USD", "broker": "alpaca", "symbol": "PAXG/USD",
+        "log": "bot_log_goldusd.csv", "session": "24/7", "timeframe": "15Min", "decimals": 2,
+        "cooldown_min": 15, "size_usd": 45, "lookback_hours": 48,
+        "min_hold_min": 90, "reentry_min": 180,
+        "exit": {"mode": "pct", "stop": 0.01, "tp": 0.015},   # gold moves less than Bitcoin, so tighter than 2%
+    },
     "usdjpy": fx_pair("USD/JPY", "USD_JPY", "bot_log_usdjpy.csv", decimals=3),
     "gbpusd": fx_pair("GBP/USD", "GBP_USD", "bot_log_gbpusd.csv", decimals=5),
     "eurusd": fx_pair("EUR/USD", "EUR_USD", "bot_log_eurusd.csv", decimals=5),
@@ -210,7 +219,8 @@ class AlpacaCrypto:
         self.pos_symbol = symbol.replace("/", "")
 
     def candles(self, timeframe, n=100):
-        start = (datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(hours=24)).strftime("%Y-%m-%dT%H:%M:%SZ")
+        hours = getattr(self, "lookback_hours", 24)
+        start = (datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(hours=hours)).strftime("%Y-%m-%dT%H:%M:%SZ")
         r = http_get(
             self.data_url, headers=self.headers, timeout=20,
             params={"symbols": self.symbol, "timeframe": timeframe, "limit": n, "sort": "desc", "start": start},
@@ -622,6 +632,8 @@ def main():
     for name, cfg in active.items():
         try:
             brokers[name] = BROKERS[cfg["broker"]](cfg["symbol"])
+            if "lookback_hours" in cfg:
+                brokers[name].lookback_hours = cfg["lookback_hours"]
         except KeyError as e:
             print(f"[{name}] skipped: missing secret {e}")
         except Exception as e:
