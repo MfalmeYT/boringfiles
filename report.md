@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-13 19:51 UTC)
+# Bot report (generated 2026-11-13 19:52 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -14,12 +14,12 @@
 
 | market | last run UTC | runs | entries | errors | closed trades (all time) | win % | total % after fees | open |
 |---|---|---|---|---|---|---|---|---|
-| Bitcoin | 11-13 19:51 | 1437 | 4 | 0 | 3 | 0 | -2.02 | yes |
-| Gold USD | 11-13 19:51 | 1275 | 2 | 0 | 2 | 0 | -1.17 |  |
-| USD/JPY | 11-13 19:51 | 1376 | 2 | 9 | 12 | 33 | -0.05 |  |
-| GBP/USD | 11-13 19:51 | 1376 | 4 | 1 | 11 | 45 | -0.00 | yes |
-| EUR/USD | 11-13 19:51 | 1376 | 4 | 4 | 12 | 33 | -0.12 | yes |
-| EUR/GBP | 11-13 19:51 | 1376 | 3 | 5 | 13 | 8 | -0.51 |  |
+| Bitcoin | 11-13 19:52 | 1437 | 4 | 0 | 3 | 0 | -2.02 | yes |
+| Gold USD | 11-13 19:52 | 1276 | 2 | 0 | 2 | 0 | -1.17 |  |
+| USD/JPY | 11-13 19:52 | 1376 | 2 | 10 | 12 | 33 | -0.05 |  |
+| GBP/USD | 11-13 19:52 | 1376 | 4 | 2 | 11 | 45 | -0.00 | yes |
+| EUR/USD | 11-13 19:52 | 1376 | 4 | 4 | 12 | 33 | -0.12 | yes |
+| EUR/GBP | 11-13 19:52 | 1376 | 4 | 5 | 13 | 8 | -0.51 | yes |
 
 ## Raw log files (full history, one row per run)
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log.csv
@@ -30,13 +30,14 @@
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log_eurgbp.csv
 
 ## Errors in the last 24h (grouped)
-- x5 USD/JPY: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
+- x6 USD/JPY: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - x4 EUR/USD: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - x3 USD/JPY: OANDA candles 401: {"errorMessage":"Insufficient authorization to perform request."}
 - x3 EUR/GBP: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - x2 EUR/GBP: OANDA candles 401: {"errorMessage":"Insufficient authorization to perform request."}
 - x1 USD/JPY: OANDA pricing 401: {"errorMessage":"Insufficient authorization to perform request."}
 - x1 GBP/USD: OANDA candles 401: {"errorMessage":"Insufficient authorization to perform request."}
+- x1 GBP/USD: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 
 ## Latest closed trades
 - Bitcoin: long -0.86%
@@ -70,21 +71,21 @@
 - EUR/GBP totals: long 11 trades -0.38%, short 2 trades -0.14%
 
 ## Latest log rows
-- Bitcoin 11-13 19:49 price 68923.6 holding 0.2%
 - Bitcoin 11-13 19:50 price 68902.3 holding 0.1%
 - Bitcoin 11-13 19:51 price 68865.86 holding 0.1%
-- Gold USD 11-13 19:49 price 3871.3 no_trade score below 2
+- Bitcoin 11-13 19:52 price 68912.92 holding 0.2%
 - Gold USD 11-13 19:50 price 3871.83 no_trade score below 2
 - Gold USD 11-13 19:51 price 3871.04 no_trade score below 2
-- USD/JPY 11-13 19:49 price 159.752 no_trade re-entry cooldown
+- Gold USD 11-13 19:52 price 3871.57 no_trade score below 2
 - USD/JPY 11-13 19:50 price 159.752 no_trade re-entry cooldown
 - USD/JPY 11-13 19:51 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
-- GBP/USD 11-13 19:49 price 1.32108 holding SHORT -0.0%
+- USD/JPY 11-13 19:52 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - GBP/USD 11-13 19:50 price 1.32108 holding SHORT -0.0%
 - GBP/USD 11-13 19:51 price 1.32108 holding SHORT -0.0%
-- EUR/USD 11-13 19:49 price 1.10236 holding SHORT 0.0%
+- GBP/USD 11-13 19:52 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - EUR/USD 11-13 19:50 price 1.10236 holding SHORT 0.0%
 - EUR/USD 11-13 19:51 price 1.10236 holding SHORT 0.0%
-- EUR/GBP 11-13 19:49 price 0.83444 no_trade max 3 open positions reached
+- EUR/USD 11-13 19:52 price 1.10236 holding SHORT 0.0%
 - EUR/GBP 11-13 19:50 price 0.83444 no_trade max 3 open positions reached
 - EUR/GBP 11-13 19:51 price 0.83444 no_trade max 3 open positions reached
+- EUR/GBP 11-13 19:52 price 0.83444 short conf 5: Strong downtrend across all EMAs with supportive RSI space. | 5000 units (reduced 

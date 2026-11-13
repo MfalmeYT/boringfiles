@@ -6514,3 +6514,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-13 19:49,0.83444,3,,no,no_trade,max 3 open positions reached
 2026-11-13 19:50,0.83444,3,,no,no_trade,max 3 open positions reached
 2026-11-13 19:51,0.83444,3,,no,no_trade,max 3 open positions reached
+2026-11-13 19:52,0.83444,3,,no,short,conf 5: Strong downtrend across all EMAs with supportive RSI space. | 5000 units (reduced for margin)
