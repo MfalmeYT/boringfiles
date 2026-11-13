@@ -358,23 +358,46 @@ class Oanda:
             return None
         return {"qty": units, "entry": float(long_.get("averagePrice", 0))}
 
+    def margin_info(self):
+        """Balance and free margin, for the log (never raises)."""
+        try:
+            a = self._get(f"/v3/accounts/{self.acct}/summary", "OANDA account").json()["account"]
+            return f"balance {float(a.get('balance', 0)):.0f}; free margin {float(a.get('marginAvailable', 0)):.0f}"
+        except Exception:
+            return "balance unknown"
+
     def buy(self, cfg, price, sl=None, tp=None):
         d = cfg["decimals"]
-        order = {"type": "MARKET", "instrument": self.symbol, "units": str(cfg["units"]),
-                 "timeInForce": "FOK", "positionFill": "DEFAULT"}
-        if sl is not None:
-            order["stopLossOnFill"] = {"price": f"{sl:.{d}f}"}
-        if tp is not None:
-            order["takeProfitOnFill"] = {"price": f"{tp:.{d}f}"}
-        r = requests.post(f"{self.base}/v3/accounts/{self.acct}/orders", headers=self.headers,
-                          json={"order": order}, timeout=20)
-        if r.status_code >= 400:
-            raise Exception(f"Order buy rejected {r.status_code}: {r.text[:200]}")
-        j = r.json()
-        if "orderCancelTransaction" in j:
-            raise Exception(f"Order buy cancelled: {j['orderCancelTransaction'].get('reason', 'unknown')}")
-        fill = j.get("orderFillTransaction", {})
-        return fill.get("id") or j.get("lastTransactionID", "ok"), None
+        units, min_units = int(cfg["units"]), int(cfg.get("min_units", 1000))
+        while True:
+            order = {"type": "MARKET", "instrument": self.symbol, "units": str(units),
+                     "timeInForce": "FOK", "positionFill": "DEFAULT"}
+            if sl is not None:
+                order["stopLossOnFill"] = {"price": f"{sl:.{d}f}"}
+            if tp is not None:
+                order["takeProfitOnFill"] = {"price": f"{tp:.{d}f}"}
+            r = requests.post(f"{self.base}/v3/accounts/{self.acct}/orders", headers=self.headers,
+                              json={"order": order}, timeout=20)
+            no_margin = False
+            if r.status_code >= 400:
+                if "INSUFFICIENT_MARGIN" not in r.text:
+                    raise Exception(f"Order buy rejected {r.status_code}: {r.text[:200]}")
+                no_margin = True
+            else:
+                j = r.json()
+                if "orderCancelTransaction" in j:
+                    reason = j["orderCancelTransaction"].get("reason", "unknown")
+                    if reason != "INSUFFICIENT_MARGIN":
+                        raise Exception(f"Order buy cancelled: {reason}")
+                    no_margin = True
+            if not no_margin:
+                self.last_units = units
+                fill = j.get("orderFillTransaction", {})
+                return fill.get("id") or j.get("lastTransactionID", "ok"), None
+            units //= 2   # not enough free margin: try half the size
+            print(f"OANDA says insufficient margin, retrying with {units} units")
+            if units < min_units:
+                return None, f"no margin for a trade ({self.margin_info()})"
 
     def close(self, pos):
         r = requests.put(f"{self.base}/v3/accounts/{self.acct}/positions/{self.symbol}/close",
@@ -484,7 +507,9 @@ def minutes_since_last_action(path, actions):
 
 def minutes_since_last_gemini_call(path):
     for c in reversed(_last_rows(path)):
-        if len(c) >= 6 and (c[5].strip() in ("gemini_hold", "buy") or (c[5].strip() == "error" and "Order buy rejected" in ",".join(c))):
+        if len(c) >= 6 and (c[5].strip() in ("gemini_hold", "buy")
+                            or (c[5].strip() == "error" and "Order buy rejected" in ",".join(c))
+                            or (c[5].strip() == "no_trade" and ("no margin" in ",".join(c) or "too low" in ",".join(c)))):
             try:
                 t = datetime.datetime.strptime(c[0].strip(), "%Y-%m-%d %H:%M").replace(tzinfo=datetime.timezone.utc)
             except ValueError:
@@ -620,6 +645,9 @@ def process_market(name, cfg, broker, pos, open_count, now):
         print(f"[{name}] {skip}. Skipping.")
         run.update(action="no_trade", note=skip)
         return run, open_count
+    lu = getattr(broker, "last_units", None)
+    if lu and lu != cfg.get("units"):
+        note += f" | {lu} units (reduced for margin)"
     print(f"[{name}] BUY order:", oid, f"(stop {sl}, take profit {tp})" if sl else "")
     run.update(action="buy", note=note)
     return run, open_count + 1
