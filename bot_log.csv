@@ -6757,3 +6757,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-13 17:33,68674.73,1,fast_above_slow|price_above_trend_ema,no,no_trade,score below 2
 2026-11-13 17:34,68700.45,1,fast_above_slow|price_above_trend_ema,no,no_trade,score below 2
 2026-11-13 17:35,68716.2,1,fast_above_slow|price_above_trend_ema,no,no_trade,score below 2
+2026-11-13 17:36,68769.94,2,price_above_trend_ema,no,buy,conf 4: EMA crossover and RSI positive; but price below EMA50
