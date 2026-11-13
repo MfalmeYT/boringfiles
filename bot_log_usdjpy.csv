@@ -6599,3 +6599,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-13 21:14,159.802,1,fast_above_slow|price_above_trend_ema,no,no_trade,no new entries before weekend
 2026-11-13 21:15,159.765,1,fast_above_slow|price_above_trend_ema,no,no_trade,no new entries before weekend
 2026-11-13 21:16,,,,,error,OANDA candles 401: {"errorMessage":"Insufficient authorization to perform request."}
+2026-11-13 21:17,159.765,1,fast_above_slow|price_above_trend_ema,no,no_trade,no new entries before weekend
