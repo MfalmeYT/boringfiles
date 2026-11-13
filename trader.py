@@ -4,7 +4,9 @@ One script, one config per market (see MARKETS below). Every run it loops over t
   1. skips markets that are closed (currency pairs close on weekends, the gold ETF outside US stock hours)
   2. scores the market with the same 3 checks (EMA trend, longer EMA, RSI)
   3. asks Gemini for a 1-6 confidence on entries, once per cooldown
-  4. places orders through a broker adapter (Alpaca for Bitcoin and the gold ETF GLD, OANDA for currency pairs)
+  4. places orders through a broker adapter (Alpaca for Bitcoin and gold PAXG, OANDA for currency pairs)
+  5. currency pairs can go LONG (bet on up) or SHORT (bet on down) with mirrored rules. Alpaca can't short crypto, so
+     Bitcoin and Gold stay long-only.
 
 Safety rails (apply to ALL markets):
   - TRADING_ENABLED=false  -> never places orders (kill switch)
@@ -28,6 +30,8 @@ GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-3.6-flash")
 # An empty or missing value means "enabled". Only an explicit false/0/no/off turns trading off.
 TRADING_ENABLED = os.environ.get("TRADING_ENABLED", "").strip().lower() not in ("false", "0", "no", "off")
 MAX_OPEN_POSITIONS = int(os.environ.get("MAX_OPEN_POSITIONS") or 3)
+# Same idea for shorting: only an explicit false/0/no/off stops NEW short trades (open ones are still managed).
+SHORTING_ENABLED = os.environ.get("SHORTING_ENABLED", "").strip().lower() not in ("false", "0", "no", "off")
 
 EMA_FAST, EMA_SLOW, EMA_TREND = 9, 21, 50
 RSI_PERIOD, RSI_LOW, RSI_HIGH = 14, 45, 70
@@ -52,6 +56,7 @@ def fx_pair(label, symbol, log, decimals, units=10000):
         "min_confidence": 2,   # paper test: let more setups through, then compare results by confidence in the viewer
         "max_spread_frac": 0.25,
         "flatten_before_weekend": True,
+        "allow_short": True,   # also trade DOWN moves (mirrored rules); set False to make this pair long-only
     }
 
 
@@ -128,10 +133,21 @@ def compute_indicators(bars):
         "price_above_trend_ema": price > trend[-1],
         "rsi_in_range": RSI_LOW <= r <= RSI_HIGH,
     }
+    # Mirror image for shorts: fast below slow, price below the long EMA, RSI between 30 and 55
+    fresh_cross_down = any(
+        fast[i - 1] >= slow[i - 1] and fast[i] < slow[i]
+        for i in range(len(closes) - CROSS_LOOKBACK, len(closes))
+    )
+    checks_short = {
+        "fast_below_slow": fast[-1] < slow[-1],
+        "price_below_trend_ema": price < trend[-1],
+        "rsi_in_short_range": (100 - RSI_HIGH) <= r <= (100 - RSI_LOW),
+    }
     return {
         "price": price, "ema_fast": fast[-1], "ema_slow": slow[-1], "ema_trend": trend[-1],
         "rsi": r, "atr": atr(bars, ATR_PERIOD), "fresh_cross": fresh_cross,
         "checks": checks, "score": sum(checks.values()),
+        "fresh_cross_down": fresh_cross_down, "checks_short": checks_short, "score_short": sum(checks_short.values()),
     }
 
 
@@ -272,7 +288,9 @@ class AlpacaCrypto:
             raise Exception(f"Order {side} rejected {r.status_code}: {r.text[:200]}")
         return r.json()["id"]
 
-    def buy(self, cfg, price, sl=None, tp=None):
+    def buy(self, cfg, price, sl=None, tp=None, side="long"):
+        if side != "long":
+            raise Exception("Alpaca crypto can't be shorted")
         cash = self.cash()
         usd = int(min(cfg["size_usd"], cash * 0.99) * 100) / 100
         if usd < MIN_TRADE_USD:
@@ -352,11 +370,13 @@ class Oanda:
         if r.status_code == 404:
             return None
         _check(r, "OANDA position")
-        long_ = r.json()["position"]["long"]
-        units = float(long_.get("units", 0))
-        if units <= 0:
-            return None
-        return {"qty": units, "entry": float(long_.get("averagePrice", 0))}
+        p = r.json()["position"]
+        lu, su = float(p["long"].get("units", 0)), float(p["short"].get("units", 0))
+        if lu > 0:
+            return {"qty": lu, "entry": float(p["long"].get("averagePrice", 0)), "side": "long"}
+        if su < 0:
+            return {"qty": -su, "entry": float(p["short"].get("averagePrice", 0)), "side": "short"}
+        return None
 
     def margin_info(self):
         """Balance and free margin, for the log (never raises)."""
@@ -366,11 +386,13 @@ class Oanda:
         except Exception:
             return "balance unknown"
 
-    def buy(self, cfg, price, sl=None, tp=None):
+    def buy(self, cfg, price, sl=None, tp=None, side="long"):
+        """Opens a long (positive units) or a short (negative units). For a short, sl is above and tp below the price."""
         d = cfg["decimals"]
+        sign = 1 if side == "long" else -1
         units, min_units = int(cfg["units"]), int(cfg.get("min_units", 1000))
         while True:
-            order = {"type": "MARKET", "instrument": self.symbol, "units": str(units),
+            order = {"type": "MARKET", "instrument": self.symbol, "units": str(units * sign),
                      "timeInForce": "FOK", "positionFill": "DEFAULT"}
             if sl is not None:
                 order["stopLossOnFill"] = {"price": f"{sl:.{d}f}"}
@@ -401,7 +423,7 @@ class Oanda:
 
     def close(self, pos):
         r = requests.put(f"{self.base}/v3/accounts/{self.acct}/positions/{self.symbol}/close",
-                         headers=self.headers, json={"longUnits": "ALL"}, timeout=20)
+                         headers=self.headers, json={("longUnits" if pos.get("side", "long") == "long" else "shortUnits"): "ALL"}, timeout=20)
         if r.status_code >= 400:
             raise Exception(f"Close rejected {r.status_code}: {r.text[:200]}")
         return r.json().get("lastTransactionID", "ok")
@@ -413,28 +435,40 @@ class Oanda:
         if not trades:
             return None
         t = trades[0]
-        return {"price": float(t.get("averageClosePrice", 0)), "pl": t.get("realizedPL", "?")}
+        return {"price": float(t.get("averageClosePrice", 0)), "pl": t.get("realizedPL", "?"),
+                "short": float(t.get("initialUnits", 0)) < 0}
 
 
 BROKERS = {"alpaca": AlpacaCrypto, "alpaca_stock": AlpacaStock, "oanda": Oanda}
 
 
 # ---------------------------------------------------------------- gemini
-def ask_gemini(label, bars, ind, exit_text):
+def ask_gemini(label, bars, ind, exit_text, side="long"):
+    short = side == "short"
     summary = {
         "price": round(ind["price"], 4), f"ema{EMA_FAST}": round(ind["ema_fast"], 4),
         f"ema{EMA_SLOW}": round(ind["ema_slow"], 4), f"ema{EMA_TREND}": round(ind["ema_trend"], 4),
-        "rsi": round(ind["rsi"], 1), "fresh_ema_crossover": ind["fresh_cross"],
-        "score_out_of_3": ind["score"], "checks": ind["checks"],
+        "rsi": round(ind["rsi"], 1),
+        ("fresh_ema_crossover_down" if short else "fresh_ema_crossover"): ind["fresh_cross_down" if short else "fresh_cross"],
+        "score_out_of_3": ind["score_short" if short else "score"],
+        "checks": ind["checks_short" if short else "checks"],
     }
     closes = [round(b["c"], 4) for b in bars[-12:]]
+    if short:
+        what = "SHORT (a bet that the price falls) paper-trading entry check"
+        goal = "hit take profit (the price must FALL) before stop loss (the price rises)"
+        bad = "a sharp ongoing rally or an exhausted drop"
+    else:
+        what = "paper-trading entry check"
+        goal = "hit take profit before stop loss"
+        bad = "a sharp ongoing drop or an exhausted spike"
     prompt = (
-        f"{label} paper-trading entry check. Trade exits automatically at {exit_text}.\n"
+        f"{label} {what}. Trade exits automatically at {exit_text}.\n"
         f"Last 12 closes, oldest first: {closes}\n"
         f"Indicators: {json.dumps(summary)}\n"
-        "Estimate how likely this trade is to hit take profit before stop loss, as a confidence score "
+        f"Estimate how likely this trade is to {goal}, as a confidence score "
         "from 1 (very unlikely) to 6 (very likely); 3-4 is a coin flip. Mixed indicators are normal, so don't "
-        "default to low scores. Use 1-2 only for clear problems like a sharp ongoing drop or an exhausted spike.\n"
+        f"default to low scores. Use 1-2 only for clear problems like {bad}.\n"
         'Reply with JSON only: {"confidence": <integer 1-6>, "reason": "<max 12 words>"}.'
     )
     url = f"https://generativelanguage.googleapis.com/v1beta/models/{GEMINI_MODEL}:generateContent"
@@ -507,7 +541,7 @@ def minutes_since_last_action(path, actions):
 
 def minutes_since_last_gemini_call(path):
     for c in reversed(_last_rows(path)):
-        if len(c) >= 6 and (c[5].strip() in ("gemini_hold", "buy")
+        if len(c) >= 6 and (c[5].strip() in ("gemini_hold", "buy", "short")
                             or (c[5].strip() == "error" and "Order buy rejected" in ",".join(c))
                             or (c[5].strip() == "no_trade" and ("no margin" in ",".join(c) or "too low" in ",".join(c)))):
             try:
@@ -550,10 +584,18 @@ def process_market(name, cfg, broker, pos, open_count, now):
 
     # ---- holding: exits
     if pos:
+        side = pos.get("side", "long")
+        sgn = 1 if side == "long" else -1
+        exit_action = "sell" if side == "long" else "cover"
+        tag = "" if side == "long" else "SHORT "
+        my_score = ind["score"]
+        if side == "short":
+            my_score = ind["score_short"]
+            run.update(score=my_score, failing="|".join(k for k, v in ind["checks_short"].items() if not v))
         entry = pos["entry"]
-        change = (price - entry) / entry
+        change = sgn * (price - entry) / entry       # positive = the trade is making money
         reason = None
-        if not broker.server_exits:
+        if not broker.server_exits:                  # (long-only brokers)
             stop_d, tp_d = exit_distances(cfg, entry, ind["atr"])
             if price <= entry - stop_d:
                 reason = f"STOP LOSS ({change:.1%})"
@@ -561,29 +603,30 @@ def process_market(name, cfg, broker, pos, open_count, now):
                 reason = f"TAKE PROFIT ({change:.1%})"
         if reason is None and (cfg.get("flatten_before_weekend") or cfg.get("flatten_at_close")) and flatten:
             reason = f"{'WEEKEND' if cfg['session'] == 'fx' else 'END-OF-DAY'} FLATTEN ({change:.1%})"
-        if reason is None and ind["score"] <= EXIT_SCORE:
-            held = minutes_since_last_action(cfg["log"], ("buy",))
+        if reason is None and my_score <= EXIT_SCORE:
+            held = minutes_since_last_action(cfg["log"], ("buy", "short"))
             if held is None or held >= cfg.get("min_hold_min", MIN_HOLD_MIN):
-                reason = f"SIGNAL EXIT, score {ind['score']}/3 ({change:.1%})"
+                reason = f"SIGNAL EXIT, score {my_score}/3 ({change:.1%})"
             else:
                 print(f"[{name}] Signal weak but held only {held:.0f} min (min hold {cfg.get('min_hold_min', MIN_HOLD_MIN)}). Holding.")
         if reason:
             if TRADING_ENABLED:
                 oid = broker.close(pos)
-                print(f"[{name}] {reason}. CLOSED:", oid)
-                run.update(action="sell", note=reason)
+                print(f"[{name}] {tag}{reason}. CLOSED:", oid)
+                run.update(action=exit_action, note=reason)
             else:
-                run.update(action="holding", note=f"{reason} but trading disabled")
+                run.update(action="holding", note=f"{tag}{reason} but trading disabled")
         else:
-            print(f"[{name}] Holding ({change:.1%}).")
-            run.update(action="holding", note=f"{change:.1%}")
+            print(f"[{name}] {tag}Holding ({change:.1%}).")
+            run.update(action="holding", note=f"{tag}{change:.1%}")
         return run, open_count
 
     # ---- flat: did the broker close a trade for us (server-side stop / take profit)?
-    if broker.server_exits and last_action(cfg["log"]) in ("buy", "holding"):
+    if broker.server_exits and last_action(cfg["log"]) in ("buy", "short", "holding"):
         closed = broker.last_closed_trade()
         if closed:
-            run.update(price=round(closed["price"], d), position="no", action="sell",
+            run.update(price=round(closed["price"], d), position="no",
+                       action="cover" if closed.get("short") else "sell",
                        note=f"closed by broker stop/TP; P/L {closed['pl']}")
             print(f"[{name}] position was closed by the broker: {run['note']}")
             return run, open_count
@@ -593,18 +636,29 @@ def process_market(name, cfg, broker, pos, open_count, now):
         print(f"[{name}] no new entries right now (outside the entry window).")
         run.update(action="no_trade", note="no new entries before weekend" if cfg["session"] == "fx" else "outside entry window")
         return run, open_count
-    if ind["score"] < MIN_ENTRY_SCORE:
-        run.update(action="no_trade", note=f"score below {MIN_ENTRY_SCORE}")
-        print(f"[{name}] Score {ind['score']}/3 is below {MIN_ENTRY_SCORE}. No trade.")
+    shorting = bool(cfg.get("allow_short")) and SHORTING_ENABLED
+    long_ok = ind["score"] >= MIN_ENTRY_SCORE and (not REQUIRE_FAST_ABOVE_SLOW or ind["checks"]["fast_above_slow"])
+    short_ok = shorting and ind["score_short"] >= MIN_ENTRY_SCORE and (
+        not REQUIRE_FAST_ABOVE_SLOW or ind["checks_short"]["fast_below_slow"])
+    if long_ok:
+        side = "long"
+    elif short_ok:
+        side = "short"
+        run.update(score=ind["score_short"], failing="|".join(k for k, v in ind["checks_short"].items() if not v))
+    else:
+        if shorting:
+            note = "no long or short setup"
+        elif ind["score"] < MIN_ENTRY_SCORE:
+            note = f"score below {MIN_ENTRY_SCORE}"
+        else:
+            note = "short-term trend not up"
+        run.update(action="no_trade", note=note)
+        print(f"[{name}] {note}. No trade.")
         return run, open_count
-    if REQUIRE_FAST_ABOVE_SLOW and not ind["checks"]["fast_above_slow"]:
-        run.update(action="no_trade", note="short-term trend not up")
-        print(f"[{name}] Short-term trend is not up (fast EMA below slow EMA). No trade.")
-        return run, open_count
-    since_sell = minutes_since_last_action(cfg["log"], ("sell",))
+    since_sell = minutes_since_last_action(cfg["log"], ("sell", "cover"))
     if since_sell is not None and since_sell < cfg.get("reentry_min", REENTRY_COOLDOWN_MIN):
         run.update(action="no_trade", note="re-entry cooldown")
-        print(f"[{name}] Sold {since_sell:.0f} min ago. Waiting {cfg.get('reentry_min', REENTRY_COOLDOWN_MIN)} min before buying again.")
+        print(f"[{name}] Closed {since_sell:.0f} min ago. Waiting {cfg.get('reentry_min', REENTRY_COOLDOWN_MIN)} min before opening again.")
         return run, open_count
     if open_count >= MAX_OPEN_POSITIONS:
         run.update(action="no_trade", note=f"max {MAX_OPEN_POSITIONS} open positions reached")
@@ -621,10 +675,13 @@ def process_market(name, cfg, broker, pos, open_count, now):
         run.update(action="no_trade", note="Gemini cooldown")
         return run, open_count
 
-    exit_text = (f"+{tp_d / price:.2%} (take profit) or -{stop_d / price:.2%} (stop loss)"
-                 + (", set from recent volatility" if cfg["exit"]["mode"] == "atr" else ""))
-    decision = ask_gemini(cfg["label"], bars, ind, exit_text)
-    print(f"[{name}] Gemini:", decision)
+    vol = ", set from recent volatility" if cfg["exit"]["mode"] == "atr" else ""
+    if side == "short":
+        exit_text = f"a {tp_d / price:.2%} fall (take profit) or a {stop_d / price:.2%} rise (stop loss){vol}"
+    else:
+        exit_text = f"+{tp_d / price:.2%} (take profit) or -{stop_d / price:.2%} (stop loss){vol}"
+    decision = ask_gemini(cfg["label"], bars, ind, exit_text, side)
+    print(f"[{name}] Gemini ({side}):", decision)
     try:
         conf = int(decision.get("confidence", 0))
     except (TypeError, ValueError):
@@ -637,10 +694,16 @@ def process_market(name, cfg, broker, pos, open_count, now):
         run.update(action="gemini_hold", note=note + " (trading disabled)")
         return run, open_count
 
-    ref = quote["ask"] if quote else price
-    sl = round(ref - stop_d, d) if broker.server_exits else None
-    tp = round(ref + tp_d, d) if broker.server_exits else None
-    oid, skip = broker.buy(cfg, price, sl, tp)
+    # a long is bought at the ask, a short is sold at the bid; the stop goes on the losing side
+    if side == "short":
+        ref = quote["bid"] if quote else price
+        sl = round(ref + stop_d, d) if broker.server_exits else None
+        tp = round(ref - tp_d, d) if broker.server_exits else None
+    else:
+        ref = quote["ask"] if quote else price
+        sl = round(ref - stop_d, d) if broker.server_exits else None
+        tp = round(ref + tp_d, d) if broker.server_exits else None
+    oid, skip = broker.buy(cfg, price, sl, tp, side)
     if skip:
         print(f"[{name}] {skip}. Skipping.")
         run.update(action="no_trade", note=skip)
@@ -648,10 +711,9 @@ def process_market(name, cfg, broker, pos, open_count, now):
     lu = getattr(broker, "last_units", None)
     if lu and lu != cfg.get("units"):
         note += f" | {lu} units (reduced for margin)"
-    print(f"[{name}] BUY order:", oid, f"(stop {sl}, take profit {tp})" if sl else "")
-    run.update(action="buy", note=note)
+    print(f"[{name}] {'SHORT' if side == 'short' else 'BUY'} order:", oid, f"(stop {sl}, take profit {tp})" if sl else "")
+    run.update(action="short" if side == "short" else "buy", note=note)
     return run, open_count + 1
-
 
 def main():
     now = datetime.datetime.now(datetime.timezone.utc)
