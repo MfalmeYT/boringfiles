@@ -6193,3 +6193,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-13 14:26,1.32292,2,price_above_trend_ema,no,no_trade,re-entry cooldown
 2026-11-13 14:27,1.32292,2,price_above_trend_ema,no,no_trade,re-entry cooldown
 2026-11-13 14:28,1.32292,2,price_above_trend_ema,no,buy,conf 3: Fresh EMA cross conflicts with price below EMA50 and neutral RSI | 5000 units (reduced for margin)
+2026-11-13 14:29,1.32292,2,price_above_trend_ema,yes,holding,0.0%
