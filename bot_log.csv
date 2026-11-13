@@ -6249,3 +6249,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-13 09:04,68865.48,3,,no,buy,conf 5: Fresh bullish EMA crossover with price above 50 EMA and strong RSI
 2026-11-13 09:05,68823.99,2,price_above_trend_ema,yes,holding,-0.0%
 2026-11-13 09:06,68777.54,2,price_above_trend_ema,yes,holding,-0.1%
+2026-11-13 09:07,68734.4,2,price_above_trend_ema,yes,holding,-0.2%
