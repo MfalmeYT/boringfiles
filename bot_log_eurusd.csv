@@ -6641,3 +6641,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-13 21:56,1.10201,0,fast_above_slow|price_above_trend_ema|rsi_in_range,no,no_trade,no new entries before weekend
 2026-11-13 21:57,1.10201,0,fast_above_slow|price_above_trend_ema|rsi_in_range,no,no_trade,no new entries before weekend
 2026-11-13 21:58,1.10201,0,fast_above_slow|price_above_trend_ema|rsi_in_range,no,no_trade,no new entries before weekend
+2026-11-13 22:08,,,,,error,OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
