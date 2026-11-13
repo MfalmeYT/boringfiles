@@ -68,6 +68,7 @@ for c in T.MARKETS.values():
     longs = [r for d, r in done if d > 0]; shorts = [r for d, r in done if d < 0]
     if shorts:
         tr_lines.append(f"- {c['label']} totals: long {len(longs)} trades {sum(longs):+.2f}%, short {len(shorts)} trades {sum(shorts):+.2f}%")
+lines += ["", "## Raw log files (full history, one row per run)"] + [f"- https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/{c['log']}" for c in T.MARKETS.values()]
 lines += ["", "## Errors in the last 24h (grouped)"] + ([f"- x{n} {m}: {t}" for (m, t), n in sorted(errs.items(), key=lambda x: -x[1])[:10]] or ["- none"])
 lines += ["", "## Latest closed trades"] + (tr_lines or ["- none yet"])
 lines += ["", "## Latest log rows"] + tail
