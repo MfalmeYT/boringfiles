@@ -5996,3 +5996,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-13 11:09,159.918,1,fast_below_slow|price_below_trend_ema,yes,holding,SHORT -0.0%
 2026-11-13 11:10,159.918,1,fast_below_slow|price_below_trend_ema,yes,holding,SHORT -0.0%
 2026-11-13 11:11,159.918,1,fast_below_slow|price_below_trend_ema,yes,holding,SHORT -0.0%
+2026-11-13 11:12,159.918,1,fast_below_slow|price_below_trend_ema,yes,holding,SHORT -0.0%
