@@ -6616,3 +6616,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-13 21:31,0.83418,0,fast_above_slow|price_above_trend_ema|rsi_in_range,no,no_trade,no new entries before weekend
 2026-11-13 21:32,0.83418,0,fast_above_slow|price_above_trend_ema|rsi_in_range,no,no_trade,no new entries before weekend
 2026-11-13 21:33,0.83418,0,fast_above_slow|price_above_trend_ema|rsi_in_range,no,no_trade,no new entries before weekend
+2026-11-13 21:34,0.83418,0,fast_above_slow|price_above_trend_ema|rsi_in_range,no,no_trade,no new entries before weekend
