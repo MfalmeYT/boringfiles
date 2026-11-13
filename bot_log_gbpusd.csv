@@ -5976,3 +5976,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-13 10:49,1.3225,3,,no,short,conf 5: Fresh bearish EMA crossover and strong momentum alignment favor a fall. | 5000 units (reduced for margin)
 2026-11-13 10:50,1.3225,3,,yes,holding,SHORT -0.0%
 2026-11-13 10:51,1.3225,3,,yes,holding,SHORT -0.0%
+2026-11-13 10:52,1.3225,3,,yes,holding,SHORT -0.0%
