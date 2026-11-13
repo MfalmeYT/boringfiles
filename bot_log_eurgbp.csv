@@ -6012,3 +6012,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-13 11:25,0.83544,3,,no,no_trade,max 3 open positions reached
 2026-11-13 11:26,0.83544,3,,no,no_trade,max 3 open positions reached
 2026-11-13 11:27,0.83544,3,,no,no_trade,max 3 open positions reached
+2026-11-13 11:28,0.83544,3,,no,short,conf 4: Favorable alignment and RSI; but momentum is weak near recent lows | 5000 units (reduced for margin)
