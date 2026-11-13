@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-13 21:59 UTC)
+# Bot report (generated 2026-11-13 22:00 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -14,8 +14,8 @@
 
 | market | last run UTC | runs | entries | errors | closed trades (all time) | win % | total % after fees | open |
 |---|---|---|---|---|---|---|---|---|
-| Bitcoin | 11-13 21:59 | 1437 | 4 | 0 | 4 | 0 | -2.43 |  |
-| Gold USD | 11-13 21:59 | 1403 | 2 | 0 | 2 | 0 | -1.17 |  |
+| Bitcoin | 11-13 22:00 | 1437 | 4 | 0 | 4 | 0 | -2.43 |  |
+| Gold USD | 11-13 22:00 | 1404 | 2 | 0 | 2 | 0 | -1.17 |  |
 | USD/JPY | 11-13 21:58 | 1376 | 2 | 19 | 12 | 33 | -0.05 |  |
 | GBP/USD | 11-13 21:58 | 1376 | 4 | 10 | 12 | 42 | -0.03 |  |
 | EUR/USD | 11-13 21:58 | 1376 | 4 | 8 | 13 | 38 | -0.08 |  |
@@ -74,12 +74,12 @@
 - EUR/GBP totals: long 11 trades -0.38%, short 3 trades -0.11%
 
 ## Latest log rows
-- Bitcoin 11-13 21:57 price 68323.26 no_trade score below 2
 - Bitcoin 11-13 21:58 price 68295.19 no_trade score below 2
 - Bitcoin 11-13 21:59 price 68321.52 no_trade score below 2
-- Gold USD 11-13 21:57 price 3876.18 no_trade score below 2
+- Bitcoin 11-13 22:00 price 68319.6 no_trade score below 2
 - Gold USD 11-13 21:58 price 3876.83 no_trade score below 2
 - Gold USD 11-13 21:59 price 3876.97 no_trade short-term trend not up
+- Gold USD 11-13 22:00 price 3878.24 no_trade short-term trend not up
 - USD/JPY 11-13 21:56 price 159.759 no_trade no new entries before weekend
 - USD/JPY 11-13 21:57 price 159.759 no_trade no new entries before weekend
 - USD/JPY 11-13 21:58 price 159.759 no_trade no new entries before weekend
