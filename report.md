@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-13 13:45 UTC)
+# Bot report (generated 2026-11-13 13:46 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -14,12 +14,12 @@
 
 | market | last run UTC | runs | entries | errors | closed trades (all time) | win % | total % after fees | open |
 |---|---|---|---|---|---|---|---|---|
-| Bitcoin | 11-13 13:45 | 1439 | 2 | 0 | 2 | 0 | -0.98 |  |
-| Gold USD | 11-13 13:45 | 911 | 1 | 0 | 1 | 0 | -0.44 |  |
-| USD/JPY | 11-13 13:45 | 1378 | 3 | 144 | 11 | 27 | -0.21 |  |
-| GBP/USD | 11-13 13:45 | 1378 | 2 | 0 | 10 | 50 | +0.06 |  |
-| EUR/USD | 11-13 13:45 | 1378 | 2 | 0 | 11 | 27 | -0.30 |  |
-| EUR/GBP | 11-13 13:45 | 1378 | 2 | 0 | 12 | 8 | -0.41 |  |
+| Bitcoin | 11-13 13:46 | 1439 | 2 | 0 | 2 | 0 | -0.98 |  |
+| Gold USD | 11-13 13:46 | 912 | 1 | 0 | 1 | 0 | -0.44 |  |
+| USD/JPY | 11-13 13:46 | 1378 | 3 | 143 | 11 | 27 | -0.21 |  |
+| GBP/USD | 11-13 13:46 | 1378 | 2 | 0 | 10 | 50 | +0.06 |  |
+| EUR/USD | 11-13 13:46 | 1378 | 2 | 0 | 11 | 27 | -0.30 |  |
+| EUR/GBP | 11-13 13:46 | 1378 | 2 | 0 | 12 | 8 | -0.41 |  |
 
 ## Raw log files (full history, one row per run)
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log.csv
@@ -30,7 +30,7 @@
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log_eurgbp.csv
 
 ## Errors in the last 24h (grouped)
-- x144 USD/JPY: Order buy cancelled: INSUFFICIENT_MARGIN
+- x143 USD/JPY: Order buy cancelled: INSUFFICIENT_MARGIN
 
 ## Latest closed trades
 - Bitcoin: long -0.86%
@@ -61,21 +61,21 @@
 - EUR/GBP totals: long 11 trades -0.38%, short 1 trades -0.04%
 
 ## Latest log rows
-- Bitcoin 11-13 13:43 price 69828.93 no_trade re-entry cooldown
 - Bitcoin 11-13 13:44 price 69810.96 no_trade re-entry cooldown
 - Bitcoin 11-13 13:45 price 69745.76 no_trade re-entry cooldown
-- Gold USD 11-13 13:43 price 3888.66 no_trade short-term trend not up
+- Bitcoin 11-13 13:46 price 69765.54 no_trade re-entry cooldown
 - Gold USD 11-13 13:44 price 3886.73 no_trade short-term trend not up
 - Gold USD 11-13 13:45 price 3885.24 no_trade score below 2
-- USD/JPY 11-13 13:43 price 159.93 no_trade re-entry cooldown
+- Gold USD 11-13 13:46 price 3885.17 no_trade score below 2
 - USD/JPY 11-13 13:44 price 159.93 no_trade re-entry cooldown
 - USD/JPY 11-13 13:45 price 159.911 no_trade re-entry cooldown
-- GBP/USD 11-13 13:43 price 1.32314 no_trade re-entry cooldown
+- USD/JPY 11-13 13:46 price 159.911 no_trade re-entry cooldown
 - GBP/USD 11-13 13:44 price 1.32314 no_trade re-entry cooldown
 - GBP/USD 11-13 13:45 price 1.3241 no_trade re-entry cooldown
-- EUR/USD 11-13 13:43 price 1.10552 no_trade re-entry cooldown
+- GBP/USD 11-13 13:46 price 1.3241 no_trade re-entry cooldown
 - EUR/USD 11-13 13:44 price 1.10552 no_trade re-entry cooldown
 - EUR/USD 11-13 13:45 price 1.10604 no_trade no long or short setup
-- EUR/GBP 11-13 13:43 price 0.83557 no_trade re-entry cooldown
+- EUR/USD 11-13 13:46 price 1.10604 no_trade no long or short setup
 - EUR/GBP 11-13 13:44 price 0.83557 no_trade re-entry cooldown
 - EUR/GBP 11-13 13:45 price 0.83532 no_trade re-entry cooldown
+- EUR/GBP 11-13 13:46 price 0.83532 no_trade re-entry cooldown
