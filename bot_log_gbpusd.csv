@@ -5688,3 +5688,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-13 06:00,1.32283,3,,no,no_trade,max 3 open positions reached
 2026-11-13 06:01,1.32283,3,,no,no_trade,max 3 open positions reached
 2026-11-13 06:02,1.32283,3,,no,no_trade,max 3 open positions reached
+2026-11-13 06:03,1.32283,3,,no,short,conf 4: Downtrend intact with favorable EMAs; but RSI shows mild momentum loss. | 2500 units (reduced for margin)
