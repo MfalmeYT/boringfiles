@@ -1476,3 +1476,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-13 23:11,3874.17,1,fast_above_slow|price_above_trend_ema,no,no_trade,score below 2
 2026-11-13 23:12,3872.77,1,fast_above_slow|price_above_trend_ema,no,no_trade,score below 2
 2026-11-13 23:13,3874.48,2,price_above_trend_ema,no,buy,conf 4: Fresh bullish EMA crossover supports entry despite price below EMA50
+2026-11-13 23:14,3874.99,2,price_above_trend_ema,yes,holding,-0.5%
