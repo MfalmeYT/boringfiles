@@ -3,7 +3,7 @@ on:
   workflow_dispatch:   # triggered from outside (cron-job.org) and by the manual "Run workflow" button
 
 permissions:
-  contents: write      # lets the bot save its log files (bot_log*.csv) back to the repo
+  contents: write      # lets the bot save its log files (bot_log*.csv) and report.md back to the repo
 
 concurrency:
   group: trading-bot   # never run two copies at once
@@ -32,10 +32,14 @@ jobs:
           SHORTING_ENABLED: ${{ vars.SHORTING_ENABLED }}
           ALPACA_ENV: ${{ vars.ALPACA_ENV }}
           OANDA_ENV: ${{ vars.OANDA_ENV }}
+      - name: Write report
+        if: always()
+        run: python report.py || true
       - name: Save logs
         if: always()
         run: |
           mkdir -p /tmp/newlines
+          [ -f report.md ] && cp report.md /tmp/report.md || true
           # only the log files this run actually changed or created
           for f in $(git status --porcelain | awk '{print $2}' | grep -E '^bot_log.*\.csv$' || true); do
             tail -n 1 "$f" > "/tmp/newlines/$f"
@@ -53,6 +57,7 @@ jobs:
               cat "$nf" >> "$name"
               git add "$name"
             done
+            [ -f /tmp/report.md ] && cp /tmp/report.md report.md && git add report.md || true
             git commit -m "log"
             if git push origin HEAD:main; then exit 0; fi
             sleep $((RANDOM % 5 + 2))
