@@ -6105,3 +6105,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-13 06:40,68827.11,1,fast_above_slow|price_above_trend_ema,no,no_trade,score below 2
 2026-11-13 06:41,68882.96,2,price_above_trend_ema,no,buy,conf 4: Bullish momentum and EMA crossover offset by EMA50 overhead resistance
 2026-11-13 06:42,68875.22,2,price_above_trend_ema,yes,holding,0.0%
+2026-11-13 06:43,68864.72,2,price_above_trend_ema,yes,holding,0.0%
