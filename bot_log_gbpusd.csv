@@ -5746,3 +5746,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-13 06:58,1.32284,3,,yes,holding,SHORT 0.0%
 2026-11-13 06:59,1.32284,3,,yes,holding,SHORT 0.0%
 2026-11-13 07:00,1.32372,2,fast_above_slow,no,cover,closed by broker stop/TP; P/L -2.1500
+2026-11-13 07:01,1.3235,2,fast_above_slow,no,no_trade,no long or short setup
