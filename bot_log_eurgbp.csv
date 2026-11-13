@@ -6612,3 +6612,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-13 21:27,0.83409,2,rsi_in_short_range,yes,holding,SHORT 0.0%
 2026-11-13 21:28,0.83409,2,rsi_in_short_range,yes,holding,SHORT 0.0%
 2026-11-13 21:29,0.83409,2,rsi_in_short_range,yes,holding,SHORT 0.0%
+2026-11-13 21:30,0.83418,3,,yes,cover,WEEKEND FLATTEN (0.0%)

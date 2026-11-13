@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-13 21:29 UTC)
+# Bot report (generated 2026-11-13 21:30 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -14,12 +14,12 @@
 
 | market | last run UTC | runs | entries | errors | closed trades (all time) | win % | total % after fees | open |
 |---|---|---|---|---|---|---|---|---|
-| Bitcoin | 11-13 21:29 | 1437 | 4 | 0 | 4 | 0 | -2.43 |  |
-| Gold USD | 11-13 21:29 | 1373 | 2 | 0 | 2 | 0 | -1.17 |  |
-| USD/JPY | 11-13 21:29 | 1376 | 2 | 18 | 12 | 33 | -0.05 |  |
-| GBP/USD | 11-13 21:29 | 1376 | 4 | 7 | 11 | 45 | -0.00 | yes |
-| EUR/USD | 11-13 21:29 | 1376 | 4 | 6 | 12 | 33 | -0.12 | yes |
-| EUR/GBP | 11-13 21:29 | 1376 | 4 | 10 | 13 | 8 | -0.51 | yes |
+| Bitcoin | 11-13 21:30 | 1437 | 4 | 0 | 4 | 0 | -2.43 |  |
+| Gold USD | 11-13 21:30 | 1374 | 2 | 0 | 2 | 0 | -1.17 |  |
+| USD/JPY | 11-13 21:30 | 1376 | 2 | 18 | 12 | 33 | -0.05 |  |
+| GBP/USD | 11-13 21:30 | 1376 | 4 | 7 | 12 | 42 | -0.03 |  |
+| EUR/USD | 11-13 21:30 | 1376 | 4 | 6 | 13 | 38 | -0.08 |  |
+| EUR/GBP | 11-13 21:30 | 1376 | 4 | 10 | 14 | 14 | -0.48 |  |
 
 ## Raw log files (full history, one row per run)
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log.csv
@@ -53,41 +53,41 @@
 - USD/JPY: short -0.03%
 - USD/JPY: short +0.16%
 - USD/JPY totals: long 10 trades -0.18%, short 2 trades +0.13%
-- GBP/USD: long -0.03%
 - GBP/USD: long -0.06%
 - GBP/USD: short -0.07%
 - GBP/USD: short -0.07%
 - GBP/USD: long -0.06%
-- GBP/USD totals: long 9 trades +0.13%, short 2 trades -0.13%
-- EUR/USD: long -0.07%
+- GBP/USD: short -0.03%
+- GBP/USD totals: long 9 trades +0.13%, short 3 trades -0.16%
 - EUR/USD: long -0.10%
 - EUR/USD: long -0.07%
 - EUR/USD: long -0.11%
 - EUR/USD: short +0.18%
-- EUR/USD totals: long 11 trades -0.30%, short 1 trades +0.18%
-- EUR/GBP: long -0.04%
+- EUR/USD: short +0.05%
+- EUR/USD totals: long 11 trades -0.30%, short 2 trades +0.22%
 - EUR/GBP: long -0.05%
 - EUR/GBP: long -0.03%
 - EUR/GBP: short -0.04%
 - EUR/GBP: short -0.10%
-- EUR/GBP totals: long 11 trades -0.38%, short 2 trades -0.14%
+- EUR/GBP: short +0.03%
+- EUR/GBP totals: long 11 trades -0.38%, short 3 trades -0.11%
 
 ## Latest log rows
-- Bitcoin 11-13 21:27 price 68409.84 no_trade score below 2
 - Bitcoin 11-13 21:28 price 68357.17 no_trade score below 2
 - Bitcoin 11-13 21:29 price 68347.24 no_trade score below 2
-- Gold USD 11-13 21:27 price 3870.5 no_trade score below 2
+- Bitcoin 11-13 21:30 price 68366.03 no_trade score below 2
 - Gold USD 11-13 21:28 price 3870.5 no_trade score below 2
 - Gold USD 11-13 21:29 price 3870.5 no_trade score below 2
-- USD/JPY 11-13 21:27 price 159.765 no_trade no new entries before weekend
+- Gold USD 11-13 21:30 price 3870.5 no_trade score below 2
 - USD/JPY 11-13 21:28 price 159.765 no_trade no new entries before weekend
 - USD/JPY 11-13 21:29 price 159.765 no_trade no new entries before weekend
-- GBP/USD 11-13 21:27 price 1.32158 holding SHORT -0.0%
+- USD/JPY 11-13 21:30 price 159.723 no_trade no new entries before weekend
 - GBP/USD 11-13 21:28 price 1.32158 holding SHORT -0.0%
 - GBP/USD 11-13 21:29 price 1.32158 holding SHORT -0.0%
-- EUR/USD 11-13 21:27 price 1.10229 holding SHORT 0.0%
+- GBP/USD 11-13 21:30 price 1.32144 cover WEEKEND FLATTEN (-0.0%)
 - EUR/USD 11-13 21:28 price 1.10229 holding SHORT 0.0%
 - EUR/USD 11-13 21:29 price 1.10229 holding SHORT 0.0%
-- EUR/GBP 11-13 21:27 price 0.83409 holding SHORT 0.0%
+- EUR/USD 11-13 21:30 price 1.1023 cover WEEKEND FLATTEN (0.0%)
 - EUR/GBP 11-13 21:28 price 0.83409 holding SHORT 0.0%
 - EUR/GBP 11-13 21:29 price 0.83409 holding SHORT 0.0%
+- EUR/GBP 11-13 21:30 price 0.83418 cover WEEKEND FLATTEN (0.0%)
