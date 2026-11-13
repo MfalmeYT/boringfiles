@@ -29,6 +29,7 @@ jobs:
           # Optional repository Variables (Settings > Secrets and variables > Actions > Variables):
           TRADING_ENABLED: ${{ vars.TRADING_ENABLED }}
           MAX_OPEN_POSITIONS: ${{ vars.MAX_OPEN_POSITIONS }}
+          SHORTING_ENABLED: ${{ vars.SHORTING_ENABLED }}
           ALPACA_ENV: ${{ vars.ALPACA_ENV }}
           OANDA_ENV: ${{ vars.OANDA_ENV }}
       - name: Save logs
