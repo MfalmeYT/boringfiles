@@ -6449,3 +6449,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-13 18:44,1.1033,3,,no,no_trade,re-entry cooldown
 2026-11-13 18:45,1.1028,3,,no,no_trade,re-entry cooldown
 2026-11-13 18:46,1.1028,3,,no,no_trade,re-entry cooldown
+2026-11-13 18:47,1.1028,3,,no,short,conf 4: Strong downtrend alignment and full score; but RSI is approaching oversold.
