@@ -5973,3 +5973,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-13 10:46,1.10532,0,fast_above_slow|price_above_trend_ema|rsi_in_range,yes,holding,-0.0%
 2026-11-13 10:47,1.10532,0,fast_above_slow|price_above_trend_ema|rsi_in_range,yes,holding,-0.0%
 2026-11-13 10:48,1.10532,0,fast_above_slow|price_above_trend_ema|rsi_in_range,yes,holding,-0.0%
+2026-11-13 10:49,1.10481,0,fast_above_slow|price_above_trend_ema|rsi_in_range,no,sell,closed by broker stop/TP; P/L -10.3000

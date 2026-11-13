@@ -5973,3 +5973,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-13 10:46,1.3225,3,,no,no_trade,max 3 open positions reached
 2026-11-13 10:47,1.3225,3,,no,no_trade,max 3 open positions reached
 2026-11-13 10:48,1.3225,3,,no,no_trade,max 3 open positions reached
+2026-11-13 10:49,1.3225,3,,no,short,conf 5: Fresh bearish EMA crossover and strong momentum alignment favor a fall. | 5000 units (reduced for margin)
