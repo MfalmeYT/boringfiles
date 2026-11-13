@@ -6595,3 +6595,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-13 21:10,159.802,1,fast_above_slow|price_above_trend_ema,no,no_trade,no new entries before weekend
 2026-11-13 21:11,159.802,1,fast_above_slow|price_above_trend_ema,no,no_trade,no new entries before weekend
 2026-11-13 21:12,159.802,1,fast_above_slow|price_above_trend_ema,no,no_trade,no new entries before weekend
+2026-11-13 21:13,159.802,1,fast_above_slow|price_above_trend_ema,no,no_trade,no new entries before weekend
