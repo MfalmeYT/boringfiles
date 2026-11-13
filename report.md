@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-13 21:15 UTC)
+# Bot report (generated 2026-11-13 21:16 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -14,12 +14,12 @@
 
 | market | last run UTC | runs | entries | errors | closed trades (all time) | win % | total % after fees | open |
 |---|---|---|---|---|---|---|---|---|
-| Bitcoin | 11-13 21:15 | 1437 | 4 | 0 | 4 | 0 | -2.43 |  |
-| Gold USD | 11-13 21:15 | 1359 | 2 | 0 | 2 | 0 | -1.17 |  |
-| USD/JPY | 11-13 21:15 | 1376 | 2 | 15 | 12 | 33 | -0.05 |  |
-| GBP/USD | 11-13 21:15 | 1376 | 4 | 6 | 11 | 45 | -0.00 | yes |
-| EUR/USD | 11-13 21:15 | 1376 | 4 | 5 | 12 | 33 | -0.12 | yes |
-| EUR/GBP | 11-13 21:15 | 1376 | 4 | 9 | 13 | 8 | -0.51 | yes |
+| Bitcoin | 11-13 21:16 | 1437 | 4 | 0 | 4 | 0 | -2.43 |  |
+| Gold USD | 11-13 21:16 | 1360 | 2 | 0 | 2 | 0 | -1.17 |  |
+| USD/JPY | 11-13 21:16 | 1376 | 2 | 16 | 12 | 33 | -0.05 |  |
+| GBP/USD | 11-13 21:16 | 1376 | 4 | 6 | 11 | 45 | -0.00 | yes |
+| EUR/USD | 11-13 21:16 | 1376 | 4 | 5 | 12 | 33 | -0.12 | yes |
+| EUR/GBP | 11-13 21:16 | 1376 | 4 | 9 | 13 | 8 | -0.51 | yes |
 
 ## Raw log files (full history, one row per run)
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log.csv
@@ -31,7 +31,7 @@
 
 ## Errors in the last 24h (grouped)
 - x8 USD/JPY: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
-- x5 USD/JPY: OANDA candles 401: {"errorMessage":"Insufficient authorization to perform request."}
+- x6 USD/JPY: OANDA candles 401: {"errorMessage":"Insufficient authorization to perform request."}
 - x5 EUR/GBP: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - x4 EUR/USD: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - x4 EUR/GBP: OANDA candles 401: {"errorMessage":"Insufficient authorization to perform request."}
@@ -73,21 +73,21 @@
 - EUR/GBP totals: long 11 trades -0.38%, short 2 trades -0.14%
 
 ## Latest log rows
-- Bitcoin 11-13 21:13 price 68586.28 no_trade score below 2
 - Bitcoin 11-13 21:14 price 68557.16 no_trade score below 2
 - Bitcoin 11-13 21:15 price 68523.96 no_trade score below 2
-- Gold USD 11-13 21:13 price 3870.46 no_trade score below 2
+- Bitcoin 11-13 21:16 price 68463.85 no_trade score below 2
 - Gold USD 11-13 21:14 price 3870.36 no_trade score below 2
 - Gold USD 11-13 21:15 price 3871.05 no_trade score below 2
-- USD/JPY 11-13 21:13 price 159.802 no_trade no new entries before weekend
+- Gold USD 11-13 21:16 price 3871.35 no_trade score below 2
 - USD/JPY 11-13 21:14 price 159.802 no_trade no new entries before weekend
 - USD/JPY 11-13 21:15 price 159.765 no_trade no new entries before weekend
-- GBP/USD 11-13 21:13 price 1.32142 holding SHORT -0.0%
+- USD/JPY 11-13 21:16 price  error OANDA candles 401: {"errorMessage":"Insufficient authorization to perform request."}
 - GBP/USD 11-13 21:14 price 1.32142 holding SHORT -0.0%
 - GBP/USD 11-13 21:15 price 1.32158 holding SHORT -0.0%
-- EUR/USD 11-13 21:13 price 1.10233 holding SHORT 0.0%
+- GBP/USD 11-13 21:16 price 1.32158 holding SHORT -0.0%
 - EUR/USD 11-13 21:14 price 1.10233 holding SHORT 0.0%
 - EUR/USD 11-13 21:15 price 1.10229 holding SHORT 0.0%
-- EUR/GBP 11-13 21:13 price 0.8342 holding SHORT 0.0%
+- EUR/USD 11-13 21:16 price 1.10229 holding SHORT 0.0%
 - EUR/GBP 11-13 21:14 price 0.8342 holding SHORT 0.0%
 - EUR/GBP 11-13 21:15 price 0.83409 holding SHORT 0.0%
+- EUR/GBP 11-13 21:16 price 0.83409 holding SHORT 0.0%
