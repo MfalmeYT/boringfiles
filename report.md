@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-13 15:53 UTC)
+# Bot report (generated 2026-11-13 15:54 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -14,12 +14,12 @@
 
 | market | last run UTC | runs | entries | errors | closed trades (all time) | win % | total % after fees | open |
 |---|---|---|---|---|---|---|---|---|
-| Bitcoin | 11-13 15:53 | 1439 | 3 | 0 | 3 | 0 | -2.02 |  |
-| Gold USD | 11-13 15:53 | 1039 | 1 | 0 | 1 | 0 | -0.44 |  |
-| USD/JPY | 11-13 15:53 | 1378 | 4 | 31 | 11 | 27 | -0.21 | yes |
-| GBP/USD | 11-13 15:53 | 1378 | 3 | 0 | 10 | 50 | +0.06 | yes |
-| EUR/USD | 11-13 15:53 | 1378 | 3 | 0 | 12 | 33 | -0.12 |  |
-| EUR/GBP | 11-13 15:53 | 1378 | 2 | 0 | 12 | 8 | -0.41 |  |
+| Bitcoin | 11-13 15:54 | 1439 | 3 | 0 | 3 | 0 | -2.02 |  |
+| Gold USD | 11-13 15:54 | 1040 | 1 | 0 | 1 | 0 | -0.44 |  |
+| USD/JPY | 11-13 15:54 | 1378 | 4 | 30 | 11 | 27 | -0.21 | yes |
+| GBP/USD | 11-13 15:54 | 1378 | 3 | 0 | 10 | 50 | +0.06 | yes |
+| EUR/USD | 11-13 15:54 | 1378 | 3 | 0 | 12 | 33 | -0.12 |  |
+| EUR/GBP | 11-13 15:54 | 1378 | 2 | 0 | 12 | 8 | -0.41 |  |
 
 ## Raw log files (full history, one row per run)
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log.csv
@@ -30,7 +30,7 @@
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log_eurgbp.csv
 
 ## Errors in the last 24h (grouped)
-- x31 USD/JPY: Order buy cancelled: INSUFFICIENT_MARGIN
+- x30 USD/JPY: Order buy cancelled: INSUFFICIENT_MARGIN
 
 ## Latest closed trades
 - Bitcoin: long -0.86%
@@ -63,21 +63,21 @@
 - EUR/GBP totals: long 11 trades -0.38%, short 1 trades -0.04%
 
 ## Latest log rows
-- Bitcoin 11-13 15:51 price 68808.24 no_trade score below 2
 - Bitcoin 11-13 15:52 price 68862.63 no_trade score below 2
 - Bitcoin 11-13 15:53 price 68642.77 no_trade score below 2
-- Gold USD 11-13 15:51 price 3869.94 no_trade score below 2
+- Bitcoin 11-13 15:54 price 68664.91 no_trade score below 2
 - Gold USD 11-13 15:52 price 3870.21 no_trade score below 2
 - Gold USD 11-13 15:53 price 3869.96 no_trade score below 2
-- USD/JPY 11-13 15:51 price 159.854 holding SHORT -0.0%
+- Gold USD 11-13 15:54 price 3869.79 no_trade score below 2
 - USD/JPY 11-13 15:52 price 159.854 holding SHORT -0.0%
 - USD/JPY 11-13 15:53 price 159.854 holding SHORT -0.0%
-- GBP/USD 11-13 15:51 price 1.32228 holding -0.0%
+- USD/JPY 11-13 15:54 price 159.854 holding SHORT -0.0%
 - GBP/USD 11-13 15:52 price 1.32228 holding -0.0%
 - GBP/USD 11-13 15:53 price 1.32228 holding -0.0%
-- EUR/USD 11-13 15:51 price 1.10318 no_trade re-entry cooldown
+- GBP/USD 11-13 15:54 price 1.32228 holding -0.0%
 - EUR/USD 11-13 15:52 price 1.10318 no_trade re-entry cooldown
 - EUR/USD 11-13 15:53 price 1.10318 no_trade re-entry cooldown
-- EUR/GBP 11-13 15:51 price 0.83432 no_trade re-entry cooldown
+- EUR/USD 11-13 15:54 price 1.10318 no_trade re-entry cooldown
 - EUR/GBP 11-13 15:52 price 0.83432 no_trade re-entry cooldown
 - EUR/GBP 11-13 15:53 price 0.83432 no_trade re-entry cooldown
+- EUR/GBP 11-13 15:54 price 0.83432 no_trade re-entry cooldown
