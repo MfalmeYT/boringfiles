@@ -6015,3 +6015,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-13 11:28,0.83544,3,,no,short,conf 4: Favorable alignment and RSI; but momentum is weak near recent lows | 5000 units (reduced for margin)
 2026-11-13 11:29,0.83544,3,,yes,holding,SHORT -0.0%
 2026-11-13 11:30,0.83524,3,,yes,holding,SHORT -0.0%
+2026-11-13 11:31,0.83524,3,,yes,holding,SHORT -0.0%
