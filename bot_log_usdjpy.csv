@@ -5907,3 +5907,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-13 09:40,159.904,2,price_below_trend_ema,no,short,conf 3: Price remains above the 50 EMA despite bearish short EMAs.
 2026-11-13 09:41,159.904,2,price_below_trend_ema,yes,holding,SHORT -0.0%
 2026-11-13 09:42,159.904,2,price_below_trend_ema,yes,holding,SHORT -0.0%
+2026-11-13 09:43,159.904,2,price_below_trend_ema,yes,holding,SHORT -0.0%
