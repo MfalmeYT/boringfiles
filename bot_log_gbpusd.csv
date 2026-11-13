@@ -6477,3 +6477,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-13 19:12,1.32102,3,,no,no_trade,max 3 open positions reached
 2026-11-13 19:13,1.32102,3,,no,short,conf 4: Full bearish EMA alignment supports short; but momentum shows signs of flattening. | 5000 units (reduced for margin)
 2026-11-13 19:14,1.32102,3,,yes,holding,SHORT 0.0%
+2026-11-13 19:15,1.32107,3,,yes,holding,SHORT -0.0%
