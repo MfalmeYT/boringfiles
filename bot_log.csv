@@ -8326,3 +8326,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-14 19:44,65704.59,2,fast_above_slow,no,no_trade,short-term trend not up
 2026-11-14 19:45,65792.54,2,fast_above_slow,no,no_trade,short-term trend not up
 2026-11-14 19:46,65718.65,3,,no,no_trade,re-entry cooldown
+2026-11-14 19:47,65656.38,1,fast_above_slow|price_above_trend_ema,no,no_trade,score below 2
