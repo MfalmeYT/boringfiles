@@ -7625,3 +7625,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-14 08:03,67167.16,1,fast_above_slow|price_above_trend_ema,no,no_trade,score below 2
 2026-11-14 08:04,67176.16,1,fast_above_slow|price_above_trend_ema,no,no_trade,score below 2
 2026-11-14 08:05,67160.9,1,fast_above_slow|price_above_trend_ema,no,no_trade,score below 2
+2026-11-14 08:06,67152.65,1,fast_above_slow|price_above_trend_ema,no,no_trade,score below 2
