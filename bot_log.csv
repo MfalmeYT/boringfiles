@@ -8338,3 +8338,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-14 19:56,65650.96,2,price_above_trend_ema,no,buy,conf 4: Fresh EMA crossover and good RSI; but price below EMA50.
 2026-11-14 19:57,65619.95,1,fast_above_slow|price_above_trend_ema,yes,holding,-0.1%
 2026-11-14 19:58,65653.93,2,price_above_trend_ema,yes,holding,-0.1%
+2026-11-14 19:59,65636.74,1,fast_above_slow|price_above_trend_ema,yes,holding,-0.1%
