@@ -7238,3 +7238,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-14 01:36,68233.25,2,price_above_trend_ema,no,no_trade,re-entry cooldown
 2026-11-14 01:37,68228.35,2,price_above_trend_ema,no,no_trade,re-entry cooldown
 2026-11-14 01:38,68257.57,2,price_above_trend_ema,no,no_trade,re-entry cooldown
+2026-11-14 01:39,68234.18,2,price_above_trend_ema,no,buy,conf 3: Price below 50 EMA creates resistance despite positive short EMAs
