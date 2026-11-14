@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-14 22:07 UTC)
+# Bot report (generated 2026-11-14 22:08 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -14,11 +14,11 @@
 
 | market | last run UTC | runs | entries | errors | closed trades (all time) | win % | total % after fees | open |
 |---|---|---|---|---|---|---|---|---|
-| Bitcoin | 11-14 22:07 | 1440 | 7 | 0 | 11 | 0 | -7.97 |  |
-| Gold USD | 11-14 22:07 | 1440 | 2 | 0 | 4 | 0 | -2.31 |  |
+| Bitcoin | 11-14 22:08 | 1440 | 7 | 0 | 11 | 0 | -7.97 |  |
+| Gold USD | 11-14 22:08 | 1440 | 2 | 0 | 4 | 0 | -2.31 |  |
 | USD/JPY | 11-14 22:06 | 95 | 0 | 95 | 12 | 33 | -0.05 |  |
-| GBP/USD | 11-14 21:36 | 88 | 0 | 88 | 12 | 42 | -0.03 |  |
-| EUR/USD | 11-14 21:12 | 58 | 0 | 58 | 13 | 38 | -0.08 |  |
+| GBP/USD | 11-14 21:36 | 87 | 0 | 87 | 12 | 42 | -0.03 |  |
+| EUR/USD | 11-14 21:12 | 57 | 0 | 57 | 13 | 38 | -0.08 |  |
 | EUR/GBP | 11-14 22:01 | 56 | 0 | 56 | 14 | 14 | -0.48 |  |
 
 ## Raw log files (full history, one row per run)
@@ -31,8 +31,8 @@
 
 ## Errors in the last 24h (grouped)
 - x95 USD/JPY: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
-- x88 GBP/USD: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
-- x58 EUR/USD: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
+- x87 GBP/USD: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
+- x57 EUR/USD: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - x56 EUR/GBP: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 
 ## Latest closed trades
@@ -71,12 +71,12 @@
 - EUR/GBP totals: long 11 trades -0.38%, short 3 trades -0.11%
 
 ## Latest log rows
-- Bitcoin 11-14 22:05 price 64217.84 no_trade score below 2
 - Bitcoin 11-14 22:06 price 64194.2 no_trade score below 2
 - Bitcoin 11-14 22:07 price 64209.05 no_trade score below 2
-- Gold USD 11-14 22:05 price 3786.96 no_trade score below 2
+- Bitcoin 11-14 22:08 price 64012.84 no_trade score below 2
 - Gold USD 11-14 22:06 price 3787.17 no_trade score below 2
 - Gold USD 11-14 22:07 price 3785.95 no_trade score below 2
+- Gold USD 11-14 22:08 price 3785.88 no_trade score below 2
 - USD/JPY 11-14 21:36 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - USD/JPY 11-14 21:52 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - USD/JPY 11-14 22:06 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
