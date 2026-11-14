@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-14 17:01 UTC)
+# Bot report (generated 2026-11-14 17:02 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -14,12 +14,12 @@
 
 | market | last run UTC | runs | entries | errors | closed trades (all time) | win % | total % after fees | open |
 |---|---|---|---|---|---|---|---|---|
-| Bitcoin | 11-14 17:01 | 1438 | 6 | 0 | 9 | 0 | -6.29 |  |
-| Gold USD | 11-14 17:01 | 1438 | 3 | 0 | 4 | 0 | -2.31 |  |
-| USD/JPY | 11-14 16:49 | 371 | 0 | 95 | 12 | 33 | -0.05 |  |
-| GBP/USD | 11-14 16:53 | 359 | 1 | 74 | 12 | 42 | -0.03 |  |
-| EUR/USD | 11-14 16:55 | 340 | 1 | 53 | 13 | 38 | -0.08 |  |
-| EUR/GBP | 11-14 16:08 | 335 | 1 | 51 | 14 | 14 | -0.48 |  |
+| Bitcoin | 11-14 17:02 | 1438 | 6 | 0 | 9 | 0 | -6.29 |  |
+| Gold USD | 11-14 17:02 | 1438 | 3 | 0 | 4 | 0 | -2.31 |  |
+| USD/JPY | 11-14 16:49 | 370 | 0 | 95 | 12 | 33 | -0.05 |  |
+| GBP/USD | 11-14 16:53 | 358 | 1 | 74 | 12 | 42 | -0.03 |  |
+| EUR/USD | 11-14 16:55 | 339 | 1 | 53 | 13 | 38 | -0.08 |  |
+| EUR/GBP | 11-14 16:08 | 334 | 1 | 51 | 14 | 14 | -0.48 |  |
 
 ## Raw log files (full history, one row per run)
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log.csv
@@ -77,12 +77,12 @@
 - EUR/GBP totals: long 11 trades -0.38%, short 3 trades -0.11%
 
 ## Latest log rows
-- Bitcoin 11-14 16:59 price 65377.65 no_trade score below 2
 - Bitcoin 11-14 17:00 price 65299.25 no_trade score below 2
 - Bitcoin 11-14 17:01 price 65137.39 no_trade score below 2
-- Gold USD 11-14 16:59 price 3830.34 no_trade score below 2
+- Bitcoin 11-14 17:02 price 65167.97 no_trade score below 2
 - Gold USD 11-14 17:00 price 3830.34 no_trade score below 2
 - Gold USD 11-14 17:01 price 3830.34 no_trade score below 2
+- Gold USD 11-14 17:02 price 3830.34 no_trade score below 2
 - USD/JPY 11-14 16:21 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - USD/JPY 11-14 16:48 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - USD/JPY 11-14 16:49 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
