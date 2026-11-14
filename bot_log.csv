@@ -7145,3 +7145,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-14 00:03,68358.68,2,fast_above_slow,no,no_trade,short-term trend not up
 2026-11-14 00:04,68318.29,1,fast_above_slow|price_above_trend_ema,no,no_trade,score below 2
 2026-11-14 00:05,68302.71,1,fast_above_slow|price_above_trend_ema,no,no_trade,score below 2
+2026-11-14 00:06,68358.05,3,,no,buy,conf 5: Strong momentum with fresh EMA crossover and price above all EMAs
