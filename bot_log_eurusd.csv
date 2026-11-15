@@ -6817,3 +6817,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-15 23:31,,,,,error,OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 2026-11-15 23:32,1.1022,3,,no,no_trade,max 3 open positions reached
 2026-11-15 23:33,,,,,error,OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
+2026-11-15 23:34,1.1022,3,,no,no_trade,max 3 open positions reached
