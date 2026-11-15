@@ -6832,3 +6832,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-15 23:46,1.10217,3,,no,no_trade,max 3 open positions reached
 2026-11-15 23:47,,,,,error,OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 2026-11-15 23:48,1.10217,3,,no,short,conf 4: Strong alignment with trend; but price is flat and RSI neutral. | 1250 units (reduced for margin)
+2026-11-15 23:49,,,,,error,OANDA candles 401: {"errorMessage":"Insufficient authorization to perform request."}
