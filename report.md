@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-15 20:29 UTC)
+# Bot report (generated 2026-11-15 20:30 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -14,12 +14,12 @@
 
 | market | last run UTC | runs | entries | errors | closed trades (all time) | win % | total % after fees | open |
 |---|---|---|---|---|---|---|---|---|
-| Bitcoin | 11-15 20:29 | 1440 | 6 | 0 | 16 | 6 | -10.83 | yes |
-| Gold USD | 11-15 20:29 | 1440 | 2 | 0 | 5 | 0 | -2.78 | yes |
-| USD/JPY | 11-15 20:06 | 80 | 0 | 80 | 12 | 33 | -0.05 |  |
+| Bitcoin | 11-15 20:30 | 1440 | 6 | 0 | 16 | 6 | -10.83 | yes |
+| Gold USD | 11-15 20:30 | 1440 | 2 | 0 | 5 | 0 | -2.78 | yes |
+| USD/JPY | 11-15 20:30 | 81 | 0 | 81 | 12 | 33 | -0.05 |  |
 | GBP/USD | 11-15 20:24 | 81 | 0 | 81 | 12 | 42 | -0.03 |  |
-| EUR/USD | 11-15 20:24 | 80 | 0 | 80 | 13 | 38 | -0.08 |  |
-| EUR/GBP | 11-15 20:24 | 63 | 0 | 63 | 14 | 14 | -0.48 |  |
+| EUR/USD | 11-15 20:30 | 81 | 0 | 81 | 13 | 38 | -0.08 |  |
+| EUR/GBP | 11-15 20:30 | 64 | 0 | 64 | 14 | 14 | -0.48 |  |
 
 ## Raw log files (full history, one row per run)
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log.csv
@@ -30,10 +30,10 @@
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log_eurgbp.csv
 
 ## Errors in the last 24h (grouped)
+- x81 USD/JPY: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - x81 GBP/USD: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
-- x80 USD/JPY: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
-- x80 EUR/USD: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
-- x63 EUR/GBP: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
+- x81 EUR/USD: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
+- x64 EUR/GBP: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 
 ## Latest closed trades
 - Bitcoin: long -1.10%
@@ -72,21 +72,21 @@
 - EUR/GBP totals: long 11 trades -0.38%, short 3 trades -0.11%
 
 ## Latest log rows
-- Bitcoin 11-15 20:27 price 64932.1 holding 0.2%
 - Bitcoin 11-15 20:28 price 64895.51 holding 0.2%
 - Bitcoin 11-15 20:29 price 64877 holding 0.2%
-- Gold USD 11-15 20:27 price 3839.41 holding -0.3%
+- Bitcoin 11-15 20:30 price 64848.39 holding 0.1%
 - Gold USD 11-15 20:28 price 3839.41 holding -0.3%
 - Gold USD 11-15 20:29 price 3839.41 holding -0.3%
-- USD/JPY 11-15 19:15 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
+- Gold USD 11-15 20:30 price 3842.66 holding -0.2%
 - USD/JPY 11-15 19:42 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - USD/JPY 11-15 20:06 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
+- USD/JPY 11-15 20:30 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - GBP/USD 11-15 20:06 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - GBP/USD 11-15 20:13 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - GBP/USD 11-15 20:24 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
-- EUR/USD 11-15 20:06 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - EUR/USD 11-15 20:13 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - EUR/USD 11-15 20:24 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
-- EUR/GBP 11-15 20:06 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
+- EUR/USD 11-15 20:30 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - EUR/GBP 11-15 20:23 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - EUR/GBP 11-15 20:24 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
+- EUR/GBP 11-15 20:30 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
