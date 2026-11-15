@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-15 16:44 UTC)
+# Bot report (generated 2026-11-15 16:45 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -14,11 +14,11 @@
 
 | market | last run UTC | runs | entries | errors | closed trades (all time) | win % | total % after fees | open |
 |---|---|---|---|---|---|---|---|---|
-| Bitcoin | 11-15 16:44 | 1440 | 6 | 0 | 15 | 7 | -9.86 |  |
-| Gold USD | 11-15 16:44 | 1440 | 1 | 0 | 5 | 0 | -2.78 |  |
+| Bitcoin | 11-15 16:45 | 1440 | 6 | 0 | 15 | 7 | -9.86 |  |
+| Gold USD | 11-15 16:45 | 1440 | 1 | 0 | 5 | 0 | -2.78 |  |
 | USD/JPY | 11-15 16:42 | 81 | 0 | 81 | 12 | 33 | -0.05 |  |
 | GBP/USD | 11-15 16:41 | 81 | 0 | 81 | 12 | 42 | -0.03 |  |
-| EUR/USD | 11-15 16:41 | 81 | 0 | 81 | 13 | 38 | -0.08 |  |
+| EUR/USD | 11-15 16:41 | 80 | 0 | 80 | 13 | 38 | -0.08 |  |
 | EUR/GBP | 11-15 16:41 | 67 | 0 | 67 | 14 | 14 | -0.48 |  |
 
 ## Raw log files (full history, one row per run)
@@ -32,7 +32,7 @@
 ## Errors in the last 24h (grouped)
 - x81 USD/JPY: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - x81 GBP/USD: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
-- x81 EUR/USD: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
+- x80 EUR/USD: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - x67 EUR/GBP: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 
 ## Latest closed trades
@@ -72,12 +72,12 @@
 - EUR/GBP totals: long 11 trades -0.38%, short 3 trades -0.11%
 
 ## Latest log rows
-- Bitcoin 11-15 16:42 price 64483.17 no_trade score below 2
 - Bitcoin 11-15 16:43 price 64535.5 no_trade score below 2
 - Bitcoin 11-15 16:44 price 64555.82 no_trade score below 2
-- Gold USD 11-15 16:42 price 3826.02 no_trade short-term trend not up
+- Bitcoin 11-15 16:45 price 64707.79 no_trade score below 2
 - Gold USD 11-15 16:43 price 3825.97 no_trade short-term trend not up
 - Gold USD 11-15 16:44 price 3826.18 no_trade short-term trend not up
+- Gold USD 11-15 16:45 price 3827.15 no_trade short-term trend not up
 - USD/JPY 11-15 15:59 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - USD/JPY 11-15 16:07 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - USD/JPY 11-15 16:42 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
