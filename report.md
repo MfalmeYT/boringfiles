@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-15 06:22 UTC)
+# Bot report (generated 2026-11-15 06:23 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -14,12 +14,12 @@
 
 | market | last run UTC | runs | entries | errors | closed trades (all time) | win % | total % after fees | open |
 |---|---|---|---|---|---|---|---|---|
-| Bitcoin | 11-15 06:22 | 1440 | 6 | 0 | 13 | 0 | -9.16 |  |
-| Gold USD | 11-15 06:22 | 1440 | 2 | 0 | 4 | 0 | -2.31 | yes |
+| Bitcoin | 11-15 06:23 | 1440 | 6 | 0 | 13 | 0 | -9.16 |  |
+| Gold USD | 11-15 06:23 | 1440 | 2 | 0 | 4 | 0 | -2.31 | yes |
 | USD/JPY | 11-15 06:14 | 81 | 0 | 81 | 12 | 33 | -0.05 |  |
 | GBP/USD | 11-15 06:14 | 76 | 0 | 76 | 12 | 42 | -0.03 |  |
 | EUR/USD | 11-15 06:19 | 68 | 0 | 68 | 13 | 38 | -0.08 |  |
-| EUR/GBP | 11-15 05:52 | 61 | 0 | 61 | 14 | 14 | -0.48 |  |
+| EUR/GBP | 11-15 05:52 | 60 | 0 | 60 | 14 | 14 | -0.48 |  |
 
 ## Raw log files (full history, one row per run)
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log.csv
@@ -33,7 +33,7 @@
 - x81 USD/JPY: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - x76 GBP/USD: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - x68 EUR/USD: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
-- x61 EUR/GBP: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
+- x60 EUR/GBP: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 
 ## Latest closed trades
 - Bitcoin: long -0.62%
@@ -71,12 +71,12 @@
 - EUR/GBP totals: long 11 trades -0.38%, short 3 trades -0.11%
 
 ## Latest log rows
-- Bitcoin 11-15 06:20 price 64492.24 no_trade score below 2
 - Bitcoin 11-15 06:21 price 64435.58 no_trade score below 2
 - Bitcoin 11-15 06:22 price 64368.6 no_trade score below 2
-- Gold USD 11-15 06:20 price 3816.72 holding -0.7%
+- Bitcoin 11-15 06:23 price 64432.07 no_trade score below 2
 - Gold USD 11-15 06:21 price 3816.72 holding -0.7%
 - Gold USD 11-15 06:22 price 3816.72 holding -0.7%
+- Gold USD 11-15 06:23 price 3816.72 holding -0.7%
 - USD/JPY 11-15 05:38 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - USD/JPY 11-15 05:52 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - USD/JPY 11-15 06:14 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
