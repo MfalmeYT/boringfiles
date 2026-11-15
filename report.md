@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-15 07:35 UTC)
+# Bot report (generated 2026-11-15 07:36 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -14,11 +14,11 @@
 
 | market | last run UTC | runs | entries | errors | closed trades (all time) | win % | total % after fees | open |
 |---|---|---|---|---|---|---|---|---|
-| Bitcoin | 11-15 07:35 | 1440 | 5 | 0 | 13 | 0 | -9.16 |  |
-| Gold USD | 11-15 07:35 | 1440 | 2 | 0 | 4 | 0 | -2.31 | yes |
-| USD/JPY | 11-15 07:19 | 83 | 0 | 83 | 12 | 33 | -0.05 |  |
+| Bitcoin | 11-15 07:36 | 1440 | 5 | 0 | 13 | 0 | -9.16 |  |
+| Gold USD | 11-15 07:36 | 1440 | 2 | 0 | 4 | 0 | -2.31 | yes |
+| USD/JPY | 11-15 07:36 | 84 | 0 | 84 | 12 | 33 | -0.05 |  |
 | GBP/USD | 11-15 07:20 | 79 | 0 | 79 | 12 | 42 | -0.03 |  |
-| EUR/USD | 11-15 07:19 | 69 | 0 | 69 | 13 | 38 | -0.08 |  |
+| EUR/USD | 11-15 07:36 | 70 | 0 | 70 | 13 | 38 | -0.08 |  |
 | EUR/GBP | 11-15 07:02 | 60 | 0 | 60 | 14 | 14 | -0.48 |  |
 
 ## Raw log files (full history, one row per run)
@@ -30,9 +30,9 @@
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log_eurgbp.csv
 
 ## Errors in the last 24h (grouped)
-- x83 USD/JPY: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
+- x84 USD/JPY: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - x79 GBP/USD: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
-- x69 EUR/USD: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
+- x70 EUR/USD: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - x60 EUR/GBP: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 
 ## Latest closed trades
@@ -71,21 +71,21 @@
 - EUR/GBP totals: long 11 trades -0.38%, short 3 trades -0.11%
 
 ## Latest log rows
-- Bitcoin 11-15 07:33 price 64254 no_trade score below 2
 - Bitcoin 11-15 07:34 price 64249.6 no_trade score below 2
 - Bitcoin 11-15 07:35 price 64217.89 no_trade score below 2
-- Gold USD 11-15 07:33 price 3823.76 holding -0.5%
+- Bitcoin 11-15 07:36 price 64155.61 no_trade score below 2
 - Gold USD 11-15 07:34 price 3823.76 holding -0.5%
 - Gold USD 11-15 07:35 price 3823.76 holding -0.5%
-- USD/JPY 11-15 07:10 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
+- Gold USD 11-15 07:36 price 3823.76 holding -0.5%
 - USD/JPY 11-15 07:16 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - USD/JPY 11-15 07:19 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
+- USD/JPY 11-15 07:36 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - GBP/USD 11-15 06:39 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - GBP/USD 11-15 07:02 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - GBP/USD 11-15 07:20 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
-- EUR/USD 11-15 06:13 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - EUR/USD 11-15 06:19 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - EUR/USD 11-15 07:19 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
+- EUR/USD 11-15 07:36 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - EUR/GBP 11-15 05:51 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - EUR/GBP 11-15 05:52 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - EUR/GBP 11-15 07:02 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
