@@ -9420,3 +9420,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-15 13:58,65438.35,3,,yes,holding,-0.1%
 2026-11-15 13:59,65455.08,3,,yes,holding,-0.1%
 2026-11-15 14:00,65404.64,3,,yes,holding,-0.2%
+2026-11-15 14:01,65303.77,0,fast_above_slow|price_above_trend_ema|rsi_in_range,yes,sell,SIGNAL EXIT; score 0/3 (-0.3%)
