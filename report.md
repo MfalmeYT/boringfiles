@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-15 08:25 UTC)
+# Bot report (generated 2026-11-15 08:26 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -14,11 +14,11 @@
 
 | market | last run UTC | runs | entries | errors | closed trades (all time) | win % | total % after fees | open |
 |---|---|---|---|---|---|---|---|---|
-| Bitcoin | 11-15 08:25 | 1440 | 5 | 0 | 13 | 0 | -9.16 |  |
-| Gold USD | 11-15 08:25 | 1440 | 2 | 0 | 4 | 0 | -2.31 | yes |
-| USD/JPY | 11-15 08:13 | 82 | 0 | 82 | 12 | 33 | -0.05 |  |
+| Bitcoin | 11-15 08:26 | 1440 | 5 | 0 | 13 | 0 | -9.16 |  |
+| Gold USD | 11-15 08:26 | 1440 | 2 | 0 | 4 | 0 | -2.31 | yes |
+| USD/JPY | 11-15 08:26 | 83 | 0 | 83 | 12 | 33 | -0.05 |  |
 | GBP/USD | 11-15 08:25 | 76 | 0 | 76 | 12 | 42 | -0.03 |  |
-| EUR/USD | 11-15 08:06 | 67 | 0 | 67 | 13 | 38 | -0.08 |  |
+| EUR/USD | 11-15 08:26 | 68 | 0 | 68 | 13 | 38 | -0.08 |  |
 | EUR/GBP | 11-15 08:01 | 59 | 0 | 59 | 14 | 14 | -0.48 |  |
 
 ## Raw log files (full history, one row per run)
@@ -30,9 +30,9 @@
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log_eurgbp.csv
 
 ## Errors in the last 24h (grouped)
-- x82 USD/JPY: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
+- x83 USD/JPY: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - x76 GBP/USD: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
-- x67 EUR/USD: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
+- x68 EUR/USD: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - x59 EUR/GBP: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 
 ## Latest closed trades
@@ -71,21 +71,21 @@
 - EUR/GBP totals: long 11 trades -0.38%, short 3 trades -0.11%
 
 ## Latest log rows
-- Bitcoin 11-15 08:23 price 64318.51 no_trade short-term trend not up
 - Bitcoin 11-15 08:24 price 64308.6 no_trade score below 2
 - Bitcoin 11-15 08:25 price 64275.5 no_trade score below 2
-- Gold USD 11-15 08:23 price 3818.78 holding -0.7%
+- Bitcoin 11-15 08:26 price 64342.86 no_trade short-term trend not up
 - Gold USD 11-15 08:24 price 3818.74 holding -0.7%
 - Gold USD 11-15 08:25 price 3818.84 holding -0.7%
-- USD/JPY 11-15 07:36 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
+- Gold USD 11-15 08:26 price 3818.91 holding -0.7%
 - USD/JPY 11-15 07:39 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - USD/JPY 11-15 08:13 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
+- USD/JPY 11-15 08:26 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - GBP/USD 11-15 07:20 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - GBP/USD 11-15 07:46 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - GBP/USD 11-15 08:25 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
-- EUR/USD 11-15 07:36 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - EUR/USD 11-15 07:46 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - EUR/USD 11-15 08:06 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
+- EUR/USD 11-15 08:26 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - EUR/GBP 11-15 05:52 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - EUR/GBP 11-15 07:02 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - EUR/GBP 11-15 08:01 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
