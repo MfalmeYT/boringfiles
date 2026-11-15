@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-15 23:30 UTC)
+# Bot report (generated 2026-11-15 23:31 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -14,12 +14,12 @@
 
 | market | last run UTC | runs | entries | errors | closed trades (all time) | win % | total % after fees | open |
 |---|---|---|---|---|---|---|---|---|
-| Bitcoin | 11-15 23:30 | 1440 | 6 | 0 | 17 | 6 | -11.21 |  |
-| Gold USD | 11-15 23:30 | 1440 | 2 | 0 | 5 | 0 | -2.78 | yes |
-| USD/JPY | 11-15 23:30 | 115 | 1 | 85 | 12 | 33 | -0.05 | yes |
-| GBP/USD | 11-15 23:30 | 112 | 1 | 81 | 12 | 42 | -0.03 | yes |
-| EUR/USD | 11-15 23:30 | 111 | 0 | 80 | 13 | 38 | -0.08 |  |
-| EUR/GBP | 11-15 23:30 | 92 | 0 | 62 | 14 | 14 | -0.48 |  |
+| Bitcoin | 11-15 23:31 | 1440 | 6 | 0 | 17 | 6 | -11.21 |  |
+| Gold USD | 11-15 23:31 | 1440 | 2 | 0 | 5 | 0 | -2.78 | yes |
+| USD/JPY | 11-15 23:31 | 116 | 1 | 86 | 12 | 33 | -0.05 | yes |
+| GBP/USD | 11-15 23:31 | 113 | 1 | 82 | 12 | 42 | -0.03 | yes |
+| EUR/USD | 11-15 23:31 | 111 | 0 | 80 | 13 | 38 | -0.08 |  |
+| EUR/GBP | 11-15 23:31 | 93 | 0 | 63 | 14 | 14 | -0.48 |  |
 
 ## Raw log files (full history, one row per run)
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log.csv
@@ -30,11 +30,12 @@
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log_eurgbp.csv
 
 ## Errors in the last 24h (grouped)
-- x85 USD/JPY: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
-- x81 GBP/USD: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
+- x86 USD/JPY: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
+- x82 GBP/USD: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - x80 EUR/USD: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - x61 EUR/GBP: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - x1 EUR/GBP: OANDA pricing 401: {"errorMessage":"Insufficient authorization to perform request."}
+- x1 EUR/GBP: OANDA candles 401: {"errorMessage":"Insufficient authorization to perform request."}
 
 ## Latest closed trades
 - Bitcoin: long -0.09%
@@ -73,21 +74,21 @@
 - EUR/GBP totals: long 11 trades -0.38%, short 3 trades -0.11%
 
 ## Latest log rows
-- Bitcoin 11-15 23:28 price 65148.11 no_trade re-entry cooldown
 - Bitcoin 11-15 23:29 price 65108.04 no_trade short-term trend not up
 - Bitcoin 11-15 23:30 price 65093.5 no_trade short-term trend not up
-- Gold USD 11-15 23:28 price 3866.62 holding 0.4%
+- Bitcoin 11-15 23:31 price 65101.54 no_trade short-term trend not up
 - Gold USD 11-15 23:29 price 3866.12 holding 0.4%
 - Gold USD 11-15 23:30 price 3866.89 holding 0.4%
-- USD/JPY 11-15 23:28 price 159.81 holding SHORT -0.1%
+- Gold USD 11-15 23:31 price 3865.27 holding 0.4%
 - USD/JPY 11-15 23:29 price 159.81 holding SHORT -0.1%
 - USD/JPY 11-15 23:30 price 159.798 holding SHORT -0.1%
-- GBP/USD 11-15 23:28 price 1.32123 holding SHORT -0.0%
+- USD/JPY 11-15 23:31 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - GBP/USD 11-15 23:29 price 1.32123 holding SHORT -0.0%
 - GBP/USD 11-15 23:30 price 1.32124 holding SHORT -0.0%
-- EUR/USD 11-15 23:28 price 1.10218 no_trade max 3 open positions reached
+- GBP/USD 11-15 23:31 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - EUR/USD 11-15 23:29 price 1.10218 no_trade max 3 open positions reached
 - EUR/USD 11-15 23:30 price 1.1022 no_trade max 3 open positions reached
-- EUR/GBP 11-15 23:28 price 0.83422 no_trade max 3 open positions reached
+- EUR/USD 11-15 23:31 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - EUR/GBP 11-15 23:29 price 0.83422 no_trade max 3 open positions reached
 - EUR/GBP 11-15 23:30 price 0.83423 no_trade max 3 open positions reached
+- EUR/GBP 11-15 23:31 price  error OANDA candles 401: {"errorMessage":"Insufficient authorization to perform request."}
