@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-15 15:00 UTC)
+# Bot report (generated 2026-11-15 15:01 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -14,9 +14,9 @@
 
 | market | last run UTC | runs | entries | errors | closed trades (all time) | win % | total % after fees | open |
 |---|---|---|---|---|---|---|---|---|
-| Bitcoin | 11-15 15:00 | 1440 | 6 | 0 | 15 | 7 | -9.86 |  |
-| Gold USD | 11-15 15:00 | 1440 | 1 | 0 | 5 | 0 | -2.78 |  |
-| USD/JPY | 11-15 14:45 | 80 | 0 | 80 | 12 | 33 | -0.05 |  |
+| Bitcoin | 11-15 15:01 | 1440 | 6 | 0 | 15 | 7 | -9.86 |  |
+| Gold USD | 11-15 15:01 | 1440 | 1 | 0 | 5 | 0 | -2.78 |  |
+| USD/JPY | 11-15 14:45 | 79 | 0 | 79 | 12 | 33 | -0.05 |  |
 | GBP/USD | 11-15 14:45 | 82 | 0 | 82 | 12 | 42 | -0.03 |  |
 | EUR/USD | 11-15 14:45 | 80 | 0 | 80 | 13 | 38 | -0.08 |  |
 | EUR/GBP | 11-15 14:45 | 65 | 0 | 65 | 14 | 14 | -0.48 |  |
@@ -31,8 +31,8 @@
 
 ## Errors in the last 24h (grouped)
 - x82 GBP/USD: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
-- x80 USD/JPY: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - x80 EUR/USD: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
+- x79 USD/JPY: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - x65 EUR/GBP: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 
 ## Latest closed trades
@@ -72,12 +72,12 @@
 - EUR/GBP totals: long 11 trades -0.38%, short 3 trades -0.11%
 
 ## Latest log rows
-- Bitcoin 11-15 14:58 price 64890.54 no_trade score below 2
 - Bitcoin 11-15 14:59 price 64850.49 no_trade score below 2
 - Bitcoin 11-15 15:00 price 64722.93 no_trade score below 2
-- Gold USD 11-15 14:58 price 3822.31 no_trade score below 2
+- Bitcoin 11-15 15:01 price 64740.73 no_trade score below 2
 - Gold USD 11-15 14:59 price 3820.66 no_trade score below 2
 - Gold USD 11-15 15:00 price 3820.66 no_trade score below 2
+- Gold USD 11-15 15:01 price 3820.48 no_trade score below 2
 - USD/JPY 11-15 13:41 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - USD/JPY 11-15 14:33 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - USD/JPY 11-15 14:45 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
