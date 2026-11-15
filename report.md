@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-15 17:50 UTC)
+# Bot report (generated 2026-11-15 17:51 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -14,12 +14,12 @@
 
 | market | last run UTC | runs | entries | errors | closed trades (all time) | win % | total % after fees | open |
 |---|---|---|---|---|---|---|---|---|
-| Bitcoin | 11-15 17:50 | 1440 | 6 | 0 | 15 | 7 | -9.86 | yes |
-| Gold USD | 11-15 17:50 | 1440 | 2 | 0 | 5 | 0 | -2.78 | yes |
+| Bitcoin | 11-15 17:51 | 1440 | 6 | 0 | 16 | 6 | -10.83 |  |
+| Gold USD | 11-15 17:51 | 1440 | 2 | 0 | 5 | 0 | -2.78 | yes |
 | USD/JPY | 11-15 17:42 | 80 | 0 | 80 | 12 | 33 | -0.05 |  |
 | GBP/USD | 11-15 17:35 | 80 | 0 | 80 | 12 | 42 | -0.03 |  |
 | EUR/USD | 11-15 17:24 | 76 | 0 | 76 | 13 | 38 | -0.08 |  |
-| EUR/GBP | 11-15 17:25 | 67 | 0 | 67 | 14 | 14 | -0.48 |  |
+| EUR/GBP | 11-15 17:25 | 66 | 0 | 66 | 14 | 14 | -0.48 |  |
 
 ## Raw log files (full history, one row per run)
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log.csv
@@ -33,14 +33,14 @@
 - x80 USD/JPY: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - x80 GBP/USD: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - x76 EUR/USD: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
-- x67 EUR/GBP: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
+- x66 EUR/GBP: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 
 ## Latest closed trades
-- Bitcoin: long -0.88%
 - Bitcoin: long -1.10%
 - Bitcoin: long -0.09%
 - Bitcoin: long +0.10%
 - Bitcoin: long -0.80%
+- Bitcoin: long -0.98%
 - Gold USD: long -0.44%
 - Gold USD: long -0.73%
 - Gold USD: long -0.56%
@@ -72,12 +72,12 @@
 - EUR/GBP totals: long 11 trades -0.38%, short 3 trades -0.11%
 
 ## Latest log rows
-- Bitcoin 11-15 17:48 price 64510.8 holding -0.5%
 - Bitcoin 11-15 17:49 price 64447.46 holding -0.6%
 - Bitcoin 11-15 17:50 price 64394.45 holding -0.6%
-- Gold USD 11-15 17:48 price 3829.09 holding -0.6%
+- Bitcoin 11-15 17:51 price 64453.25 sell SIGNAL EXIT; score 0/3 (-0.5%)
 - Gold USD 11-15 17:49 price 3829.09 holding -0.6%
 - Gold USD 11-15 17:50 price 3829.09 holding -0.6%
+- Gold USD 11-15 17:51 price 3829.09 holding -0.6%
 - USD/JPY 11-15 17:23 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - USD/JPY 11-15 17:25 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - USD/JPY 11-15 17:42 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
