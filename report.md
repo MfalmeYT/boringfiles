@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-15 16:23 UTC)
+# Bot report (generated 2026-11-15 16:24 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -14,11 +14,11 @@
 
 | market | last run UTC | runs | entries | errors | closed trades (all time) | win % | total % after fees | open |
 |---|---|---|---|---|---|---|---|---|
-| Bitcoin | 11-15 16:23 | 1440 | 6 | 0 | 15 | 7 | -9.86 |  |
-| Gold USD | 11-15 16:23 | 1440 | 1 | 0 | 5 | 0 | -2.78 |  |
+| Bitcoin | 11-15 16:24 | 1440 | 6 | 0 | 15 | 7 | -9.86 |  |
+| Gold USD | 11-15 16:24 | 1440 | 1 | 0 | 5 | 0 | -2.78 |  |
 | USD/JPY | 11-15 16:07 | 80 | 0 | 80 | 12 | 33 | -0.05 |  |
-| GBP/USD | 11-15 16:19 | 79 | 0 | 79 | 12 | 42 | -0.03 |  |
-| EUR/USD | 11-15 16:07 | 79 | 0 | 79 | 13 | 38 | -0.08 |  |
+| GBP/USD | 11-15 16:24 | 80 | 0 | 80 | 12 | 42 | -0.03 |  |
+| EUR/USD | 11-15 16:24 | 80 | 0 | 80 | 13 | 38 | -0.08 |  |
 | EUR/GBP | 11-15 16:00 | 66 | 0 | 66 | 14 | 14 | -0.48 |  |
 
 ## Raw log files (full history, one row per run)
@@ -31,8 +31,8 @@
 
 ## Errors in the last 24h (grouped)
 - x80 USD/JPY: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
-- x79 GBP/USD: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
-- x79 EUR/USD: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
+- x80 GBP/USD: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
+- x80 EUR/USD: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - x66 EUR/GBP: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 
 ## Latest closed trades
@@ -72,21 +72,21 @@
 - EUR/GBP totals: long 11 trades -0.38%, short 3 trades -0.11%
 
 ## Latest log rows
-- Bitcoin 11-15 16:21 price 64459.96 no_trade score below 2
 - Bitcoin 11-15 16:22 price 64470.84 no_trade score below 2
 - Bitcoin 11-15 16:23 price 64452.47 no_trade score below 2
-- Gold USD 11-15 16:21 price 3823.12 no_trade short-term trend not up
+- Bitcoin 11-15 16:24 price 64253.02 no_trade score below 2
 - Gold USD 11-15 16:22 price 3822.82 no_trade short-term trend not up
 - Gold USD 11-15 16:23 price 3822.82 no_trade short-term trend not up
+- Gold USD 11-15 16:24 price 3822.82 no_trade short-term trend not up
 - USD/JPY 11-15 15:21 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - USD/JPY 11-15 15:59 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - USD/JPY 11-15 16:07 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
-- GBP/USD 11-15 14:45 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - GBP/USD 11-15 15:59 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - GBP/USD 11-15 16:19 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
-- EUR/USD 11-15 15:43 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
+- GBP/USD 11-15 16:24 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - EUR/USD 11-15 15:59 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - EUR/USD 11-15 16:07 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
+- EUR/USD 11-15 16:24 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - EUR/GBP 11-15 15:23 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - EUR/GBP 11-15 15:59 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - EUR/GBP 11-15 16:00 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
