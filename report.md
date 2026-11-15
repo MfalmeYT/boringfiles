@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-15 08:22 UTC)
+# Bot report (generated 2026-11-15 08:23 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -14,8 +14,8 @@
 
 | market | last run UTC | runs | entries | errors | closed trades (all time) | win % | total % after fees | open |
 |---|---|---|---|---|---|---|---|---|
-| Bitcoin | 11-15 08:22 | 1440 | 5 | 0 | 13 | 0 | -9.16 |  |
-| Gold USD | 11-15 08:22 | 1440 | 2 | 0 | 4 | 0 | -2.31 | yes |
+| Bitcoin | 11-15 08:23 | 1440 | 5 | 0 | 13 | 0 | -9.16 |  |
+| Gold USD | 11-15 08:23 | 1440 | 2 | 0 | 4 | 0 | -2.31 | yes |
 | USD/JPY | 11-15 08:13 | 82 | 0 | 82 | 12 | 33 | -0.05 |  |
 | GBP/USD | 11-15 07:46 | 76 | 0 | 76 | 12 | 42 | -0.03 |  |
 | EUR/USD | 11-15 08:06 | 68 | 0 | 68 | 13 | 38 | -0.08 |  |
@@ -71,12 +71,12 @@
 - EUR/GBP totals: long 11 trades -0.38%, short 3 trades -0.11%
 
 ## Latest log rows
-- Bitcoin 11-15 08:20 price 63873.83 no_trade score below 2
 - Bitcoin 11-15 08:21 price 63938.05 no_trade score below 2
 - Bitcoin 11-15 08:22 price 64448.25 no_trade short-term trend not up
-- Gold USD 11-15 08:20 price 3815.86 holding -0.7%
+- Bitcoin 11-15 08:23 price 64318.51 no_trade short-term trend not up
 - Gold USD 11-15 08:21 price 3815.86 holding -0.7%
 - Gold USD 11-15 08:22 price 3819.01 holding -0.7%
+- Gold USD 11-15 08:23 price 3818.78 holding -0.7%
 - USD/JPY 11-15 07:36 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - USD/JPY 11-15 07:39 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - USD/JPY 11-15 08:13 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
