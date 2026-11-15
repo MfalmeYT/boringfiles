@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-15 08:52 UTC)
+# Bot report (generated 2026-11-15 08:53 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -14,12 +14,12 @@
 
 | market | last run UTC | runs | entries | errors | closed trades (all time) | win % | total % after fees | open |
 |---|---|---|---|---|---|---|---|---|
-| Bitcoin | 11-15 08:52 | 1440 | 6 | 0 | 13 | 0 | -9.16 | yes |
-| Gold USD | 11-15 08:52 | 1440 | 2 | 0 | 4 | 0 | -2.31 | yes |
+| Bitcoin | 11-15 08:53 | 1440 | 6 | 0 | 13 | 0 | -9.16 | yes |
+| Gold USD | 11-15 08:53 | 1440 | 2 | 0 | 4 | 0 | -2.31 | yes |
 | USD/JPY | 11-15 08:48 | 86 | 0 | 86 | 12 | 33 | -0.05 |  |
 | GBP/USD | 11-15 08:37 | 76 | 0 | 76 | 12 | 42 | -0.03 |  |
-| EUR/USD | 11-15 08:48 | 72 | 0 | 72 | 13 | 38 | -0.08 |  |
-| EUR/GBP | 11-15 08:42 | 59 | 0 | 59 | 14 | 14 | -0.48 |  |
+| EUR/USD | 11-15 08:53 | 73 | 0 | 73 | 13 | 38 | -0.08 |  |
+| EUR/GBP | 11-15 08:53 | 60 | 0 | 60 | 14 | 14 | -0.48 |  |
 
 ## Raw log files (full history, one row per run)
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log.csv
@@ -32,8 +32,8 @@
 ## Errors in the last 24h (grouped)
 - x86 USD/JPY: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - x76 GBP/USD: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
-- x72 EUR/USD: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
-- x59 EUR/GBP: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
+- x73 EUR/USD: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
+- x60 EUR/GBP: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 
 ## Latest closed trades
 - Bitcoin: long -0.62%
@@ -71,21 +71,21 @@
 - EUR/GBP totals: long 11 trades -0.38%, short 3 trades -0.11%
 
 ## Latest log rows
-- Bitcoin 11-15 08:50 price 64683.45 holding -0.0%
 - Bitcoin 11-15 08:51 price 64645.74 holding -0.1%
 - Bitcoin 11-15 08:52 price 64711.51 holding -0.0%
-- Gold USD 11-15 08:50 price 3823.11 holding -0.6%
+- Bitcoin 11-15 08:53 price 64743.62 holding 0.0%
 - Gold USD 11-15 08:51 price 3822.84 holding -0.6%
 - Gold USD 11-15 08:52 price 3822.09 holding -0.6%
+- Gold USD 11-15 08:53 price 3820.09 holding -0.6%
 - USD/JPY 11-15 08:36 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - USD/JPY 11-15 08:43 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - USD/JPY 11-15 08:48 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - GBP/USD 11-15 07:46 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - GBP/USD 11-15 08:25 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - GBP/USD 11-15 08:37 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
-- EUR/USD 11-15 08:37 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - EUR/USD 11-15 08:43 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - EUR/USD 11-15 08:48 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
-- EUR/GBP 11-15 08:01 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
+- EUR/USD 11-15 08:53 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - EUR/GBP 11-15 08:34 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - EUR/GBP 11-15 08:42 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
+- EUR/GBP 11-15 08:53 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
