@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-15 17:20 UTC)
+# Bot report (generated 2026-11-15 17:21 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -14,8 +14,8 @@
 
 | market | last run UTC | runs | entries | errors | closed trades (all time) | win % | total % after fees | open |
 |---|---|---|---|---|---|---|---|---|
-| Bitcoin | 11-15 17:20 | 1440 | 6 | 0 | 15 | 7 | -9.86 |  |
-| Gold USD | 11-15 17:20 | 1440 | 1 | 0 | 5 | 0 | -2.78 |  |
+| Bitcoin | 11-15 17:21 | 1440 | 7 | 0 | 15 | 7 | -9.86 | yes |
+| Gold USD | 11-15 17:21 | 1440 | 1 | 0 | 5 | 0 | -2.78 |  |
 | USD/JPY | 11-15 16:42 | 77 | 0 | 77 | 12 | 33 | -0.05 |  |
 | GBP/USD | 11-15 17:07 | 81 | 0 | 81 | 12 | 42 | -0.03 |  |
 | EUR/USD | 11-15 17:17 | 79 | 0 | 79 | 13 | 38 | -0.08 |  |
@@ -72,12 +72,12 @@
 - EUR/GBP totals: long 11 trades -0.38%, short 3 trades -0.11%
 
 ## Latest log rows
-- Bitcoin 11-15 17:18 price 64703.42 no_trade score below 2
 - Bitcoin 11-15 17:19 price 64782.94 no_trade score below 2
 - Bitcoin 11-15 17:20 price 64777.82 no_trade score below 2
-- Gold USD 11-15 17:18 price 3828.19 no_trade re-entry cooldown
+- Bitcoin 11-15 17:21 price 64763.8 buy conf 4: Fresh EMA crossover and healthy RSI offset price below EMA50
 - Gold USD 11-15 17:19 price 3828 no_trade re-entry cooldown
 - Gold USD 11-15 17:20 price 3827.8 no_trade re-entry cooldown
+- Gold USD 11-15 17:21 price 3828.05 no_trade re-entry cooldown
 - USD/JPY 11-15 15:59 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - USD/JPY 11-15 16:07 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - USD/JPY 11-15 16:42 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
