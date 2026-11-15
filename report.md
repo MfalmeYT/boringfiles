@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-15 02:17 UTC)
+# Bot report (generated 2026-11-15 02:18 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -14,8 +14,8 @@
 
 | market | last run UTC | runs | entries | errors | closed trades (all time) | win % | total % after fees | open |
 |---|---|---|---|---|---|---|---|---|
-| Bitcoin | 11-15 02:17 | 1440 | 7 | 0 | 12 | 0 | -9.07 | yes |
-| Gold USD | 11-15 02:17 | 1440 | 2 | 0 | 4 | 0 | -2.31 | yes |
+| Bitcoin | 11-15 02:18 | 1440 | 7 | 0 | 12 | 0 | -9.07 | yes |
+| Gold USD | 11-15 02:18 | 1440 | 2 | 0 | 4 | 0 | -2.31 | yes |
 | USD/JPY | 11-15 00:19 | 85 | 0 | 85 | 12 | 33 | -0.05 |  |
 | GBP/USD | 11-15 02:17 | 79 | 0 | 79 | 12 | 42 | -0.03 |  |
 | EUR/USD | 11-15 02:15 | 58 | 0 | 58 | 13 | 38 | -0.08 |  |
@@ -71,12 +71,12 @@
 - EUR/GBP totals: long 11 trades -0.38%, short 3 trades -0.11%
 
 ## Latest log rows
-- Bitcoin 11-15 02:15 price 63817.57 no_trade short-term trend not up
 - Bitcoin 11-15 02:16 price 64254.2 buy conf 5: Strong momentum; recent golden cross; and all key EMAs aligned upward.
 - Bitcoin 11-15 02:17 price 64306.91 holding 0.2%
-- Gold USD 11-15 02:15 price 3817.06 no_trade score below 2
+- Bitcoin 11-15 02:18 price 64443.7 holding 0.4%
 - Gold USD 11-15 02:16 price 3817.06 no_trade score below 2
 - Gold USD 11-15 02:17 price 3816.86 buy conf 4: Fresh bullish crossover and favorable RSI offset by resistance near EMA50
+- Gold USD 11-15 02:18 price 3818.09 holding -0.7%
 - USD/JPY 11-14 23:35 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - USD/JPY 11-14 23:57 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - USD/JPY 11-15 00:19 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
