@@ -3099,3 +3099,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-15 02:14,3813.76,1,fast_above_slow|price_above_trend_ema,no,no_trade,score below 2
 2026-11-15 02:15,3817.06,1,fast_above_slow|price_above_trend_ema,no,no_trade,score below 2
 2026-11-15 02:16,3817.06,1,fast_above_slow|price_above_trend_ema,no,no_trade,score below 2
+2026-11-15 02:17,3816.86,2,price_above_trend_ema,no,buy,conf 4: Fresh bullish crossover and favorable RSI offset by resistance near EMA50
