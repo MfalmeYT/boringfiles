@@ -6764,3 +6764,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-15 08:13,,,,,error,OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 2026-11-15 08:26,,,,,error,OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 2026-11-15 08:32,,,,,error,OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
+2026-11-15 08:36,,,,,error,OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
