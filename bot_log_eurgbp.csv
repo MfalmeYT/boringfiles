@@ -6797,3 +6797,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-15 23:33,0.83423,3,,no,no_trade,no margin for a trade (balance 871; free margin 35)
 2026-11-15 23:34,0.83423,3,,no,no_trade,max 3 open positions reached
 2026-11-15 23:35,0.83423,3,,no,no_trade,max 3 open positions reached
+2026-11-15 23:36,0.83423,3,,no,no_trade,max 3 open positions reached
