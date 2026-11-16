@@ -7420,3 +7420,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-16 09:43,1.10162,2,price_above_trend_ema,no,no_trade,re-entry cooldown
 2026-11-16 09:44,1.10162,2,price_above_trend_ema,no,no_trade,re-entry cooldown
 2026-11-16 09:45,,,,,error,OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
+2026-11-16 09:47,1.10074,3,,no,no_trade,re-entry cooldown
