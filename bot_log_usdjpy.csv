@@ -7878,3 +7878,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-16 16:43,159.609,1,fast_below_slow|price_below_trend_ema,yes,holding,SHORT -0.1%
 2026-11-16 16:44,159.609,1,fast_below_slow|price_below_trend_ema,yes,holding,SHORT -0.1%
 2026-11-16 16:45,,,,,error,Close rejected 401: {"errorMessage":"Insufficient authorization to perform request."}
+2026-11-16 16:46,159.642,0,fast_below_slow|price_below_trend_ema|rsi_in_short_range,yes,cover,SIGNAL EXIT; score 0/3 (-0.1%)
