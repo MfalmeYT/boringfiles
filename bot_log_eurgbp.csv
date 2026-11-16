@@ -7319,3 +7319,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-16 08:21,,,,,error,OANDA candles 401: {"errorMessage":"Insufficient authorization to perform request."}
 2026-11-16 08:22,,,,,error,OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 2026-11-16 08:23,0.83416,1,price_above_trend_ema|rsi_in_range,no,no_trade,no long or short setup
+2026-11-16 08:24,0.83416,1,price_above_trend_ema|rsi_in_range,no,no_trade,no long or short setup
