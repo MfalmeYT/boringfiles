@@ -7925,3 +7925,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-16 18:34,0.83401,3,,no,no_trade,re-entry cooldown
 2026-11-16 18:35,0.83401,3,,no,no_trade,re-entry cooldown
 2026-11-16 18:36,0.83401,3,,no,no_trade,re-entry cooldown
+2026-11-16 18:37,0.83401,3,,no,short,conf 5: Strong downtrend; fresh crossover; and clean alignment across all indicators.
