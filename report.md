@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-16 19:41 UTC)
+# Bot report (generated 2026-11-16 19:42 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -14,12 +14,12 @@
 
 | market | last run UTC | runs | entries | errors | closed trades (all time) | win % | total % after fees | open |
 |---|---|---|---|---|---|---|---|---|
-| Bitcoin | 11-16 19:41 | 1370 | 4 | 1 | 20 | 5 | -14.02 | yes |
-| Gold USD | 11-16 19:41 | 1370 | 1 | 2 | 7 | 14 | -3.29 |  |
-| USD/JPY | 11-16 19:41 | 1188 | 3 | 121 | 15 | 33 | +0.04 |  |
-| GBP/USD | 11-16 19:41 | 1183 | 2 | 80 | 13 | 38 | -0.11 | yes |
-| EUR/USD | 11-16 19:41 | 1182 | 2 | 78 | 15 | 40 | +0.02 |  |
-| EUR/GBP | 11-16 19:41 | 1180 | 4 | 65 | 16 | 19 | -0.50 | yes |
+| Bitcoin | 11-16 19:42 | 1430 | 4 | 1 | 21 | 5 | -14.27 |  |
+| Gold USD | 11-16 19:42 | 1430 | 1 | 2 | 7 | 14 | -3.29 |  |
+| USD/JPY | 11-16 19:42 | 1248 | 3 | 122 | 15 | 33 | +0.04 |  |
+| GBP/USD | 11-16 19:42 | 1244 | 2 | 83 | 13 | 38 | -0.11 | yes |
+| EUR/USD | 11-16 19:42 | 1243 | 2 | 83 | 15 | 40 | +0.02 |  |
+| EUR/GBP | 11-16 19:42 | 1241 | 5 | 68 | 16 | 19 | -0.50 | yes |
 
 ## Raw log files (full history, one row per run)
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log.csv
@@ -30,23 +30,23 @@
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log_eurgbp.csv
 
 ## Errors in the last 24h (grouped)
-- x86 USD/JPY: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
-- x52 EUR/USD: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
-- x48 GBP/USD: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
-- x41 EUR/GBP: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
-- x20 GBP/USD: OANDA candles 401: {"errorMessage":"Insufficient authorization to perform request."}
+- x87 USD/JPY: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
+- x55 EUR/USD: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
+- x50 GBP/USD: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
+- x43 EUR/GBP: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
+- x21 GBP/USD: OANDA candles 401: {"errorMessage":"Insufficient authorization to perform request."}
 - x19 USD/JPY: OANDA candles 401: {"errorMessage":"Insufficient authorization to perform request."}
 - x15 USD/JPY: OANDA pricing 401: {"errorMessage":"Insufficient authorization to perform request."}
-- x14 EUR/USD: OANDA candles 401: {"errorMessage":"Insufficient authorization to perform request."}
+- x15 EUR/USD: OANDA candles 401: {"errorMessage":"Insufficient authorization to perform request."}
 - x14 EUR/GBP: OANDA candles 401: {"errorMessage":"Insufficient authorization to perform request."}
-- x12 GBP/USD: OANDA pricing 401: {"errorMessage":"Insufficient authorization to perform request."}
+- x13 EUR/USD: OANDA pricing 401: {"errorMessage":"Insufficient authorization to perform request."}
 
 ## Latest closed trades
-- Bitcoin: long -0.98%
 - Bitcoin: long -0.38%
 - Bitcoin: long -1.02%
 - Bitcoin: long -0.82%
 - Bitcoin: long -0.97%
+- Bitcoin: long -0.25%
 - Gold USD: long -0.56%
 - Gold USD: long -0.58%
 - Gold USD: long -0.47%
@@ -78,21 +78,21 @@
 - EUR/GBP totals: long 13 trades -0.39%, short 3 trades -0.11%
 
 ## Latest log rows
-- Bitcoin 11-16 18:42 price 64893.79 holding 0.5%
-- Bitcoin 11-16 18:43 price 64950.7 holding 0.6%
+- Bitcoin 11-16 19:41 price 64735.09 sell SIGNAL EXIT; score 0/3 (0.2%)
 - Bitcoin 11-16 19:41 price 64735.09 no_trade score below 2
-- Gold USD 11-16 18:42 price 3836.86 no_trade score below 2
-- Gold USD 11-16 18:43 price 3836.76 no_trade score below 2
+- Bitcoin 11-16 19:42 price 64724.36 no_trade score below 2
 - Gold USD 11-16 19:41 price 3851.11 no_trade short-term trend not up
-- USD/JPY 11-16 18:42 price 159.46 no_trade re-entry cooldown
-- USD/JPY 11-16 18:43 price 159.46 no_trade re-entry cooldown
+- Gold USD 11-16 19:41 price 3851.11 no_trade short-term trend not up
+- Gold USD 11-16 19:42 price 3850.26 no_trade short-term trend not up
 - USD/JPY 11-16 19:41 price 159.424 no_trade re-entry cooldown
-- GBP/USD 11-16 18:42 price 1.31833 holding SHORT 0.1%
-- GBP/USD 11-16 18:43 price 1.31833 holding SHORT 0.1%
+- USD/JPY 11-16 19:41 price 159.424 no_trade re-entry cooldown
+- USD/JPY 11-16 19:42 price 159.424 no_trade re-entry cooldown
 - GBP/USD 11-16 19:41 price 1.31922 holding SHORT -0.0%
-- EUR/USD 11-16 18:42 price 1.0995 no_trade re-entry cooldown
-- EUR/USD 11-16 18:43 price 1.0995 no_trade re-entry cooldown
+- GBP/USD 11-16 19:41 price 1.31922 holding SHORT -0.0%
+- GBP/USD 11-16 19:42 price 1.31922 holding SHORT -0.0%
+- EUR/USD 11-16 19:41 price 1.10066 no_trade re-entry cooldown
 - EUR/USD 11-16 19:41 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
-- EUR/GBP 11-16 18:42 price 0.83401 holding SHORT -0.0%
-- EUR/GBP 11-16 18:43 price 0.83401 holding SHORT -0.0%
+- EUR/USD 11-16 19:42 price 1.10066 no_trade re-entry cooldown
 - EUR/GBP 11-16 19:41 price 0.83433 holding SHORT 0.0%
+- EUR/GBP 11-16 19:41 price 0.83433 holding SHORT 0.0%
+- EUR/GBP 11-16 19:42 price 0.83433 holding SHORT 0.0%
