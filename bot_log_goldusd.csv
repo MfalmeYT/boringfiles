@@ -5026,3 +5026,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-16 10:30,3848.86,2,fast_above_slow,no,no_trade,short-term trend not up
 2026-11-16 10:31,3848.88,2,fast_above_slow,no,no_trade,short-term trend not up
 2026-11-16 10:32,3850.36,3,,no,buy,conf 4: Fresh EMA crossover and score 3 support bullish momentum.
+2026-11-16 10:33,3849.99,3,,yes,holding,-0.5%
