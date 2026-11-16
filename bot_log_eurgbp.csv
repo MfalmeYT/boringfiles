@@ -7102,3 +7102,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-16 04:43,0.83412,3,,no,no_trade,max 3 open positions reached
 2026-11-16 04:44,0.83412,3,,no,no_trade,max 3 open positions reached
 2026-11-16 04:45,,,,,error,OANDA candles 401: {"errorMessage":"Insufficient authorization to perform request."}
+2026-11-16 04:46,0.83422,3,,no,no_trade,max 3 open positions reached
