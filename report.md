@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-16 05:35 UTC)
+# Bot report (generated 2026-11-16 05:36 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -14,12 +14,12 @@
 
 | market | last run UTC | runs | entries | errors | closed trades (all time) | win % | total % after fees | open |
 |---|---|---|---|---|---|---|---|---|
-| Bitcoin | 11-16 05:35 | 1435 | 4 | 0 | 17 | 6 | -11.21 |  |
-| Gold USD | 11-16 05:35 | 1435 | 1 | 0 | 6 | 17 | -2.73 |  |
-| USD/JPY | 11-16 05:35 | 464 | 1 | 107 | 12 | 33 | -0.05 | yes |
-| GBP/USD | 11-16 05:35 | 456 | 1 | 90 | 12 | 42 | -0.03 | yes |
-| EUR/USD | 11-16 05:35 | 450 | 1 | 78 | 13 | 38 | -0.08 | yes |
-| EUR/GBP | 11-16 05:35 | 436 | 0 | 64 | 14 | 14 | -0.48 |  |
+| Bitcoin | 11-16 05:36 | 1435 | 4 | 0 | 17 | 6 | -11.21 |  |
+| Gold USD | 11-16 05:36 | 1435 | 1 | 0 | 6 | 17 | -2.73 |  |
+| USD/JPY | 11-16 05:36 | 465 | 1 | 107 | 13 | 38 | +0.13 |  |
+| GBP/USD | 11-16 05:36 | 457 | 1 | 90 | 12 | 42 | -0.03 | yes |
+| EUR/USD | 11-16 05:36 | 451 | 1 | 78 | 13 | 38 | -0.08 | yes |
+| EUR/GBP | 11-16 05:36 | 437 | 0 | 64 | 14 | 14 | -0.48 |  |
 
 ## Raw log files (full history, one row per run)
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log.csv
@@ -52,12 +52,12 @@
 - Gold USD: long -0.58%
 - Gold USD: long -0.47%
 - Gold USD: long +0.05%
-- USD/JPY: long -0.11%
 - USD/JPY: long -0.07%
 - USD/JPY: long -0.13%
 - USD/JPY: short -0.03%
 - USD/JPY: short +0.16%
-- USD/JPY totals: long 10 trades -0.18%, short 2 trades +0.13%
+- USD/JPY: short +0.18%
+- USD/JPY totals: long 10 trades -0.18%, short 3 trades +0.31%
 - GBP/USD: long -0.06%
 - GBP/USD: short -0.07%
 - GBP/USD: short -0.07%
@@ -78,21 +78,21 @@
 - EUR/GBP totals: long 11 trades -0.38%, short 3 trades -0.11%
 
 ## Latest log rows
-- Bitcoin 11-16 05:33 price 64701.75 no_trade score below 2
 - Bitcoin 11-16 05:34 price 64719.7 no_trade score below 2
 - Bitcoin 11-16 05:35 price 64764.25 no_trade score below 2
-- Gold USD 11-16 05:33 price 3860.55 no_trade short-term trend not up
+- Bitcoin 11-16 05:36 price 64715.75 no_trade score below 2
 - Gold USD 11-16 05:34 price 3860.55 no_trade short-term trend not up
 - Gold USD 11-16 05:35 price 3859.05 no_trade short-term trend not up
-- USD/JPY 11-16 05:33 price 159.496 holding SHORT 0.1%
+- Gold USD 11-16 05:36 price 3858.7 no_trade short-term trend not up
 - USD/JPY 11-16 05:34 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - USD/JPY 11-16 05:35 price 159.496 holding SHORT 0.1%
-- GBP/USD 11-16 05:33 price 1.3212 holding SHORT -0.0%
+- USD/JPY 11-16 05:36 price 159.427 cover closed by broker stop/TP; P/L 18.0711
 - GBP/USD 11-16 05:34 price 1.3212 holding SHORT -0.0%
 - GBP/USD 11-16 05:35 price 1.3212 holding SHORT -0.0%
-- EUR/USD 11-16 05:33 price 1.10244 holding SHORT -0.0%
+- GBP/USD 11-16 05:36 price 1.3212 holding SHORT -0.0%
 - EUR/USD 11-16 05:34 price 1.10244 holding SHORT -0.0%
 - EUR/USD 11-16 05:35 price 1.10244 holding SHORT -0.0%
-- EUR/GBP 11-16 05:33 price 0.83444 no_trade max 3 open positions reached
+- EUR/USD 11-16 05:36 price 1.10244 holding SHORT -0.0%
 - EUR/GBP 11-16 05:34 price 0.83444 no_trade spread 0.00013 too wide vs target
 - EUR/GBP 11-16 05:35 price 0.83444 no_trade max 3 open positions reached
+- EUR/GBP 11-16 05:36 price 0.83444 no_trade spread 0.00015 too wide vs target
