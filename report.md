@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-16 00:22 UTC)
+# Bot report (generated 2026-11-16 00:23 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -14,12 +14,12 @@
 
 | market | last run UTC | runs | entries | errors | closed trades (all time) | win % | total % after fees | open |
 |---|---|---|---|---|---|---|---|---|
-| Bitcoin | 11-16 00:22 | 1440 | 5 | 0 | 17 | 6 | -11.21 |  |
-| Gold USD | 11-16 00:22 | 1440 | 2 | 0 | 5 | 0 | -2.78 | yes |
-| USD/JPY | 11-16 00:22 | 164 | 1 | 88 | 12 | 33 | -0.05 | yes |
-| GBP/USD | 11-16 00:22 | 162 | 1 | 86 | 12 | 42 | -0.03 | yes |
-| EUR/USD | 11-16 00:22 | 161 | 1 | 84 | 13 | 38 | -0.08 | yes |
-| EUR/GBP | 11-16 00:22 | 141 | 0 | 63 | 14 | 14 | -0.48 |  |
+| Bitcoin | 11-16 00:23 | 1440 | 5 | 0 | 17 | 6 | -11.21 |  |
+| Gold USD | 11-16 00:23 | 1440 | 2 | 0 | 5 | 0 | -2.78 | yes |
+| USD/JPY | 11-16 00:23 | 165 | 1 | 89 | 12 | 33 | -0.05 | yes |
+| GBP/USD | 11-16 00:23 | 163 | 1 | 86 | 12 | 42 | -0.03 | yes |
+| EUR/USD | 11-16 00:23 | 162 | 1 | 85 | 13 | 38 | -0.08 | yes |
+| EUR/GBP | 11-16 00:23 | 142 | 0 | 63 | 14 | 14 | -0.48 |  |
 
 ## Raw log files (full history, one row per run)
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log.csv
@@ -30,9 +30,9 @@
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log_eurgbp.csv
 
 ## Errors in the last 24h (grouped)
-- x87 USD/JPY: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
+- x88 USD/JPY: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - x84 GBP/USD: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
-- x83 EUR/USD: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
+- x84 EUR/USD: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - x60 EUR/GBP: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - x2 GBP/USD: OANDA candles 401: {"errorMessage":"Insufficient authorization to perform request."}
 - x2 EUR/GBP: OANDA candles 401: {"errorMessage":"Insufficient authorization to perform request."}
@@ -77,21 +77,21 @@
 - EUR/GBP totals: long 11 trades -0.38%, short 3 trades -0.11%
 
 ## Latest log rows
-- Bitcoin 11-16 00:20 price 65030.28 no_trade max 3 open positions reached
 - Bitcoin 11-16 00:21 price 64986.95 no_trade score below 2
 - Bitcoin 11-16 00:22 price 64965.9 no_trade score below 2
-- Gold USD 11-16 00:20 price 3882.32 holding 0.8%
+- Bitcoin 11-16 00:23 price 65038.34 no_trade score below 2
 - Gold USD 11-16 00:21 price 3881.57 holding 0.8%
 - Gold USD 11-16 00:22 price 3882.18 holding 0.8%
-- USD/JPY 11-16 00:20 price 159.65 holding SHORT 0.0%
+- Gold USD 11-16 00:23 price 3881.88 holding 0.8%
 - USD/JPY 11-16 00:21 price 159.65 holding SHORT 0.0%
 - USD/JPY 11-16 00:22 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
-- GBP/USD 11-16 00:20 price 1.3217 holding SHORT -0.0%
+- USD/JPY 11-16 00:23 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - GBP/USD 11-16 00:21 price 1.3217 holding SHORT -0.0%
 - GBP/USD 11-16 00:22 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
-- EUR/USD 11-16 00:20 price 1.10258 holding SHORT -0.0%
+- GBP/USD 11-16 00:23 price 1.3217 holding SHORT -0.0%
 - EUR/USD 11-16 00:21 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - EUR/USD 11-16 00:22 price 1.10258 holding SHORT -0.0%
-- EUR/GBP 11-16 00:20 price 0.83422 no_trade max 3 open positions reached
+- EUR/USD 11-16 00:23 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - EUR/GBP 11-16 00:21 price 0.83422 no_trade max 3 open positions reached
 - EUR/GBP 11-16 00:22 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
+- EUR/GBP 11-16 00:23 price 0.83422 no_trade no margin for a trade (balance 871; free margin 13)
