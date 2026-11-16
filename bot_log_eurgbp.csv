@@ -6846,3 +6846,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-16 00:22,,,,,error,OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 2026-11-16 00:23,0.83422,3,,no,no_trade,no margin for a trade (balance 871; free margin 13)
 2026-11-16 00:24,0.83422,3,,no,no_trade,max 3 open positions reached
+2026-11-16 00:25,0.83422,3,,no,no_trade,max 3 open positions reached
