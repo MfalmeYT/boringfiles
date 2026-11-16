@@ -14,7 +14,7 @@
 
 | market | last run UTC | runs | entries | errors | closed trades (all time) | win % | total % after fees | open |
 |---|---|---|---|---|---|---|---|---|
-| Bitcoin | 11-16 09:09 | 1430 | 4 | 1 | 18 | 6 | -12.23 |  |
+| Bitcoin | 11-16 09:11 | 1430 | 4 | 0 | 18 | 6 | -12.23 |  |
 | Gold USD | 11-16 09:11 | 1430 | 1 | 1 | 6 | 17 | -2.73 |  |
 | USD/JPY | 11-16 09:11 | 655 | 2 | 103 | 13 | 38 | +0.13 | yes |
 | GBP/USD | 11-16 09:11 | 655 | 1 | 90 | 13 | 38 | -0.11 |  |
@@ -80,10 +80,10 @@
 ## Latest log rows
 - Bitcoin 11-16 09:06 price 64393.99 no_trade score below 2
 - Bitcoin 11-16 09:07 price 64336.15 no_trade score below 2
-- Bitcoin 11-16 09:09 price  error HTTPSConnectionPool(host='paper-api.alpaca.markets'; port=443): Max retries exceeded with 
+- Bitcoin 11-16 09:11 price 64275.25 no_trade score below 2
 - Gold USD 11-16 09:06 price 3849.69 no_trade short-term trend not up
 - Gold USD 11-16 09:07 price 3849.69 no_trade short-term trend not up
-- Gold USD 11-16 09:11 price  error HTTPSConnectionPool(host='paper-api.alpaca.markets'; port=443): Max retries exceeded with 
+- Gold USD 11-16 09:11 price  error Alpaca position 500: temporary gateway error (HTML page)
 - USD/JPY 11-16 09:06 price 159.424 holding SHORT 0.0%
 - USD/JPY 11-16 09:07 price 159.424 holding SHORT 0.0%
 - USD/JPY 11-16 09:11 price 159.424 holding SHORT 0.0%
