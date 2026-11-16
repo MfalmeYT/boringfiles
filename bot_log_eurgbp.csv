@@ -7664,3 +7664,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-16 14:10,0.83434,3,,no,short,conf 4: Trend indicators align for short; but momentum is completely flat. | 2500 units (reduced for margin)
 2026-11-16 14:11,0.83434,3,,yes,holding,SHORT -0.0%
 2026-11-16 14:12,0.83434,3,,yes,holding,SHORT -0.0%
+2026-11-16 14:13,0.83434,3,,yes,holding,SHORT -0.0%
