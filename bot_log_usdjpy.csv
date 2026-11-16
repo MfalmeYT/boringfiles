@@ -7801,3 +7801,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-16 15:27,159.52,2,fast_below_slow,yes,holding,SHORT 0.0%
 2026-11-16 15:28,159.52,2,fast_below_slow,yes,holding,SHORT 0.0%
 2026-11-16 15:29,159.52,2,fast_below_slow,yes,holding,SHORT 0.0%
+2026-11-16 15:30,159.538,2,fast_below_slow,yes,holding,SHORT -0.0%
