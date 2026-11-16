@@ -10639,3 +10639,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-16 10:26,64457.18,1,fast_above_slow|price_above_trend_ema,no,no_trade,score below 2
 2026-11-16 10:27,64460.8,1,fast_above_slow|price_above_trend_ema,no,no_trade,score below 2
 2026-11-16 10:28,64607.57,3,,no,buy,conf 5: Fresh bullish EMA crossover with supportive RSI and strong price momentum
+2026-11-16 10:29,64583.22,3,,yes,holding,-0.1%
