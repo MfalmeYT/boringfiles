@@ -7688,3 +7688,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-16 13:30,159.594,2,price_below_trend_ema,no,no_trade,max 3 open positions reached
 2026-11-16 13:31,159.594,2,price_below_trend_ema,no,no_trade,max 3 open positions reached
 2026-11-16 13:32,159.594,2,price_below_trend_ema,no,short,conf 3: Price sits above EMA50 trendline; conflicting with short direction | 5000 units (reduced for margin)
+2026-11-16 13:33,159.594,2,price_below_trend_ema,yes,holding,SHORT -0.0%
