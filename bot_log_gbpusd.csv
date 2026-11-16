@@ -7534,3 +7534,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-16 11:08,1.31858,3,,no,no_trade,re-entry cooldown
 2026-11-16 11:09,,,,,error,OANDA candles 401: {"errorMessage":"Insufficient authorization to perform request."}
 2026-11-16 11:10,,,,,error,OANDA pricing 401: {"errorMessage":"Insufficient authorization to perform request."}
+2026-11-16 11:11,1.31858,3,,no,no_trade,re-entry cooldown
