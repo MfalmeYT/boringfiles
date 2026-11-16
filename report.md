@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-16 14:09 UTC)
+# Bot report (generated 2026-11-16 14:10 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -14,12 +14,12 @@
 
 | market | last run UTC | runs | entries | errors | closed trades (all time) | win % | total % after fees | open |
 |---|---|---|---|---|---|---|---|---|
-| Bitcoin | 11-16 14:09 | 1430 | 4 | 1 | 19 | 5 | -13.05 |  |
-| Gold USD | 11-16 14:09 | 1430 | 2 | 2 | 6 | 17 | -2.73 | yes |
-| USD/JPY | 11-16 14:09 | 935 | 3 | 113 | 14 | 36 | +0.07 | yes |
-| GBP/USD | 11-16 14:09 | 936 | 2 | 87 | 13 | 38 | -0.11 | yes |
-| EUR/USD | 11-16 14:09 | 927 | 2 | 72 | 14 | 36 | -0.16 | yes |
-| EUR/GBP | 11-16 14:09 | 921 | 2 | 62 | 15 | 13 | -0.52 | yes |
+| Bitcoin | 11-16 14:10 | 1430 | 4 | 1 | 19 | 5 | -13.05 |  |
+| Gold USD | 11-16 14:10 | 1430 | 2 | 2 | 6 | 17 | -2.73 | yes |
+| USD/JPY | 11-16 14:10 | 936 | 3 | 114 | 14 | 36 | +0.07 | yes |
+| GBP/USD | 11-16 14:10 | 937 | 2 | 88 | 13 | 38 | -0.11 | yes |
+| EUR/USD | 11-16 14:10 | 928 | 2 | 73 | 14 | 36 | -0.16 | yes |
+| EUR/GBP | 11-16 14:10 | 922 | 3 | 62 | 15 | 13 | -0.52 | yes |
 
 ## Raw log files (full history, one row per run)
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log.csv
@@ -30,16 +30,16 @@
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log_eurgbp.csv
 
 ## Errors in the last 24h (grouped)
-- x89 USD/JPY: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
-- x63 GBP/USD: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
+- x90 USD/JPY: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
+- x64 GBP/USD: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - x57 EUR/USD: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - x43 EUR/GBP: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - x15 GBP/USD: OANDA candles 401: {"errorMessage":"Insufficient authorization to perform request."}
 - x13 USD/JPY: OANDA candles 401: {"errorMessage":"Insufficient authorization to perform request."}
 - x11 USD/JPY: OANDA pricing 401: {"errorMessage":"Insufficient authorization to perform request."}
 - x11 EUR/GBP: OANDA candles 401: {"errorMessage":"Insufficient authorization to perform request."}
+- x10 EUR/USD: OANDA candles 401: {"errorMessage":"Insufficient authorization to perform request."}
 - x9 GBP/USD: OANDA pricing 401: {"errorMessage":"Insufficient authorization to perform request."}
-- x9 EUR/USD: OANDA candles 401: {"errorMessage":"Insufficient authorization to perform request."}
 
 ## Latest closed trades
 - Bitcoin: long -0.80%
@@ -78,21 +78,21 @@
 - EUR/GBP totals: long 12 trades -0.41%, short 3 trades -0.11%
 
 ## Latest log rows
-- Bitcoin 11-16 14:07 price 64044.67 no_trade score below 2
 - Bitcoin 11-16 14:08 price 64030.93 no_trade score below 2
 - Bitcoin 11-16 14:09 price 64003.63 no_trade score below 2
-- Gold USD 11-16 14:07 price 3851.7 holding -0.5%
+- Bitcoin 11-16 14:10 price 63946.28 no_trade score below 2
 - Gold USD 11-16 14:08 price 3851.7 holding -0.5%
 - Gold USD 11-16 14:09 price 3851.7 holding -0.5%
-- USD/JPY 11-16 14:07 price 159.631 holding SHORT -0.1%
+- Gold USD 11-16 14:10 price 3851.7 holding -0.5%
 - USD/JPY 11-16 14:08 price 159.631 holding SHORT -0.1%
 - USD/JPY 11-16 14:09 price 159.631 holding SHORT -0.1%
-- GBP/USD 11-16 14:07 price 1.31986 holding SHORT -0.0%
+- USD/JPY 11-16 14:10 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - GBP/USD 11-16 14:08 price 1.31986 holding SHORT -0.0%
 - GBP/USD 11-16 14:09 price 1.31986 holding SHORT -0.0%
-- EUR/USD 11-16 14:07 price 1.1012 holding SHORT -0.0%
+- GBP/USD 11-16 14:10 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - EUR/USD 11-16 14:08 price 1.1012 holding SHORT -0.0%
 - EUR/USD 11-16 14:09 price 1.1012 holding SHORT -0.0%
-- EUR/GBP 11-16 14:07 price 0.83434 no_trade max 3 open positions reached
+- EUR/USD 11-16 14:10 price  error OANDA candles 401: {"errorMessage":"Insufficient authorization to perform request."}
 - EUR/GBP 11-16 14:08 price 0.83434 no_trade max 3 open positions reached
 - EUR/GBP 11-16 14:09 price 0.83434 no_trade max 3 open positions reached
+- EUR/GBP 11-16 14:10 price 0.83434 short conf 4: Trend indicators align for short; but momentum is completely flat. | 2500 units (r
