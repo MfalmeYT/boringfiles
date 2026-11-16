@@ -7970,3 +7970,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-16 18:28,1.3183,3,,yes,holding,SHORT 0.1%
 2026-11-16 18:29,1.3183,3,,yes,holding,SHORT 0.1%
 2026-11-16 18:29,1.3183,3,,yes,holding,SHORT 0.1%
+2026-11-16 18:30,,,,,error,OANDA pricing 401: {"errorMessage":"Insufficient authorization to perform request."}
