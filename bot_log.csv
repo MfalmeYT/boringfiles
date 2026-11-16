@@ -10239,3 +10239,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-16 03:37,64859.86,0,fast_above_slow|price_above_trend_ema|rsi_in_range,no,no_trade,score below 2
 2026-11-16 03:38,64865.89,1,price_above_trend_ema|rsi_in_range,no,no_trade,score below 2
 2026-11-16 03:41,64983.74,2,price_above_trend_ema,no,no_trade,max 3 open positions reached
+2026-11-16 03:45,64976.33,1,fast_above_slow|price_above_trend_ema,no,no_trade,score below 2
