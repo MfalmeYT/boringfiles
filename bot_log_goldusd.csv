@@ -5609,3 +5609,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-16 20:13,3851.69,2,fast_above_slow,no,no_trade,short-term trend not up
 2026-11-16 20:14,3852.07,2,fast_above_slow,no,no_trade,short-term trend not up
 2026-11-16 20:15,3851.68,2,fast_above_slow,no,no_trade,short-term trend not up
+2026-11-16 20:16,3851.24,3,,no,no_trade,max 3 open positions reached
