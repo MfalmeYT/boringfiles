@@ -8117,3 +8117,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-16 20:40,159.446,3,,no,short,conf 4: All indicators aligned short; score 3/3; but momentum is low. | 2500 units (reduced for margin)
 2026-11-16 20:41,159.446,3,,yes,holding,SHORT 0.0%
 2026-11-16 20:42,159.446,3,,yes,holding,SHORT 0.0%
+2026-11-16 20:43,159.446,3,,yes,holding,SHORT 0.0%
