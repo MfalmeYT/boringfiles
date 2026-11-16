@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-16 22:02 UTC)
+# Bot report (generated 2026-11-16 22:03 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -14,8 +14,8 @@
 
 | market | last run UTC | runs | entries | errors | closed trades (all time) | win % | total % after fees | open |
 |---|---|---|---|---|---|---|---|---|
-| Bitcoin | 11-16 22:02 | 1430 | 5 | 1 | 21 | 5 | -14.27 | yes |
-| Gold USD | 11-16 22:02 | 1430 | 1 | 2 | 7 | 14 | -3.29 |  |
+| Bitcoin | 11-16 22:03 | 1430 | 5 | 1 | 21 | 5 | -14.27 | yes |
+| Gold USD | 11-16 22:03 | 1430 | 1 | 2 | 7 | 14 | -3.29 |  |
 | USD/JPY | 11-16 21:57 | 1374 | 4 | 124 | 15 | 33 | +0.04 | yes |
 | GBP/USD | 11-16 21:59 | 1372 | 2 | 84 | 13 | 38 | -0.11 | yes |
 | EUR/USD | 11-16 22:01 | 1374 | 2 | 82 | 15 | 40 | +0.02 |  |
@@ -78,12 +78,12 @@
 - EUR/GBP totals: long 13 trades -0.39%, short 3 trades -0.11%
 
 ## Latest log rows
-- Bitcoin 11-16 22:00 price 65237.2 holding 0.3%
 - Bitcoin 11-16 22:01 price 65280.54 holding 0.4%
 - Bitcoin 11-16 22:02 price 65365.94 holding 0.5%
-- Gold USD 11-16 22:00 price 3843.95 no_trade score below 2
+- Bitcoin 11-16 22:03 price 65342.43 holding 0.5%
 - Gold USD 11-16 22:01 price 3844.41 no_trade score below 2
 - Gold USD 11-16 22:02 price 3843.76 no_trade score below 2
+- Gold USD 11-16 22:03 price 3843.26 no_trade score below 2
 - USD/JPY 11-16 21:55 price 159.446 holding SHORT 0.0%
 - USD/JPY 11-16 21:56 price 159.446 holding SHORT 0.0%
 - USD/JPY 11-16 21:57 price 159.446 holding SHORT 0.0%
