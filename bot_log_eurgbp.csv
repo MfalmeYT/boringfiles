@@ -7698,3 +7698,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-16 14:45,0.83445,2,price_below_trend_ema,yes,holding,SHORT -0.0%
 2026-11-16 14:47,0.83445,2,price_below_trend_ema,yes,holding,SHORT -0.0%
 2026-11-16 14:48,0.83445,2,price_below_trend_ema,yes,holding,SHORT -0.0%
+2026-11-16 14:49,0.83445,2,price_below_trend_ema,yes,holding,SHORT -0.0%
