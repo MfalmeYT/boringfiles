@@ -80,7 +80,7 @@
 ## Latest log rows
 - Bitcoin 11-16 06:48 price 64561.27 no_trade score below 2
 - Bitcoin 11-16 06:49 price 64571.65 no_trade score below 2
-- Bitcoin 11-16 06:51 price 64573.37 no_trade score below 2
+- Bitcoin 11-16 06:51 price 64622.25 no_trade score below 2
 - Gold USD 11-16 06:48 price 3830.05 no_trade score below 2
 - Gold USD 11-16 06:49 price 3830.06 no_trade score below 2
 - Gold USD 11-16 06:51 price 3830.87 no_trade score below 2
