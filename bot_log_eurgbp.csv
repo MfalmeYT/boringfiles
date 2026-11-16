@@ -7120,3 +7120,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-16 05:01,0.83426,3,,no,no_trade,max 3 open positions reached
 2026-11-16 05:02,0.83426,3,,no,no_trade,max 3 open positions reached
 2026-11-16 05:03,,,,,error,OANDA pricing 401: {"errorMessage":"Insufficient authorization to perform request."}
+2026-11-16 05:04,0.83426,3,,no,no_trade,spread 0.00013 too wide vs target
