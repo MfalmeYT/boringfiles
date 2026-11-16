@@ -7902,3 +7902,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-16 17:06,159.655,3,,no,no_trade,re-entry cooldown
 2026-11-16 17:06,159.654,3,,no,cover,closed by broker stop/TP; P/L -4.0489
 2026-11-16 17:07,159.655,3,,no,no_trade,re-entry cooldown
+2026-11-16 17:08,,,,,error,OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
