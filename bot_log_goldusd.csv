@@ -4945,3 +4945,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-16 09:07,3849.69,2,fast_above_slow,no,no_trade,short-term trend not up
 2026-11-16 09:11,,,,,error,HTTPSConnectionPool(host='paper-api.alpaca.markets'; port=443): Max retries exceeded with url: /v2/positions/PAXGUSD (Ca
 2026-11-16 09:11,,,,,error,Alpaca position 500: temporary gateway error (HTML page)
+2026-11-16 09:12,3848.1,2,fast_above_slow,no,no_trade,short-term trend not up
