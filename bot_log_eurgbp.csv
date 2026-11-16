@@ -7194,3 +7194,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-16 06:15,0.83429,2,price_above_trend_ema,no,no_trade,spread 0.00013 too wide vs target
 2026-11-16 06:16,0.83429,2,price_above_trend_ema,no,no_trade,spread 0.00013 too wide vs target
 2026-11-16 06:18,0.83429,2,price_above_trend_ema,no,buy,conf 3: Flat price action with price below trend EMA limits directional conviction | 5000 units (reduced for margin)
+2026-11-16 06:18,0.83429,2,price_above_trend_ema,yes,holding,0.0%

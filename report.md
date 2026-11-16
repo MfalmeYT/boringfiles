@@ -19,7 +19,7 @@
 | USD/JPY | 11-16 06:18 | 503 | 1 | 106 | 13 | 38 | +0.13 |  |
 | GBP/USD | 11-16 06:18 | 495 | 1 | 90 | 12 | 42 | -0.03 | yes |
 | EUR/USD | 11-16 06:18 | 488 | 1 | 75 | 13 | 38 | -0.08 | yes |
-| EUR/GBP | 11-16 06:18 | 475 | 1 | 62 | 14 | 14 | -0.48 | yes |
+| EUR/GBP | 11-16 06:18 | 475 | 0 | 62 | 14 | 14 | -0.48 |  |
 
 ## Raw log files (full history, one row per run)
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log.csv
@@ -95,4 +95,4 @@
 - EUR/USD 11-16 06:18 price 1.10212 holding SHORT 0.0%
 - EUR/GBP 11-16 06:15 price 0.83429 no_trade spread 0.00013 too wide vs target
 - EUR/GBP 11-16 06:16 price 0.83429 no_trade spread 0.00013 too wide vs target
-- EUR/GBP 11-16 06:18 price 0.83429 buy conf 3: Flat price action with price below trend EMA limits directional conviction | 5000 
+- EUR/GBP 11-16 06:18 price 0.83429 holding 0.0%
