@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-16 14:30 UTC)
+# Bot report (generated 2026-11-16 14:31 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -14,12 +14,12 @@
 
 | market | last run UTC | runs | entries | errors | closed trades (all time) | win % | total % after fees | open |
 |---|---|---|---|---|---|---|---|---|
-| Bitcoin | 11-16 14:30 | 1430 | 5 | 1 | 19 | 5 | -13.05 | yes |
-| Gold USD | 11-16 14:30 | 1430 | 2 | 2 | 6 | 17 | -2.73 | yes |
-| USD/JPY | 11-16 14:30 | 956 | 3 | 116 | 14 | 36 | +0.07 | yes |
-| GBP/USD | 11-16 14:30 | 955 | 2 | 87 | 13 | 38 | -0.11 | yes |
-| EUR/USD | 11-16 14:30 | 947 | 2 | 73 | 14 | 36 | -0.16 | yes |
-| EUR/GBP | 11-16 14:30 | 940 | 3 | 61 | 15 | 13 | -0.52 | yes |
+| Bitcoin | 11-16 14:31 | 1430 | 5 | 1 | 19 | 5 | -13.05 | yes |
+| Gold USD | 11-16 14:31 | 1430 | 2 | 2 | 6 | 17 | -2.73 | yes |
+| USD/JPY | 11-16 14:31 | 957 | 3 | 116 | 14 | 36 | +0.07 | yes |
+| GBP/USD | 11-16 14:31 | 956 | 2 | 87 | 13 | 38 | -0.11 | yes |
+| EUR/USD | 11-16 14:31 | 948 | 2 | 73 | 14 | 36 | -0.16 | yes |
+| EUR/GBP | 11-16 14:31 | 941 | 3 | 61 | 15 | 13 | -0.52 | yes |
 
 ## Raw log files (full history, one row per run)
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log.csv
@@ -78,21 +78,21 @@
 - EUR/GBP totals: long 12 trades -0.41%, short 3 trades -0.11%
 
 ## Latest log rows
-- Bitcoin 11-16 14:28 price 64438.07 buy conf 5: Bullish EMA crossover with price above trend and healthy RSI.
 - Bitcoin 11-16 14:29 price 64438.55 holding -0.0%
 - Bitcoin 11-16 14:30 price 64417.3 holding -0.1%
-- Gold USD 11-16 14:28 price 3852.37 holding -0.5%
+- Bitcoin 11-16 14:31 price 64361.94 holding -0.2%
 - Gold USD 11-16 14:29 price 3852.64 holding -0.5%
 - Gold USD 11-16 14:30 price 3853.83 holding -0.4%
-- USD/JPY 11-16 14:28 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
+- Gold USD 11-16 14:31 price 3855.4 holding -0.4%
 - USD/JPY 11-16 14:29 price 159.584 holding SHORT -0.0%
 - USD/JPY 11-16 14:30 price 159.606 holding SHORT -0.1%
-- GBP/USD 11-16 14:28 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
+- USD/JPY 11-16 14:31 price 159.606 holding SHORT -0.1%
 - GBP/USD 11-16 14:29 price 1.3201 holding SHORT -0.1%
 - GBP/USD 11-16 14:30 price 1.31932 holding SHORT -0.0%
-- EUR/USD 11-16 14:28 price  error OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
+- GBP/USD 11-16 14:31 price 1.31932 holding SHORT -0.0%
 - EUR/USD 11-16 14:29 price 1.10145 holding SHORT -0.0%
 - EUR/USD 11-16 14:30 price 1.10078 holding SHORT 0.0%
-- EUR/GBP 11-16 14:28 price 0.83437 holding SHORT -0.0%
+- EUR/USD 11-16 14:31 price 1.10078 holding SHORT 0.0%
 - EUR/GBP 11-16 14:29 price 0.83437 holding SHORT -0.0%
 - EUR/GBP 11-16 14:30 price 0.83435 holding SHORT -0.0%
+- EUR/GBP 11-16 14:31 price 0.83435 holding SHORT -0.0%
