@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-16 18:02 UTC)
+# Bot report (generated 2026-11-16 18:03 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -14,12 +14,12 @@
 
 | market | last run UTC | runs | entries | errors | closed trades (all time) | win % | total % after fees | open |
 |---|---|---|---|---|---|---|---|---|
-| Bitcoin | 11-16 18:02 | 1427 | 5 | 1 | 20 | 5 | -14.02 | yes |
-| Gold USD | 11-16 18:02 | 1427 | 1 | 2 | 7 | 14 | -3.29 |  |
-| USD/JPY | 11-16 18:02 | 1155 | 3 | 128 | 15 | 33 | +0.04 |  |
-| GBP/USD | 11-16 18:02 | 1152 | 2 | 87 | 13 | 38 | -0.11 | yes |
-| EUR/USD | 11-16 18:02 | 1146 | 2 | 80 | 14 | 36 | -0.16 | yes |
-| EUR/GBP | 11-16 18:02 | 1140 | 3 | 65 | 16 | 19 | -0.50 |  |
+| Bitcoin | 11-16 18:03 | 1427 | 5 | 1 | 20 | 5 | -14.02 | yes |
+| Gold USD | 11-16 18:03 | 1427 | 1 | 2 | 7 | 14 | -3.29 |  |
+| USD/JPY | 11-16 18:03 | 1156 | 3 | 128 | 15 | 33 | +0.04 |  |
+| GBP/USD | 11-16 18:03 | 1153 | 2 | 88 | 13 | 38 | -0.11 | yes |
+| EUR/USD | 11-16 18:03 | 1147 | 2 | 80 | 14 | 36 | -0.16 | yes |
+| EUR/GBP | 11-16 18:03 | 1141 | 3 | 66 | 16 | 19 | -0.50 |  |
 
 ## Raw log files (full history, one row per run)
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log.csv
@@ -34,12 +34,12 @@
 - x57 GBP/USD: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - x55 EUR/USD: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - x43 EUR/GBP: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
-- x19 GBP/USD: OANDA candles 401: {"errorMessage":"Insufficient authorization to perform request."}
+- x20 GBP/USD: OANDA candles 401: {"errorMessage":"Insufficient authorization to perform request."}
 - x18 USD/JPY: OANDA candles 401: {"errorMessage":"Insufficient authorization to perform request."}
 - x15 USD/JPY: OANDA pricing 401: {"errorMessage":"Insufficient authorization to perform request."}
 - x13 EUR/USD: OANDA candles 401: {"errorMessage":"Insufficient authorization to perform request."}
+- x13 EUR/GBP: OANDA candles 401: {"errorMessage":"Insufficient authorization to perform request."}
 - x12 EUR/USD: OANDA pricing 401: {"errorMessage":"Insufficient authorization to perform request."}
-- x12 EUR/GBP: OANDA candles 401: {"errorMessage":"Insufficient authorization to perform request."}
 
 ## Latest closed trades
 - Bitcoin: long -0.98%
@@ -78,21 +78,21 @@
 - EUR/GBP totals: long 13 trades -0.39%, short 3 trades -0.11%
 
 ## Latest log rows
-- Bitcoin 11-16 18:00 price 64840.69 holding 0.4%
 - Bitcoin 11-16 18:01 price 64730.85 holding 0.2%
 - Bitcoin 11-16 18:02 price 64706.09 holding 0.2%
-- Gold USD 11-16 18:00 price 3842.18 no_trade score below 2
+- Bitcoin 11-16 18:03 price 64746.97 holding 0.2%
 - Gold USD 11-16 18:01 price 3842.18 no_trade score below 2
 - Gold USD 11-16 18:02 price 3842.18 no_trade score below 2
-- USD/JPY 11-16 18:00 price 159.504 no_trade re-entry cooldown
+- Gold USD 11-16 18:03 price 3842.18 no_trade score below 2
 - USD/JPY 11-16 18:01 price 159.504 no_trade re-entry cooldown
 - USD/JPY 11-16 18:02 price 159.504 no_trade re-entry cooldown
-- GBP/USD 11-16 18:00 price 1.31914 holding SHORT 0.0%
+- USD/JPY 11-16 18:03 price 159.504 no_trade re-entry cooldown
 - GBP/USD 11-16 18:01 price 1.31914 holding SHORT 0.0%
 - GBP/USD 11-16 18:02 price 1.31914 holding SHORT 0.0%
-- EUR/USD 11-16 18:00 price 1.10045 holding SHORT 0.1%
+- GBP/USD 11-16 18:03 price  error OANDA candles 401: {"errorMessage":"Insufficient authorization to perform request."}
 - EUR/USD 11-16 18:01 price 1.10045 holding SHORT 0.1%
 - EUR/USD 11-16 18:02 price 1.10045 holding SHORT 0.1%
-- EUR/GBP 11-16 18:00 price 0.83424 no_trade re-entry cooldown
+- EUR/USD 11-16 18:03 price 1.10045 holding SHORT 0.1%
 - EUR/GBP 11-16 18:01 price 0.83424 no_trade re-entry cooldown
 - EUR/GBP 11-16 18:02 price 0.83424 no_trade re-entry cooldown
+- EUR/GBP 11-16 18:03 price  error OANDA candles 401: {"errorMessage":"Insufficient authorization to perform request."}
