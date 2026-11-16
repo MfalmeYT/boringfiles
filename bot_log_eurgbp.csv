@@ -7196,3 +7196,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-16 06:18,0.83429,2,price_above_trend_ema,no,buy,conf 3: Flat price action with price below trend EMA limits directional conviction | 5000 units (reduced for margin)
 2026-11-16 06:18,0.83429,2,price_above_trend_ema,yes,holding,0.0%
 2026-11-16 06:19,0.83429,2,price_above_trend_ema,yes,holding,0.0%
+2026-11-16 06:20,,,,,error,OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
