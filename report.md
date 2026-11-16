@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-16 22:12 UTC)
+# Bot report (generated 2026-11-16 22:13 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -14,9 +14,9 @@
 
 | market | last run UTC | runs | entries | errors | closed trades (all time) | win % | total % after fees | open |
 |---|---|---|---|---|---|---|---|---|
-| Bitcoin | 11-16 22:12 | 1431 | 5 | 1 | 21 | 5 | -14.27 | yes |
-| Gold USD | 11-16 22:12 | 1431 | 1 | 2 | 7 | 14 | -3.29 |  |
-| USD/JPY | 11-16 21:57 | 1373 | 4 | 123 | 15 | 33 | +0.04 | yes |
+| Bitcoin | 11-16 22:13 | 1431 | 5 | 1 | 21 | 5 | -14.27 | yes |
+| Gold USD | 11-16 22:13 | 1431 | 1 | 2 | 7 | 14 | -3.29 |  |
+| USD/JPY | 11-16 21:57 | 1372 | 4 | 122 | 15 | 33 | +0.04 | yes |
 | GBP/USD | 11-16 21:59 | 1372 | 2 | 84 | 13 | 38 | -0.11 | yes |
 | EUR/USD | 11-16 22:01 | 1373 | 2 | 81 | 15 | 40 | +0.02 |  |
 | EUR/GBP | 11-16 22:11 | 1370 | 5 | 66 | 16 | 19 | -0.50 | yes |
@@ -30,7 +30,7 @@
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log_eurgbp.csv
 
 ## Errors in the last 24h (grouped)
-- x83 USD/JPY: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
+- x82 USD/JPY: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - x52 EUR/USD: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - x48 GBP/USD: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - x38 EUR/GBP: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
@@ -78,12 +78,12 @@
 - EUR/GBP totals: long 13 trades -0.39%, short 3 trades -0.11%
 
 ## Latest log rows
-- Bitcoin 11-16 22:10 price 65412.4 holding 0.6%
 - Bitcoin 11-16 22:11 price 65446.35 holding 0.6%
 - Bitcoin 11-16 22:12 price 65446.53 holding 0.6%
-- Gold USD 11-16 22:10 price 3845.24 no_trade score below 2
+- Bitcoin 11-16 22:13 price 65447.95 holding 0.6%
 - Gold USD 11-16 22:11 price 3846.62 no_trade score below 2
 - Gold USD 11-16 22:12 price 3846.75 no_trade score below 2
+- Gold USD 11-16 22:13 price 3847.13 no_trade score below 2
 - USD/JPY 11-16 21:55 price 159.446 holding SHORT 0.0%
 - USD/JPY 11-16 21:56 price 159.446 holding SHORT 0.0%
 - USD/JPY 11-16 21:57 price 159.446 holding SHORT 0.0%
