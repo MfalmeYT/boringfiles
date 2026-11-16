@@ -11008,3 +11008,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-16 16:38,64552.69,3,,no,no_trade,max 3 open positions reached
 2026-11-16 16:39,64550.52,3,,no,no_trade,max 3 open positions reached
 2026-11-16 16:40,64587.89,3,,no,no_trade,max 3 open positions reached
+2026-11-16 16:41,64571.53,3,,no,buy,conf 4: Moving averages aligned bullishly; but momentum has flattened recently
