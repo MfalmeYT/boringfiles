@@ -7515,3 +7515,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-16 11:43,0.83439,2,price_above_trend_ema,yes,holding,-0.0%
 2026-11-16 11:43,0.83439,2,price_above_trend_ema,yes,holding,-0.0%
 2026-11-16 11:44,0.83439,2,price_above_trend_ema,yes,holding,-0.0%
+2026-11-16 11:45,,,,,error,OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
