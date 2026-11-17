@@ -8873,3 +8873,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-17 10:53,1.09925,3,,no,no_trade,re-entry cooldown
 2026-11-17 10:54,1.09925,3,,no,no_trade,re-entry cooldown
 2026-11-17 10:55,1.09925,3,,no,short,conf 4: Downtrend intact with solid setup; but low RSI risks minor bounce | 1250 units (reduced for margin)
+2026-11-17 10:56,1.09925,3,,yes,holding,SHORT -0.0%
