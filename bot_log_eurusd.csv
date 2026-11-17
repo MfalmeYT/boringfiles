@@ -8412,3 +8412,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-17 03:12,1.10029,2,fast_above_slow,no,no_trade,no long or short setup
 2026-11-17 03:13,1.10029,2,fast_above_slow,no,no_trade,no long or short setup
 2026-11-17 03:14,1.10029,2,fast_above_slow,no,no_trade,no long or short setup
+2026-11-17 03:15,1.10068,3,,no,buy,conf 5: Fresh bullish EMA crossover with price leading strong momentum upward.
