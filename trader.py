@@ -190,6 +190,7 @@ def session_state(session, now_utc):
 # ---------------------------------------------------------------- brokers
 def http_get(url, **kw):
     """GET with a few retries for temporary gateway errors (429/502/503/504) and dropped connections."""
+    retry = (429, 502, 503, 504) + ((401,) if "oanda.com" in url else ())   # OANDA sometimes answers a valid token with a temporary 401
     for wait in (1, 2, 4, None):
         try:
             r = requests.get(url, **kw)
@@ -198,7 +199,7 @@ def http_get(url, **kw):
                 raise
             time.sleep(wait)
             continue
-        if r.status_code in (429, 502, 503, 504) and wait is not None:
+        if r.status_code in retry and wait is not None:
             time.sleep(wait)
             continue
         return r
@@ -422,8 +423,14 @@ class Oanda:
                 return None, f"no margin for a trade ({self.margin_info()})"
 
     def close(self, pos):
-        r = requests.put(f"{self.base}/v3/accounts/{self.acct}/positions/{self.symbol}/close",
-                         headers=self.headers, json={("longUnits" if pos.get("side", "long") == "long" else "shortUnits"): "ALL"}, timeout=20)
+        body = {("longUnits" if pos.get("side", "long") == "long" else "shortUnits"): "ALL"}
+        for wait in (1, 2, None):
+            r = requests.put(f"{self.base}/v3/accounts/{self.acct}/positions/{self.symbol}/close",
+                             headers=self.headers, json=body, timeout=20)
+            if r.status_code == 401 and wait is not None:
+                time.sleep(wait)
+                continue
+            break
         if r.status_code >= 400:
             raise Exception(f"Close rejected {r.status_code}: {r.text[:200]}")
         return r.json().get("lastTransactionID", "ok")
@@ -524,8 +531,9 @@ def _last_rows(path):
 
 
 def last_action(path):
-    rows = _last_rows(path)
-    return rows[-1][5].strip() if rows and len(rows[-1]) >= 6 else None
+    """Last logged action, ignoring error rows (a temporary 401 must not hide that a trade was open)."""
+    rows = [r for r in _last_rows(path) if len(r) >= 6 and r[5].strip() != "error"]
+    return rows[-1][5].strip() if rows else None
 
 
 def minutes_since_last_action(path, actions):
