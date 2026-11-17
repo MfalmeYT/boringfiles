@@ -12198,3 +12198,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-17 12:25,64897.29,3,,no,no_trade,max 3 open positions reached
 2026-11-17 12:26,64874.95,3,,no,buy,conf 4: Solid uptrend and EMA alignment; but lacking fresh momentum crossover
 2026-11-17 12:27,64880.46,3,,yes,holding,-0.0%
+2026-11-17 12:28,64986.32,2,rsi_in_range,yes,holding,0.2%
