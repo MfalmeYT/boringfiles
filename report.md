@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-17 04:01 UTC)
+# Bot report (generated 2026-11-17 04:02 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -14,12 +14,12 @@
 
 | market | last run UTC | runs | entries | errors | closed trades (all time) | win % | total % after fees | open |
 |---|---|---|---|---|---|---|---|---|
-| Bitcoin | 11-17 04:01 | 1436 | 6 | 1 | 22 | 5 | -14.64 | yes |
-| Gold USD | 11-17 04:01 | 1436 | 2 | 2 | 7 | 14 | -3.29 | yes |
-| USD/JPY | 11-17 04:01 | 1381 | 3 | 109 | 16 | 31 | -0.04 |  |
-| GBP/USD | 11-17 04:01 | 1379 | 1 | 72 | 14 | 36 | -0.14 |  |
-| EUR/USD | 11-17 04:01 | 1379 | 3 | 74 | 16 | 38 | -0.03 | yes |
-| EUR/GBP | 11-17 04:01 | 1378 | 5 | 63 | 17 | 18 | -0.53 |  |
+| Bitcoin | 11-17 04:02 | 1436 | 6 | 1 | 22 | 5 | -14.64 | yes |
+| Gold USD | 11-17 04:02 | 1436 | 2 | 2 | 7 | 14 | -3.29 | yes |
+| USD/JPY | 11-17 04:02 | 1381 | 3 | 109 | 16 | 31 | -0.04 |  |
+| GBP/USD | 11-17 04:02 | 1379 | 1 | 71 | 14 | 36 | -0.14 |  |
+| EUR/USD | 11-17 04:02 | 1379 | 3 | 74 | 16 | 38 | -0.03 | yes |
+| EUR/GBP | 11-17 04:02 | 1378 | 5 | 63 | 17 | 18 | -0.53 |  |
 
 ## Raw log files (full history, one row per run)
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log.csv
@@ -38,8 +38,8 @@
 - x18 USD/JPY: OANDA pricing 401: {"errorMessage":"Insufficient authorization to perform request."}
 - x17 GBP/USD: OANDA candles 401: {"errorMessage":"Insufficient authorization to perform request."}
 - x15 EUR/USD: OANDA candles 401: {"errorMessage":"Insufficient authorization to perform request."}
-- x11 GBP/USD: OANDA pricing 401: {"errorMessage":"Insufficient authorization to perform request."}
 - x11 EUR/GBP: OANDA candles 401: {"errorMessage":"Insufficient authorization to perform request."}
+- x10 GBP/USD: OANDA pricing 401: {"errorMessage":"Insufficient authorization to perform request."}
 
 ## Latest closed trades
 - Bitcoin: long -1.02%
@@ -78,21 +78,21 @@
 - EUR/GBP totals: long 13 trades -0.39%, short 4 trades -0.14%
 
 ## Latest log rows
-- Bitcoin 11-17 03:59 price 64986.41 holding 0.4%
 - Bitcoin 11-17 04:00 price 64993.78 holding 0.4%
 - Bitcoin 11-17 04:01 price 64973.73 holding 0.4%
-- Gold USD 11-17 03:59 price 3856.22 holding -0.5%
+- Bitcoin 11-17 04:02 price 64981.05 holding 0.4%
 - Gold USD 11-17 04:00 price 3856.22 holding -0.5%
 - Gold USD 11-17 04:01 price 3856.22 holding -0.5%
-- USD/JPY 11-17 03:59 price 159.362 no_trade re-entry cooldown
+- Gold USD 11-17 04:02 price 3856.22 holding -0.5%
 - USD/JPY 11-17 04:00 price 159.262 no_trade re-entry cooldown
 - USD/JPY 11-17 04:01 price 159.262 no_trade re-entry cooldown
-- GBP/USD 11-17 03:59 price 1.31927 no_trade re-entry cooldown
+- USD/JPY 11-17 04:02 price 159.262 no_trade re-entry cooldown
 - GBP/USD 11-17 04:00 price 1.31949 no_trade re-entry cooldown
 - GBP/USD 11-17 04:01 price 1.31949 no_trade re-entry cooldown
-- EUR/USD 11-17 03:59 price 1.10058 holding -0.0%
+- GBP/USD 11-17 04:02 price 1.31949 no_trade re-entry cooldown
 - EUR/USD 11-17 04:00 price 1.10074 holding 0.0%
 - EUR/USD 11-17 04:01 price 1.10074 holding 0.0%
-- EUR/GBP 11-17 03:59 price 0.83424 no_trade re-entry cooldown
+- EUR/USD 11-17 04:02 price 1.10074 holding 0.0%
 - EUR/GBP 11-17 04:00 price 0.83422 no_trade re-entry cooldown
 - EUR/GBP 11-17 04:01 price 0.83422 no_trade re-entry cooldown
+- EUR/GBP 11-17 04:02 price 0.83422 no_trade re-entry cooldown
