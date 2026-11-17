@@ -9087,3 +9087,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-17 13:58,1.31774,3,,no,no_trade,re-entry cooldown
 2026-11-17 13:59,1.31774,3,,no,no_trade,re-entry cooldown
 2026-11-17 14:00,1.31885,3,,no,short,conf 4: Fresh EMA crossover and score 3/3 support a short continuation. | 2500 units (reduced for margin)
+2026-11-17 14:01,1.31885,3,,yes,holding,SHORT -0.0%
