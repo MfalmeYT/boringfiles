@@ -12671,3 +12671,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-17 20:18,63795.81,1,fast_above_slow|price_above_trend_ema,no,no_trade,score below 2
 2026-11-17 20:19,63823.56,1,fast_above_slow|price_above_trend_ema,no,no_trade,score below 2
 2026-11-17 20:20,63864.92,3,,no,buy,conf 4: Fresh EMA crossover and score 3/3; but near EMA50 resistance.
+2026-11-17 20:21,63870.85,3,,yes,holding,-0.0%
