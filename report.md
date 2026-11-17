@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-17 01:14 UTC)
+# Bot report (generated 2026-11-17 01:15 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -14,12 +14,12 @@
 
 | market | last run UTC | runs | entries | errors | closed trades (all time) | win % | total % after fees | open |
 |---|---|---|---|---|---|---|---|---|
-| Bitcoin | 11-17 01:14 | 1431 | 5 | 1 | 22 | 5 | -14.64 |  |
-| Gold USD | 11-17 01:14 | 1431 | 1 | 2 | 7 | 14 | -3.29 |  |
-| USD/JPY | 11-17 01:14 | 1376 | 3 | 126 | 15 | 33 | +0.04 | yes |
-| GBP/USD | 11-17 01:14 | 1374 | 1 | 85 | 13 | 38 | -0.11 | yes |
-| EUR/USD | 11-17 01:14 | 1374 | 2 | 81 | 16 | 38 | -0.03 |  |
-| EUR/GBP | 11-17 01:14 | 1373 | 5 | 70 | 16 | 19 | -0.50 | yes |
+| Bitcoin | 11-17 01:15 | 1431 | 5 | 1 | 22 | 5 | -14.64 |  |
+| Gold USD | 11-17 01:15 | 1431 | 1 | 2 | 7 | 14 | -3.29 |  |
+| USD/JPY | 11-17 01:15 | 1376 | 3 | 126 | 16 | 31 | -0.04 |  |
+| GBP/USD | 11-17 01:15 | 1374 | 1 | 85 | 13 | 38 | -0.11 | yes |
+| EUR/USD | 11-17 01:15 | 1374 | 2 | 81 | 16 | 38 | -0.03 |  |
+| EUR/GBP | 11-17 01:15 | 1373 | 5 | 69 | 16 | 19 | -0.50 | yes |
 
 ## Raw log files (full history, one row per run)
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log.csv
@@ -33,7 +33,7 @@
 - x82 USD/JPY: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - x53 EUR/USD: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - x50 GBP/USD: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
-- x45 EUR/GBP: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
+- x44 EUR/GBP: OANDA position 401: {"errorMessage":"Insufficient authorization to perform request."}
 - x23 USD/JPY: OANDA candles 401: {"errorMessage":"Insufficient authorization to perform request."}
 - x21 GBP/USD: OANDA candles 401: {"errorMessage":"Insufficient authorization to perform request."}
 - x20 USD/JPY: OANDA pricing 401: {"errorMessage":"Insufficient authorization to perform request."}
@@ -52,12 +52,12 @@
 - Gold USD: long -0.47%
 - Gold USD: long +0.05%
 - Gold USD: long -0.55%
-- USD/JPY: short -0.03%
 - USD/JPY: short +0.16%
 - USD/JPY: short +0.18%
 - USD/JPY: short -0.07%
 - USD/JPY: short -0.03%
-- USD/JPY totals: long 10 trades -0.18%, short 5 trades +0.21%
+- USD/JPY: short -0.07%
+- USD/JPY totals: long 10 trades -0.18%, short 6 trades +0.14%
 - GBP/USD: short -0.07%
 - GBP/USD: short -0.07%
 - GBP/USD: long -0.06%
@@ -78,21 +78,21 @@
 - EUR/GBP totals: long 13 trades -0.39%, short 3 trades -0.11%
 
 ## Latest log rows
-- Bitcoin 11-17 01:12 price 64597.82 no_trade score below 2
 - Bitcoin 11-17 01:13 price 64660.89 no_trade score below 2
 - Bitcoin 11-17 01:14 price 64567.15 no_trade score below 2
-- Gold USD 11-17 01:12 price 3837.48 no_trade score below 2
+- Bitcoin 11-17 01:15 price 64640.76 no_trade score below 2
 - Gold USD 11-17 01:13 price 3837.48 no_trade score below 2
 - Gold USD 11-17 01:14 price 3841.48 no_trade score below 2
-- USD/JPY 11-17 01:12 price 159.434 holding SHORT 0.0%
+- Gold USD 11-17 01:15 price 3841.59 no_trade score below 2
 - USD/JPY 11-17 01:13 price 159.434 holding SHORT 0.0%
 - USD/JPY 11-17 01:14 price 159.434 holding SHORT 0.0%
-- GBP/USD 11-17 01:12 price 1.31844 holding SHORT 0.1%
+- USD/JPY 11-17 01:15 price 159.564 cover SIGNAL EXIT; score 0/3 (-0.1%)
 - GBP/USD 11-17 01:13 price 1.31844 holding SHORT 0.1%
 - GBP/USD 11-17 01:14 price 1.31844 holding SHORT 0.1%
-- EUR/USD 11-17 01:12 price 1.09958 no_trade re-entry cooldown
+- GBP/USD 11-17 01:15 price 1.31771 holding SHORT 0.1%
 - EUR/USD 11-17 01:13 price 1.09958 no_trade re-entry cooldown
 - EUR/USD 11-17 01:14 price 1.09958 no_trade re-entry cooldown
-- EUR/GBP 11-17 01:12 price 0.83402 holding SHORT 0.0%
+- EUR/USD 11-17 01:15 price 1.09894 no_trade re-entry cooldown
 - EUR/GBP 11-17 01:13 price 0.83402 holding SHORT 0.0%
 - EUR/GBP 11-17 01:14 price 0.83402 holding SHORT 0.0%
+- EUR/GBP 11-17 01:15 price 0.834 holding SHORT 0.0%
