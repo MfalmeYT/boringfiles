@@ -9129,3 +9129,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-17 14:40,1.32002,0,fast_below_slow|price_below_trend_ema|rsi_in_short_range,yes,holding,SHORT -0.1%
 2026-11-17 14:41,1.32002,0,fast_below_slow|price_below_trend_ema|rsi_in_short_range,yes,holding,SHORT -0.1%
 2026-11-17 14:42,1.32002,0,fast_below_slow|price_below_trend_ema|rsi_in_short_range,yes,holding,SHORT -0.1%
+2026-11-17 14:43,1.32002,0,fast_below_slow|price_below_trend_ema|rsi_in_short_range,yes,holding,SHORT -0.1%
