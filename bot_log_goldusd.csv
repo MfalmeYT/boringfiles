@@ -5939,3 +5939,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-17 01:43,3851.88,2,fast_above_slow,no,no_trade,short-term trend not up
 2026-11-17 01:44,3854.66,2,fast_above_slow,no,no_trade,short-term trend not up
 2026-11-17 01:45,3854.11,2,fast_above_slow,no,no_trade,short-term trend not up
+2026-11-17 01:46,3853.16,3,,no,buy,conf 4: Fresh bullish EMA crossover offset by high recent price volatility.
