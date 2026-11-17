@@ -8721,3 +8721,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-17 07:52,1.31894,2,price_above_trend_ema,no,no_trade,max 3 open positions reached
 2026-11-17 07:53,1.31894,2,price_above_trend_ema,no,no_trade,max 3 open positions reached
 2026-11-17 07:54,1.31894,2,price_above_trend_ema,no,no_trade,max 3 open positions reached
+2026-11-17 07:55,1.31894,2,price_above_trend_ema,no,buy,conf 2: Downtrend intact with price below all EMAs and falling closes
