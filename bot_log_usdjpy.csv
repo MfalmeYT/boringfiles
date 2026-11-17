@@ -8917,3 +8917,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-17 10:54,159.052,3,,no,no_trade,re-entry cooldown
 2026-11-17 10:55,159.052,3,,no,short,conf 4: All indicators align short; but price bounce reduces downside momentum. | 2500 units (reduced for margin)
 2026-11-17 10:56,159.052,3,,yes,holding,SHORT 0.0%
+2026-11-17 10:57,159.052,3,,yes,holding,SHORT 0.0%
