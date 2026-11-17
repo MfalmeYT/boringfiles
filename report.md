@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-17 01:48 UTC)
+# Bot report (generated 2026-11-17 01:49 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -14,12 +14,12 @@
 
 | market | last run UTC | runs | entries | errors | closed trades (all time) | win % | total % after fees | open |
 |---|---|---|---|---|---|---|---|---|
-| Bitcoin | 11-17 01:48 | 1431 | 5 | 1 | 22 | 5 | -14.64 |  |
-| Gold USD | 11-17 01:48 | 1431 | 2 | 2 | 7 | 14 | -3.29 | yes |
-| USD/JPY | 11-17 01:48 | 1376 | 3 | 120 | 16 | 31 | -0.04 |  |
-| GBP/USD | 11-17 01:48 | 1374 | 1 | 78 | 13 | 38 | -0.11 | yes |
-| EUR/USD | 11-17 01:48 | 1374 | 2 | 75 | 16 | 38 | -0.03 |  |
-| EUR/GBP | 11-17 01:48 | 1373 | 5 | 66 | 16 | 19 | -0.50 | yes |
+| Bitcoin | 11-17 01:49 | 1431 | 5 | 1 | 22 | 5 | -14.64 |  |
+| Gold USD | 11-17 01:49 | 1431 | 2 | 2 | 7 | 14 | -3.29 | yes |
+| USD/JPY | 11-17 01:49 | 1376 | 3 | 120 | 16 | 31 | -0.04 |  |
+| GBP/USD | 11-17 01:49 | 1374 | 1 | 78 | 13 | 38 | -0.11 | yes |
+| EUR/USD | 11-17 01:49 | 1374 | 2 | 75 | 16 | 38 | -0.03 |  |
+| EUR/GBP | 11-17 01:49 | 1373 | 5 | 66 | 16 | 19 | -0.50 | yes |
 
 ## Raw log files (full history, one row per run)
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log.csv
@@ -78,21 +78,21 @@
 - EUR/GBP totals: long 13 trades -0.39%, short 3 trades -0.11%
 
 ## Latest log rows
-- Bitcoin 11-17 01:46 price 64807.72 no_trade score below 2
 - Bitcoin 11-17 01:47 price 64747.4 no_trade score below 2
 - Bitcoin 11-17 01:48 price 64751.28 no_trade score below 2
-- Gold USD 11-17 01:46 price 3853.16 buy conf 4: Fresh bullish EMA crossover offset by high recent price volatility.
+- Bitcoin 11-17 01:49 price 64688.23 no_trade score below 2
 - Gold USD 11-17 01:47 price 3853.86 holding -0.6%
 - Gold USD 11-17 01:48 price 3852.8 holding -0.6%
-- USD/JPY 11-17 01:46 price 159.532 no_trade re-entry cooldown
+- Gold USD 11-17 01:49 price 3852.29 holding -0.6%
 - USD/JPY 11-17 01:47 price 159.532 no_trade re-entry cooldown
 - USD/JPY 11-17 01:48 price 159.532 no_trade re-entry cooldown
-- GBP/USD 11-17 01:46 price 1.31776 holding SHORT 0.1%
+- USD/JPY 11-17 01:49 price 159.532 no_trade re-entry cooldown
 - GBP/USD 11-17 01:47 price 1.31776 holding SHORT 0.1%
 - GBP/USD 11-17 01:48 price 1.31776 holding SHORT 0.1%
-- EUR/USD 11-17 01:46 price 1.09926 no_trade re-entry cooldown
+- GBP/USD 11-17 01:49 price 1.31776 holding SHORT 0.1%
 - EUR/USD 11-17 01:47 price 1.09926 no_trade re-entry cooldown
 - EUR/USD 11-17 01:48 price 1.09926 no_trade re-entry cooldown
-- EUR/GBP 11-17 01:46 price 0.8342 holding SHORT 0.0%
+- EUR/USD 11-17 01:49 price 1.09926 no_trade re-entry cooldown
 - EUR/GBP 11-17 01:47 price 0.8342 holding SHORT 0.0%
 - EUR/GBP 11-17 01:48 price 0.8342 holding SHORT 0.0%
+- EUR/GBP 11-17 01:49 price 0.8342 holding SHORT 0.0%
