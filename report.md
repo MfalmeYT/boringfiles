@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-17 14:31 UTC)
+# Bot report (generated 2026-11-17 14:32 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -14,12 +14,12 @@
 
 | market | last run UTC | runs | entries | errors | closed trades (all time) | win % | total % after fees | open |
 |---|---|---|---|---|---|---|---|---|
-| Bitcoin | 11-17 14:31 | 1441 | 4 | 0 | 23 | 4 | -15.11 | yes |
-| Gold USD | 11-17 14:31 | 1441 | 1 | 0 | 8 | 12 | -3.84 |  |
-| USD/JPY | 11-17 14:31 | 1386 | 3 | 56 | 18 | 28 | -0.27 |  |
-| GBP/USD | 11-17 14:31 | 1384 | 2 | 41 | 15 | 33 | -0.15 | yes |
-| EUR/USD | 11-17 14:31 | 1384 | 3 | 42 | 18 | 39 | +0.09 |  |
-| EUR/GBP | 11-17 14:31 | 1383 | 4 | 34 | 18 | 17 | -0.54 | yes |
+| Bitcoin | 11-17 14:32 | 1441 | 4 | 0 | 24 | 4 | -15.79 |  |
+| Gold USD | 11-17 14:32 | 1441 | 1 | 0 | 8 | 12 | -3.84 |  |
+| USD/JPY | 11-17 14:32 | 1386 | 3 | 56 | 18 | 28 | -0.27 |  |
+| GBP/USD | 11-17 14:32 | 1384 | 2 | 41 | 15 | 33 | -0.15 | yes |
+| EUR/USD | 11-17 14:32 | 1384 | 3 | 42 | 18 | 39 | +0.09 |  |
+| EUR/GBP | 11-17 14:32 | 1383 | 4 | 34 | 18 | 17 | -0.54 | yes |
 
 ## Raw log files (full history, one row per run)
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log.csv
@@ -42,11 +42,11 @@
 - x5 GBP/USD: OANDA pricing 401: {"errorMessage":"Insufficient authorization to perform request."}
 
 ## Latest closed trades
-- Bitcoin: long -0.82%
 - Bitcoin: long -0.97%
 - Bitcoin: long -0.25%
 - Bitcoin: long -0.37%
 - Bitcoin: long -0.47%
+- Bitcoin: long -0.68%
 - Gold USD: long -0.58%
 - Gold USD: long -0.47%
 - Gold USD: long +0.05%
@@ -78,21 +78,21 @@
 - EUR/GBP totals: long 13 trades -0.39%, short 5 trades -0.14%
 
 ## Latest log rows
-- Bitcoin 11-17 14:29 price 64863.14 holding -0.0%
 - Bitcoin 11-17 14:30 price 64852.09 holding -0.0%
 - Bitcoin 11-17 14:31 price 64866.47 holding -0.0%
-- Gold USD 11-17 14:29 price 3850.66 no_trade short-term trend not up
+- Bitcoin 11-17 14:32 price 64756.86 sell SIGNAL EXIT; score 0/3 (-0.2%)
 - Gold USD 11-17 14:30 price 3850.82 no_trade short-term trend not up
 - Gold USD 11-17 14:31 price 3851.64 no_trade short-term trend not up
-- USD/JPY 11-17 14:29 price 159.354 no_trade re-entry cooldown
+- Gold USD 11-17 14:32 price 3850.72 no_trade short-term trend not up
 - USD/JPY 11-17 14:30 price 159.304 no_trade re-entry cooldown
 - USD/JPY 11-17 14:31 price 159.304 no_trade re-entry cooldown
-- GBP/USD 11-17 14:29 price 1.31932 holding SHORT -0.0%
+- USD/JPY 11-17 14:32 price 159.304 no_trade re-entry cooldown
 - GBP/USD 11-17 14:30 price 1.32002 holding SHORT -0.1%
 - GBP/USD 11-17 14:31 price 1.32002 holding SHORT -0.1%
-- EUR/USD 11-17 14:29 price 1.09884 no_trade re-entry cooldown
+- GBP/USD 11-17 14:32 price 1.32002 holding SHORT -0.1%
 - EUR/USD 11-17 14:30 price 1.09931 no_trade re-entry cooldown
 - EUR/USD 11-17 14:31 price 1.09931 no_trade re-entry cooldown
-- EUR/GBP 11-17 14:29 price 0.83292 holding SHORT 0.0%
+- EUR/USD 11-17 14:32 price 1.09931 no_trade re-entry cooldown
 - EUR/GBP 11-17 14:30 price 0.83281 holding SHORT 0.0%
 - EUR/GBP 11-17 14:31 price 0.83281 holding SHORT 0.0%
+- EUR/GBP 11-17 14:32 price 0.83281 holding SHORT 0.0%
