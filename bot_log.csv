@@ -12355,3 +12355,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-17 15:02,64862.05,3,,no,no_trade,re-entry cooldown
 2026-11-17 15:03,64819.43,3,,no,no_trade,re-entry cooldown
 2026-11-17 15:04,64812.34,2,price_above_trend_ema,no,no_trade,re-entry cooldown
+2026-11-17 15:05,64753.89,0,fast_above_slow|price_above_trend_ema|rsi_in_range,no,no_trade,score below 2
