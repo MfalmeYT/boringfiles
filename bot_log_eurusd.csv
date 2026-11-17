@@ -8223,3 +8223,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-17 00:03,1.0998,3,,yes,holding,SHORT -0.0%
 2026-11-17 00:04,1.0998,3,,yes,holding,SHORT -0.0%
 2026-11-17 00:05,1.0998,3,,yes,holding,SHORT -0.0%
+2026-11-17 00:06,1.1004,1,fast_above_slow|price_above_trend_ema,no,cover,closed by broker stop/TP; P/L -0.9750
