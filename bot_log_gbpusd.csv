@@ -9377,3 +9377,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-17 18:48,1.32212,3,,no,no_trade,max 3 open positions reached
 2026-11-17 18:49,1.32212,3,,no,no_trade,no margin for a trade (balance 831; free margin 60)
 2026-11-17 18:50,1.32212,3,,no,no_trade,Gemini cooldown
+2026-11-17 18:51,1.32212,3,,no,no_trade,Gemini cooldown
