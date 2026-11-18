@@ -10122,3 +10122,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-18 08:00,159.362,2,price_below_trend_ema,no,no_trade,re-entry cooldown
 2026-11-18 08:01,159.362,2,price_below_trend_ema,no,no_trade,re-entry cooldown
 2026-11-18 08:02,159.362,2,price_below_trend_ema,no,short,conf 2: Price jumped above all EMAs; invalidating the short setup momentum.
+2026-11-18 08:03,159.362,2,price_below_trend_ema,yes,holding,SHORT -0.0%
