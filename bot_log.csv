@@ -13944,3 +13944,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-18 17:31,63153.36,2,price_above_trend_ema,no,buy,conf 4: Fresh EMA crossover supports upside despite price remaining below EMA50
 2026-11-18 17:32,63302.1,3,,yes,holding,0.1%
 2026-11-18 17:33,63418.26,3,,yes,holding,0.3%
+2026-11-18 17:34,63411.17,3,,yes,holding,0.2%
