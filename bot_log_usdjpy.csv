@@ -10316,3 +10316,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-18 11:14,159.336,2,price_below_trend_ema,yes,holding,SHORT -0.0%
 2026-11-18 11:15,159.354,0,fast_below_slow|price_below_trend_ema|rsi_in_short_range,yes,cover,SIGNAL EXIT; score 0/3 (-0.0%)
 2026-11-18 11:16,159.354,3,,no,no_trade,re-entry cooldown
+2026-11-18 11:17,159.354,3,,no,no_trade,re-entry cooldown
