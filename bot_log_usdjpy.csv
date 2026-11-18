@@ -9895,3 +9895,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-18 04:13,159.33,3,,no,no_trade,re-entry cooldown
 2026-11-18 04:14,159.33,3,,no,short,conf 4: Downtrend intact with EMA crossover; but RSI approaches oversold territory. | 5000 units (reduced for margin)
 2026-11-18 04:15,159.406,2,price_below_trend_ema,yes,holding,SHORT -0.0%
+2026-11-18 04:16,159.406,2,price_below_trend_ema,yes,holding,SHORT -0.0%
