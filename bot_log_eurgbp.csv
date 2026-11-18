@@ -10389,3 +10389,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-18 13:33,0.83336,3,,no,no_trade,re-entry cooldown
 2026-11-18 13:34,0.83336,3,,no,buy,conf 4: Strong EMA alignment and trend; but late entry near recent high
 2026-11-18 13:35,0.83336,3,,yes,holding,-0.0%
+2026-11-18 13:36,0.83336,3,,yes,holding,-0.0%
