@@ -10525,3 +10525,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-18 14:43,159.358,3,,no,no_trade,max 3 open positions reached
 2026-11-18 14:44,159.358,3,,no,no_trade,max 3 open positions reached
 2026-11-18 14:45,159.222,1,price_above_trend_ema|rsi_in_range,no,no_trade,no long or short setup
+2026-11-18 14:46,159.222,1,price_above_trend_ema|rsi_in_range,no,no_trade,no long or short setup
