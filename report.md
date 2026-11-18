@@ -14,12 +14,12 @@
 
 | market | last run UTC | runs | entries | errors | closed trades (all time) | win % | total % after fees | open |
 |---|---|---|---|---|---|---|---|---|
-| Bitcoin | 11-18 14:40 | 1439 | 4 | 0 | 28 | 7 | -17.34 |  |
-| Gold USD | 11-18 14:40 | 1439 | 2 | 0 | 9 | 11 | -4.61 | yes |
-| USD/JPY | 11-18 14:40 | 1378 | 4 | 0 | 22 | 36 | -0.12 |  |
-| GBP/USD | 11-18 14:40 | 1378 | 3 | 1 | 18 | 33 | -0.16 | yes |
-| EUR/USD | 11-18 14:40 | 1378 | 4 | 1 | 22 | 41 | +0.20 |  |
-| EUR/GBP | 11-18 14:41 | 1378 | 3 | 0 | 21 | 19 | -0.53 | yes |
+| Bitcoin | 11-18 14:41 | 1439 | 4 | 0 | 28 | 7 | -17.34 |  |
+| Gold USD | 11-18 14:41 | 1439 | 2 | 0 | 9 | 11 | -4.61 | yes |
+| USD/JPY | 11-18 14:41 | 1378 | 4 | 0 | 22 | 36 | -0.12 |  |
+| GBP/USD | 11-18 14:41 | 1378 | 3 | 1 | 18 | 33 | -0.16 | yes |
+| EUR/USD | 11-18 14:41 | 1378 | 4 | 1 | 22 | 41 | +0.20 |  |
+| EUR/GBP | 11-18 14:41 | 1378 | 3 | 1 | 21 | 19 | -0.53 | yes |
 
 ## Raw log files (full history, one row per run)
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log.csv
@@ -32,6 +32,7 @@
 ## Errors in the last 24h (grouped)
 - x1 GBP/USD: OANDA candles 504: temporary gateway error (HTML page)
 - x1 EUR/USD: OANDA position 503: {"errorMessage":"Unable to service request; please try again later."}
+- x1 EUR/GBP: OANDA candles 504: temporary gateway error (HTML page)
 
 ## Latest closed trades
 - Bitcoin: long -0.68%
@@ -72,19 +73,19 @@
 ## Latest log rows
 - Bitcoin 11-18 14:38 price 63380.11 no_trade score below 2
 - Bitcoin 11-18 14:39 price 63174.96 no_trade score below 2
-- Bitcoin 11-18 14:40 price 63302.61 no_trade score below 2
+- Bitcoin 11-18 14:41 price 63011.96 no_trade score below 2
 - Gold USD 11-18 14:38 price 3765.28 holding -0.8%
 - Gold USD 11-18 14:39 price 3765.55 holding -0.8%
-- Gold USD 11-18 14:40 price 3766.55 holding -0.8%
+- Gold USD 11-18 14:41 price 3764.55 holding -0.9%
 - USD/JPY 11-18 14:38 price 159.358 no_trade max 3 open positions reached
 - USD/JPY 11-18 14:39 price 159.358 no_trade max 3 open positions reached
-- USD/JPY 11-18 14:40 price 159.358 no_trade max 3 open positions reached
+- USD/JPY 11-18 14:41 price 159.358 no_trade max 3 open positions reached
 - GBP/USD 11-18 14:38 price 1.316 holding SHORT 0.1%
 - GBP/USD 11-18 14:39 price 1.316 holding SHORT 0.1%
-- GBP/USD 11-18 14:40 price 1.316 holding SHORT 0.1%
+- GBP/USD 11-18 14:41 price 1.316 holding SHORT 0.1%
 - EUR/USD 11-18 14:38 price 1.09686 no_trade re-entry cooldown
 - EUR/USD 11-18 14:39 price 1.09686 no_trade re-entry cooldown
-- EUR/USD 11-18 14:40 price 1.09686 no_trade re-entry cooldown
+- EUR/USD 11-18 14:41 price 1.09686 no_trade re-entry cooldown
 - EUR/GBP 11-18 14:38 price 0.83346 holding -0.0%
 - EUR/GBP 11-18 14:39 price 0.83346 holding -0.0%
-- EUR/GBP 11-18 14:41 price 0.83346 holding -0.0%
+- EUR/GBP 11-18 14:41 price  error OANDA candles 504: temporary gateway error (HTML page)
