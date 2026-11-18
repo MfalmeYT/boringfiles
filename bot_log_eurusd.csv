@@ -9873,3 +9873,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-18 04:34,1.09854,3,,no,no_trade,re-entry cooldown
 2026-11-18 04:35,1.09854,3,,no,no_trade,re-entry cooldown
 2026-11-18 04:36,1.09854,3,,no,no_trade,no margin for a trade (balance 822; free margin 24)
+2026-11-18 04:37,1.09854,3,,no,no_trade,Gemini cooldown
