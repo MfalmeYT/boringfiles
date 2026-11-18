@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-18 07:00 UTC)
+# Bot report (generated 2026-11-18 07:01 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -14,12 +14,12 @@
 
 | market | last run UTC | runs | entries | errors | closed trades (all time) | win % | total % after fees | open |
 |---|---|---|---|---|---|---|---|---|
-| Bitcoin | 11-18 07:00 | 1440 | 3 | 0 | 26 | 8 | -15.95 |  |
-| Gold USD | 11-18 07:00 | 1440 | 1 | 0 | 9 | 11 | -4.61 |  |
-| USD/JPY | 11-18 07:00 | 1379 | 4 | 0 | 21 | 33 | -0.12 |  |
-| GBP/USD | 11-18 07:00 | 1379 | 4 | 2 | 17 | 29 | -0.28 | yes |
-| EUR/USD | 11-18 07:00 | 1379 | 4 | 1 | 20 | 35 | -0.08 | yes |
-| EUR/GBP | 11-18 07:00 | 1379 | 3 | 0 | 19 | 21 | -0.44 | yes |
+| Bitcoin | 11-18 07:01 | 1440 | 4 | 0 | 26 | 8 | -15.95 | yes |
+| Gold USD | 11-18 07:01 | 1440 | 1 | 0 | 9 | 11 | -4.61 |  |
+| USD/JPY | 11-18 07:01 | 1379 | 4 | 0 | 21 | 33 | -0.12 |  |
+| GBP/USD | 11-18 07:01 | 1379 | 4 | 2 | 17 | 29 | -0.28 | yes |
+| EUR/USD | 11-18 07:01 | 1379 | 4 | 1 | 20 | 35 | -0.08 | yes |
+| EUR/GBP | 11-18 07:01 | 1379 | 3 | 0 | 20 | 20 | -0.47 |  |
 
 ## Raw log files (full history, one row per run)
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log.csv
@@ -63,29 +63,29 @@
 - EUR/USD: long -0.10%
 - EUR/USD: short -0.07%
 - EUR/USD totals: long 13 trades -0.49%, short 7 trades +0.41%
-- EUR/GBP: long -0.04%
 - EUR/GBP: long +0.02%
 - EUR/GBP: short -0.03%
 - EUR/GBP: short -0.00%
 - EUR/GBP: short +0.10%
-- EUR/GBP totals: long 13 trades -0.39%, short 6 trades -0.04%
+- EUR/GBP: short -0.03%
+- EUR/GBP totals: long 13 trades -0.39%, short 7 trades -0.08%
 
 ## Latest log rows
-- Bitcoin 11-18 06:58 price 64571.1 no_trade max 3 open positions reached
 - Bitcoin 11-18 06:59 price 64546.26 no_trade max 3 open positions reached
 - Bitcoin 11-18 07:00 price 64531.56 no_trade max 3 open positions reached
-- Gold USD 11-18 06:58 price 3776.3 no_trade score below 2
+- Bitcoin 11-18 07:01 price 64559.88 buy conf 3: Price is below short EMAs after a recent drop; signal weak
 - Gold USD 11-18 06:59 price 3776.13 no_trade score below 2
 - Gold USD 11-18 07:00 price 3775.55 no_trade score below 2
-- USD/JPY 11-18 06:58 price 159.274 no_trade re-entry cooldown
+- Gold USD 11-18 07:01 price 3775.2 no_trade score below 2
 - USD/JPY 11-18 06:59 price 159.274 no_trade re-entry cooldown
 - USD/JPY 11-18 07:00 price 159.246 no_trade re-entry cooldown
-- GBP/USD 11-18 06:58 price 1.3191 holding SHORT 0.0%
+- USD/JPY 11-18 07:01 price 159.246 no_trade re-entry cooldown
 - GBP/USD 11-18 06:59 price 1.3191 holding SHORT 0.0%
 - GBP/USD 11-18 07:00 price 1.31931 holding SHORT 0.0%
-- EUR/USD 11-18 06:58 price 1.09806 holding SHORT 0.1%
+- GBP/USD 11-18 07:01 price 1.31931 holding SHORT 0.0%
 - EUR/USD 11-18 06:59 price 1.09806 holding SHORT 0.1%
 - EUR/USD 11-18 07:00 price 1.0982 holding SHORT 0.1%
-- EUR/GBP 11-18 06:58 price 0.83244 holding SHORT 0.0%
+- EUR/USD 11-18 07:01 price 1.0982 holding SHORT 0.1%
 - EUR/GBP 11-18 06:59 price 0.83244 holding SHORT 0.0%
 - EUR/GBP 11-18 07:00 price 0.83238 holding SHORT 0.0%
+- EUR/GBP 11-18 07:01 price 0.83294 cover closed by broker stop/TP; P/L -5.5932
