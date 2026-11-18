@@ -215,7 +215,8 @@ def _check(r, what):
         if "INSTRUMENT_NOT_TRADEABLE" in body or "not tradeable" in body.lower():
             raise NotTradeable(f"{what}: not tradeable on this account")
         msg = "temporary gateway error (HTML page)" if "<html" in body[:300].lower() else body[:200]
-        raise Exception(f"{what} {r.status_code}: {msg}")
+        rid = r.headers.get("RequestID")
+        raise Exception(f"{what} {r.status_code}" + (f" [req {rid}]" if rid else "") + f": {msg}")
     return r
 
 
