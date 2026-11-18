@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-18 05:01 UTC)
+# Bot report (generated 2026-11-18 05:02 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -14,12 +14,12 @@
 
 | market | last run UTC | runs | entries | errors | closed trades (all time) | win % | total % after fees | open |
 |---|---|---|---|---|---|---|---|---|
-| Bitcoin | 11-18 05:01 | 1440 | 3 | 0 | 26 | 8 | -15.95 |  |
-| Gold USD | 11-18 05:01 | 1440 | 1 | 0 | 9 | 11 | -4.61 |  |
-| USD/JPY | 11-18 05:01 | 1379 | 5 | 0 | 20 | 30 | -0.24 | yes |
-| GBP/USD | 11-18 05:01 | 1379 | 3 | 2 | 17 | 29 | -0.28 |  |
-| EUR/USD | 11-18 05:01 | 1379 | 3 | 1 | 20 | 35 | -0.08 |  |
-| EUR/GBP | 11-18 05:01 | 1379 | 3 | 0 | 19 | 21 | -0.44 | yes |
+| Bitcoin | 11-18 05:02 | 1440 | 3 | 0 | 26 | 8 | -15.95 |  |
+| Gold USD | 11-18 05:02 | 1440 | 1 | 0 | 9 | 11 | -4.61 |  |
+| USD/JPY | 11-18 05:02 | 1379 | 5 | 0 | 21 | 33 | -0.12 |  |
+| GBP/USD | 11-18 05:02 | 1379 | 3 | 2 | 17 | 29 | -0.28 |  |
+| EUR/USD | 11-18 05:02 | 1379 | 3 | 1 | 20 | 35 | -0.08 |  |
+| EUR/GBP | 11-18 05:02 | 1379 | 3 | 0 | 19 | 21 | -0.44 | yes |
 
 ## Raw log files (full history, one row per run)
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log.csv
@@ -45,12 +45,12 @@
 - Gold USD: long -0.55%
 - Gold USD: long -0.56%
 - Gold USD: long -0.77%
-- USD/JPY: short -0.07%
 - USD/JPY: short -0.11%
 - USD/JPY: short -0.12%
 - USD/JPY: long -0.11%
 - USD/JPY: long +0.14%
-- USD/JPY totals: long 12 trades -0.14%, short 8 trades -0.09%
+- USD/JPY: short +0.11%
+- USD/JPY totals: long 12 trades -0.14%, short 9 trades +0.02%
 - GBP/USD: short -0.08%
 - GBP/USD: short -0.03%
 - GBP/USD: long -0.01%
@@ -71,21 +71,21 @@
 - EUR/GBP totals: long 13 trades -0.39%, short 6 trades -0.04%
 
 ## Latest log rows
-- Bitcoin 11-18 04:59 price 64352.82 no_trade score below 2
 - Bitcoin 11-18 05:00 price 64348.16 no_trade score below 2
 - Bitcoin 11-18 05:01 price 64294.81 no_trade score below 2
-- Gold USD 11-18 04:59 price 3777.46 no_trade score below 2
+- Bitcoin 11-18 05:02 price 64276.29 no_trade score below 2
 - Gold USD 11-18 05:00 price 3777.46 no_trade score below 2
 - Gold USD 11-18 05:01 price 3777.46 no_trade score below 2
-- USD/JPY 11-18 04:59 price 159.246 holding SHORT 0.1%
+- Gold USD 11-18 05:02 price 3777.46 no_trade score below 2
 - USD/JPY 11-18 05:00 price 159.162 holding SHORT 0.1%
 - USD/JPY 11-18 05:01 price 159.162 holding SHORT 0.1%
-- GBP/USD 11-18 04:59 price 1.31954 no_trade Gemini cooldown
+- USD/JPY 11-18 05:02 price 159.149 cover closed by broker stop/TP; P/L 7.7139
 - GBP/USD 11-18 05:00 price 1.31984 no_trade Gemini cooldown
 - GBP/USD 11-18 05:01 price 1.31984 no_trade Gemini cooldown
-- EUR/USD 11-18 04:59 price 1.09879 no_trade Gemini cooldown
+- GBP/USD 11-18 05:02 price 1.31984 no_trade Gemini cooldown
 - EUR/USD 11-18 05:00 price 1.09898 no_trade Gemini cooldown
 - EUR/USD 11-18 05:01 price 1.09898 no_trade Gemini cooldown
-- EUR/GBP 11-18 04:59 price 0.83272 holding SHORT -0.0%
+- EUR/USD 11-18 05:02 price 1.09898 no_trade Gemini cooldown
 - EUR/GBP 11-18 05:00 price 0.83266 holding SHORT -0.0%
 - EUR/GBP 11-18 05:01 price 0.83266 holding SHORT -0.0%
+- EUR/GBP 11-18 05:02 price 0.83266 holding SHORT -0.0%
