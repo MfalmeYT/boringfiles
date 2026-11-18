@@ -14251,3 +14251,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-18 22:39,62535.82,1,fast_above_slow|price_above_trend_ema,no,no_trade,score below 2
 2026-11-18 22:40,62524.36,1,fast_above_slow|price_above_trend_ema,no,no_trade,score below 2
 2026-11-18 22:41,62452.65,2,price_above_trend_ema,no,buy,conf 4: Fresh bullish crossover with neutral RSI; though price sits below EMA50
+2026-11-18 22:42,62436.78,1,fast_above_slow|price_above_trend_ema,yes,holding,-0.1%
