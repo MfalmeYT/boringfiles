@@ -10261,3 +10261,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-18 10:33,1.31734,3,,no,no_trade,max 3 open positions reached
 2026-11-18 10:34,1.31734,3,,no,short,conf 4: Price rebounds near EMA9/EMA21 but remains below long-term trend EMA50. | 2500 units (reduced for margin)
 2026-11-18 10:35,1.31734,3,,yes,holding,SHORT -0.0%
+2026-11-18 10:36,1.31734,3,,yes,holding,SHORT -0.0%
