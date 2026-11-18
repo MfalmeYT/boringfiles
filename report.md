@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-18 23:05 UTC)
+# Bot report (generated 2026-11-18 23:06 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -14,12 +14,12 @@
 
 | market | last run UTC | runs | entries | errors | closed trades (all time) | win % | total % after fees | open |
 |---|---|---|---|---|---|---|---|---|
-| Bitcoin | 11-18 23:05 | 1439 | 5 | 0 | 29 | 7 | -18.45 | yes |
-| Gold USD | 11-18 23:05 | 1439 | 1 | 0 | 10 | 10 | -5.72 |  |
-| USD/JPY | 11-18 23:05 | 1378 | 3 | 0 | 23 | 35 | -0.20 |  |
-| GBP/USD | 11-18 23:05 | 1378 | 4 | 0 | 19 | 37 | +0.02 | yes |
-| EUR/USD | 11-18 23:05 | 1378 | 5 | 1 | 23 | 39 | +0.13 | yes |
-| EUR/GBP | 11-18 23:05 | 1378 | 4 | 1 | 23 | 22 | -0.49 |  |
+| Bitcoin | 11-18 23:06 | 1439 | 5 | 0 | 29 | 7 | -18.45 | yes |
+| Gold USD | 11-18 23:06 | 1439 | 1 | 0 | 10 | 10 | -5.72 |  |
+| USD/JPY | 11-18 23:06 | 1378 | 3 | 0 | 23 | 35 | -0.20 |  |
+| GBP/USD | 11-18 23:06 | 1378 | 4 | 0 | 19 | 37 | +0.02 | yes |
+| EUR/USD | 11-18 23:06 | 1378 | 5 | 1 | 23 | 39 | +0.13 | yes |
+| EUR/GBP | 11-18 23:06 | 1378 | 4 | 1 | 23 | 22 | -0.49 |  |
 
 ## Raw log files (full history, one row per run)
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log.csv
@@ -70,21 +70,21 @@
 - EUR/GBP totals: long 16 trades -0.42%, short 7 trades -0.08%
 
 ## Latest log rows
-- Bitcoin 11-18 23:03 price 62328.18 holding -0.2%
 - Bitcoin 11-18 23:04 price 62317.29 holding -0.2%
 - Bitcoin 11-18 23:05 price 62318.69 holding -0.2%
-- Gold USD 11-18 23:03 price 3719.14 no_trade score below 2
+- Bitcoin 11-18 23:06 price 62377.72 holding -0.2%
 - Gold USD 11-18 23:04 price 3719.14 no_trade score below 2
 - Gold USD 11-18 23:05 price 3719.14 no_trade score below 2
-- USD/JPY 11-18 23:03 price 159.349 no_trade max 3 open positions reached
+- Gold USD 11-18 23:06 price 3722.68 no_trade score below 2
 - USD/JPY 11-18 23:04 price 159.349 no_trade max 3 open positions reached
 - USD/JPY 11-18 23:05 price 159.349 no_trade max 3 open positions reached
-- GBP/USD 11-18 23:03 price 1.31524 holding SHORT 0.0%
+- USD/JPY 11-18 23:06 price 159.349 no_trade max 3 open positions reached
 - GBP/USD 11-18 23:04 price 1.31524 holding SHORT 0.0%
 - GBP/USD 11-18 23:05 price 1.31524 holding SHORT 0.0%
-- EUR/USD 11-18 23:03 price 1.0975 holding -0.0%
+- GBP/USD 11-18 23:06 price 1.31524 holding SHORT 0.0%
 - EUR/USD 11-18 23:04 price 1.0975 holding -0.0%
 - EUR/USD 11-18 23:05 price 1.0975 holding -0.0%
-- EUR/GBP 11-18 23:03 price 0.83444 no_trade re-entry cooldown
+- EUR/USD 11-18 23:06 price 1.0975 holding -0.0%
 - EUR/GBP 11-18 23:04 price 0.83444 no_trade re-entry cooldown
 - EUR/GBP 11-18 23:05 price 0.83444 no_trade re-entry cooldown
+- EUR/GBP 11-18 23:06 price 0.83444 no_trade re-entry cooldown
