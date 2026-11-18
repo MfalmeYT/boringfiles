@@ -13407,3 +13407,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-18 08:34,64683.15,3,,no,no_trade,re-entry cooldown
 2026-11-18 08:35,64662.6,3,,no,no_trade,re-entry cooldown
 2026-11-18 08:36,64643.15,3,,no,no_trade,re-entry cooldown
+2026-11-18 08:37,64668.81,3,,no,buy,conf 4: All indicators bullish but recent price action is sideways consolidation
