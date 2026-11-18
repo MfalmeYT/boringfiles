@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-18 10:07 UTC)
+# Bot report (generated 2026-11-18 10:08 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -14,12 +14,12 @@
 
 | market | last run UTC | runs | entries | errors | closed trades (all time) | win % | total % after fees | open |
 |---|---|---|---|---|---|---|---|---|
-| Bitcoin | 11-18 10:07 | 1440 | 5 | 0 | 28 | 7 | -17.34 |  |
-| Gold USD | 11-18 10:07 | 1440 | 1 | 0 | 9 | 11 | -4.61 |  |
-| USD/JPY | 11-18 10:07 | 1379 | 5 | 0 | 21 | 33 | -0.12 | yes |
-| GBP/USD | 11-18 10:07 | 1379 | 3 | 1 | 18 | 33 | -0.16 |  |
-| EUR/USD | 11-18 10:07 | 1379 | 5 | 1 | 21 | 38 | +0.05 | yes |
-| EUR/GBP | 11-18 10:07 | 1379 | 3 | 0 | 20 | 20 | -0.47 | yes |
+| Bitcoin | 11-18 10:08 | 1440 | 5 | 0 | 28 | 7 | -17.34 |  |
+| Gold USD | 11-18 10:08 | 1440 | 1 | 0 | 9 | 11 | -4.61 |  |
+| USD/JPY | 11-18 10:08 | 1379 | 5 | 0 | 21 | 33 | -0.12 | yes |
+| GBP/USD | 11-18 10:08 | 1379 | 3 | 1 | 18 | 33 | -0.16 |  |
+| EUR/USD | 11-18 10:08 | 1379 | 5 | 1 | 21 | 38 | +0.05 | yes |
+| EUR/GBP | 11-18 10:08 | 1379 | 3 | 0 | 20 | 20 | -0.47 | yes |
 
 ## Raw log files (full history, one row per run)
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log.csv
@@ -70,21 +70,21 @@
 - EUR/GBP totals: long 13 trades -0.39%, short 7 trades -0.08%
 
 ## Latest log rows
-- Bitcoin 11-18 10:05 price 64476.06 no_trade score below 2
 - Bitcoin 11-18 10:06 price 64513.03 no_trade score below 2
 - Bitcoin 11-18 10:07 price 64535.63 no_trade score below 2
-- Gold USD 11-18 10:05 price 3772.34 no_trade score below 2
+- Bitcoin 11-18 10:08 price 64534.94 no_trade score below 2
 - Gold USD 11-18 10:06 price 3771.26 no_trade score below 2
 - Gold USD 11-18 10:07 price 3772.36 no_trade score below 2
-- USD/JPY 11-18 10:05 price 159.246 holding SHORT 0.0%
+- Gold USD 11-18 10:08 price 3772.57 no_trade score below 2
 - USD/JPY 11-18 10:06 price 159.246 holding SHORT 0.0%
 - USD/JPY 11-18 10:07 price 159.246 holding SHORT 0.0%
-- GBP/USD 11-18 10:05 price 1.3171 no_trade Gemini cooldown
+- USD/JPY 11-18 10:08 price 159.246 holding SHORT 0.0%
 - GBP/USD 11-18 10:06 price 1.3171 no_trade Gemini cooldown
 - GBP/USD 11-18 10:07 price 1.3171 no_trade Gemini cooldown
-- EUR/USD 11-18 10:05 price 1.09754 no_trade re-entry cooldown
+- GBP/USD 11-18 10:08 price 1.3171 no_trade max 3 open positions reached
 - EUR/USD 11-18 10:06 price 1.09754 no_trade re-entry cooldown
 - EUR/USD 11-18 10:07 price 1.09754 short conf 4: Favorable EMA alignment offset by recent price rebounding off lows. | 2500 units (
-- EUR/GBP 11-18 10:05 price 0.83332 holding -0.0%
+- EUR/USD 11-18 10:08 price 1.09754 holding SHORT 0.0%
 - EUR/GBP 11-18 10:06 price 0.83332 holding -0.0%
 - EUR/GBP 11-18 10:07 price 0.83332 holding -0.0%
+- EUR/GBP 11-18 10:08 price 0.83332 holding -0.0%

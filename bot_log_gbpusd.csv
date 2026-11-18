@@ -10233,3 +10233,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-18 10:05,1.3171,3,,no,no_trade,Gemini cooldown
 2026-11-18 10:06,1.3171,3,,no,no_trade,Gemini cooldown
 2026-11-18 10:07,1.3171,3,,no,no_trade,Gemini cooldown
+2026-11-18 10:08,1.3171,3,,no,no_trade,max 3 open positions reached
