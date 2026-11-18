@@ -10646,3 +10646,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-18 17:27,1.09725,3,,yes,holding,SHORT -0.1%
 2026-11-18 17:28,1.09725,3,,yes,holding,SHORT -0.1%
 2026-11-18 17:29,1.09725,3,,yes,holding,SHORT -0.1%
+2026-11-18 17:30,1.09748,0,fast_below_slow|price_below_trend_ema|rsi_in_short_range,yes,cover,SIGNAL EXIT; score 0/3 (-0.1%)
