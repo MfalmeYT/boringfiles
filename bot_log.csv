@@ -13387,3 +13387,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-18 08:14,64471.39,1,price_above_trend_ema|rsi_in_range,no,no_trade,score below 2
 2026-11-18 08:15,64544.69,2,price_above_trend_ema,no,no_trade,re-entry cooldown
 2026-11-18 08:16,64551.06,2,price_above_trend_ema,no,no_trade,re-entry cooldown
+2026-11-18 08:17,64535.91,1,price_above_trend_ema|rsi_in_range,no,no_trade,score below 2
