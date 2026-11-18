@@ -10554,3 +10554,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-18 15:55,1.09664,3,,no,no_trade,max 3 open positions reached
 2026-11-18 15:56,1.09664,3,,no,no_trade,max 3 open positions reached
 2026-11-18 15:57,1.09664,3,,no,short,conf 5: Fresh EMA crossover; bearish alignment; and price below trend EMA support short.
+2026-11-18 15:58,1.09664,3,,yes,holding,SHORT -0.0%
