@@ -68,14 +68,27 @@ MARKETS = {
         "cooldown_min": 5, "size_usd": 45,   # Bitcoin and GLD share one Alpaca cash balance, so each uses a smaller slice
         "exit": {"mode": "pct", "stop": 0.02, "tp": 0.02},
     },
-    # Bitcoin TEST (started 2026-11-18): 1-hour candles, wide 4% stop / 4% target, NO signal exit, so a trade ends only on
-    # stop or target and the 0.5% round-trip fee is small next to the target. Own log file so results are not mixed with the old setup.
+    # 1-hour test (2026-11-18, replaced the next day by the 15-minute test below). Off; its log stays for reference.
     "btc1h": {
-        "enabled": True, "label": "Bitcoin 1h", "broker": "alpaca", "symbol": "BTC/USD",
+        "enabled": False, "label": "Bitcoin 1h", "broker": "alpaca", "symbol": "BTC/USD",
         "log": "bot_log_btc1h.csv", "session": "24/7", "timeframe": "1Hour", "decimals": 2,
         "cooldown_min": 60, "size_usd": 45, "lookback_hours": 120,   # 120h of 1-hour candles = enough for the 60+ needed
         "signal_exit": False,
         "exit": {"mode": "pct", "stop": 0.04, "tp": 0.04},
+    },
+    # Bitcoin TEST (from 2026-11-19): 15-minute candles. A trade ends only on stop (2%), target (3%) or a 48h time stop, never
+    # on the "checks failed" signal. Alpaca's market-order fee is 0.25% per order (0.5% round trip), so wide exits keep it small.
+    # Extra guards: the 1-hour trend must agree, 3 losses in a row pauses entries 12h, bad/stale data or a wide spread skips the trade.
+    "btc15": {
+        "enabled": True, "label": "Bitcoin 15m", "broker": "alpaca", "symbol": "BTC/USD",
+        "log": "bot_log_btc15.csv", "session": "24/7", "timeframe": "15Min", "decimals": 2,
+        "cooldown_min": 15, "size_usd": 45, "lookback_hours": 30,
+        "reentry_min": 120, "signal_exit": False, "max_hold_min": 2880,
+        "htf": {"timeframe": "1Hour", "hours": 120},          # price must be above the 1-hour EMA50 to buy
+        "pause_after_losses": 3, "pause_hours": 12, "round_trip_fee_pct": 0.5,
+        "max_candle_age_min": 60,                             # refuse to trade on stale candles
+        "max_spread_frac": 0.1,                               # skip if bid/ask spread is over 10% of the target distance
+        "exit": {"mode": "pct", "stop": 0.02, "tp": 0.03},
     },
     # Gold, traded as PAXG/USD (a token backed by 1 oz of gold) on the same Alpaca paper account. Logged as "Gold USD".
     # PAXG trades thinly, so it uses 15-min candles and looks back 48h to find enough of them.
@@ -246,8 +259,8 @@ class AlpacaCrypto:
         self.symbol = symbol
         self.pos_symbol = symbol.replace("/", "")
 
-    def candles(self, timeframe, n=100):
-        hours = getattr(self, "lookback_hours", 24)
+    def candles(self, timeframe, n=100, hours=None):
+        hours = hours or getattr(self, "lookback_hours", 24)
         start = (datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(hours=hours)).strftime("%Y-%m-%dT%H:%M:%SZ")
         r = http_get(
             self.data_url, headers=self.headers, timeout=20,
@@ -258,7 +271,21 @@ class AlpacaCrypto:
         return [{"t": b["t"], "o": b["o"], "h": b["h"], "l": b["l"], "c": b["c"], "v": b["v"]} for b in raw]
 
     def quote(self):
-        return None  # no spread data used for crypto
+        """Best bid/ask, only for markets that ask for it (use_quote). Never raises: if the lookup fails the bot goes without it."""
+        if not getattr(self, "use_quote", False):
+            return None
+        try:
+            r = http_get("https://data.alpaca.markets/v1beta3/crypto/us/latest/quotes", headers=self.headers, timeout=20,
+                         params={"symbols": self.symbol})
+            if r.status_code >= 400:
+                return None
+            q = r.json()["quotes"][self.symbol]
+            bid, ask = float(q["bp"]), float(q["ap"])
+            if bid <= 0 or ask < bid:
+                return None
+            return {"bid": bid, "ask": ask, "tradeable": True}
+        except Exception:
+            return None
 
     def position(self):
         r = http_get(f"{self.trade_url}/positions/{self.pos_symbol}", headers=self.headers, timeout=20)
@@ -703,6 +730,25 @@ def minutes_since_last_gemini_call(path):
     return None
 
 
+def recent_results(path, n, fee=0.0):
+    """Net % result (after fee) of the last n closed trades in a log, oldest first (each buy/short paired with the next sell/cover)."""
+    done, op = [], None
+    for c in _last_rows(path):
+        if len(c) < 6:
+            continue
+        try:
+            p = float(c[1])
+        except ValueError:
+            continue
+        a = c[5].strip()
+        if a in ("buy", "short") and op is None:
+            op = (p, 1 if a == "buy" else -1)
+        elif a in ("sell", "cover") and op is not None:
+            done.append((p / op[0] - 1) * 100 * op[1] - fee)
+            op = None
+    return done[-n:]
+
+
 # ---------------------------------------------------------------- per-market logic
 def process_market(name, cfg, broker, pos, open_count, now):
     """Returns (run_dict_or_None, new_open_count). run is None when nothing should be logged."""
@@ -718,6 +764,11 @@ def process_market(name, cfg, broker, pos, open_count, now):
     bars = broker.candles(cfg["timeframe"], 100)
     if len(bars) < 60:
         raise Exception(f"Only {len(bars)} candles returned, need 60+")
+    if cfg.get("max_candle_age_min"):
+        newest = datetime.datetime.fromisoformat(str(bars[-1]["t"]).replace("Z", "+00:00"))
+        age = (now - newest).total_seconds() / 60
+        if age > cfg["max_candle_age_min"]:
+            raise Exception(f"stale candles: newest is {age:.0f} min old")
     ind = compute_indicators(bars)
     price, d = ind["price"], cfg["decimals"]
     quote = broker.quote()
@@ -754,6 +805,10 @@ def process_market(name, cfg, broker, pos, open_count, now):
                 reason = f"TAKE PROFIT ({change:.1%})"
         if reason is None and (cfg.get("flatten_before_weekend") or cfg.get("flatten_at_close")) and flatten:
             reason = f"{'WEEKEND' if cfg['session'] == 'fx' else 'END-OF-DAY'} FLATTEN ({change:.1%})"
+        if reason is None and cfg.get("max_hold_min"):
+            held_t = minutes_since_last_action(cfg["log"], ("buy", "short"))
+            if held_t is not None and held_t >= cfg["max_hold_min"]:
+                reason = f"TIME STOP ({held_t / 60:.0f}h, {change:.1%})"
         if reason is None and cfg.get("signal_exit", True) and my_score <= EXIT_SCORE:
             held = minutes_since_last_action(cfg["log"], ("buy", "short"))
             if held is None or held >= cfg.get("min_hold_min", MIN_HOLD_MIN):
@@ -814,6 +869,15 @@ def process_market(name, cfg, broker, pos, open_count, now):
         run.update(action="no_trade", note="re-entry cooldown")
         print(f"[{name}] Closed {since_sell:.0f} min ago. Waiting {cfg.get('reentry_min', REENTRY_COOLDOWN_MIN)} min before opening again.")
         return run, open_count
+    pause_n = cfg.get("pause_after_losses")
+    if pause_n:
+        res = recent_results(cfg["log"], pause_n, cfg.get("round_trip_fee_pct", 0))
+        if len(res) == pause_n and all(r < 0 for r in res):
+            m = minutes_since_last_action(cfg["log"], ("sell", "cover"))
+            if m is not None and m < cfg.get("pause_hours", 12) * 60:
+                run.update(action="no_trade", note=f"paused after {pause_n} losses in a row")
+                print(f"[{name}] paused: the last {pause_n} trades all lost.")
+                return run, open_count
     if open_count >= MAX_OPEN_POSITIONS:
         run.update(action="no_trade", note=f"max {MAX_OPEN_POSITIONS} open positions reached")
         return run, open_count
@@ -829,6 +893,16 @@ def process_market(name, cfg, broker, pos, open_count, now):
         run.update(action="no_trade", note="Gemini cooldown")
         return run, open_count
 
+    htf = cfg.get("htf")
+    if htf:
+        hb = broker.candles(htf["timeframe"], 100, hours=htf.get("hours"))
+        if len(hb) < 60:
+            raise Exception(f"Only {len(hb)} {htf['timeframe']} candles returned, need 60+")
+        h_ema = ema([b["c"] for b in hb], EMA_TREND)[-1]
+        if not (price > h_ema if side == "long" else price < h_ema):
+            run.update(action="no_trade", note=f"{htf['timeframe']} trend not {'up' if side == 'long' else 'down'}")
+            print(f"[{name}] {htf['timeframe']} trend filter: price {price:.{d}f} vs EMA{EMA_TREND} {h_ema:.{d}f}. No trade.")
+            return run, open_count
     vol = ", set from recent volatility" if cfg["exit"]["mode"] == "atr" else ""
     if side == "short":
         exit_text = f"a {tp_d / price:.2%} fall (take profit) or a {stop_d / price:.2%} rise (stop loss){vol}"
@@ -883,6 +957,8 @@ def main():
             brokers[name] = BROKERS[cfg["broker"]](cfg["symbol"])
             if "lookback_hours" in cfg:
                 brokers[name].lookback_hours = cfg["lookback_hours"]
+            if "max_spread_frac" in cfg:
+                brokers[name].use_quote = True
         except KeyError as e:
             print(f"[{name}] skipped: missing secret {e}")
         except Exception as e:
