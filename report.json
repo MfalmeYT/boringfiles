@@ -1,11 +1,11 @@
 {
- "generated_utc": "2026-11-19 23:28",
+ "generated_utc": "2026-11-19 23:29",
  "markets": [
   {
    "market": "Bitcoin",
    "enabled": false,
    "last_run_utc": "2026-11-19 00:24",
-   "runs_24h": 56,
+   "runs_24h": 55,
    "entries_24h": 0,
    "errors_24h": 0,
    "closed_trades": 29,
@@ -42,8 +42,8 @@
   {
    "market": "Bitcoin 15m",
    "enabled": true,
-   "last_run_utc": "2026-11-19 23:28",
-   "runs_24h": 39,
+   "last_run_utc": "2026-11-19 23:29",
+   "runs_24h": 40,
    "entries_24h": 0,
    "errors_24h": 0,
    "closed_trades": 0,
@@ -58,7 +58,7 @@
   {
    "market": "Gold USD",
    "enabled": true,
-   "last_run_utc": "2026-11-19 23:28",
+   "last_run_utc": "2026-11-19 23:29",
    "runs_24h": 96,
    "entries_24h": 0,
    "errors_24h": 0,
@@ -80,29 +80,29 @@
   {
    "market": "USD/JPY",
    "enabled": true,
-   "last_run_utc": "2026-11-19 23:28",
+   "last_run_utc": "2026-11-19 23:29",
    "runs_24h": 86,
    "entries_24h": 1,
    "errors_24h": 0,
-   "closed_trades": 23,
-   "win_pct": 35,
-   "total_pct_after_fees": -0.2,
-   "open": "short",
-   "closed_today": 0,
-   "result_today_pct": 0,
+   "closed_trades": 24,
+   "win_pct": 33,
+   "total_pct_after_fees": -0.24,
+   "open": null,
+   "closed_today": 1,
+   "result_today_pct": -0.04,
    "entries_today": 1,
    "last_trades_pct": [
-    -0.11,
     0.14,
     0.11,
     0.01,
-    -0.09
+    -0.09,
+    -0.04
    ]
   },
   {
    "market": "GBP/USD",
    "enabled": true,
-   "last_run_utc": "2026-11-19 23:28",
+   "last_run_utc": "2026-11-19 23:29",
    "runs_24h": 86,
    "entries_24h": 0,
    "errors_24h": 0,
@@ -124,7 +124,7 @@
   {
    "market": "EUR/USD",
    "enabled": true,
-   "last_run_utc": "2026-11-19 23:28",
+   "last_run_utc": "2026-11-19 23:29",
    "runs_24h": 86,
    "entries_24h": 0,
    "errors_24h": 0,
@@ -146,7 +146,7 @@
   {
    "market": "EUR/GBP",
    "enabled": true,
-   "last_run_utc": "2026-11-19 23:28",
+   "last_run_utc": "2026-11-19 23:29",
    "runs_24h": 86,
    "entries_24h": 1,
    "errors_24h": 0,
