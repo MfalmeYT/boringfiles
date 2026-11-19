@@ -15,7 +15,10 @@ for c in T.MARKETS.values():
     size = f"{c['units']} units" if "units" in c else f"${c['size_usd']}"
     lines.append(f"- {c['label']} ({'on' if c['enabled'] else 'off'}): {c['broker']}, {c['timeframe']} candles, {e}, size {size}, "
                  f"min confidence {c.get('min_confidence', T.MIN_CONFIDENCE)}, min hold {c.get('min_hold_min', T.MIN_HOLD_MIN)} min, "
-                 f"re-entry pause {c.get('reentry_min', T.REENTRY_COOLDOWN_MIN)} min, signal exit {'on' if c.get('signal_exit', True) else 'OFF'}, "
+                 f"re-entry pause {c.get('reentry_min', T.REENTRY_COOLDOWN_MIN)} min, signal exit {'on' if c.get('signal_exit', True) else 'OFF'}"
+                 + (f", time stop {c['max_hold_min'] / 60:.0f}h" if c.get("max_hold_min") else "")
+                 + (f", {c['htf']['timeframe']} trend filter" if c.get("htf") else "")
+                 + (f", pause {c['pause_hours']}h after {c['pause_after_losses']} losses" if c.get("pause_after_losses") else "") + ", "
                  f"{'long and short' if c.get('allow_short') else 'long only'}")
 
 def load(path):
