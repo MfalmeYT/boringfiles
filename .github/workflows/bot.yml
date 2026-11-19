@@ -18,6 +18,10 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install requests
+      - name: Remember how many rows each data file has now
+        run: |
+          mkdir -p /tmp/before
+          for f in data/*.csv; do [ -f "$f" ] && wc -l < "$f" > "/tmp/before/$(basename "$f")"; done || true
       - run: python trader.py
         env:
           ALPACA_KEY: ${{ secrets.ALPACA_KEY }}
@@ -34,6 +38,53 @@ jobs:
           OANDA_ENV: ${{ vars.OANDA_ENV }}
       - name: Write report
         if: always()
+        run: python report.py || true
+      - name: Save logs
+        if: always()
+        run: |
+          mkdir -p /tmp/newlines /tmp/newdata /tmp/gen
+          # generated files that are simply replaced each run
+          for f in report.md status.md report.json; do [ -f "$f" ] && cp "$f" /tmp/gen/ || true; done
+          [ -d reports ] && cp -r reports /tmp/gen/reports || true
+          # rows added to the data/ logs by this run (header included if the file is new)
+          for f in data/*.csv; do
+            [ -f "$f" ] || continue
+            b=$(cat "/tmp/before/$(basename "$f")" 2>/dev/null || echo 0)
+            n=$(wc -l < "$f")
+            if [ "$n" -gt "$b" ]; then tail -n +$((b+1)) "$f" > "/tmp/newdata/$(basename "$f")"; fi
+          done
+          # only the log files this run actually changed or created
+          for f in $(git status --porcelain | awk '{print $2}' | grep -E '^bot_log.*\.csv$' || true); do
+            tail -n 1 "$f" > "/tmp/newlines/$f"
+          done
+          [ -n "$(ls -A /tmp/newlines)" ] || [ -n "$(ls -A /tmp/newdata)" ] || exit 0
+          git config user.name "bot"
+          git config user.email "bot@users.noreply.github.com"
+          for i in 1 2 3 4 5; do
+            git fetch origin main
+            git reset --hard origin/main
+            git clean -fdq -- 'bot_log*.csv' data reports
+            for nf in /tmp/newlines/*; do
+              name=$(basename "$nf")
+              [ -f "$name" ] || echo "time_utc,price,score,failing_checks,position,action,note" > "$name"
+              cat "$nf" >> "$name"
+              git add "$name"
+            done
+            mkdir -p data
+            for nf in /tmp/newdata/*; do
+              [ -f "$nf" ] || continue
+              name="data/$(basename "$nf")"
+              if [ -f "$name" ] && [ "$(head -n1 "$nf")" = "$(head -n1 "$name")" ]; then tail -n +2 "$nf" >> "$name"; else cat "$nf" >> "$name"; fi
+              git add "$name"
+            done
+            for g in report.md status.md report.json; do [ -f "/tmp/gen/$g" ] && cp "/tmp/gen/$g" "$g" && git add "$g" || true; done
+            if [ -d /tmp/gen/reports ]; then mkdir -p reports; cp -r /tmp/gen/reports/. reports/; git add reports; fi
+            git diff --cached --quiet && exit 0
+            git commit -m "log"
+            if git push origin HEAD:main; then exit 0; fi
+            sleep $((RANDOM % 5 + 2))
+          done
+          exit 1
         run: python report.py || true
       - name: Save logs
         if: always()
