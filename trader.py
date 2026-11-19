@@ -61,11 +61,21 @@ def fx_pair(label, symbol, log, decimals, units=10000):
 
 
 MARKETS = {
+    # Old Bitcoin setup (5-min candles, signal exit). Switched off on 2026-11-18 so its history stays as it was.
     "btc": {
-        "enabled": True, "label": "Bitcoin", "broker": "alpaca", "symbol": "BTC/USD",
+        "enabled": False, "label": "Bitcoin", "broker": "alpaca", "symbol": "BTC/USD",
         "log": "bot_log.csv", "session": "24/7", "timeframe": "5Min", "decimals": 2,
         "cooldown_min": 5, "size_usd": 45,   # Bitcoin and GLD share one Alpaca cash balance, so each uses a smaller slice
         "exit": {"mode": "pct", "stop": 0.02, "tp": 0.02},
+    },
+    # Bitcoin TEST (started 2026-11-18): 1-hour candles, wide 4% stop / 4% target, NO signal exit, so a trade ends only on
+    # stop or target and the 0.5% round-trip fee is small next to the target. Own log file so results are not mixed with the old setup.
+    "btc1h": {
+        "enabled": True, "label": "Bitcoin 1h", "broker": "alpaca", "symbol": "BTC/USD",
+        "log": "bot_log_btc1h.csv", "session": "24/7", "timeframe": "1Hour", "decimals": 2,
+        "cooldown_min": 60, "size_usd": 45, "lookback_hours": 120,   # 120h of 1-hour candles = enough for the 60+ needed
+        "signal_exit": False,
+        "exit": {"mode": "pct", "stop": 0.04, "tp": 0.04},
     },
     # Gold, traded as PAXG/USD (a token backed by 1 oz of gold) on the same Alpaca paper account. Logged as "Gold USD".
     # PAXG trades thinly, so it uses 15-min candles and looks back 48h to find enough of them.
@@ -302,6 +312,31 @@ class AlpacaCrypto:
     def close(self, pos):
         return self._order("sell", qty=pos["qty"])
 
+    def fill_info(self, oid):
+        """Look up what the order really filled at. Market orders fill in a second or two; waits up to ~6 s."""
+        for wait in (1, 2, 3, None):
+            r = http_get(f"{self.trade_url}/orders/{oid}", headers=self.headers, timeout=20)
+            if r.status_code < 400:
+                o = r.json()
+                if o.get("status") == "filled" or wait is None:
+                    return {"price": float(o.get("filled_avg_price") or 0), "qty": float(o.get("filled_qty") or 0),
+                            "status": o.get("status", "")}
+            if wait is None:
+                return None
+            time.sleep(wait)
+
+    def account_summary(self):
+        a = _check(http_get(f"{self.trade_url}/account", headers=self.headers, timeout=20), "Alpaca account").json()
+        extra = ""
+        try:   # raw crypto fee records, so the real fee can be read from the log (field names not verified offline)
+            r = http_get(f"{self.trade_url}/account/activities", headers=self.headers, timeout=20,
+                         params={"activity_types": "CFEE", "page_size": 5, "direction": "desc"})
+            if r.status_code < 400:
+                extra = json.dumps(r.json()[:3])[:300]
+        except Exception:
+            pass
+        return {"balance": a.get("cash", ""), "equity": a.get("equity", ""), "free": a.get("buying_power", ""), "extra": extra}
+
     def last_closed_trade(self):
         return None
 
@@ -417,6 +452,10 @@ class Oanda:
             if not no_margin:
                 self.last_units = units
                 fill = j.get("orderFillTransaction", {})
+                try:
+                    self.last_fill = {"price": float(fill.get("price") or 0), "qty": abs(float(fill.get("units") or 0)), "status": "filled"}
+                except (TypeError, ValueError):
+                    self.last_fill = None
                 return fill.get("id") or j.get("lastTransactionID", "ok"), None
             units //= 2   # not enough free margin: try half the size
             print(f"OANDA says insufficient margin, retrying with {units} units")
@@ -434,7 +473,20 @@ class Oanda:
             break
         if r.status_code >= 400:
             raise Exception(f"Close rejected {r.status_code}: {r.text[:200]}")
-        return r.json().get("lastTransactionID", "ok")
+        j = r.json()
+        try:
+            f = j.get("longOrderFillTransaction") or j.get("shortOrderFillTransaction") or {}
+            self.last_fill = {"price": float(f.get("price") or 0), "qty": abs(float(f.get("units") or 0)), "status": "filled"}
+        except (TypeError, ValueError):
+            self.last_fill = None
+        return j.get("lastTransactionID", "ok")
+
+    def fill_info(self, oid):
+        return getattr(self, "last_fill", None)
+
+    def account_summary(self):
+        a = self._get(f"/v3/accounts/{self.acct}/summary", "OANDA account").json()["account"]
+        return {"balance": a.get("balance", ""), "equity": a.get("NAV", ""), "free": a.get("marginAvailable", "")}
 
     def last_closed_trade(self):
         r = self._get(f"/v3/accounts/{self.acct}/trades", "OANDA trades",
@@ -522,6 +574,96 @@ def write_log(path, run):
         if new:
             f.write(HEADER)
         f.write(",".join(str(x).replace(",", ";").replace("\n", " ") for x in row) + "\n")
+
+
+DATA_DIR = "data"
+DEC_HEADER = "time_utc,market,action,side,price,spread,ema_fast,ema_slow,ema_trend,rsi,atr,score,confidence,exit_text,gemini_reason"
+FILL_HEADER = "time_utc,market,action,order_id,decision_price,fill_price,move_pct,fill_qty,position_qty,requested,status,reason"
+ACC_HEADER = "time_utc,broker,balance,equity,free_margin,extra"
+
+
+def _utc():
+    return datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M")
+
+
+def append_data(fname, header, row):
+    """Extra detail logs in data/. A logging problem must never stop trading, so every error is swallowed."""
+    try:
+        os.makedirs(DATA_DIR, exist_ok=True)
+        path = os.path.join(DATA_DIR, fname)
+        new = not os.path.exists(path)
+        with open(path, "a") as f:
+            if new:
+                f.write(header + "\n")
+            f.write(",".join(str(x).replace(",", ";").replace("\n", " ") for x in row) + "\n")
+    except Exception as e:
+        print(f"detail log skipped ({e.__class__.__name__})")
+
+
+def log_decision(cfg, action, side, ind, quote, conf, reason, exit_text):
+    """One row each time Gemini is asked: the indicator values, the spread, Gemini's score and full reason."""
+    try:
+        d = cfg["decimals"]
+        spread = round(quote["ask"] - quote["bid"], d + 1) if quote else ""
+        sc = ind["score_short"] if side == "short" else ind["score"]
+        append_data("decisions.csv", DEC_HEADER, [
+            _utc(), cfg["label"], action, side, round(ind["price"], d), spread, round(ind["ema_fast"], d + 1),
+            round(ind["ema_slow"], d + 1), round(ind["ema_trend"], d + 1), round(ind["rsi"], 1),
+            round(ind["atr"], d + 1), sc, conf, exit_text, reason])
+    except Exception as e:
+        print(f"decision log skipped ({e.__class__.__name__})")
+
+
+def log_fill(cfg, action, oid, broker, decision_price, reason="", requested="", pos_qty=""):
+    """One row per order: the price we decided on vs the price the broker really filled at."""
+    try:
+        try:
+            info = broker.fill_info(oid)
+        except Exception:
+            info = None
+        fp = info["price"] if info and info.get("price") else ""
+        mv = round((fp / decision_price - 1) * 100, 4) if fp and decision_price else ""
+        decision_price = round(decision_price, 6) if decision_price != "" else ""
+        append_data("fills.csv", FILL_HEADER, [
+            _utc(), cfg["label"], action, oid, decision_price, fp, mv, info["qty"] if info else "",
+            pos_qty, requested, info["status"] if info else "unknown", reason])
+    except Exception as e:
+        print(f"fill log skipped ({e.__class__.__name__})")
+
+
+def minutes_since_data_row(fname, key):
+    """Minutes since the last row of data/<fname> whose 2nd column equals key (None if none)."""
+    path = os.path.join(DATA_DIR, fname)
+    if not os.path.exists(path):
+        return None
+    with open(path) as f:
+        for line in reversed(f.read().splitlines()):
+            c = line.split(",")
+            if len(c) >= 2 and c[1] == key:
+                try:
+                    t = datetime.datetime.strptime(c[0], "%Y-%m-%d %H:%M").replace(tzinfo=datetime.timezone.utc)
+                except ValueError:
+                    return None
+                return (datetime.datetime.now(datetime.timezone.utc) - t).total_seconds() / 60
+    return None
+
+
+def snapshot_accounts(brokers):
+    """Once an hour per broker: balance, equity, free margin (and Alpaca's recent crypto fee records)."""
+    seen = set()
+    for b in brokers.values():
+        kind = type(b).__name__
+        if kind in seen or not hasattr(b, "account_summary"):
+            continue
+        seen.add(kind)
+        try:
+            ago = minutes_since_data_row("account.csv", kind)
+            if ago is not None and ago < 59:
+                continue
+            a = b.account_summary()
+            append_data("account.csv", ACC_HEADER, [_utc(), kind, a["balance"], a["equity"], a["free"], a.get("extra", "")])
+        except Exception as e:
+            print(f"account snapshot skipped ({e.__class__.__name__}: {str(e)[:80]})")
 
 
 def _last_rows(path):
@@ -612,7 +754,7 @@ def process_market(name, cfg, broker, pos, open_count, now):
                 reason = f"TAKE PROFIT ({change:.1%})"
         if reason is None and (cfg.get("flatten_before_weekend") or cfg.get("flatten_at_close")) and flatten:
             reason = f"{'WEEKEND' if cfg['session'] == 'fx' else 'END-OF-DAY'} FLATTEN ({change:.1%})"
-        if reason is None and my_score <= EXIT_SCORE:
+        if reason is None and cfg.get("signal_exit", True) and my_score <= EXIT_SCORE:
             held = minutes_since_last_action(cfg["log"], ("buy", "short"))
             if held is None or held >= cfg.get("min_hold_min", MIN_HOLD_MIN):
                 reason = f"SIGNAL EXIT, score {my_score}/3 ({change:.1%})"
@@ -622,6 +764,7 @@ def process_market(name, cfg, broker, pos, open_count, now):
             if TRADING_ENABLED:
                 oid = broker.close(pos)
                 print(f"[{name}] {tag}{reason}. CLOSED:", oid)
+                log_fill(cfg, exit_action, oid, broker, price, reason, "", pos.get("qty", ""))
                 run.update(action=exit_action, note=reason)
             else:
                 run.update(action="holding", note=f"{tag}{reason} but trading disabled")
@@ -638,6 +781,8 @@ def process_market(name, cfg, broker, pos, open_count, now):
                        action="cover" if closed.get("short") else "sell",
                        note=f"closed by broker stop/TP; P/L {closed['pl']}")
             print(f"[{name}] position was closed by the broker: {run['note']}")
+            append_data("fills.csv", FILL_HEADER, [_utc(), cfg["label"], run["action"], "broker", "", closed["price"], "", "", "", "",
+                                                  "filled", run["note"]])
             return run, open_count
 
     # ---- flat: entries
@@ -696,11 +841,14 @@ def process_market(name, cfg, broker, pos, open_count, now):
     except (TypeError, ValueError):
         conf = 0
     note = f"conf {conf}: {decision.get('reason', '')}"
+    greason = decision.get("reason", "")
     if conf < cfg.get("min_confidence", MIN_CONFIDENCE):
         run.update(action="gemini_hold", note=note)
+        log_decision(cfg, "gemini_hold", side, ind, quote, conf, greason, exit_text)
         return run, open_count
     if not TRADING_ENABLED:
         run.update(action="gemini_hold", note=note + " (trading disabled)")
+        log_decision(cfg, "gemini_hold", side, ind, quote, conf, greason, exit_text)
         return run, open_count
 
     # a long is bought at the ask, a short is sold at the bid; the stop goes on the losing side
@@ -722,6 +870,8 @@ def process_market(name, cfg, broker, pos, open_count, now):
         note += f" | {lu} units (reduced for margin)"
     print(f"[{name}] {'SHORT' if side == 'short' else 'BUY'} order:", oid, f"(stop {sl}, take profit {tp})" if sl else "")
     run.update(action="short" if side == "short" else "buy", note=note)
+    log_decision(cfg, run["action"], side, ind, quote, conf, greason, exit_text)
+    log_fill(cfg, run["action"], oid, broker, price, f"conf {conf}", cfg.get("size_usd", getattr(broker, "last_units", cfg.get("units", ""))))
     return run, open_count + 1
 
 def main():
@@ -769,6 +919,7 @@ def main():
             print(f"[{name}] ERROR:", e)
             write_log(cfg["log"], {"action": "error", "note": str(e)[:120]})
             problems.append(name)
+    snapshot_accounts(brokers)
     if problems:
         sys.exit(1)
 
