@@ -16,10 +16,10 @@ jobs:
         run: |
           python3 - <<'PY'
           import datetime, sys
-          last = open("bot_log_btc1h.csv").read().splitlines()[-1].split(",")[0]
+          last = open("bot_log_btc15.csv").read().splitlines()[-1].split(",")[0]
           t = datetime.datetime.strptime(last, "%Y-%m-%d %H:%M").replace(tzinfo=datetime.timezone.utc)
           age = (datetime.datetime.now(datetime.timezone.utc) - t).total_seconds() / 60
-          print(f"Bitcoin 1h log last written {age:.0f} min ago")
+          print(f"Bitcoin 15m log last written {age:.0f} min ago")
           if age > 20:
               print("BOT STOPPED? No new row in over 20 minutes. Check cron-job.org and the trading-bot workflow.")
               sys.exit(1)
