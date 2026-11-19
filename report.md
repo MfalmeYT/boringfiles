@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-19 22:51 UTC)
+# Bot report (generated 2026-11-19 22:52 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -16,10 +16,10 @@
 
 | market | last run UTC | runs | entries | errors | closed trades (all time) | win % | total % after fees | open |
 |---|---|---|---|---|---|---|---|---|
-| Bitcoin | 11-19 00:24 | 93 | 0 | 0 | 29 | 7 | -18.45 | yes |
+| Bitcoin | 11-19 00:24 | 92 | 0 | 0 | 29 | 7 | -18.45 | yes |
 | Bitcoin 1h | 11-19 00:25 | 1 | 0 | 0 | 0 | - | +0.00 |  |
-| Bitcoin 15m | 11-19 22:51 | 2 | 0 | 0 | 0 | - | +0.00 |  |
-| Gold USD | 11-19 22:51 | 96 | 0 | 0 | 10 | 10 | -5.72 |  |
+| Bitcoin 15m | 11-19 22:52 | 3 | 0 | 0 | 0 | - | +0.00 |  |
+| Gold USD | 11-19 22:52 | 96 | 0 | 0 | 10 | 10 | -5.72 |  |
 | USD/JPY | 11-19 00:25 | 86 | 0 | 0 | 23 | 35 | -0.20 |  |
 | GBP/USD | 11-19 00:25 | 86 | 0 | 0 | 19 | 37 | +0.02 | yes |
 | EUR/USD | 11-19 00:25 | 86 | 0 | 0 | 23 | 39 | +0.13 | yes |
@@ -101,9 +101,10 @@
 - Bitcoin 1h 11-19 00:25 price 62607.78 holding 0.2%
 - Bitcoin 15m 11-19 22:50 price 62190.9 holding -0.4%
 - Bitcoin 15m 11-19 22:51 price 62186.67 holding -0.5%
-- Gold USD 11-19 00:25 price 3742.94 no_trade max 3 open positions reached
+- Bitcoin 15m 11-19 22:52 price 62162.56 holding -0.5%
 - Gold USD 11-19 22:50 price 3626.8 no_trade score below 2
 - Gold USD 11-19 22:51 price 3626.62 no_trade score below 2
+- Gold USD 11-19 22:52 price 3624.68 no_trade score below 2
 - USD/JPY 11-19 00:23 price 159.417 no_trade max 3 open positions reached
 - USD/JPY 11-19 00:24 price 159.417 no_trade max 3 open positions reached
 - USD/JPY 11-19 00:25 price 159.417 no_trade max 3 open positions reached
