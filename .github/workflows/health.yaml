@@ -1,0 +1,26 @@
+name: health-check
+on:
+  schedule:
+    - cron: "*/30 * * * *"   # GitHub may run this a few minutes late; that is fine
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fail (and email you) if the bot has stopped logging
+        run: |
+          python3 - <<'PY'
+          import datetime, sys
+          last = open("bot_log_btc1h.csv").read().splitlines()[-1].split(",")[0]
+          t = datetime.datetime.strptime(last, "%Y-%m-%d %H:%M").replace(tzinfo=datetime.timezone.utc)
+          age = (datetime.datetime.now(datetime.timezone.utc) - t).total_seconds() / 60
+          print(f"Bitcoin 1h log last written {age:.0f} min ago")
+          if age > 20:
+              print("BOT STOPPED? No new row in over 20 minutes. Check cron-job.org and the trading-bot workflow.")
+              sys.exit(1)
+          PY
