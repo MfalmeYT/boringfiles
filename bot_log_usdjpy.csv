@@ -11043,3 +11043,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-19 00:23,159.417,3,,no,no_trade,max 3 open positions reached
 2026-11-19 00:24,159.417,3,,no,no_trade,max 3 open positions reached
 2026-11-19 00:25,159.417,3,,no,no_trade,max 3 open positions reached
+2026-11-19 23:00,159.648,3,,no,short,conf 4: Full bearish alignment present but RSI shows fading downside momentum.
