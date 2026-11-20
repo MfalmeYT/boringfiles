@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-11-20 17:43",
+ "generated_utc": "2026-11-20 17:44",
  "markets": [
   {
    "market": "Bitcoin",
@@ -42,8 +42,8 @@
   {
    "market": "Bitcoin 15m",
    "enabled": true,
-   "last_run_utc": "2026-11-20 17:43",
-   "runs_24h": 1134,
+   "last_run_utc": "2026-11-20 17:44",
+   "runs_24h": 1135,
    "entries_24h": 0,
    "errors_24h": 0,
    "closed_trades": 0,
@@ -58,8 +58,8 @@
   {
    "market": "Gold USD",
    "enabled": true,
-   "last_run_utc": "2026-11-20 17:43",
-   "runs_24h": 1134,
+   "last_run_utc": "2026-11-20 17:44",
+   "runs_24h": 1135,
    "entries_24h": 1,
    "errors_24h": 0,
    "closed_trades": 11,
@@ -80,8 +80,8 @@
   {
    "market": "USD/JPY",
    "enabled": true,
-   "last_run_utc": "2026-11-20 17:43",
-   "runs_24h": 1124,
+   "last_run_utc": "2026-11-20 17:44",
+   "runs_24h": 1125,
    "entries_24h": 3,
    "errors_24h": 0,
    "closed_trades": 26,
@@ -102,8 +102,8 @@
   {
    "market": "GBP/USD",
    "enabled": true,
-   "last_run_utc": "2026-11-20 17:43",
-   "runs_24h": 1124,
+   "last_run_utc": "2026-11-20 17:44",
+   "runs_24h": 1125,
    "entries_24h": 4,
    "errors_24h": 0,
    "closed_trades": 23,
@@ -124,30 +124,30 @@
   {
    "market": "EUR/USD",
    "enabled": true,
-   "last_run_utc": "2026-11-20 17:43",
-   "runs_24h": 1124,
+   "last_run_utc": "2026-11-20 17:44",
+   "runs_24h": 1125,
    "entries_24h": 3,
    "errors_24h": 0,
-   "closed_trades": 26,
-   "win_pct": 38,
-   "total_pct_after_fees": 0.03,
-   "open": "long",
-   "closed_today": 2,
-   "result_today_pct": -0.0,
+   "closed_trades": 27,
+   "win_pct": 37,
+   "total_pct_after_fees": -0.04,
+   "open": null,
+   "closed_today": 3,
+   "result_today_pct": -0.07,
    "entries_today": 3,
    "last_trades_pct": [
-    0.16,
     -0.08,
     -0.09,
     0.1,
-    -0.11
+    -0.11,
+    -0.07
    ]
   },
   {
    "market": "EUR/GBP",
    "enabled": true,
-   "last_run_utc": "2026-11-20 17:43",
-   "runs_24h": 1124,
+   "last_run_utc": "2026-11-20 17:44",
+   "runs_24h": 1125,
    "entries_24h": 2,
    "errors_24h": 0,
    "closed_trades": 24,

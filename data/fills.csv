@@ -25,3 +25,4 @@ time_utc,market,action,order_id,decision_price,fill_price,move_pct,fill_qty,posi
 2026-11-20 15:10,Bitcoin 15m,sell,4d7660c6-b769-4f98-8d29-a8740a1aa770,61169.9,61034.0,-0.2222,0.000704643,0.000704643,,filled,STOP LOSS (-2.1%)
 2026-11-20 15:37,EUR/USD,buy,1716,1.09827,1.09906,0.0719,10000.0,,10000,filled,conf 4
 2026-11-20 16:15,GBP/USD,short,1724,1.31018,1.31011,-0.0053,2500.0,,2500,filled,conf 4
+2026-11-20 17:44,EUR/USD,sell,broker,,1.09747,,,,,filled,closed by broker stop/TP; P/L -15.9000
