@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-20 13:23 UTC)
+# Bot report (generated 2026-11-20 13:24 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -18,12 +18,12 @@
 |---|---|---|---|---|---|---|---|---|
 | Bitcoin | 11-19 00:24 | 0 | 0 | 0 | 29 | 7 | -18.45 | yes |
 | Bitcoin 1h | 11-19 00:25 | 0 | 0 | 0 | 0 | - | +0.00 |  |
-| Bitcoin 15m | 11-20 13:23 | 874 | 0 | 0 | 0 | - | +0.00 |  |
-| Gold USD | 11-20 13:23 | 874 | 1 | 0 | 10 | 10 | -5.72 | yes |
-| USD/JPY | 11-20 13:23 | 864 | 3 | 0 | 25 | 36 | -0.05 | yes |
-| GBP/USD | 11-20 13:23 | 864 | 3 | 0 | 23 | 35 | -0.08 |  |
-| EUR/USD | 11-20 13:23 | 864 | 2 | 0 | 26 | 38 | +0.03 |  |
-| EUR/GBP | 11-20 13:23 | 864 | 1 | 0 | 24 | 21 | -0.54 |  |
+| Bitcoin 15m | 11-20 13:24 | 875 | 0 | 0 | 0 | - | +0.00 |  |
+| Gold USD | 11-20 13:24 | 875 | 1 | 0 | 11 | 9 | -6.86 |  |
+| USD/JPY | 11-20 13:24 | 865 | 3 | 0 | 25 | 36 | -0.05 | yes |
+| GBP/USD | 11-20 13:24 | 865 | 3 | 0 | 23 | 35 | -0.08 |  |
+| EUR/USD | 11-20 13:24 | 865 | 2 | 0 | 26 | 38 | +0.03 |  |
+| EUR/GBP | 11-20 13:24 | 865 | 1 | 0 | 24 | 21 | -0.54 |  |
 
 ## Raw log files (full history, one row per run)
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log.csv
@@ -47,11 +47,11 @@
 - Bitcoin: long -0.72%
 - Bitcoin: long -0.68%
 - Bitcoin: long -1.11%
-- Gold USD: long +0.05%
 - Gold USD: long -0.55%
 - Gold USD: long -0.56%
 - Gold USD: long -0.77%
 - Gold USD: long -1.11%
+- Gold USD: long -1.14%
 - USD/JPY: short +0.11%
 - USD/JPY: short +0.01%
 - USD/JPY: short -0.09%
@@ -82,7 +82,6 @@
 - 2026-11-20 12:36 UTC Oanda: balance 865.2591, equity 856.9591, free 637.4151
 
 ## Recent fills (decision price vs real fill; columns: time_utc,market,action,order_id,decision_price,fill_price,move_pct,fill_qty,position_qty,requested,status,reason)
-- 2026-11-20 08:42,Gold USD,buy,e521cada-860a-4e96-b2e9-af564ff81a5b,3579.12,3596.6,0.4884,0.012269284,,45,filled,conf 4
 - 2026-11-20 08:42,GBP/USD,sell,broker,,1.31053,,,,,filled,closed by broker stop/TP; P/L -5.1500
 - 2026-11-20 09:40,USD/JPY,cover,broker,,158.912,,,,,filled,closed by broker stop/TP; P/L 20.3727
 - 2026-11-20 09:40,EUR/USD,short,1692,1.09687,1.09704,0.0155,10000.0,,10000,filled,conf 4
@@ -90,6 +89,7 @@
 - 2026-11-20 12:37,EUR/USD,cover,broker,,1.09803,,,,,filled,closed by broker stop/TP; P/L -9.9000
 - 2026-11-20 13:03,USD/JPY,short,1704,158.758,158.685,-0.046,10000.0,,10000,filled,conf 4
 - 2026-11-20 13:03,GBP/USD,cover,broker,,1.31225,,,,,filled,closed by broker stop/TP; P/L -14.3000
+- 2026-11-20 13:24,Gold USD,sell,6e776c1c-be92-4ef1-a78d-e07693929e07,3556.265,3536.53,-0.5549,0.01223861,0.01223861,,filled,STOP LOSS (-1.1%)
 
 ## Recent Gemini decisions
 - 2026-11-20 06:35,GBP/USD,buy,long,1.31134,0.00022,1.310735,1.31025,1.310353,67.5,0.000502,3,4,+0.11% (take profit) or -0.08% (stop loss); set from recent volatility,Bullish momentum is strong; but hig
@@ -110,21 +110,21 @@
 - Bitcoin 11-19 00:23 price 62606.65 holding 0.2%
 - Bitcoin 11-19 00:24 price 62630.6 holding 0.3%
 - Bitcoin 1h 11-19 00:25 price 62607.78 holding 0.2%
-- Bitcoin 15m 11-20 13:21 price 61547.98 holding -1.5%
 - Bitcoin 15m 11-20 13:22 price 61549.64 holding -1.5%
 - Bitcoin 15m 11-20 13:23 price 61394.14 holding -1.7%
-- Gold USD 11-20 13:21 price 3567.32 holding -0.8%
+- Bitcoin 15m 11-20 13:24 price 61361.59 holding -1.8%
 - Gold USD 11-20 13:22 price 3567.32 holding -0.8%
 - Gold USD 11-20 13:23 price 3565.04 holding -0.9%
-- USD/JPY 11-20 13:21 price 158.66 holding SHORT 0.0%
+- Gold USD 11-20 13:24 price 3556.26 sell STOP LOSS (-1.1%)
 - USD/JPY 11-20 13:22 price 158.66 holding SHORT 0.0%
 - USD/JPY 11-20 13:23 price 158.66 holding SHORT 0.0%
-- GBP/USD 11-20 13:21 price 1.31216 no_trade re-entry cooldown
+- USD/JPY 11-20 13:24 price 158.66 holding SHORT 0.0%
 - GBP/USD 11-20 13:22 price 1.31216 no_trade re-entry cooldown
 - GBP/USD 11-20 13:23 price 1.31216 no_trade re-entry cooldown
-- EUR/USD 11-20 13:21 price 1.09912 no_trade re-entry cooldown
+- GBP/USD 11-20 13:24 price 1.31216 no_trade re-entry cooldown
 - EUR/USD 11-20 13:22 price 1.09912 no_trade re-entry cooldown
 - EUR/USD 11-20 13:23 price 1.09912 no_trade re-entry cooldown
-- EUR/GBP 11-20 13:21 price 0.83764 no_trade max 3 open positions reached
+- EUR/USD 11-20 13:24 price 1.09912 no_trade re-entry cooldown
 - EUR/GBP 11-20 13:22 price 0.83764 no_trade max 3 open positions reached
 - EUR/GBP 11-20 13:23 price 0.83764 no_trade max 3 open positions reached
+- EUR/GBP 11-20 13:24 price 0.83764 no_trade max 3 open positions reached
