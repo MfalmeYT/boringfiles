@@ -17,3 +17,5 @@ time_utc,market,action,order_id,decision_price,fill_price,move_pct,fill_qty,posi
 2026-11-20 09:40,EUR/USD,short,1692,1.09687,1.09704,0.0155,10000.0,,10000,filled,conf 4
 2026-11-20 12:37,GBP/USD,short,1698,1.31001,1.31082,0.0618,10000.0,,10000,filled,conf 5
 2026-11-20 12:37,EUR/USD,cover,broker,,1.09803,,,,,filled,closed by broker stop/TP; P/L -9.9000
+2026-11-20 13:03,USD/JPY,short,1704,158.758,158.685,-0.046,10000.0,,10000,filled,conf 4
+2026-11-20 13:03,GBP/USD,cover,broker,,1.31225,,,,,filled,closed by broker stop/TP; P/L -14.3000

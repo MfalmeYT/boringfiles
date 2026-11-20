@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-20 13:02 UTC)
+# Bot report (generated 2026-11-20 13:03 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -18,12 +18,12 @@
 |---|---|---|---|---|---|---|---|---|
 | Bitcoin | 11-19 00:24 | 0 | 0 | 0 | 29 | 7 | -18.45 | yes |
 | Bitcoin 1h | 11-19 00:25 | 0 | 0 | 0 | 0 | - | +0.00 |  |
-| Bitcoin 15m | 11-20 13:02 | 853 | 0 | 0 | 0 | - | +0.00 |  |
-| Gold USD | 11-20 13:02 | 853 | 1 | 0 | 10 | 10 | -5.72 | yes |
-| USD/JPY | 11-20 13:02 | 843 | 2 | 0 | 25 | 36 | -0.05 |  |
-| GBP/USD | 11-20 13:02 | 843 | 3 | 0 | 22 | 36 | +0.09 | yes |
-| EUR/USD | 11-20 13:02 | 843 | 2 | 0 | 26 | 38 | +0.03 |  |
-| EUR/GBP | 11-20 13:02 | 843 | 1 | 0 | 24 | 21 | -0.54 |  |
+| Bitcoin 15m | 11-20 13:03 | 854 | 0 | 0 | 0 | - | +0.00 |  |
+| Gold USD | 11-20 13:03 | 854 | 1 | 0 | 10 | 10 | -5.72 | yes |
+| USD/JPY | 11-20 13:03 | 844 | 3 | 0 | 25 | 36 | -0.05 | yes |
+| GBP/USD | 11-20 13:03 | 844 | 3 | 0 | 23 | 35 | -0.08 |  |
+| EUR/USD | 11-20 13:03 | 844 | 2 | 0 | 26 | 38 | +0.03 |  |
+| EUR/GBP | 11-20 13:03 | 844 | 1 | 0 | 24 | 21 | -0.54 |  |
 
 ## Raw log files (full history, one row per run)
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log.csv
@@ -58,12 +58,12 @@
 - USD/JPY: short -0.04%
 - USD/JPY: short +0.20%
 - USD/JPY totals: long 12 trades -0.14%, short 13 trades +0.10%
-- GBP/USD: short +0.12%
 - GBP/USD: short +0.18%
 - GBP/USD: short +0.21%
 - GBP/USD: short -0.08%
 - GBP/USD: long -0.06%
-- GBP/USD totals: long 11 trades +0.06%, short 11 trades +0.03%
+- GBP/USD: short -0.17%
+- GBP/USD totals: long 11 trades +0.06%, short 12 trades -0.14%
 - EUR/USD: short +0.16%
 - EUR/USD: short -0.08%
 - EUR/USD: long -0.09%
@@ -82,21 +82,21 @@
 - 2026-11-20 12:36 UTC Oanda: balance 865.2591, equity 856.9591, free 637.4151
 
 ## Recent fills (decision price vs real fill; columns: time_utc,market,action,order_id,decision_price,fill_price,move_pct,fill_qty,position_qty,requested,status,reason)
-- 2026-11-20 06:35,GBP/USD,buy,1684,1.31134,1.31156,0.0168,5000.0,,5000,filled,conf 4
-- 2026-11-20 06:35,EUR/USD,sell,broker,,1.09874,,,,,filled,closed by broker stop/TP; P/L 12.2000
 - 2026-11-20 08:42,Gold USD,buy,e521cada-860a-4e96-b2e9-af564ff81a5b,3579.12,3596.6,0.4884,0.012269284,,45,filled,conf 4
 - 2026-11-20 08:42,GBP/USD,sell,broker,,1.31053,,,,,filled,closed by broker stop/TP; P/L -5.1500
 - 2026-11-20 09:40,USD/JPY,cover,broker,,158.912,,,,,filled,closed by broker stop/TP; P/L 20.3727
 - 2026-11-20 09:40,EUR/USD,short,1692,1.09687,1.09704,0.0155,10000.0,,10000,filled,conf 4
 - 2026-11-20 12:37,GBP/USD,short,1698,1.31001,1.31082,0.0618,10000.0,,10000,filled,conf 5
 - 2026-11-20 12:37,EUR/USD,cover,broker,,1.09803,,,,,filled,closed by broker stop/TP; P/L -9.9000
+- 2026-11-20 13:03,USD/JPY,short,1704,158.758,158.685,-0.046,10000.0,,10000,filled,conf 4
+- 2026-11-20 13:03,GBP/USD,cover,broker,,1.31225,,,,,filled,closed by broker stop/TP; P/L -14.3000
 
 ## Recent Gemini decisions
-- 2026-11-20 04:02,EUR/USD,buy,long,1.0976,0.00015,1.097191,1.097111,1.097348,59.4,0.000406,3,5,+0.11% (take profit) or -0.07% (stop loss); set from recent volatility,Bullish momentum with valid 3/3 ali
 - 2026-11-20 06:35,GBP/USD,buy,long,1.31134,0.00022,1.310735,1.31025,1.310353,67.5,0.000502,3,4,+0.11% (take profit) or -0.08% (stop loss); set from recent volatility,Bullish momentum is strong; but hig
 - 2026-11-20 08:42,Gold USD,buy,long,3579.12,,3562.528,3556.808,3579.32,60.5,33.141,2,4,+1.50% (take profit) or -1.00% (stop loss),Bullish momentum and crossover offset by strong price resistance at EMA
 - 2026-11-20 09:40,EUR/USD,short,short,1.09687,0.00016,1.097332,1.097605,1.097658,37.1,0.000492,3,4,a 0.13% fall (take profit) or a 0.09% rise (stop loss); set from recent volatility,Strong downtrend in
 - 2026-11-20 12:37,GBP/USD,short,short,1.31001,0.00019,1.310324,1.310485,1.310559,45.8,0.000751,3,5,a 0.17% fall (take profit) or a 0.11% rise (stop loss); set from recent volatility,Fresh bearish EMA c
+- 2026-11-20 13:03,USD/JPY,short,short,158.758,0.014,158.819,158.9015,159.0954,39.9,0.1217,3,4,a 0.23% fall (take profit) or a 0.15% rise (stop loss); set from recent volatility,Full bearish indicator a
 
 ## Data files
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/data/fills.csv
@@ -110,21 +110,21 @@
 - Bitcoin 11-19 00:23 price 62606.65 holding 0.2%
 - Bitcoin 11-19 00:24 price 62630.6 holding 0.3%
 - Bitcoin 1h 11-19 00:25 price 62607.78 holding 0.2%
-- Bitcoin 15m 11-20 13:00 price 61497.28 holding -1.6%
 - Bitcoin 15m 11-20 13:01 price 61497.89 holding -1.6%
 - Bitcoin 15m 11-20 13:02 price 61572.57 holding -1.4%
-- Gold USD 11-20 13:00 price 3569.3 holding -0.8%
+- Bitcoin 15m 11-20 13:03 price 61567.97 holding -1.4%
 - Gold USD 11-20 13:01 price 3569.37 holding -0.8%
 - Gold USD 11-20 13:02 price 3569.37 holding -0.8%
-- USD/JPY 11-20 13:00 price 158.758 no_trade max 3 open positions reached
+- Gold USD 11-20 13:03 price 3569.37 holding -0.8%
 - USD/JPY 11-20 13:01 price 158.758 no_trade max 3 open positions reached
 - USD/JPY 11-20 13:02 price 158.758 no_trade max 3 open positions reached
-- GBP/USD 11-20 13:00 price 1.31119 holding SHORT -0.0%
+- USD/JPY 11-20 13:03 price 158.758 short conf 4: Full bearish indicator alignment present; but recent price momentum is flat
 - GBP/USD 11-20 13:01 price 1.31119 holding SHORT -0.0%
 - GBP/USD 11-20 13:02 price 1.31119 holding SHORT -0.0%
-- EUR/USD 11-20 13:00 price 1.09822 no_trade re-entry cooldown
+- GBP/USD 11-20 13:03 price 1.31225 cover closed by broker stop/TP; P/L -14.3000
 - EUR/USD 11-20 13:01 price 1.09822 no_trade re-entry cooldown
 - EUR/USD 11-20 13:02 price 1.09822 no_trade re-entry cooldown
-- EUR/GBP 11-20 13:00 price 0.83758 no_trade max 3 open positions reached
+- EUR/USD 11-20 13:03 price 1.09822 no_trade re-entry cooldown
 - EUR/GBP 11-20 13:01 price 0.83758 no_trade max 3 open positions reached
 - EUR/GBP 11-20 13:02 price 0.83758 no_trade max 3 open positions reached
+- EUR/GBP 11-20 13:03 price 0.83758 no_trade max 3 open positions reached
