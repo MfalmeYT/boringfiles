@@ -11484,3 +11484,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-20 06:32,1.31134,3,,no,no_trade,max 3 open positions reached
 2026-11-20 06:33,1.31134,3,,no,no_trade,max 3 open positions reached
 2026-11-20 06:34,1.31134,3,,no,no_trade,max 3 open positions reached
+2026-11-20 06:35,1.31134,3,,no,buy,conf 4: Bullish momentum is strong; but high RSI suggests limited immediate upside. | 5000 units (reduced for margin)
