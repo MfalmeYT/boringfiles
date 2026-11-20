@@ -12328,3 +12328,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-20 21:28,0.83833,3,,yes,holding,0.0%
 2026-11-20 21:29,0.83833,3,,yes,holding,0.0%
 2026-11-20 21:30,0.83837,3,,yes,sell,WEEKEND FLATTEN (0.1%)
+2026-11-20 21:31,0.83837,3,,no,no_trade,no new entries before weekend
