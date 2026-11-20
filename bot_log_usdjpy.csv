@@ -12396,3 +12396,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-20 21:30,158.592,3,,yes,cover,WEEKEND FLATTEN (0.1%)
 2026-11-20 21:31,158.592,0,fast_above_slow|price_above_trend_ema|rsi_in_range,no,no_trade,no new entries before weekend
 2026-11-20 21:32,158.592,0,fast_above_slow|price_above_trend_ema|rsi_in_range,no,no_trade,no new entries before weekend
+2026-11-20 21:33,158.592,0,fast_above_slow|price_above_trend_ema|rsi_in_range,no,no_trade,no new entries before weekend
