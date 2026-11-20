@@ -11457,3 +11457,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-20 06:34,1.09848,3,,yes,holding,0.1%
 2026-11-20 06:35,1.09874,3,,no,sell,closed by broker stop/TP; P/L 12.2000
 2026-11-20 06:36,1.09848,3,,no,no_trade,re-entry cooldown
+2026-11-20 06:37,1.09848,3,,no,no_trade,re-entry cooldown
