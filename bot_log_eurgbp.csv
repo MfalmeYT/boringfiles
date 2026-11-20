@@ -11843,3 +11843,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-20 13:23,0.83764,3,,no,no_trade,max 3 open positions reached
 2026-11-20 13:24,0.83764,3,,no,no_trade,max 3 open positions reached
 2026-11-20 13:25,0.83764,3,,no,buy,conf 5: Fresh bullish EMA crossover with price above trend and RSI supportive | 5000 units (reduced for margin)
+2026-11-20 13:26,0.83764,3,,yes,holding,-0.0%
