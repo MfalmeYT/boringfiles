@@ -12413,3 +12413,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-20 21:47,158.604,1,fast_above_slow|price_above_trend_ema,no,no_trade,no new entries before weekend
 2026-11-20 21:48,158.604,1,fast_above_slow|price_above_trend_ema,no,no_trade,no new entries before weekend
 2026-11-20 21:49,158.604,1,fast_above_slow|price_above_trend_ema,no,no_trade,no new entries before weekend
+2026-11-20 21:50,158.604,1,fast_above_slow|price_above_trend_ema,no,no_trade,no new entries before weekend
