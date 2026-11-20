@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-20 23:14 UTC)
+# Bot report (generated 2026-11-20 23:15 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -18,12 +18,12 @@
 |---|---|---|---|---|---|---|---|---|
 | Bitcoin | 11-19 00:24 | 0 | 0 | 0 | 29 | 7 | -18.45 | yes |
 | Bitcoin 1h | 11-19 00:25 | 0 | 0 | 0 | 0 | - | +0.00 |  |
-| Bitcoin 15m | 11-20 23:14 | 1440 | 0 | 0 | 0 | - | +0.00 |  |
-| Gold USD | 11-20 23:14 | 1440 | 2 | 0 | 11 | 9 | -6.86 | yes |
-| USD/JPY | 11-20 23:14 | 1393 | 3 | 29 | 27 | 37 | -0.04 |  |
-| GBP/USD | 11-20 23:14 | 1393 | 4 | 29 | 24 | 38 | +0.11 |  |
-| EUR/USD | 11-20 23:14 | 1393 | 3 | 29 | 27 | 37 | -0.04 |  |
-| EUR/GBP | 11-20 23:14 | 1393 | 1 | 29 | 25 | 24 | -0.45 |  |
+| Bitcoin 15m | 11-20 23:15 | 1440 | 0 | 0 | 0 | - | +0.00 |  |
+| Gold USD | 11-20 23:15 | 1440 | 2 | 0 | 11 | 9 | -6.86 | yes |
+| USD/JPY | 11-20 23:15 | 1393 | 3 | 30 | 27 | 37 | -0.04 |  |
+| GBP/USD | 11-20 23:15 | 1393 | 4 | 30 | 24 | 38 | +0.11 |  |
+| EUR/USD | 11-20 23:15 | 1393 | 3 | 30 | 27 | 37 | -0.04 |  |
+| EUR/GBP | 11-20 23:15 | 1393 | 1 | 30 | 25 | 24 | -0.45 |  |
 
 ## Raw log files (full history, one row per run)
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log.csv
@@ -44,8 +44,8 @@
 - x6 GBP/USD: OANDA position 503 [req 0]: {"errorMessage":"System under maintenance; please try again later."}
 - x6 EUR/USD: OANDA position 503 [req 0]: {"errorMessage":"System under maintenance; please try again later."}
 - x6 EUR/GBP: OANDA position 503 [req 0]: {"errorMessage":"System under maintenance; please try again later."}
-- x4 GBP/USD: OANDA position 520: temporary gateway error (HTML page)
-- x4 EUR/USD: OANDA position 520: temporary gateway error (HTML page)
+- x5 GBP/USD: OANDA position 520: temporary gateway error (HTML page)
+- x5 EUR/USD: OANDA position 520: temporary gateway error (HTML page)
 
 ## OANDA 401 errors, last 24h
 - count: 0
@@ -119,21 +119,21 @@
 - Bitcoin 11-19 00:23 price 62606.65 holding 0.2%
 - Bitcoin 11-19 00:24 price 62630.6 holding 0.3%
 - Bitcoin 1h 11-19 00:25 price 62607.78 holding 0.2%
-- Bitcoin 15m 11-20 23:12 price 59045.99 no_trade score below 2
 - Bitcoin 15m 11-20 23:13 price 59067.67 no_trade score below 2
 - Bitcoin 15m 11-20 23:14 price 59067.57 no_trade score below 2
-- Gold USD 11-20 23:12 price 3535.71 holding -0.4%
+- Bitcoin 15m 11-20 23:15 price 59021.13 no_trade score below 2
 - Gold USD 11-20 23:13 price 3534.52 holding -0.5%
 - Gold USD 11-20 23:14 price 3535.1 holding -0.4%
-- USD/JPY 11-20 23:12 price  error OANDA position 520: temporary gateway error (HTML page)
+- Gold USD 11-20 23:15 price 3535.39 holding -0.4%
 - USD/JPY 11-20 23:13 price  error OANDA position 520: temporary gateway error (HTML page)
 - USD/JPY 11-20 23:14 price  error OANDA position 520: temporary gateway error (HTML page)
-- GBP/USD 11-20 23:12 price  error OANDA position 520: temporary gateway error (HTML page)
+- USD/JPY 11-20 23:15 price  error OANDA position 520: temporary gateway error (HTML page)
 - GBP/USD 11-20 23:13 price  error OANDA position 520: temporary gateway error (HTML page)
 - GBP/USD 11-20 23:14 price  error OANDA position 520: temporary gateway error (HTML page)
-- EUR/USD 11-20 23:12 price  error OANDA position 520: temporary gateway error (HTML page)
+- GBP/USD 11-20 23:15 price  error OANDA position 520: temporary gateway error (HTML page)
 - EUR/USD 11-20 23:13 price  error OANDA position 520: temporary gateway error (HTML page)
 - EUR/USD 11-20 23:14 price  error OANDA position 520: temporary gateway error (HTML page)
-- EUR/GBP 11-20 23:12 price  error OANDA position 520: temporary gateway error (HTML page)
+- EUR/USD 11-20 23:15 price  error OANDA position 520: temporary gateway error (HTML page)
 - EUR/GBP 11-20 23:13 price  error OANDA position 520: temporary gateway error (HTML page)
 - EUR/GBP 11-20 23:14 price  error OANDA position 520: temporary gateway error (HTML page)
+- EUR/GBP 11-20 23:15 price  error OANDA position 520: temporary gateway error (HTML page)
