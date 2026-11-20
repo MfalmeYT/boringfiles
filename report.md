@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-20 01:59 UTC)
+# Bot report (generated 2026-11-20 02:00 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -18,12 +18,12 @@
 |---|---|---|---|---|---|---|---|---|
 | Bitcoin | 11-19 00:24 | 0 | 0 | 0 | 29 | 7 | -18.45 | yes |
 | Bitcoin 1h | 11-19 00:25 | 0 | 0 | 0 | 0 | - | +0.00 |  |
-| Bitcoin 15m | 11-20 01:59 | 190 | 0 | 0 | 0 | - | +0.00 |  |
-| Gold USD | 11-20 01:59 | 190 | 0 | 0 | 10 | 10 | -5.72 |  |
-| USD/JPY | 11-20 01:59 | 180 | 1 | 0 | 24 | 33 | -0.24 |  |
-| GBP/USD | 11-20 01:59 | 180 | 0 | 0 | 20 | 40 | +0.23 |  |
-| EUR/USD | 11-20 01:59 | 180 | 0 | 0 | 24 | 38 | +0.04 |  |
-| EUR/GBP | 11-20 01:59 | 180 | 1 | 0 | 23 | 22 | -0.49 | yes |
+| Bitcoin 15m | 11-20 02:00 | 191 | 0 | 0 | 0 | - | +0.00 |  |
+| Gold USD | 11-20 02:00 | 191 | 0 | 0 | 10 | 10 | -5.72 |  |
+| USD/JPY | 11-20 02:00 | 181 | 1 | 0 | 24 | 33 | -0.24 |  |
+| GBP/USD | 11-20 02:00 | 181 | 1 | 0 | 20 | 40 | +0.23 | yes |
+| EUR/USD | 11-20 02:00 | 181 | 0 | 0 | 24 | 38 | +0.04 |  |
+| EUR/GBP | 11-20 02:00 | 181 | 1 | 0 | 23 | 22 | -0.49 | yes |
 
 ## Raw log files (full history, one row per run)
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log.csv
@@ -87,10 +87,12 @@
 - 2026-11-19 23:00,EUR/USD,sell,broker,,1.09649,,,,,filled,closed by broker stop/TP; P/L -1.3375
 - 2026-11-19 23:00,EUR/GBP,buy,1656,0.83794,0.83811,0.0203,5000.0,,5000,filled,conf 4
 - 2026-11-19 23:29,USD/JPY,cover,broker,,159.711,,,,,filled,closed by broker stop/TP; P/L -7.3993
+- 2026-11-20 02:00,GBP/USD,short,1664,1.3083,1.30818,-0.0092,5000.0,,5000,filled,conf 4
 
 ## Recent Gemini decisions
 - 2026-11-19 23:00,USD/JPY,short,short,159.648,0.032,159.6845,159.7154,159.7385,40.7,0.0597,3,4,a 0.11% fall (take profit) or a 0.07% rise (stop loss); set from recent volatility,Full bearish alignment 
 - 2026-11-19 23:00,EUR/GBP,buy,long,0.83794,0.00021,0.837938,0.837778,0.837151,58.0,0.000289,3,4,+0.10% (take profit) or -0.07% (stop loss); set from recent volatility,Uptrend intact with good score; bu
+- 2026-11-20 02:00,GBP/USD,short,short,1.3083,0.00021,1.308926,1.309224,1.310439,34.7,0.0006,3,4,a 0.14% fall (take profit) or a 0.09% rise (stop loss); set from recent volatility,Downtrend intact with 
 
 ## Data files
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/data/fills.csv
@@ -104,21 +106,21 @@
 - Bitcoin 11-19 00:23 price 62606.65 holding 0.2%
 - Bitcoin 11-19 00:24 price 62630.6 holding 0.3%
 - Bitcoin 1h 11-19 00:25 price 62607.78 holding 0.2%
-- Bitcoin 15m 11-20 01:57 price 61570.43 holding -1.4%
 - Bitcoin 15m 11-20 01:58 price 61530.67 holding -1.5%
 - Bitcoin 15m 11-20 01:59 price 61477.43 holding -1.6%
-- Gold USD 11-20 01:57 price 3556.36 no_trade score below 2
+- Bitcoin 15m 11-20 02:00 price 61509.53 holding -1.5%
 - Gold USD 11-20 01:58 price 3557.36 no_trade score below 2
 - Gold USD 11-20 01:59 price 3552.33 no_trade score below 2
-- USD/JPY 11-20 01:57 price 159.375 no_trade re-entry cooldown
+- Gold USD 11-20 02:00 price 3552.45 no_trade score below 2
 - USD/JPY 11-20 01:58 price 159.375 no_trade re-entry cooldown
 - USD/JPY 11-20 01:59 price 159.375 no_trade re-entry cooldown
-- GBP/USD 11-20 01:57 price 1.30898 no_trade re-entry cooldown
+- USD/JPY 11-20 02:00 price 159.338 no_trade re-entry cooldown
 - GBP/USD 11-20 01:58 price 1.30898 no_trade re-entry cooldown
 - GBP/USD 11-20 01:59 price 1.30898 no_trade re-entry cooldown
-- EUR/USD 11-20 01:57 price 1.09654 no_trade re-entry cooldown
+- GBP/USD 11-20 02:00 price 1.3083 short conf 4: Downtrend intact with RSI at 34.7; but price is slightly stretched. | 5000 units (
 - EUR/USD 11-20 01:58 price 1.09654 no_trade re-entry cooldown
 - EUR/USD 11-20 01:59 price 1.09654 no_trade re-entry cooldown
-- EUR/GBP 11-20 01:57 price 0.83771 holding -0.0%
+- EUR/USD 11-20 02:00 price 1.09625 no_trade max 3 open positions reached
 - EUR/GBP 11-20 01:58 price 0.83771 holding -0.0%
 - EUR/GBP 11-20 01:59 price 0.83771 holding -0.0%
+- EUR/GBP 11-20 02:00 price 0.83792 holding -0.0%
