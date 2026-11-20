@@ -1,6 +1,6 @@
-# Status (2026-11-20 13:24 UTC)
-- last bot run: 2026-11-20 13:24 UTC (0 min ago)
-- open now: Bitcoin long, USD/JPY short
+# Status (2026-11-20 13:25 UTC)
+- last bot run: 2026-11-20 13:25 UTC (0 min ago)
+- open now: Bitcoin long, USD/JPY short, EUR/GBP long
 - closed trades: 138, win 25%, sum of results -25.95% (sum of %, not account balance)
 - errors last 24h: 0 (OANDA 401: 0)
 - per market (trades / win% / total after fees): Bitcoin 29/7%/-18.45%; Bitcoin 1h 0/-%/+0.00%; Bitcoin 15m 0/-%/+0.00%; Gold USD 11/9%/-6.86%; USD/JPY 25/36%/-0.05%; GBP/USD 23/35%/-0.08%; EUR/USD 26/38%/+0.03%; EUR/GBP 24/21%/-0.54%
