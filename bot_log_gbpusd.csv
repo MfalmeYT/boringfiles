@@ -12066,3 +12066,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-20 16:14,1.31018,1,price_above_trend_ema|rsi_in_range,no,no_trade,no long or short setup
 2026-11-20 16:15,1.31018,3,,no,short,conf 4: Fresh bear crossover and full setup align; though momentum remains modest | 2500 units (reduced for margin)
 2026-11-20 16:17,1.31018,3,,yes,holding,SHORT -0.0%
+2026-11-20 16:18,1.31018,3,,yes,holding,SHORT -0.0%
