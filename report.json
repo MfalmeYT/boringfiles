@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-11-20 22:48",
+ "generated_utc": "2026-11-20 22:49",
  "markets": [
   {
    "market": "Bitcoin",
@@ -42,8 +42,8 @@
   {
    "market": "Bitcoin 15m",
    "enabled": true,
-   "last_run_utc": "2026-11-20 22:48",
-   "runs_24h": 1437,
+   "last_run_utc": "2026-11-20 22:49",
+   "runs_24h": 1438,
    "entries_24h": 0,
    "errors_24h": 0,
    "closed_trades": 0,
@@ -58,17 +58,17 @@
   {
    "market": "Gold USD",
    "enabled": true,
-   "last_run_utc": "2026-11-20 22:48",
-   "runs_24h": 1437,
-   "entries_24h": 1,
+   "last_run_utc": "2026-11-20 22:49",
+   "runs_24h": 1438,
+   "entries_24h": 2,
    "errors_24h": 0,
    "closed_trades": 11,
    "win_pct": 9,
    "total_pct_after_fees": -6.86,
-   "open": null,
+   "open": "long",
    "closed_today": 1,
    "result_today_pct": -1.14,
-   "entries_today": 1,
+   "entries_today": 2,
    "last_trades_pct": [
     -0.55,
     -0.56,
@@ -80,10 +80,10 @@
   {
    "market": "USD/JPY",
    "enabled": true,
-   "last_run_utc": "2026-11-20 22:47",
-   "runs_24h": 1380,
+   "last_run_utc": "2026-11-20 22:48",
+   "runs_24h": 1381,
    "entries_24h": 4,
-   "errors_24h": 1,
+   "errors_24h": 2,
    "closed_trades": 27,
    "win_pct": 37,
    "total_pct_after_fees": -0.04,
@@ -102,10 +102,10 @@
   {
    "market": "GBP/USD",
    "enabled": true,
-   "last_run_utc": "2026-11-20 22:47",
-   "runs_24h": 1380,
+   "last_run_utc": "2026-11-20 22:48",
+   "runs_24h": 1381,
    "entries_24h": 4,
-   "errors_24h": 1,
+   "errors_24h": 2,
    "closed_trades": 24,
    "win_pct": 38,
    "total_pct_after_fees": 0.11,
@@ -125,9 +125,9 @@
    "market": "EUR/USD",
    "enabled": true,
    "last_run_utc": "2026-11-20 22:48",
-   "runs_24h": 1380,
+   "runs_24h": 1381,
    "entries_24h": 3,
-   "errors_24h": 1,
+   "errors_24h": 2,
    "closed_trades": 27,
    "win_pct": 37,
    "total_pct_after_fees": -0.04,
@@ -146,10 +146,10 @@
   {
    "market": "EUR/GBP",
    "enabled": true,
-   "last_run_utc": "2026-11-20 22:48",
-   "runs_24h": 1380,
+   "last_run_utc": "2026-11-20 22:49",
+   "runs_24h": 1381,
    "entries_24h": 2,
-   "errors_24h": 1,
+   "errors_24h": 2,
    "closed_trades": 25,
    "win_pct": 24,
    "total_pct_after_fees": -0.45,
@@ -171,22 +171,22 @@
   {
    "market": "USD/JPY",
    "text": "OANDA position 503 [req #]: {\"errorMessage\":\"Service unavailable; please try again later.\"}",
-   "count": 1
+   "count": 2
   },
   {
    "market": "GBP/USD",
    "text": "OANDA position 503 [req #]: {\"errorMessage\":\"Service unavailable; please try again later.\"}",
-   "count": 1
+   "count": 2
   },
   {
    "market": "EUR/USD",
    "text": "OANDA position 503 [req #]: {\"errorMessage\":\"Service unavailable; please try again later.\"}",
-   "count": 1
+   "count": 2
   },
   {
    "market": "EUR/GBP",
    "text": "OANDA position 503 [req #]: {\"errorMessage\":\"Service unavailable; please try again later.\"}",
-   "count": 1
+   "count": 2
   }
  ],
  "account": {

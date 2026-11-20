@@ -12381,3 +12381,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-20 21:58,1.09621,0,fast_above_slow|price_above_trend_ema|rsi_in_range,no,no_trade,no new entries before weekend
 2026-11-20 22:47,,,,,error,OANDA position 503 [req 61572872304751689]: {"errorMessage":"Service unavailable; please try again later."}
 2026-11-20 22:48,,,,,error,OANDA position 503 [req 61572872480959324]: {"errorMessage":"Service unavailable; please try again later."}
+2026-11-20 22:48,,,,,error,OANDA position 503 [req 97601669730123611]: {"errorMessage":"Service unavailable; please try again later."}
