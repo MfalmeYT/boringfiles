@@ -11448,3 +11448,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-20 05:56,1.31022,2,price_above_trend_ema,no,no_trade,re-entry cooldown
 2026-11-20 05:57,1.31022,2,price_above_trend_ema,no,no_trade,re-entry cooldown
 2026-11-20 05:58,1.31022,2,price_above_trend_ema,no,no_trade,max 3 open positions reached
+2026-11-20 05:59,1.31022,2,price_above_trend_ema,no,no_trade,max 3 open positions reached
