@@ -1,8 +1,8 @@
-# Status (2026-11-20 22:53 UTC)
-- last bot run: 2026-11-20 22:53 UTC (0 min ago)
+# Status (2026-11-20 22:54 UTC)
+- last bot run: 2026-11-20 22:54 UTC (0 min ago)
 - open now: Bitcoin long, Gold USD long
 - closed trades: 143, win 27%, sum of results -25.73% (sum of %, not account balance)
-- errors last 24h: 32 (OANDA 401: 0)
+- errors last 24h: 36 (OANDA 401: 0)
 - per market (trades / win% / total after fees): Bitcoin 29/7%/-18.45%; Bitcoin 1h 0/-%/+0.00%; Bitcoin 15m 0/-%/+0.00%; Gold USD 11/9%/-6.86%; USD/JPY 27/37%/-0.04%; GBP/USD 24/38%/+0.11%; EUR/USD 27/37%/-0.04%; EUR/GBP 25/24%/-0.45%
 - 2026-11-20 22:26 UTC AlpacaCrypto: balance 982.36, equity 982.36, free 982.36
 - 2026-11-20 22:26 UTC Oanda: balance 821.5243, equity 821.5243, free 821.5243
