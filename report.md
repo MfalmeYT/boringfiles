@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-20 21:26 UTC)
+# Bot report (generated 2026-11-20 21:27 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -18,12 +18,12 @@
 |---|---|---|---|---|---|---|---|---|
 | Bitcoin | 11-19 00:24 | 0 | 0 | 0 | 29 | 7 | -18.45 | yes |
 | Bitcoin 1h | 11-19 00:25 | 0 | 0 | 0 | 0 | - | +0.00 |  |
-| Bitcoin 15m | 11-20 21:26 | 1357 | 0 | 0 | 0 | - | +0.00 |  |
-| Gold USD | 11-20 21:26 | 1357 | 1 | 0 | 11 | 9 | -6.86 |  |
-| USD/JPY | 11-20 21:26 | 1347 | 4 | 0 | 26 | 35 | -0.15 | yes |
-| GBP/USD | 11-20 21:26 | 1347 | 4 | 0 | 23 | 35 | -0.08 | yes |
-| EUR/USD | 11-20 21:26 | 1347 | 3 | 0 | 27 | 37 | -0.04 |  |
-| EUR/GBP | 11-20 21:26 | 1347 | 2 | 0 | 24 | 21 | -0.54 | yes |
+| Bitcoin 15m | 11-20 21:27 | 1358 | 0 | 0 | 0 | - | +0.00 |  |
+| Gold USD | 11-20 21:27 | 1358 | 1 | 0 | 11 | 9 | -6.86 |  |
+| USD/JPY | 11-20 21:27 | 1348 | 4 | 0 | 26 | 35 | -0.15 | yes |
+| GBP/USD | 11-20 21:27 | 1348 | 4 | 0 | 23 | 35 | -0.08 | yes |
+| EUR/USD | 11-20 21:27 | 1348 | 3 | 0 | 27 | 37 | -0.04 |  |
+| EUR/GBP | 11-20 21:27 | 1348 | 2 | 0 | 24 | 21 | -0.54 | yes |
 
 ## Raw log files (full history, one row per run)
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log.csv
@@ -78,8 +78,8 @@
 - EUR/GBP totals: long 17 trades -0.46%, short 7 trades -0.08%
 
 ## Account (latest hourly snapshot)
-- 2026-11-20 20:28 UTC AlpacaCrypto: balance 982.36, equity 982.36, free 982.36
-- 2026-11-20 20:28 UTC Oanda: balance 809.6521, equity 820.4836, free 132.7361
+- 2026-11-20 21:27 UTC AlpacaCrypto: balance 982.36, equity 982.36, free 982.36
+- 2026-11-20 21:27 UTC Oanda: balance 809.6521, equity 821.6672, free 134.1135
 
 ## Recent fills (decision price vs real fill; columns: time_utc,market,action,order_id,decision_price,fill_price,move_pct,fill_qty,position_qty,requested,status,reason)
 - 2026-11-20 13:24,Gold USD,sell,6e776c1c-be92-4ef1-a78d-e07693929e07,3556.265,3536.53,-0.5549,0.01223861,0.01223861,,filled,STOP LOSS (-1.1%)
@@ -110,21 +110,21 @@
 - Bitcoin 11-19 00:23 price 62606.65 holding 0.2%
 - Bitcoin 11-19 00:24 price 62630.6 holding 0.3%
 - Bitcoin 1h 11-19 00:25 price 62607.78 holding 0.2%
-- Bitcoin 15m 11-20 21:24 price 58598.89 no_trade score below 2
 - Bitcoin 15m 11-20 21:25 price 58528.83 no_trade score below 2
 - Bitcoin 15m 11-20 21:26 price 58596.06 no_trade score below 2
-- Gold USD 11-20 21:24 price 3513.5 no_trade score below 2
+- Bitcoin 15m 11-20 21:27 price 58615.31 no_trade score below 2
 - Gold USD 11-20 21:25 price 3513.13 no_trade score below 2
 - Gold USD 11-20 21:26 price 3513.32 no_trade score below 2
-- USD/JPY 11-20 21:24 price 158.568 holding SHORT 0.1%
+- Gold USD 11-20 21:27 price 3514.63 no_trade score below 2
 - USD/JPY 11-20 21:25 price 158.568 holding SHORT 0.1%
 - USD/JPY 11-20 21:26 price 158.568 holding SHORT 0.1%
-- GBP/USD 11-20 21:24 price 1.3078 holding SHORT 0.2%
+- USD/JPY 11-20 21:27 price 158.568 holding SHORT 0.1%
 - GBP/USD 11-20 21:25 price 1.3078 holding SHORT 0.2%
 - GBP/USD 11-20 21:26 price 1.3078 holding SHORT 0.2%
-- EUR/USD 11-20 21:24 price 1.09636 no_trade no new entries before weekend
+- GBP/USD 11-20 21:27 price 1.3078 holding SHORT 0.2%
 - EUR/USD 11-20 21:25 price 1.09636 no_trade no new entries before weekend
 - EUR/USD 11-20 21:26 price 1.09636 no_trade no new entries before weekend
-- EUR/GBP 11-20 21:24 price 0.83833 holding 0.0%
+- EUR/USD 11-20 21:27 price 1.09636 no_trade no new entries before weekend
 - EUR/GBP 11-20 21:25 price 0.83833 holding 0.0%
 - EUR/GBP 11-20 21:26 price 0.83833 holding 0.0%
+- EUR/GBP 11-20 21:27 price 0.83833 holding 0.0%
