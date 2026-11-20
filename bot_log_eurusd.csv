@@ -12304,3 +12304,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-20 20:41,1.0967,3,,no,no_trade,re-entry cooldown
 2026-11-20 20:42,1.0967,3,,no,no_trade,re-entry cooldown
 2026-11-20 20:43,1.0967,3,,no,no_trade,re-entry cooldown
+2026-11-20 20:44,1.0967,3,,no,no_trade,max 3 open positions reached
