@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-20 21:36 UTC)
+# Bot report (generated 2026-11-20 21:37 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -18,12 +18,12 @@
 |---|---|---|---|---|---|---|---|---|
 | Bitcoin | 11-19 00:24 | 0 | 0 | 0 | 29 | 7 | -18.45 | yes |
 | Bitcoin 1h | 11-19 00:25 | 0 | 0 | 0 | 0 | - | +0.00 |  |
-| Bitcoin 15m | 11-20 21:36 | 1367 | 0 | 0 | 0 | - | +0.00 |  |
-| Gold USD | 11-20 21:36 | 1367 | 1 | 0 | 11 | 9 | -6.86 |  |
-| USD/JPY | 11-20 21:36 | 1357 | 4 | 0 | 27 | 37 | -0.04 |  |
-| GBP/USD | 11-20 21:36 | 1357 | 4 | 0 | 24 | 38 | +0.11 |  |
-| EUR/USD | 11-20 21:36 | 1357 | 3 | 0 | 27 | 37 | -0.04 |  |
-| EUR/GBP | 11-20 21:36 | 1357 | 2 | 0 | 25 | 24 | -0.45 |  |
+| Bitcoin 15m | 11-20 21:37 | 1368 | 0 | 0 | 0 | - | +0.00 |  |
+| Gold USD | 11-20 21:37 | 1368 | 1 | 0 | 11 | 9 | -6.86 |  |
+| USD/JPY | 11-20 21:37 | 1358 | 4 | 0 | 27 | 37 | -0.04 |  |
+| GBP/USD | 11-20 21:37 | 1358 | 4 | 0 | 24 | 38 | +0.11 |  |
+| EUR/USD | 11-20 21:37 | 1358 | 3 | 0 | 27 | 37 | -0.04 |  |
+| EUR/GBP | 11-20 21:37 | 1358 | 2 | 0 | 25 | 24 | -0.45 |  |
 
 ## Raw log files (full history, one row per run)
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log.csv
@@ -110,21 +110,21 @@
 - Bitcoin 11-19 00:23 price 62606.65 holding 0.2%
 - Bitcoin 11-19 00:24 price 62630.6 holding 0.3%
 - Bitcoin 1h 11-19 00:25 price 62607.78 holding 0.2%
-- Bitcoin 15m 11-20 21:34 price 58608.34 no_trade score below 2
 - Bitcoin 15m 11-20 21:35 price 58681.54 no_trade score below 2
 - Bitcoin 15m 11-20 21:36 price 58760.18 no_trade score below 2
-- Gold USD 11-20 21:34 price 3515.12 no_trade score below 2
+- Bitcoin 15m 11-20 21:37 price 58713.95 no_trade score below 2
 - Gold USD 11-20 21:35 price 3517.08 no_trade score below 2
 - Gold USD 11-20 21:36 price 3517.68 no_trade score below 2
-- USD/JPY 11-20 21:34 price 158.592 no_trade no new entries before weekend
+- Gold USD 11-20 21:37 price 3520.13 no_trade score below 2
 - USD/JPY 11-20 21:35 price 158.592 no_trade no new entries before weekend
 - USD/JPY 11-20 21:36 price 158.592 no_trade no new entries before weekend
-- GBP/USD 11-20 21:34 price 1.30774 no_trade no new entries before weekend
+- USD/JPY 11-20 21:37 price 158.592 no_trade no new entries before weekend
 - GBP/USD 11-20 21:35 price 1.30774 no_trade no new entries before weekend
 - GBP/USD 11-20 21:36 price 1.30774 no_trade no new entries before weekend
-- EUR/USD 11-20 21:34 price 1.09633 no_trade no new entries before weekend
+- GBP/USD 11-20 21:37 price 1.30774 no_trade no new entries before weekend
 - EUR/USD 11-20 21:35 price 1.09633 no_trade no new entries before weekend
 - EUR/USD 11-20 21:36 price 1.09633 no_trade no new entries before weekend
-- EUR/GBP 11-20 21:34 price 0.83837 no_trade no new entries before weekend
+- EUR/USD 11-20 21:37 price 1.09633 no_trade no new entries before weekend
 - EUR/GBP 11-20 21:35 price 0.83837 no_trade no new entries before weekend
 - EUR/GBP 11-20 21:36 price 0.83837 no_trade no new entries before weekend
+- EUR/GBP 11-20 21:37 price 0.83837 no_trade no new entries before weekend
