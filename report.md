@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-20 20:57 UTC)
+# Bot report (generated 2026-11-20 20:58 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -18,12 +18,12 @@
 |---|---|---|---|---|---|---|---|---|
 | Bitcoin | 11-19 00:24 | 0 | 0 | 0 | 29 | 7 | -18.45 | yes |
 | Bitcoin 1h | 11-19 00:25 | 0 | 0 | 0 | 0 | - | +0.00 |  |
-| Bitcoin 15m | 11-20 20:57 | 1328 | 0 | 0 | 0 | - | +0.00 |  |
-| Gold USD | 11-20 20:57 | 1328 | 1 | 0 | 11 | 9 | -6.86 |  |
-| USD/JPY | 11-20 20:57 | 1318 | 4 | 0 | 26 | 35 | -0.15 | yes |
-| GBP/USD | 11-20 20:57 | 1318 | 4 | 0 | 23 | 35 | -0.08 | yes |
-| EUR/USD | 11-20 20:57 | 1318 | 3 | 0 | 27 | 37 | -0.04 |  |
-| EUR/GBP | 11-20 20:57 | 1318 | 2 | 0 | 24 | 21 | -0.54 | yes |
+| Bitcoin 15m | 11-20 20:58 | 1329 | 0 | 0 | 0 | - | +0.00 |  |
+| Gold USD | 11-20 20:58 | 1329 | 1 | 0 | 11 | 9 | -6.86 |  |
+| USD/JPY | 11-20 20:58 | 1319 | 4 | 0 | 26 | 35 | -0.15 | yes |
+| GBP/USD | 11-20 20:58 | 1319 | 4 | 0 | 23 | 35 | -0.08 | yes |
+| EUR/USD | 11-20 20:58 | 1319 | 3 | 0 | 27 | 37 | -0.04 |  |
+| EUR/GBP | 11-20 20:58 | 1319 | 2 | 0 | 24 | 21 | -0.54 | yes |
 
 ## Raw log files (full history, one row per run)
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log.csv
@@ -110,21 +110,21 @@
 - Bitcoin 11-19 00:23 price 62606.65 holding 0.2%
 - Bitcoin 11-19 00:24 price 62630.6 holding 0.3%
 - Bitcoin 1h 11-19 00:25 price 62607.78 holding 0.2%
-- Bitcoin 15m 11-20 20:55 price 58273.51 no_trade score below 2
 - Bitcoin 15m 11-20 20:56 price 58160.35 no_trade score below 2
 - Bitcoin 15m 11-20 20:57 price 58215.11 no_trade score below 2
-- Gold USD 11-20 20:55 price 3515.41 no_trade score below 2
+- Bitcoin 15m 11-20 20:58 price 58223.43 no_trade score below 2
 - Gold USD 11-20 20:56 price 3512.81 no_trade score below 2
 - Gold USD 11-20 20:57 price 3513.36 no_trade score below 2
-- USD/JPY 11-20 20:55 price 158.478 holding SHORT 0.2%
+- Gold USD 11-20 20:58 price 3514.03 no_trade score below 2
 - USD/JPY 11-20 20:56 price 158.478 holding SHORT 0.2%
 - USD/JPY 11-20 20:57 price 158.478 holding SHORT 0.2%
-- GBP/USD 11-20 20:55 price 1.30808 holding SHORT 0.2%
+- USD/JPY 11-20 20:58 price 158.478 holding SHORT 0.2%
 - GBP/USD 11-20 20:56 price 1.30808 holding SHORT 0.2%
 - GBP/USD 11-20 20:57 price 1.30808 holding SHORT 0.2%
-- EUR/USD 11-20 20:55 price 1.09647 no_trade max 3 open positions reached
+- GBP/USD 11-20 20:58 price 1.30808 holding SHORT 0.2%
 - EUR/USD 11-20 20:56 price 1.09647 no_trade max 3 open positions reached
 - EUR/USD 11-20 20:57 price 1.09647 no_trade max 3 open positions reached
-- EUR/GBP 11-20 20:55 price 0.83824 holding 0.0%
+- EUR/USD 11-20 20:58 price 1.09647 no_trade max 3 open positions reached
 - EUR/GBP 11-20 20:56 price 0.83824 holding 0.0%
 - EUR/GBP 11-20 20:57 price 0.83824 holding 0.0%
+- EUR/GBP 11-20 20:58 price 0.83824 holding 0.0%
