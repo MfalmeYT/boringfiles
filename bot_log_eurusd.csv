@@ -11640,3 +11640,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-20 09:37,1.09687,3,,no,no_trade,max 3 open positions reached
 2026-11-20 09:38,1.09687,3,,no,no_trade,max 3 open positions reached
 2026-11-20 09:39,1.09687,3,,no,no_trade,max 3 open positions reached
+2026-11-20 09:40,1.09687,3,,no,short,conf 4: Strong downtrend intact; but RSI near oversold risks a minor pullback
