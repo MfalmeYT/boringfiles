@@ -12390,3 +12390,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-20 22:54,,,,,error,OANDA position 503 [req 79587272662280291]: {"errorMessage":"Service unavailable; please try again later."}
 2026-11-20 22:55,,,,,error,OANDA position 503 [req 97601671454215294]: {"errorMessage":"Service unavailable; please try again later."}
 2026-11-20 22:56,,,,,error,OANDA position 503 [req 115616070210157124]: {"errorMessage":"Service unavailable; please try again later."}
+2026-11-20 22:57,,,,,error,OANDA position 503 [req 79587273413217224]: {"errorMessage":"Service unavailable; please try again later."}
