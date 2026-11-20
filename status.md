@@ -1,5 +1,5 @@
-# Status (2026-11-20 02:50 UTC)
-- last bot run: 2026-11-20 02:50 UTC (0 min ago)
+# Status (2026-11-20 02:51 UTC)
+- last bot run: 2026-11-20 02:51 UTC (0 min ago)
 - open now: Bitcoin long, GBP/USD short, EUR/GBP long
 - closed trades: 130, win 25%, sum of results -24.63% (sum of %, not account balance)
 - errors last 24h: 0 (OANDA 401: 0)
