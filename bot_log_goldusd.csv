@@ -10177,3 +10177,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-20 22:47,3532.82,2,price_above_trend_ema,no,buy,conf 4: Fresh bullish crossover with RSI neutral; but EMA50 acts as overhead resistance.
 2026-11-20 22:48,3532.69,2,price_above_trend_ema,yes,holding,-0.5%
 2026-11-20 22:49,3533.04,2,price_above_trend_ema,yes,holding,-0.5%
+2026-11-20 22:49,3533.04,2,price_above_trend_ema,yes,holding,-0.5%

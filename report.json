@@ -43,7 +43,7 @@
    "market": "Bitcoin 15m",
    "enabled": true,
    "last_run_utc": "2026-11-20 22:49",
-   "runs_24h": 1438,
+   "runs_24h": 1439,
    "entries_24h": 0,
    "errors_24h": 0,
    "closed_trades": 0,
@@ -59,7 +59,7 @@
    "market": "Gold USD",
    "enabled": true,
    "last_run_utc": "2026-11-20 22:49",
-   "runs_24h": 1438,
+   "runs_24h": 1439,
    "entries_24h": 2,
    "errors_24h": 0,
    "closed_trades": 11,
@@ -80,10 +80,10 @@
   {
    "market": "USD/JPY",
    "enabled": true,
-   "last_run_utc": "2026-11-20 22:48",
-   "runs_24h": 1381,
+   "last_run_utc": "2026-11-20 22:49",
+   "runs_24h": 1382,
    "entries_24h": 4,
-   "errors_24h": 2,
+   "errors_24h": 3,
    "closed_trades": 27,
    "win_pct": 37,
    "total_pct_after_fees": -0.04,
@@ -102,10 +102,10 @@
   {
    "market": "GBP/USD",
    "enabled": true,
-   "last_run_utc": "2026-11-20 22:48",
-   "runs_24h": 1381,
+   "last_run_utc": "2026-11-20 22:49",
+   "runs_24h": 1382,
    "entries_24h": 4,
-   "errors_24h": 2,
+   "errors_24h": 3,
    "closed_trades": 24,
    "win_pct": 38,
    "total_pct_after_fees": 0.11,
@@ -124,10 +124,10 @@
   {
    "market": "EUR/USD",
    "enabled": true,
-   "last_run_utc": "2026-11-20 22:48",
-   "runs_24h": 1381,
+   "last_run_utc": "2026-11-20 22:49",
+   "runs_24h": 1382,
    "entries_24h": 3,
-   "errors_24h": 2,
+   "errors_24h": 3,
    "closed_trades": 27,
    "win_pct": 37,
    "total_pct_after_fees": -0.04,
@@ -147,9 +147,9 @@
    "market": "EUR/GBP",
    "enabled": true,
    "last_run_utc": "2026-11-20 22:49",
-   "runs_24h": 1381,
+   "runs_24h": 1382,
    "entries_24h": 2,
-   "errors_24h": 2,
+   "errors_24h": 3,
    "closed_trades": 25,
    "win_pct": 24,
    "total_pct_after_fees": -0.45,
@@ -171,22 +171,22 @@
   {
    "market": "USD/JPY",
    "text": "OANDA position 503 [req #]: {\"errorMessage\":\"Service unavailable; please try again later.\"}",
-   "count": 2
+   "count": 3
   },
   {
    "market": "GBP/USD",
    "text": "OANDA position 503 [req #]: {\"errorMessage\":\"Service unavailable; please try again later.\"}",
-   "count": 2
+   "count": 3
   },
   {
    "market": "EUR/USD",
    "text": "OANDA position 503 [req #]: {\"errorMessage\":\"Service unavailable; please try again later.\"}",
-   "count": 2
+   "count": 3
   },
   {
    "market": "EUR/GBP",
    "text": "OANDA position 503 [req #]: {\"errorMessage\":\"Service unavailable; please try again later.\"}",
-   "count": 2
+   "count": 3
   }
  ],
  "account": {
