@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-20 18:01 UTC)
+# Bot report (generated 2026-11-20 18:02 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -18,12 +18,12 @@
 |---|---|---|---|---|---|---|---|---|
 | Bitcoin | 11-19 00:24 | 0 | 0 | 0 | 29 | 7 | -18.45 | yes |
 | Bitcoin 1h | 11-19 00:25 | 0 | 0 | 0 | 0 | - | +0.00 |  |
-| Bitcoin 15m | 11-20 18:01 | 1152 | 0 | 0 | 0 | - | +0.00 |  |
-| Gold USD | 11-20 18:01 | 1152 | 1 | 0 | 11 | 9 | -6.86 |  |
-| USD/JPY | 11-20 18:01 | 1142 | 4 | 0 | 26 | 35 | -0.15 | yes |
-| GBP/USD | 11-20 18:01 | 1142 | 4 | 0 | 23 | 35 | -0.08 | yes |
-| EUR/USD | 11-20 18:01 | 1142 | 3 | 0 | 27 | 37 | -0.04 |  |
-| EUR/GBP | 11-20 18:01 | 1142 | 2 | 0 | 24 | 21 | -0.54 | yes |
+| Bitcoin 15m | 11-20 18:02 | 1153 | 0 | 0 | 0 | - | +0.00 |  |
+| Gold USD | 11-20 18:02 | 1153 | 1 | 0 | 11 | 9 | -6.86 |  |
+| USD/JPY | 11-20 18:02 | 1143 | 4 | 0 | 26 | 35 | -0.15 | yes |
+| GBP/USD | 11-20 18:02 | 1143 | 4 | 0 | 23 | 35 | -0.08 | yes |
+| EUR/USD | 11-20 18:02 | 1143 | 3 | 0 | 27 | 37 | -0.04 |  |
+| EUR/GBP | 11-20 18:02 | 1143 | 2 | 0 | 24 | 21 | -0.54 | yes |
 
 ## Raw log files (full history, one row per run)
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log.csv
@@ -110,21 +110,21 @@
 - Bitcoin 11-19 00:23 price 62606.65 holding 0.2%
 - Bitcoin 11-19 00:24 price 62630.6 holding 0.3%
 - Bitcoin 1h 11-19 00:25 price 62607.78 holding 0.2%
-- Bitcoin 15m 11-20 17:59 price 59068.04 no_trade score below 2
 - Bitcoin 15m 11-20 18:00 price 59091.55 no_trade score below 2
 - Bitcoin 15m 11-20 18:01 price 59025.05 no_trade score below 2
-- Gold USD 11-20 17:59 price 3521.03 no_trade score below 2
+- Bitcoin 15m 11-20 18:02 price 58979.01 no_trade score below 2
 - Gold USD 11-20 18:00 price 3522.59 no_trade score below 2
 - Gold USD 11-20 18:01 price 3522.59 no_trade score below 2
-- USD/JPY 11-20 17:59 price 158.744 no_trade re-entry cooldown
+- Gold USD 11-20 18:02 price 3522.59 no_trade score below 2
 - USD/JPY 11-20 18:00 price 158.772 short conf 4: Weak downtrend alignment but price is consolidating flat around EMAs | 5000 units 
 - USD/JPY 11-20 18:01 price 158.772 holding SHORT -0.0%
-- GBP/USD 11-20 17:59 price 1.31004 holding SHORT 0.0%
+- USD/JPY 11-20 18:02 price 158.772 holding SHORT -0.0%
 - GBP/USD 11-20 18:00 price 1.31004 holding SHORT 0.0%
 - GBP/USD 11-20 18:01 price 1.31004 holding SHORT 0.0%
-- EUR/USD 11-20 17:59 price 1.09757 no_trade re-entry cooldown
+- GBP/USD 11-20 18:02 price 1.31004 holding SHORT 0.0%
 - EUR/USD 11-20 18:00 price 1.0973 no_trade re-entry cooldown
 - EUR/USD 11-20 18:01 price 1.0973 no_trade re-entry cooldown
-- EUR/GBP 11-20 17:59 price 0.83784 holding -0.0%
+- EUR/USD 11-20 18:02 price 1.0973 no_trade re-entry cooldown
 - EUR/GBP 11-20 18:00 price 0.83763 holding -0.0%
 - EUR/GBP 11-20 18:01 price 0.83763 holding -0.0%
+- EUR/GBP 11-20 18:02 price 0.83763 holding -0.0%
