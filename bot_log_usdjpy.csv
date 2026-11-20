@@ -12183,3 +12183,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-20 17:57,158.744,3,,no,no_trade,re-entry cooldown
 2026-11-20 17:58,158.744,3,,no,no_trade,re-entry cooldown
 2026-11-20 17:59,158.744,3,,no,no_trade,re-entry cooldown
+2026-11-20 18:00,158.772,3,,no,short,conf 4: Weak downtrend alignment but price is consolidating flat around EMAs | 5000 units (reduced for margin)
