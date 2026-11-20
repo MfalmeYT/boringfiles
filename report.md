@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-20 22:25 UTC)
+# Bot report (generated 2026-11-20 22:26 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -18,8 +18,8 @@
 |---|---|---|---|---|---|---|---|---|
 | Bitcoin | 11-19 00:24 | 0 | 0 | 0 | 29 | 7 | -18.45 | yes |
 | Bitcoin 1h | 11-19 00:25 | 0 | 0 | 0 | 0 | - | +0.00 |  |
-| Bitcoin 15m | 11-20 22:25 | 1416 | 0 | 0 | 0 | - | +0.00 |  |
-| Gold USD | 11-20 22:25 | 1416 | 1 | 0 | 11 | 9 | -6.86 |  |
+| Bitcoin 15m | 11-20 22:26 | 1417 | 0 | 0 | 0 | - | +0.00 |  |
+| Gold USD | 11-20 22:26 | 1417 | 1 | 0 | 11 | 9 | -6.86 |  |
 | USD/JPY | 11-20 21:58 | 1379 | 4 | 0 | 27 | 37 | -0.04 |  |
 | GBP/USD | 11-20 21:58 | 1379 | 4 | 0 | 24 | 38 | +0.11 |  |
 | EUR/USD | 11-20 21:58 | 1379 | 3 | 0 | 27 | 37 | -0.04 |  |
@@ -78,8 +78,8 @@
 - EUR/GBP totals: long 18 trades -0.38%, short 7 trades -0.08%
 
 ## Account (latest hourly snapshot)
-- 2026-11-20 21:27 UTC AlpacaCrypto: balance 982.36, equity 982.36, free 982.36
-- 2026-11-20 21:27 UTC Oanda: balance 809.6521, equity 821.6672, free 134.1135
+- 2026-11-20 22:26 UTC AlpacaCrypto: balance 982.36, equity 982.36, free 982.36
+- 2026-11-20 22:26 UTC Oanda: balance 821.5243, equity 821.5243, free 821.5243
 
 ## Recent fills (decision price vs real fill; columns: time_utc,market,action,order_id,decision_price,fill_price,move_pct,fill_qty,position_qty,requested,status,reason)
 - 2026-11-20 15:10,Bitcoin 15m,sell,4d7660c6-b769-4f98-8d29-a8740a1aa770,61169.9,61034.0,-0.2222,0.000704643,0.000704643,,filled,STOP LOSS (-2.1%)
@@ -110,12 +110,12 @@
 - Bitcoin 11-19 00:23 price 62606.65 holding 0.2%
 - Bitcoin 11-19 00:24 price 62630.6 holding 0.3%
 - Bitcoin 1h 11-19 00:25 price 62607.78 holding 0.2%
-- Bitcoin 15m 11-20 22:23 price 59087.4 no_trade score below 2
 - Bitcoin 15m 11-20 22:24 price 59054.05 no_trade score below 2
 - Bitcoin 15m 11-20 22:25 price 59003.67 no_trade score below 2
-- Gold USD 11-20 22:23 price 3528.44 no_trade score below 2
+- Bitcoin 15m 11-20 22:26 price 58925.87 no_trade score below 2
 - Gold USD 11-20 22:24 price 3528.44 no_trade score below 2
 - Gold USD 11-20 22:25 price 3528.44 no_trade score below 2
+- Gold USD 11-20 22:26 price 3528.44 no_trade score below 2
 - USD/JPY 11-20 21:56 price 158.604 no_trade no new entries before weekend
 - USD/JPY 11-20 21:57 price 158.604 no_trade no new entries before weekend
 - USD/JPY 11-20 21:58 price 158.604 no_trade no new entries before weekend
