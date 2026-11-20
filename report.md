@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-20 22:14 UTC)
+# Bot report (generated 2026-11-20 22:15 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -18,8 +18,8 @@
 |---|---|---|---|---|---|---|---|---|
 | Bitcoin | 11-19 00:24 | 0 | 0 | 0 | 29 | 7 | -18.45 | yes |
 | Bitcoin 1h | 11-19 00:25 | 0 | 0 | 0 | 0 | - | +0.00 |  |
-| Bitcoin 15m | 11-20 22:14 | 1405 | 0 | 0 | 0 | - | +0.00 |  |
-| Gold USD | 11-20 22:14 | 1405 | 1 | 0 | 11 | 9 | -6.86 |  |
+| Bitcoin 15m | 11-20 22:15 | 1406 | 0 | 0 | 0 | - | +0.00 |  |
+| Gold USD | 11-20 22:15 | 1406 | 1 | 0 | 11 | 9 | -6.86 |  |
 | USD/JPY | 11-20 21:58 | 1379 | 4 | 0 | 27 | 37 | -0.04 |  |
 | GBP/USD | 11-20 21:58 | 1379 | 4 | 0 | 24 | 38 | +0.11 |  |
 | EUR/USD | 11-20 21:58 | 1379 | 3 | 0 | 27 | 37 | -0.04 |  |
@@ -110,12 +110,12 @@
 - Bitcoin 11-19 00:23 price 62606.65 holding 0.2%
 - Bitcoin 11-19 00:24 price 62630.6 holding 0.3%
 - Bitcoin 1h 11-19 00:25 price 62607.78 holding 0.2%
-- Bitcoin 15m 11-20 22:12 price 59012.73 no_trade score below 2
 - Bitcoin 15m 11-20 22:13 price 59000.96 no_trade score below 2
 - Bitcoin 15m 11-20 22:14 price 59042.81 no_trade score below 2
-- Gold USD 11-20 22:12 price 3530.2 no_trade score below 2
+- Bitcoin 15m 11-20 22:15 price 59087.66 no_trade score below 2
 - Gold USD 11-20 22:13 price 3530.26 no_trade score below 2
 - Gold USD 11-20 22:14 price 3528.44 no_trade score below 2
+- Gold USD 11-20 22:15 price 3528.44 no_trade score below 2
 - USD/JPY 11-20 21:56 price 158.604 no_trade no new entries before weekend
 - USD/JPY 11-20 21:57 price 158.604 no_trade no new entries before weekend
 - USD/JPY 11-20 21:58 price 158.604 no_trade no new entries before weekend
