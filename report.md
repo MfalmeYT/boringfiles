@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-20 22:49 UTC)
+# Bot report (generated 2026-11-20 22:50 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -18,12 +18,12 @@
 |---|---|---|---|---|---|---|---|---|
 | Bitcoin | 11-19 00:24 | 0 | 0 | 0 | 29 | 7 | -18.45 | yes |
 | Bitcoin 1h | 11-19 00:25 | 0 | 0 | 0 | 0 | - | +0.00 |  |
-| Bitcoin 15m | 11-20 22:49 | 1439 | 0 | 0 | 0 | - | +0.00 |  |
-| Gold USD | 11-20 22:49 | 1439 | 2 | 0 | 11 | 9 | -6.86 | yes |
-| USD/JPY | 11-20 22:49 | 1382 | 4 | 3 | 27 | 37 | -0.04 |  |
-| GBP/USD | 11-20 22:49 | 1382 | 4 | 3 | 24 | 38 | +0.11 |  |
-| EUR/USD | 11-20 22:49 | 1382 | 3 | 3 | 27 | 37 | -0.04 |  |
-| EUR/GBP | 11-20 22:49 | 1382 | 2 | 3 | 25 | 24 | -0.45 |  |
+| Bitcoin 15m | 11-20 22:50 | 1440 | 0 | 0 | 0 | - | +0.00 |  |
+| Gold USD | 11-20 22:50 | 1440 | 2 | 0 | 11 | 9 | -6.86 | yes |
+| USD/JPY | 11-20 22:50 | 1384 | 4 | 5 | 27 | 37 | -0.04 |  |
+| GBP/USD | 11-20 22:50 | 1384 | 4 | 5 | 24 | 38 | +0.11 |  |
+| EUR/USD | 11-20 22:50 | 1384 | 3 | 5 | 27 | 37 | -0.04 |  |
+| EUR/GBP | 11-20 22:50 | 1384 | 2 | 5 | 25 | 24 | -0.45 |  |
 
 ## Raw log files (full history, one row per run)
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log.csv
@@ -36,10 +36,10 @@
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log_eurgbp.csv
 
 ## Errors in the last 24h (grouped)
-- x3 USD/JPY: OANDA position 503 [req #]: {"errorMessage":"Service unavailable; please try again later."}
-- x3 GBP/USD: OANDA position 503 [req #]: {"errorMessage":"Service unavailable; please try again later."}
-- x3 EUR/USD: OANDA position 503 [req #]: {"errorMessage":"Service unavailable; please try again later."}
-- x3 EUR/GBP: OANDA position 503 [req #]: {"errorMessage":"Service unavailable; please try again later."}
+- x5 USD/JPY: OANDA position 503 [req #]: {"errorMessage":"Service unavailable; please try again later."}
+- x5 GBP/USD: OANDA position 503 [req #]: {"errorMessage":"Service unavailable; please try again later."}
+- x5 EUR/USD: OANDA position 503 [req #]: {"errorMessage":"Service unavailable; please try again later."}
+- x5 EUR/GBP: OANDA position 503 [req #]: {"errorMessage":"Service unavailable; please try again later."}
 
 ## OANDA 401 errors, last 24h
 - count: 0
@@ -113,21 +113,21 @@
 - Bitcoin 11-19 00:23 price 62606.65 holding 0.2%
 - Bitcoin 11-19 00:24 price 62630.6 holding 0.3%
 - Bitcoin 1h 11-19 00:25 price 62607.78 holding 0.2%
-- Bitcoin 15m 11-20 22:47 price 59031.89 no_trade score below 2
-- Bitcoin 15m 11-20 22:48 price 58882.46 no_trade score below 2
 - Bitcoin 15m 11-20 22:49 price 58863.26 no_trade score below 2
-- Gold USD 11-20 22:47 price 3532.82 buy conf 4: Fresh bullish crossover with RSI neutral; but EMA50 acts as overhead resistance.
-- Gold USD 11-20 22:48 price 3532.69 holding -0.5%
+- Bitcoin 15m 11-20 22:49 price 58863.26 no_trade score below 2
+- Bitcoin 15m 11-20 22:50 price 58885.32 no_trade score below 2
 - Gold USD 11-20 22:49 price 3533.04 holding -0.5%
-- USD/JPY 11-20 22:47 price  error OANDA position 503 [req 115616067777095080]: {"errorMessage":"Service unavailable; please 
-- USD/JPY 11-20 22:47 price  error OANDA position 503 [req 61572872422222790]: {"errorMessage":"Service unavailable; please t
+- Gold USD 11-20 22:49 price 3533.04 holding -0.5%
+- Gold USD 11-20 22:50 price 3531.68 holding -0.5%
+- USD/JPY 11-20 22:48 price  error OANDA position 503 [req 97601669667201324]: {"errorMessage":"Service unavailable; please t
 - USD/JPY 11-20 22:49 price  error OANDA position 503 [req 97601669876944635]: {"errorMessage":"Service unavailable; please t
-- GBP/USD 11-20 22:47 price  error OANDA position 503 [req 61572872275382955]: {"errorMessage":"Service unavailable; please t
-- GBP/USD 11-20 22:47 price  error OANDA position 503 [req 61572872451591244]: {"errorMessage":"Service unavailable; please t
+- USD/JPY 11-20 22:50 price  error OANDA position 503 [req 61572873093496788]: {"errorMessage":"Service unavailable; please t
+- GBP/USD 11-20 22:48 price  error OANDA position 503 [req 79587271189780927]: {"errorMessage":"Service unavailable; please t
 - GBP/USD 11-20 22:49 price  error OANDA position 503 [req 97601669910503026]: {"errorMessage":"Service unavailable; please t
-- EUR/USD 11-20 22:47 price  error OANDA position 503 [req 61572872304751689]: {"errorMessage":"Service unavailable; please t
-- EUR/USD 11-20 22:48 price  error OANDA position 503 [req 61572872480959324]: {"errorMessage":"Service unavailable; please t
+- GBP/USD 11-20 22:50 price  error OANDA position 503 [req 115616068653837920]: {"errorMessage":"Service unavailable; please 
+- EUR/USD 11-20 22:48 price  error OANDA position 503 [req 97601669730123611]: {"errorMessage":"Service unavailable; please t
 - EUR/USD 11-20 22:49 price  error OANDA position 503 [req 97601669939866999]: {"errorMessage":"Service unavailable; please t
-- EUR/GBP 11-20 22:47 price  error OANDA position 503 [req 61572872338313819]: {"errorMessage":"Service unavailable; please t
-- EUR/GBP 11-20 22:48 price  error OANDA position 503 [req 97601669532965746]: {"errorMessage":"Service unavailable; please t
+- EUR/USD 11-20 22:50 price  error OANDA position 503 [req 79587271663831720]: {"errorMessage":"Service unavailable; please t
+- EUR/GBP 11-20 22:49 price  error OANDA position 503 [req 79587271252706209]: {"errorMessage":"Service unavailable; please t
 - EUR/GBP 11-20 22:49 price  error OANDA position 503 [req 97601669973425470]: {"errorMessage":"Service unavailable; please t
+- EUR/GBP 11-20 22:50 price  error OANDA position 503 [req 115616068716761049]: {"errorMessage":"Service unavailable; please 
