@@ -11211,3 +11211,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-20 01:59,1.30898,3,,no,no_trade,re-entry cooldown
 2026-11-20 02:00,1.3083,3,,no,short,conf 4: Downtrend intact with RSI at 34.7; but price is slightly stretched. | 5000 units (reduced for margin)
 2026-11-20 02:01,1.3083,3,,yes,holding,SHORT -0.0%
+2026-11-20 02:02,1.3083,3,,yes,holding,SHORT -0.0%
