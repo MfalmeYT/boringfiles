@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-20 15:54 UTC)
+# Bot report (generated 2026-11-20 15:55 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -18,12 +18,12 @@
 |---|---|---|---|---|---|---|---|---|
 | Bitcoin | 11-19 00:24 | 0 | 0 | 0 | 29 | 7 | -18.45 | yes |
 | Bitcoin 1h | 11-19 00:25 | 0 | 0 | 0 | 0 | - | +0.00 |  |
-| Bitcoin 15m | 11-20 15:54 | 1025 | 0 | 0 | 0 | - | +0.00 |  |
-| Gold USD | 11-20 15:54 | 1025 | 1 | 0 | 11 | 9 | -6.86 |  |
-| USD/JPY | 11-20 15:54 | 1015 | 3 | 0 | 26 | 35 | -0.15 |  |
-| GBP/USD | 11-20 15:54 | 1015 | 3 | 0 | 23 | 35 | -0.08 |  |
-| EUR/USD | 11-20 15:54 | 1015 | 3 | 0 | 26 | 38 | +0.03 | yes |
-| EUR/GBP | 11-20 15:54 | 1015 | 2 | 0 | 24 | 21 | -0.54 | yes |
+| Bitcoin 15m | 11-20 15:55 | 1026 | 0 | 0 | 0 | - | +0.00 |  |
+| Gold USD | 11-20 15:55 | 1026 | 1 | 0 | 11 | 9 | -6.86 |  |
+| USD/JPY | 11-20 15:55 | 1016 | 3 | 0 | 26 | 35 | -0.15 |  |
+| GBP/USD | 11-20 15:55 | 1016 | 3 | 0 | 23 | 35 | -0.08 |  |
+| EUR/USD | 11-20 15:55 | 1016 | 3 | 0 | 26 | 38 | +0.03 | yes |
+| EUR/GBP | 11-20 15:55 | 1016 | 2 | 0 | 24 | 21 | -0.54 | yes |
 
 ## Raw log files (full history, one row per run)
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log.csv
@@ -110,21 +110,21 @@
 - Bitcoin 11-19 00:23 price 62606.65 holding 0.2%
 - Bitcoin 11-19 00:24 price 62630.6 holding 0.3%
 - Bitcoin 1h 11-19 00:25 price 62607.78 holding 0.2%
-- Bitcoin 15m 11-20 15:52 price 59496.05 no_trade score below 2
 - Bitcoin 15m 11-20 15:53 price 59480.06 no_trade score below 2
 - Bitcoin 15m 11-20 15:54 price 59566.45 no_trade score below 2
-- Gold USD 11-20 15:52 price 3548.27 no_trade score below 2
+- Bitcoin 15m 11-20 15:55 price 59535.99 no_trade score below 2
 - Gold USD 11-20 15:53 price 3548.3 no_trade score below 2
 - Gold USD 11-20 15:54 price 3547.3 no_trade score below 2
-- USD/JPY 11-20 15:52 price 158.674 no_trade re-entry cooldown
+- Gold USD 11-20 15:55 price 3548.82 no_trade score below 2
 - USD/JPY 11-20 15:53 price 158.674 no_trade re-entry cooldown
 - USD/JPY 11-20 15:54 price 158.674 no_trade re-entry cooldown
-- GBP/USD 11-20 15:52 price 1.31176 no_trade re-entry cooldown
+- USD/JPY 11-20 15:55 price 158.674 no_trade re-entry cooldown
 - GBP/USD 11-20 15:53 price 1.31176 no_trade re-entry cooldown
 - GBP/USD 11-20 15:54 price 1.31176 no_trade re-entry cooldown
-- EUR/USD 11-20 15:52 price 1.09953 holding 0.0%
+- GBP/USD 11-20 15:55 price 1.31176 no_trade re-entry cooldown
 - EUR/USD 11-20 15:53 price 1.09953 holding 0.0%
 - EUR/USD 11-20 15:54 price 1.09953 holding 0.0%
-- EUR/GBP 11-20 15:52 price 0.83824 holding 0.0%
+- EUR/USD 11-20 15:55 price 1.09953 holding 0.0%
 - EUR/GBP 11-20 15:53 price 0.83824 holding 0.0%
 - EUR/GBP 11-20 15:54 price 0.83824 holding 0.0%
+- EUR/GBP 11-20 15:55 price 0.83824 holding 0.0%
