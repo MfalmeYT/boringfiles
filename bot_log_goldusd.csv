@@ -9331,3 +9331,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-20 08:40,3580.55,3,,no,no_trade,max 3 open positions reached
 2026-11-20 08:41,3580.55,3,,no,no_trade,max 3 open positions reached
 2026-11-20 08:42,3579.12,2,price_above_trend_ema,no,buy,conf 4: Bullish momentum and crossover offset by strong price resistance at EMA50
+2026-11-20 08:43,3580.18,3,,yes,holding,-0.5%
