@@ -10835,3 +10835,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-21 09:45,3522.59,2,price_above_trend_ema,yes,holding,-0.5%
 2026-11-21 09:46,3522.6,2,price_above_trend_ema,yes,holding,-0.5%
 2026-11-21 09:47,3522.07,2,price_above_trend_ema,yes,holding,-0.5%
+2026-11-21 09:48,3522.89,3,,yes,holding,-0.5%
