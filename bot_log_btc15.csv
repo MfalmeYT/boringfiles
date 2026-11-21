@@ -2356,3 +2356,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-21 14:05,60464.72,2,rsi_in_range,no,no_trade,Gemini cooldown
 2026-11-21 14:06,60571.45,2,rsi_in_range,no,no_trade,Gemini cooldown
 2026-11-21 14:07,60458.48,2,rsi_in_range,no,gemini_hold,conf 2: RSI overbought at 83.6 with momentum exhausting near the tops
+2026-11-21 14:08,60401.08,2,rsi_in_range,no,no_trade,Gemini cooldown
