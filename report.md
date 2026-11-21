@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-21 14:32 UTC)
+# Bot report (generated 2026-11-21 14:33 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -18,12 +18,12 @@
 |---|---|---|---|---|---|---|---|---|
 | Bitcoin | 11-19 00:24 | 0 | 0 | 0 | 29 | 7 | -18.45 | yes |
 | Bitcoin 1h | 11-19 00:25 | 0 | 0 | 0 | 0 | - | +0.00 |  |
-| Bitcoin 15m | 11-21 14:32 | 1439 | 1 | 0 | 0 | - | +0.00 | yes |
-| Gold USD | 11-21 14:32 | 1439 | 2 | 0 | 12 | 8 | -7.69 | yes |
-| USD/JPY | 11-21 01:44 | 624 | 1 | 178 | 27 | 37 | -0.04 |  |
-| GBP/USD | 11-21 01:44 | 624 | 1 | 178 | 24 | 38 | +0.11 |  |
-| EUR/USD | 11-21 01:44 | 624 | 1 | 178 | 27 | 37 | -0.04 |  |
-| EUR/GBP | 11-21 01:44 | 624 | 0 | 178 | 25 | 24 | -0.45 |  |
+| Bitcoin 15m | 11-21 14:33 | 1439 | 1 | 0 | 0 | - | +0.00 | yes |
+| Gold USD | 11-21 14:33 | 1439 | 2 | 0 | 12 | 8 | -7.69 | yes |
+| USD/JPY | 11-21 01:44 | 623 | 1 | 178 | 27 | 37 | -0.04 |  |
+| GBP/USD | 11-21 01:44 | 623 | 1 | 178 | 24 | 38 | +0.11 |  |
+| EUR/USD | 11-21 01:44 | 623 | 1 | 178 | 27 | 37 | -0.04 |  |
+| EUR/GBP | 11-21 01:44 | 623 | 0 | 178 | 25 | 24 | -0.45 |  |
 
 ## Raw log files (full history, one row per run)
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log.csv
@@ -119,12 +119,12 @@
 - Bitcoin 11-19 00:23 price 62606.65 holding 0.2%
 - Bitcoin 11-19 00:24 price 62630.6 holding 0.3%
 - Bitcoin 1h 11-19 00:25 price 62607.78 holding 0.2%
-- Bitcoin 15m 11-21 14:30 price 60244.75 holding -0.4%
 - Bitcoin 15m 11-21 14:31 price 60288.86 holding -0.3%
 - Bitcoin 15m 11-21 14:32 price 60285.61 holding -0.3%
-- Gold USD 11-21 14:30 price 3545.35 holding 0.1%
+- Bitcoin 15m 11-21 14:33 price 60196.37 holding -0.4%
 - Gold USD 11-21 14:31 price 3545.35 holding 0.1%
 - Gold USD 11-21 14:32 price 3545.35 holding 0.1%
+- Gold USD 11-21 14:33 price 3545.35 holding 0.1%
 - USD/JPY 11-21 01:42 price  error OANDA position 503 [req 0]: {"errorMessage":"System under maintenance; please try again la
 - USD/JPY 11-21 01:43 price  error OANDA position 503 [req 0]: {"errorMessage":"System under maintenance; please try again la
 - USD/JPY 11-21 01:44 price  error OANDA position 503 [req 0]: {"errorMessage":"System under maintenance; please try again la
