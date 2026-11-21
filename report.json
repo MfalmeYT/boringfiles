@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-11-20 23:59",
+ "generated_utc": "2026-11-21 00:00",
  "markets": [
   {
    "market": "Bitcoin",
@@ -42,7 +42,7 @@
   {
    "market": "Bitcoin 15m",
    "enabled": true,
-   "last_run_utc": "2026-11-20 23:59",
+   "last_run_utc": "2026-11-21 00:00",
    "runs_24h": 1440,
    "entries_24h": 0,
    "errors_24h": 0,
@@ -58,7 +58,7 @@
   {
    "market": "Gold USD",
    "enabled": true,
-   "last_run_utc": "2026-11-20 23:59",
+   "last_run_utc": "2026-11-21 00:00",
    "runs_24h": 1440,
    "entries_24h": 2,
    "errors_24h": 0,
@@ -66,9 +66,9 @@
    "win_pct": 9,
    "total_pct_after_fees": -6.86,
    "open": "long",
-   "closed_today": 1,
-   "result_today_pct": -1.14,
-   "entries_today": 2,
+   "closed_today": 0,
+   "result_today_pct": 0,
+   "entries_today": 0,
    "last_trades_pct": [
     -0.55,
     -0.56,
@@ -80,17 +80,17 @@
   {
    "market": "USD/JPY",
    "enabled": true,
-   "last_run_utc": "2026-11-20 23:59",
+   "last_run_utc": "2026-11-21 00:00",
    "runs_24h": 1393,
    "entries_24h": 3,
-   "errors_24h": 74,
+   "errors_24h": 75,
    "closed_trades": 27,
    "win_pct": 37,
    "total_pct_after_fees": -0.04,
    "open": null,
-   "closed_today": 3,
-   "result_today_pct": 0.2,
-   "entries_today": 3,
+   "closed_today": 0,
+   "result_today_pct": 0,
+   "entries_today": 0,
    "last_trades_pct": [
     -0.09,
     -0.04,
@@ -102,17 +102,17 @@
   {
    "market": "GBP/USD",
    "enabled": true,
-   "last_run_utc": "2026-11-20 23:59",
+   "last_run_utc": "2026-11-21 00:00",
    "runs_24h": 1393,
    "entries_24h": 4,
-   "errors_24h": 74,
+   "errors_24h": 75,
    "closed_trades": 24,
    "win_pct": 38,
    "total_pct_after_fees": 0.11,
    "open": null,
-   "closed_today": 4,
-   "result_today_pct": -0.13,
-   "entries_today": 4,
+   "closed_today": 0,
+   "result_today_pct": 0,
+   "entries_today": 0,
    "last_trades_pct": [
     0.21,
     -0.08,
@@ -124,17 +124,17 @@
   {
    "market": "EUR/USD",
    "enabled": true,
-   "last_run_utc": "2026-11-20 23:59",
+   "last_run_utc": "2026-11-21 00:00",
    "runs_24h": 1393,
    "entries_24h": 3,
-   "errors_24h": 74,
+   "errors_24h": 75,
    "closed_trades": 27,
    "win_pct": 37,
    "total_pct_after_fees": -0.04,
    "open": null,
-   "closed_today": 3,
-   "result_today_pct": -0.07,
-   "entries_today": 3,
+   "closed_today": 0,
+   "result_today_pct": 0,
+   "entries_today": 0,
    "last_trades_pct": [
     -0.08,
     -0.09,
@@ -146,17 +146,17 @@
   {
    "market": "EUR/GBP",
    "enabled": true,
-   "last_run_utc": "2026-11-20 23:59",
+   "last_run_utc": "2026-11-21 00:00",
    "runs_24h": 1393,
    "entries_24h": 1,
-   "errors_24h": 74,
+   "errors_24h": 75,
    "closed_trades": 25,
    "win_pct": 24,
    "total_pct_after_fees": -0.45,
    "open": null,
-   "closed_today": 2,
-   "result_today_pct": 0.04,
-   "entries_today": 1,
+   "closed_today": 0,
+   "result_today_pct": 0,
+   "entries_today": 0,
    "last_trades_pct": [
     -0.06,
     0.12,
@@ -181,7 +181,7 @@
   {
    "market": "USD/JPY",
    "text": "OANDA position 520: temporary gateway error (HTML page)",
-   "count": 48
+   "count": 49
   },
   {
    "market": "GBP/USD",
@@ -196,7 +196,7 @@
   {
    "market": "GBP/USD",
    "text": "OANDA position 520: temporary gateway error (HTML page)",
-   "count": 49
+   "count": 50
   },
   {
    "market": "EUR/USD",
@@ -211,7 +211,7 @@
   {
    "market": "EUR/USD",
    "text": "OANDA position 520: temporary gateway error (HTML page)",
-   "count": 49
+   "count": 50
   },
   {
    "market": "EUR/GBP",
@@ -226,7 +226,7 @@
   {
    "market": "EUR/GBP",
    "text": "OANDA position 520: temporary gateway error (HTML page)",
-   "count": 49
+   "count": 50
   }
  ],
  "account": {
