@@ -18,8 +18,8 @@
 |---|---|---|---|---|---|---|---|---|
 | Bitcoin | 11-19 00:24 | 0 | 0 | 0 | 29 | 7 | -18.45 | yes |
 | Bitcoin 1h | 11-19 00:25 | 0 | 0 | 0 | 0 | - | +0.00 |  |
-| Bitcoin 15m | 11-21 01:44 | 1438 | 0 | 0 | 0 | - | +0.00 |  |
-| Gold USD | 11-21 01:44 | 1438 | 2 | 0 | 11 | 9 | -6.86 | yes |
+| Bitcoin 15m | 11-21 01:45 | 1439 | 0 | 0 | 0 | - | +0.00 |  |
+| Gold USD | 11-21 01:45 | 1439 | 2 | 0 | 11 | 9 | -6.86 | yes |
 | USD/JPY | 11-21 01:44 | 1391 | 3 | 178 | 27 | 37 | -0.04 |  |
 | GBP/USD | 11-21 01:44 | 1391 | 4 | 178 | 24 | 38 | +0.11 |  |
 | EUR/USD | 11-21 01:44 | 1391 | 3 | 178 | 27 | 37 | -0.04 |  |
@@ -119,12 +119,12 @@
 - Bitcoin 11-19 00:23 price 62606.65 holding 0.2%
 - Bitcoin 11-19 00:24 price 62630.6 holding 0.3%
 - Bitcoin 1h 11-19 00:25 price 62607.78 holding 0.2%
-- Bitcoin 15m 11-21 01:42 price 58875.62 no_trade score below 2
 - Bitcoin 15m 11-21 01:43 price 58883.39 no_trade score below 2
 - Bitcoin 15m 11-21 01:44 price 58877.77 no_trade score below 2
-- Gold USD 11-21 01:42 price 3528.84 holding -0.6%
+- Bitcoin 15m 11-21 01:45 price 58868.04 no_trade score below 2
 - Gold USD 11-21 01:43 price 3530.53 holding -0.6%
 - Gold USD 11-21 01:44 price 3531.25 holding -0.6%
+- Gold USD 11-21 01:45 price 3531.15 holding -0.6%
 - USD/JPY 11-21 01:42 price  error OANDA position 503 [req 0]: {"errorMessage":"System under maintenance; please try again la
 - USD/JPY 11-21 01:43 price  error OANDA position 503 [req 0]: {"errorMessage":"System under maintenance; please try again la
 - USD/JPY 11-21 01:44 price  error OANDA position 503 [req 0]: {"errorMessage":"System under maintenance; please try again la
