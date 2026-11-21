@@ -2327,3 +2327,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-21 13:36,59749.41,2,rsi_in_range,no,no_trade,1Hour trend not up
 2026-11-21 13:37,60268.03,2,rsi_in_range,no,gemini_hold,conf 2: Extremely overbought RSI at 82.6 indicates high risk of pullback
 2026-11-21 13:38,60449.56,2,rsi_in_range,no,no_trade,Gemini cooldown
+2026-11-21 13:39,60514.31,2,rsi_in_range,no,no_trade,Gemini cooldown
