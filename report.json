@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-11-21 03:31",
+ "generated_utc": "2026-11-21 03:32",
  "markets": [
   {
    "market": "Bitcoin",
@@ -42,7 +42,7 @@
   {
    "market": "Bitcoin 15m",
    "enabled": true,
-   "last_run_utc": "2026-11-21 03:31",
+   "last_run_utc": "2026-11-21 03:32",
    "runs_24h": 1439,
    "entries_24h": 0,
    "errors_24h": 0,
@@ -58,30 +58,30 @@
   {
    "market": "Gold USD",
    "enabled": true,
-   "last_run_utc": "2026-11-21 03:31",
+   "last_run_utc": "2026-11-21 03:32",
    "runs_24h": 1439,
    "entries_24h": 2,
    "errors_24h": 0,
-   "closed_trades": 11,
-   "win_pct": 9,
-   "total_pct_after_fees": -6.86,
-   "open": "long",
-   "closed_today": 0,
-   "result_today_pct": 0,
+   "closed_trades": 12,
+   "win_pct": 8,
+   "total_pct_after_fees": -7.69,
+   "open": null,
+   "closed_today": 1,
+   "result_today_pct": -0.83,
    "entries_today": 0,
    "last_trades_pct": [
-    -0.55,
     -0.56,
     -0.77,
     -1.11,
-    -1.14
+    -1.14,
+    -0.83
    ]
   },
   {
    "market": "USD/JPY",
    "enabled": true,
    "last_run_utc": "2026-11-21 01:44",
-   "runs_24h": 1285,
+   "runs_24h": 1284,
    "entries_24h": 2,
    "errors_24h": 178,
    "closed_trades": 27,
@@ -103,7 +103,7 @@
    "market": "GBP/USD",
    "enabled": true,
    "last_run_utc": "2026-11-21 01:44",
-   "runs_24h": 1285,
+   "runs_24h": 1284,
    "entries_24h": 3,
    "errors_24h": 178,
    "closed_trades": 24,
@@ -125,7 +125,7 @@
    "market": "EUR/USD",
    "enabled": true,
    "last_run_utc": "2026-11-21 01:44",
-   "runs_24h": 1285,
+   "runs_24h": 1284,
    "entries_24h": 3,
    "errors_24h": 178,
    "closed_trades": 27,
@@ -147,7 +147,7 @@
    "market": "EUR/GBP",
    "enabled": true,
    "last_run_utc": "2026-11-21 01:44",
-   "runs_24h": 1285,
+   "runs_24h": 1284,
    "entries_24h": 1,
    "errors_24h": 178,
    "closed_trades": 25,

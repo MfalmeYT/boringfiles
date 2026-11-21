@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-21 03:31 UTC)
+# Bot report (generated 2026-11-21 03:32 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -18,12 +18,12 @@
 |---|---|---|---|---|---|---|---|---|
 | Bitcoin | 11-19 00:24 | 0 | 0 | 0 | 29 | 7 | -18.45 | yes |
 | Bitcoin 1h | 11-19 00:25 | 0 | 0 | 0 | 0 | - | +0.00 |  |
-| Bitcoin 15m | 11-21 03:31 | 1439 | 0 | 0 | 0 | - | +0.00 |  |
-| Gold USD | 11-21 03:31 | 1439 | 2 | 0 | 11 | 9 | -6.86 | yes |
-| USD/JPY | 11-21 01:44 | 1285 | 2 | 178 | 27 | 37 | -0.04 |  |
-| GBP/USD | 11-21 01:44 | 1285 | 3 | 178 | 24 | 38 | +0.11 |  |
-| EUR/USD | 11-21 01:44 | 1285 | 3 | 178 | 27 | 37 | -0.04 |  |
-| EUR/GBP | 11-21 01:44 | 1285 | 1 | 178 | 25 | 24 | -0.45 |  |
+| Bitcoin 15m | 11-21 03:32 | 1439 | 0 | 0 | 0 | - | +0.00 |  |
+| Gold USD | 11-21 03:32 | 1439 | 2 | 0 | 12 | 8 | -7.69 |  |
+| USD/JPY | 11-21 01:44 | 1284 | 2 | 178 | 27 | 37 | -0.04 |  |
+| GBP/USD | 11-21 01:44 | 1284 | 3 | 178 | 24 | 38 | +0.11 |  |
+| EUR/USD | 11-21 01:44 | 1284 | 3 | 178 | 27 | 37 | -0.04 |  |
+| EUR/GBP | 11-21 01:44 | 1284 | 1 | 178 | 25 | 24 | -0.45 |  |
 
 ## Raw log files (full history, one row per run)
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log.csv
@@ -56,11 +56,11 @@
 - Bitcoin: long -0.72%
 - Bitcoin: long -0.68%
 - Bitcoin: long -1.11%
-- Gold USD: long -0.55%
 - Gold USD: long -0.56%
 - Gold USD: long -0.77%
 - Gold USD: long -1.11%
 - Gold USD: long -1.14%
+- Gold USD: long -0.83%
 - USD/JPY: short -0.09%
 - USD/JPY: short -0.04%
 - USD/JPY: short +0.20%
@@ -91,7 +91,6 @@
 - 2026-11-21 02:44 UTC Oanda: balance 821.5243, equity 821.5243, free 821.5243
 
 ## Recent fills (decision price vs real fill; columns: time_utc,market,action,order_id,decision_price,fill_price,move_pct,fill_qty,position_qty,requested,status,reason)
-- 2026-11-20 15:37,EUR/USD,buy,1716,1.09827,1.09906,0.0719,10000.0,,10000,filled,conf 4
 - 2026-11-20 16:15,GBP/USD,short,1724,1.31018,1.31011,-0.0053,2500.0,,2500,filled,conf 4
 - 2026-11-20 17:44,EUR/USD,sell,broker,,1.09747,,,,,filled,closed by broker stop/TP; P/L -15.9000
 - 2026-11-20 18:00,USD/JPY,short,1732,158.772,158.747,-0.0157,5000.0,,5000,filled,conf 4
@@ -99,6 +98,7 @@
 - 2026-11-20 21:30,GBP/USD,cover,1742,1.30774,1.30785,0.0084,2500.0,2500.0,,filled,WEEKEND FLATTEN (0.2%)
 - 2026-11-20 21:30,EUR/GBP,sell,1746,0.83837,0.83827,-0.0119,5000.0,5000.0,,filled,WEEKEND FLATTEN (0.1%)
 - 2026-11-20 22:47,Gold USD,buy,43f1175e-3b7b-4e1b-9015-e41fa4b53ee2,3532.824,3550.91,0.5119,0.012424356,,45,filled,conf 4
+- 2026-11-21 03:32,Gold USD,sell,53750fe8-2f6a-41c8-b093-8538a3ce855a,3521.2825,3512.01,-0.2633,0.012393295,0.012393295,,filled,SIGNAL EXIT; score 0/3 (-0.8%)
 
 ## Recent Gemini decisions
 - 2026-11-20 13:25,EUR/GBP,buy,long,0.83764,0.00014,0.837241,0.837136,0.837255,56.8,0.000447,3,5,+0.16% (take profit) or -0.11% (stop loss); set from recent volatility,Fresh bullish EMA crossover with p
@@ -119,12 +119,12 @@
 - Bitcoin 11-19 00:23 price 62606.65 holding 0.2%
 - Bitcoin 11-19 00:24 price 62630.6 holding 0.3%
 - Bitcoin 1h 11-19 00:25 price 62607.78 holding 0.2%
-- Bitcoin 15m 11-21 03:29 price 58192.92 no_trade score below 2
 - Bitcoin 15m 11-21 03:30 price 58163.32 no_trade score below 2
 - Bitcoin 15m 11-21 03:31 price 57843.9 no_trade score below 2
-- Gold USD 11-21 03:29 price 3527.63 holding -0.7%
+- Bitcoin 15m 11-21 03:32 price 57232.03 no_trade score below 2
 - Gold USD 11-21 03:30 price 3527.63 holding -0.7%
 - Gold USD 11-21 03:31 price 3527.63 holding -0.7%
+- Gold USD 11-21 03:32 price 3521.28 sell SIGNAL EXIT; score 0/3 (-0.8%)
 - USD/JPY 11-21 01:42 price  error OANDA position 503 [req 0]: {"errorMessage":"System under maintenance; please try again la
 - USD/JPY 11-21 01:43 price  error OANDA position 503 [req 0]: {"errorMessage":"System under maintenance; please try again la
 - USD/JPY 11-21 01:44 price  error OANDA position 503 [req 0]: {"errorMessage":"System under maintenance; please try again la
