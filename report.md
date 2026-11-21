@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-21 13:36 UTC)
+# Bot report (generated 2026-11-21 13:37 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -18,12 +18,12 @@
 |---|---|---|---|---|---|---|---|---|
 | Bitcoin | 11-19 00:24 | 0 | 0 | 0 | 29 | 7 | -18.45 | yes |
 | Bitcoin 1h | 11-19 00:25 | 0 | 0 | 0 | 0 | - | +0.00 |  |
-| Bitcoin 15m | 11-21 13:36 | 1439 | 0 | 0 | 0 | - | +0.00 |  |
-| Gold USD | 11-21 13:36 | 1439 | 2 | 0 | 12 | 8 | -7.69 | yes |
-| USD/JPY | 11-21 01:44 | 680 | 1 | 178 | 27 | 37 | -0.04 |  |
-| GBP/USD | 11-21 01:44 | 680 | 1 | 178 | 24 | 38 | +0.11 |  |
-| EUR/USD | 11-21 01:44 | 680 | 1 | 178 | 27 | 37 | -0.04 |  |
-| EUR/GBP | 11-21 01:44 | 680 | 0 | 178 | 25 | 24 | -0.45 |  |
+| Bitcoin 15m | 11-21 13:37 | 1439 | 0 | 0 | 0 | - | +0.00 |  |
+| Gold USD | 11-21 13:37 | 1439 | 2 | 0 | 12 | 8 | -7.69 | yes |
+| USD/JPY | 11-21 01:44 | 679 | 1 | 178 | 27 | 37 | -0.04 |  |
+| GBP/USD | 11-21 01:44 | 679 | 1 | 178 | 24 | 38 | +0.11 |  |
+| EUR/USD | 11-21 01:44 | 679 | 1 | 178 | 27 | 37 | -0.04 |  |
+| EUR/GBP | 11-21 01:44 | 679 | 0 | 178 | 25 | 24 | -0.45 |  |
 
 ## Raw log files (full history, one row per run)
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log.csv
@@ -101,11 +101,11 @@
 - 2026-11-21 07:16,Gold USD,buy,728e4d4e-1a84-4d9f-9c50-f37ec473d47e,3524.3,3540.5,0.4597,0.012462816,,45,filled,conf 5
 
 ## Recent Gemini decisions
-- 2026-11-20 15:37,EUR/USD,buy,long,1.09827,0.00015,1.098373,1.098024,1.097752,53.5,0.000785,3,4,+0.21% (take profit) or -0.14% (stop loss); set from recent volatility,Bullish alignment and RSI support 
 - 2026-11-20 16:15,GBP/USD,short,short,1.31018,0.00018,1.31089,1.310945,1.310759,44.5,0.000989,3,4,a 0.23% fall (take profit) or a 0.15% rise (stop loss); set from recent volatility,Fresh bear crossover
 - 2026-11-20 18:00,USD/JPY,short,short,158.772,0.013,158.7438,158.768,158.8975,49.0,0.1164,3,4,a 0.22% fall (take profit) or a 0.15% rise (stop loss); set from recent volatility,Weak downtrend alignment
 - 2026-11-20 22:47,Gold USD,buy,long,3532.82,,3526.741,3526.165,3537.258,53.0,20.662,2,4,+1.50% (take profit) or -1.00% (stop loss),Fresh bullish crossover with RSI neutral; but EMA50 acts as overhead r
 - 2026-11-21 07:16,Gold USD,buy,long,3524.3,,3517.516,3517.404,3523.607,56.3,27.499,3,5,+1.50% (take profit) or -1.00% (stop loss),Fresh bullish EMA crossover with price above trend and healthy RSI.
+- 2026-11-21 13:37,Bitcoin 15m,gemini_hold,long,60268.03,14.286,59022.282,58441.793,58196.943,82.6,462.641,2,2,+3.00% (take profit) or -2.00% (stop loss),Extremely overbought RSI at 82.6 indicates high 
 
 ## Data files
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/data/fills.csv
@@ -119,12 +119,12 @@
 - Bitcoin 11-19 00:23 price 62606.65 holding 0.2%
 - Bitcoin 11-19 00:24 price 62630.6 holding 0.3%
 - Bitcoin 1h 11-19 00:25 price 62607.78 holding 0.2%
-- Bitcoin 15m 11-21 13:34 price 59776.25 no_trade 1Hour trend not up
 - Bitcoin 15m 11-21 13:35 price 59719.42 no_trade 1Hour trend not up
 - Bitcoin 15m 11-21 13:36 price 59749.41 no_trade 1Hour trend not up
-- Gold USD 11-21 13:34 price 3544.84 holding 0.1%
+- Bitcoin 15m 11-21 13:37 price 60268.03 gemini_hold conf 2: Extremely overbought RSI at 82.6 indicates high risk of pullback
 - Gold USD 11-21 13:35 price 3547.73 holding 0.2%
 - Gold USD 11-21 13:36 price 3547.73 holding 0.2%
+- Gold USD 11-21 13:37 price 3547.73 holding 0.2%
 - USD/JPY 11-21 01:42 price  error OANDA position 503 [req 0]: {"errorMessage":"System under maintenance; please try again la
 - USD/JPY 11-21 01:43 price  error OANDA position 503 [req 0]: {"errorMessage":"System under maintenance; please try again la
 - USD/JPY 11-21 01:44 price  error OANDA position 503 [req 0]: {"errorMessage":"System under maintenance; please try again la
