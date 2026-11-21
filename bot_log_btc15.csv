@@ -2343,3 +2343,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-21 13:52,60613.7,2,rsi_in_range,no,gemini_hold,conf 2: RSI at 84.4 signals an exhausted overbought spike vulnerable to pullback
 2026-11-21 13:53,60506.82,2,rsi_in_range,no,no_trade,Gemini cooldown
 2026-11-21 13:54,60493.72,2,rsi_in_range,no,no_trade,Gemini cooldown
+2026-11-21 13:55,60460.03,2,rsi_in_range,no,no_trade,Gemini cooldown
