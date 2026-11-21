@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-11-21 23:00",
+ "generated_utc": "2026-11-21 23:01",
  "markets": [
   {
    "market": "Bitcoin",
@@ -42,7 +42,7 @@
   {
    "market": "Bitcoin 15m",
    "enabled": true,
-   "last_run_utc": "2026-11-21 23:00",
+   "last_run_utc": "2026-11-21 23:01",
    "runs_24h": 1439,
    "entries_24h": 1,
    "errors_24h": 0,
@@ -58,7 +58,7 @@
   {
    "market": "Gold USD",
    "enabled": true,
-   "last_run_utc": "2026-11-21 23:00",
+   "last_run_utc": "2026-11-21 23:01",
    "runs_24h": 1439,
    "entries_24h": 1,
    "errors_24h": 0,
@@ -81,9 +81,9 @@
    "market": "USD/JPY",
    "enabled": true,
    "last_run_utc": "2026-11-21 01:44",
-   "runs_24h": 163,
+   "runs_24h": 162,
    "entries_24h": 0,
-   "errors_24h": 163,
+   "errors_24h": 162,
    "closed_trades": 27,
    "win_pct": 37,
    "total_pct_after_fees": -0.04,
@@ -103,9 +103,9 @@
    "market": "GBP/USD",
    "enabled": true,
    "last_run_utc": "2026-11-21 01:44",
-   "runs_24h": 163,
+   "runs_24h": 162,
    "entries_24h": 0,
-   "errors_24h": 163,
+   "errors_24h": 162,
    "closed_trades": 24,
    "win_pct": 38,
    "total_pct_after_fees": 0.11,
@@ -125,9 +125,9 @@
    "market": "EUR/USD",
    "enabled": true,
    "last_run_utc": "2026-11-21 01:44",
-   "runs_24h": 163,
+   "runs_24h": 162,
    "entries_24h": 0,
-   "errors_24h": 163,
+   "errors_24h": 162,
    "closed_trades": 27,
    "win_pct": 37,
    "total_pct_after_fees": -0.04,
@@ -147,9 +147,9 @@
    "market": "EUR/GBP",
    "enabled": true,
    "last_run_utc": "2026-11-21 01:44",
-   "runs_24h": 163,
+   "runs_24h": 162,
    "entries_24h": 0,
-   "errors_24h": 163,
+   "errors_24h": 162,
    "closed_trades": 25,
    "win_pct": 24,
    "total_pct_after_fees": -0.45,
@@ -171,7 +171,7 @@
   {
    "market": "USD/JPY",
    "text": "OANDA position 503 [req #]: {\"errorMessage\":\"Service unavailable; please try again later.\"}",
-   "count": 5
+   "count": 4
   },
   {
    "market": "USD/JPY",
@@ -186,7 +186,7 @@
   {
    "market": "GBP/USD",
    "text": "OANDA position 503 [req #]: {\"errorMessage\":\"Service unavailable; please try again later.\"}",
-   "count": 4
+   "count": 3
   },
   {
    "market": "GBP/USD",
@@ -201,7 +201,7 @@
   {
    "market": "EUR/USD",
    "text": "OANDA position 503 [req #]: {\"errorMessage\":\"Service unavailable; please try again later.\"}",
-   "count": 4
+   "count": 3
   },
   {
    "market": "EUR/USD",
@@ -216,7 +216,7 @@
   {
    "market": "EUR/GBP",
    "text": "OANDA position 503 [req #]: {\"errorMessage\":\"Service unavailable; please try again later.\"}",
-   "count": 4
+   "count": 3
   },
   {
    "market": "EUR/GBP",
@@ -235,7 +235,7 @@
   }
  ],
  "account": {
-  "AlpacaCrypto": "2026-11-21 22:02 UTC AlpacaCrypto: balance 893.41, equity 981.75, free 893.41",
-  "Oanda": "2026-11-21 22:24 UTC Oanda: balance 821.5243, equity 821.5243, free 821.5243"
+  "Oanda": "2026-11-21 22:24 UTC Oanda: balance 821.5243, equity 821.5243, free 821.5243",
+  "AlpacaCrypto": "2026-11-21 23:01 UTC AlpacaCrypto: balance 937.12, equity 980.82, free 937.12"
  }
 }
