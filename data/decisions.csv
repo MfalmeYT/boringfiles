@@ -16,3 +16,4 @@ time_utc,market,action,side,price,spread,ema_fast,ema_slow,ema_trend,rsi,atr,sco
 2026-11-20 22:47,Gold USD,buy,long,3532.82,,3526.741,3526.165,3537.258,53.0,20.662,2,4,+1.50% (take profit) or -1.00% (stop loss),Fresh bullish crossover with RSI neutral; but EMA50 acts as overhead resistance.
 2026-11-21 07:16,Gold USD,buy,long,3524.3,,3517.516,3517.404,3523.607,56.3,27.499,3,5,+1.50% (take profit) or -1.00% (stop loss),Fresh bullish EMA crossover with price above trend and healthy RSI.
 2026-11-21 13:37,Bitcoin 15m,gemini_hold,long,60268.03,14.286,59022.282,58441.793,58196.943,82.6,462.641,2,2,+3.00% (take profit) or -2.00% (stop loss),Extremely overbought RSI at 82.6 indicates high risk of pullback
+2026-11-21 13:52,Bitcoin 15m,gemini_hold,long,60613.7,18.8,59350.658,58644.45,58293.697,84.4,477.05,2,2,+3.00% (take profit) or -2.00% (stop loss),RSI at 84.4 signals an exhausted overbought spike vulnerable to pullback
