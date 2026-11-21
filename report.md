@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-21 07:11 UTC)
+# Bot report (generated 2026-11-21 07:12 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -18,12 +18,12 @@
 |---|---|---|---|---|---|---|---|---|
 | Bitcoin | 11-19 00:24 | 0 | 0 | 0 | 29 | 7 | -18.45 | yes |
 | Bitcoin 1h | 11-19 00:25 | 0 | 0 | 0 | 0 | - | +0.00 |  |
-| Bitcoin 15m | 11-21 07:11 | 1439 | 0 | 0 | 0 | - | +0.00 |  |
-| Gold USD | 11-21 07:11 | 1439 | 2 | 0 | 12 | 8 | -7.69 |  |
-| USD/JPY | 11-21 01:44 | 1065 | 2 | 178 | 27 | 37 | -0.04 |  |
-| GBP/USD | 11-21 01:44 | 1065 | 2 | 178 | 24 | 38 | +0.11 |  |
-| EUR/USD | 11-21 01:44 | 1065 | 2 | 178 | 27 | 37 | -0.04 |  |
-| EUR/GBP | 11-21 01:44 | 1065 | 1 | 178 | 25 | 24 | -0.45 |  |
+| Bitcoin 15m | 11-21 07:12 | 1439 | 0 | 0 | 0 | - | +0.00 |  |
+| Gold USD | 11-21 07:12 | 1439 | 2 | 0 | 12 | 8 | -7.69 |  |
+| USD/JPY | 11-21 01:44 | 1064 | 2 | 178 | 27 | 37 | -0.04 |  |
+| GBP/USD | 11-21 01:44 | 1064 | 2 | 178 | 24 | 38 | +0.11 |  |
+| EUR/USD | 11-21 01:44 | 1064 | 2 | 178 | 27 | 37 | -0.04 |  |
+| EUR/GBP | 11-21 01:44 | 1064 | 1 | 178 | 25 | 24 | -0.45 |  |
 
 ## Raw log files (full history, one row per run)
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log.csv
@@ -119,12 +119,12 @@
 - Bitcoin 11-19 00:23 price 62606.65 holding 0.2%
 - Bitcoin 11-19 00:24 price 62630.6 holding 0.3%
 - Bitcoin 1h 11-19 00:25 price 62607.78 holding 0.2%
-- Bitcoin 15m 11-21 07:09 price 58152.5 no_trade short-term trend not up
 - Bitcoin 15m 11-21 07:10 price 58344.92 no_trade short-term trend not up
 - Bitcoin 15m 11-21 07:11 price 58388.57 no_trade short-term trend not up
-- Gold USD 11-21 07:09 price 3527.0 no_trade short-term trend not up
+- Bitcoin 15m 11-21 07:12 price 58247.12 no_trade short-term trend not up
 - Gold USD 11-21 07:10 price 3526.01 no_trade short-term trend not up
 - Gold USD 11-21 07:11 price 3525.43 no_trade short-term trend not up
+- Gold USD 11-21 07:12 price 3524.76 no_trade short-term trend not up
 - USD/JPY 11-21 01:42 price  error OANDA position 503 [req 0]: {"errorMessage":"System under maintenance; please try again la
 - USD/JPY 11-21 01:43 price  error OANDA position 503 [req 0]: {"errorMessage":"System under maintenance; please try again la
 - USD/JPY 11-21 01:44 price  error OANDA position 503 [req 0]: {"errorMessage":"System under maintenance; please try again la
