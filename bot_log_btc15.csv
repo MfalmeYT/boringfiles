@@ -2373,3 +2373,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-21 14:22,60384.32,2,rsi_in_range,no,buy,conf 3: Strong uptrend but overbought RSI 78 indicates potential short-term exhaustion
 2026-11-21 14:23,60318.72,2,rsi_in_range,yes,holding,-0.2%
 2026-11-21 14:24,60280.03,2,rsi_in_range,yes,holding,-0.3%
+2026-11-21 14:25,60268.59,2,rsi_in_range,yes,holding,-0.3%
