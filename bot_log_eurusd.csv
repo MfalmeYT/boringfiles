@@ -12516,3 +12516,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-21 01:01,,,,,error,OANDA position 503 [req 0]: {"errorMessage":"System under maintenance; please try again later."}
 2026-11-21 01:02,,,,,error,OANDA position 503 [req 0]: {"errorMessage":"System under maintenance; please try again later."}
 2026-11-21 01:03,,,,,error,OANDA position 503 [req 0]: {"errorMessage":"System under maintenance; please try again later."}
+2026-11-21 01:04,,,,,error,OANDA position 503 [req 0]: {"errorMessage":"System under maintenance; please try again later."}
