@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-21 00:20 UTC)
+# Bot report (generated 2026-11-21 00:21 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -18,12 +18,12 @@
 |---|---|---|---|---|---|---|---|---|
 | Bitcoin | 11-19 00:24 | 0 | 0 | 0 | 29 | 7 | -18.45 | yes |
 | Bitcoin 1h | 11-19 00:25 | 0 | 0 | 0 | 0 | - | +0.00 |  |
-| Bitcoin 15m | 11-21 00:20 | 1439 | 0 | 0 | 0 | - | +0.00 |  |
-| Gold USD | 11-21 00:20 | 1439 | 2 | 0 | 11 | 9 | -6.86 | yes |
-| USD/JPY | 11-21 00:20 | 1392 | 3 | 94 | 27 | 37 | -0.04 |  |
-| GBP/USD | 11-21 00:20 | 1392 | 4 | 94 | 24 | 38 | +0.11 |  |
-| EUR/USD | 11-21 00:20 | 1392 | 3 | 94 | 27 | 37 | -0.04 |  |
-| EUR/GBP | 11-21 00:20 | 1392 | 1 | 94 | 25 | 24 | -0.45 |  |
+| Bitcoin 15m | 11-21 00:21 | 1439 | 0 | 0 | 0 | - | +0.00 |  |
+| Gold USD | 11-21 00:21 | 1439 | 2 | 0 | 11 | 9 | -6.86 | yes |
+| USD/JPY | 11-21 00:21 | 1392 | 3 | 95 | 27 | 37 | -0.04 |  |
+| GBP/USD | 11-21 00:21 | 1392 | 4 | 95 | 24 | 38 | +0.11 |  |
+| EUR/USD | 11-21 00:21 | 1392 | 3 | 95 | 27 | 37 | -0.04 |  |
+| EUR/GBP | 11-21 00:21 | 1392 | 1 | 95 | 25 | 24 | -0.45 |  |
 
 ## Raw log files (full history, one row per run)
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log.csv
@@ -36,10 +36,10 @@
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log_eurgbp.csv
 
 ## Errors in the last 24h (grouped)
-- x69 GBP/USD: OANDA position 520: temporary gateway error (HTML page)
-- x69 EUR/USD: OANDA position 520: temporary gateway error (HTML page)
-- x69 EUR/GBP: OANDA position 520: temporary gateway error (HTML page)
-- x68 USD/JPY: OANDA position 520: temporary gateway error (HTML page)
+- x70 GBP/USD: OANDA position 520: temporary gateway error (HTML page)
+- x70 EUR/USD: OANDA position 520: temporary gateway error (HTML page)
+- x70 EUR/GBP: OANDA position 520: temporary gateway error (HTML page)
+- x69 USD/JPY: OANDA position 520: temporary gateway error (HTML page)
 - x20 USD/JPY: OANDA position 503 [req #]: {"errorMessage":"Service unavailable; please try again later."}
 - x19 GBP/USD: OANDA position 503 [req #]: {"errorMessage":"Service unavailable; please try again later."}
 - x19 EUR/USD: OANDA position 503 [req #]: {"errorMessage":"Service unavailable; please try again later."}
@@ -119,21 +119,21 @@
 - Bitcoin 11-19 00:23 price 62606.65 holding 0.2%
 - Bitcoin 11-19 00:24 price 62630.6 holding 0.3%
 - Bitcoin 1h 11-19 00:25 price 62607.78 holding 0.2%
-- Bitcoin 15m 11-21 00:18 price 58854.64 no_trade score below 2
 - Bitcoin 15m 11-21 00:19 price 58854.48 no_trade score below 2
 - Bitcoin 15m 11-21 00:20 price 58875.39 no_trade score below 2
-- Gold USD 11-21 00:18 price 3534.41 holding -0.5%
+- Bitcoin 15m 11-21 00:21 price 58850.36 no_trade score below 2
 - Gold USD 11-21 00:19 price 3534.3 holding -0.5%
 - Gold USD 11-21 00:20 price 3534.3 holding -0.5%
-- USD/JPY 11-21 00:18 price  error OANDA position 520: temporary gateway error (HTML page)
+- Gold USD 11-21 00:21 price 3534.86 holding -0.5%
 - USD/JPY 11-21 00:19 price  error OANDA position 520: temporary gateway error (HTML page)
 - USD/JPY 11-21 00:20 price  error OANDA position 520: temporary gateway error (HTML page)
-- GBP/USD 11-21 00:18 price  error OANDA position 520: temporary gateway error (HTML page)
+- USD/JPY 11-21 00:21 price  error OANDA position 520: temporary gateway error (HTML page)
 - GBP/USD 11-21 00:19 price  error OANDA position 520: temporary gateway error (HTML page)
 - GBP/USD 11-21 00:20 price  error OANDA position 520: temporary gateway error (HTML page)
-- EUR/USD 11-21 00:18 price  error OANDA position 520: temporary gateway error (HTML page)
+- GBP/USD 11-21 00:21 price  error OANDA position 520: temporary gateway error (HTML page)
 - EUR/USD 11-21 00:19 price  error OANDA position 520: temporary gateway error (HTML page)
 - EUR/USD 11-21 00:20 price  error OANDA position 520: temporary gateway error (HTML page)
-- EUR/GBP 11-21 00:18 price  error OANDA position 520: temporary gateway error (HTML page)
+- EUR/USD 11-21 00:21 price  error OANDA position 520: temporary gateway error (HTML page)
 - EUR/GBP 11-21 00:19 price  error OANDA position 520: temporary gateway error (HTML page)
 - EUR/GBP 11-21 00:20 price  error OANDA position 520: temporary gateway error (HTML page)
+- EUR/GBP 11-21 00:21 price  error OANDA position 520: temporary gateway error (HTML page)
