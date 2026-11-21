@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-21 14:21 UTC)
+# Bot report (generated 2026-11-21 14:22 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -18,12 +18,12 @@
 |---|---|---|---|---|---|---|---|---|
 | Bitcoin | 11-19 00:24 | 0 | 0 | 0 | 29 | 7 | -18.45 | yes |
 | Bitcoin 1h | 11-19 00:25 | 0 | 0 | 0 | 0 | - | +0.00 |  |
-| Bitcoin 15m | 11-21 14:21 | 1439 | 0 | 0 | 0 | - | +0.00 |  |
-| Gold USD | 11-21 14:21 | 1439 | 2 | 0 | 12 | 8 | -7.69 | yes |
-| USD/JPY | 11-21 01:44 | 635 | 1 | 178 | 27 | 37 | -0.04 |  |
-| GBP/USD | 11-21 01:44 | 635 | 1 | 178 | 24 | 38 | +0.11 |  |
-| EUR/USD | 11-21 01:44 | 635 | 1 | 178 | 27 | 37 | -0.04 |  |
-| EUR/GBP | 11-21 01:44 | 635 | 0 | 178 | 25 | 24 | -0.45 |  |
+| Bitcoin 15m | 11-21 14:22 | 1439 | 1 | 0 | 0 | - | +0.00 | yes |
+| Gold USD | 11-21 14:22 | 1439 | 2 | 0 | 12 | 8 | -7.69 | yes |
+| USD/JPY | 11-21 01:44 | 634 | 1 | 178 | 27 | 37 | -0.04 |  |
+| GBP/USD | 11-21 01:44 | 634 | 1 | 178 | 24 | 38 | +0.11 |  |
+| EUR/USD | 11-21 01:44 | 634 | 1 | 178 | 27 | 37 | -0.04 |  |
+| EUR/GBP | 11-21 01:44 | 634 | 0 | 178 | 25 | 24 | -0.45 |  |
 
 ## Raw log files (full history, one row per run)
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log.csv
@@ -91,7 +91,6 @@
 - 2026-11-21 14:10 UTC AlpacaCrypto: balance 937.54, equity 981.48, free 937.54
 
 ## Recent fills (decision price vs real fill; columns: time_utc,market,action,order_id,decision_price,fill_price,move_pct,fill_qty,position_qty,requested,status,reason)
-- 2026-11-20 17:44,EUR/USD,sell,broker,,1.09747,,,,,filled,closed by broker stop/TP; P/L -15.9000
 - 2026-11-20 18:00,USD/JPY,short,1732,158.772,158.747,-0.0157,5000.0,,5000,filled,conf 4
 - 2026-11-20 21:30,USD/JPY,cover,1738,158.592,158.614,0.0139,5000.0,5000.0,,filled,WEEKEND FLATTEN (0.1%)
 - 2026-11-20 21:30,GBP/USD,cover,1742,1.30774,1.30785,0.0084,2500.0,2500.0,,filled,WEEKEND FLATTEN (0.2%)
@@ -99,13 +98,14 @@
 - 2026-11-20 22:47,Gold USD,buy,43f1175e-3b7b-4e1b-9015-e41fa4b53ee2,3532.824,3550.91,0.5119,0.012424356,,45,filled,conf 4
 - 2026-11-21 03:32,Gold USD,sell,53750fe8-2f6a-41c8-b093-8538a3ce855a,3521.2825,3512.01,-0.2633,0.012393295,0.012393295,,filled,SIGNAL EXIT; score 0/3 (-0.8%)
 - 2026-11-21 07:16,Gold USD,buy,728e4d4e-1a84-4d9f-9c50-f37ec473d47e,3524.3,3540.5,0.4597,0.012462816,,45,filled,conf 5
+- 2026-11-21 14:22,Bitcoin 15m,buy,ad109ffc-31a9-4a2a-9116-3abd40aad4fe,60384.316,60458.862,0.1235,0.000729932,,45,filled,conf 3
 
 ## Recent Gemini decisions
-- 2026-11-20 22:47,Gold USD,buy,long,3532.82,,3526.741,3526.165,3537.258,53.0,20.662,2,4,+1.50% (take profit) or -1.00% (stop loss),Fresh bullish crossover with RSI neutral; but EMA50 acts as overhead r
 - 2026-11-21 07:16,Gold USD,buy,long,3524.3,,3517.516,3517.404,3523.607,56.3,27.499,3,5,+1.50% (take profit) or -1.00% (stop loss),Fresh bullish EMA crossover with price above trend and healthy RSI.
 - 2026-11-21 13:37,Bitcoin 15m,gemini_hold,long,60268.03,14.286,59022.282,58441.793,58196.943,82.6,462.641,2,2,+3.00% (take profit) or -2.00% (stop loss),Extremely overbought RSI at 82.6 indicates high 
 - 2026-11-21 13:52,Bitcoin 15m,gemini_hold,long,60613.7,18.8,59350.658,58644.45,58293.697,84.4,477.05,2,2,+3.00% (take profit) or -2.00% (stop loss),RSI at 84.4 signals an exhausted overbought spike vul
 - 2026-11-21 14:07,Bitcoin 15m,gemini_hold,long,60458.48,17.47,59547.293,58796.482,58371.948,83.6,473.825,2,2,+3.00% (take profit) or -2.00% (stop loss),RSI overbought at 83.6 with momentum exhausting n
+- 2026-11-21 14:22,Bitcoin 15m,buy,long,60384.32,18.214,59670.997,58918.257,58440.365,78.0,486.792,2,3,+3.00% (take profit) or -2.00% (stop loss),Strong uptrend but overbought RSI 78 indicates potential
 
 ## Data files
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/data/fills.csv
@@ -119,12 +119,12 @@
 - Bitcoin 11-19 00:23 price 62606.65 holding 0.2%
 - Bitcoin 11-19 00:24 price 62630.6 holding 0.3%
 - Bitcoin 1h 11-19 00:25 price 62607.78 holding 0.2%
-- Bitcoin 15m 11-21 14:19 price 60240.1 no_trade Gemini cooldown
 - Bitcoin 15m 11-21 14:20 price 60114.92 no_trade Gemini cooldown
 - Bitcoin 15m 11-21 14:21 price 60181.29 no_trade Gemini cooldown
-- Gold USD 11-21 14:19 price 3546.31 holding 0.2%
+- Bitcoin 15m 11-21 14:22 price 60384.32 buy conf 3: Strong uptrend but overbought RSI 78 indicates potential short-term exhaustion
 - Gold USD 11-21 14:20 price 3545.35 holding 0.1%
 - Gold USD 11-21 14:21 price 3545.35 holding 0.1%
+- Gold USD 11-21 14:22 price 3545.35 holding 0.1%
 - USD/JPY 11-21 01:42 price  error OANDA position 503 [req 0]: {"errorMessage":"System under maintenance; please try again la
 - USD/JPY 11-21 01:43 price  error OANDA position 503 [req 0]: {"errorMessage":"System under maintenance; please try again la
 - USD/JPY 11-21 01:44 price  error OANDA position 503 [req 0]: {"errorMessage":"System under maintenance; please try again la
