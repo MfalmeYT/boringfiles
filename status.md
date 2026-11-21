@@ -1,10 +1,10 @@
-# Status (2026-11-21 08:37 UTC)
-- last bot run: 2026-11-21 08:37 UTC (0 min ago)
+# Status (2026-11-21 08:38 UTC)
+- last bot run: 2026-11-21 08:38 UTC (0 min ago)
 - open now: Bitcoin long, Gold USD long
 - closed trades: 144, win 26%, sum of results -26.56% (sum of %, not account balance)
 - errors last 24h: 712 (OANDA 401: 1)
 - per market (trades / win% / total after fees): Bitcoin 29/7%/-18.45%; Bitcoin 1h 0/-%/+0.00%; Bitcoin 15m 0/-%/+0.00%; Gold USD 12/8%/-7.69%; USD/JPY 27/37%/-0.04%; GBP/USD 24/38%/+0.11%; EUR/USD 27/37%/-0.04%; EUR/GBP 25/24%/-0.45%
-- 2026-11-21 07:39 UTC Oanda: balance 821.5243, equity 821.5243, free 821.5243
 - 2026-11-21 08:16 UTC AlpacaCrypto: balance 937.54, equity 981.47, free 937.54
+- 2026-11-21 08:38 UTC Oanda: balance 821.5243, equity 821.5243, free 821.5243
 - latest closed: Gold USD long -0.83%
 - full report: https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/report.md

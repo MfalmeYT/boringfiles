@@ -2026,3 +2026,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-21 08:35,57291.4,2,price_above_trend_ema,no,no_trade,1Hour trend not up
 2026-11-21 08:36,57389.02,2,price_above_trend_ema,no,no_trade,1Hour trend not up
 2026-11-21 08:37,57342.15,2,price_above_trend_ema,no,no_trade,1Hour trend not up
+2026-11-21 08:38,57373.31,2,price_above_trend_ema,no,no_trade,1Hour trend not up
