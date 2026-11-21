@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-11-21 23:42",
+ "generated_utc": "2026-11-21 23:43",
  "markets": [
   {
    "market": "Bitcoin",
@@ -42,7 +42,7 @@
   {
    "market": "Bitcoin 15m",
    "enabled": true,
-   "last_run_utc": "2026-11-21 23:42",
+   "last_run_utc": "2026-11-21 23:43",
    "runs_24h": 1439,
    "entries_24h": 1,
    "errors_24h": 0,
@@ -58,7 +58,7 @@
   {
    "market": "Gold USD",
    "enabled": true,
-   "last_run_utc": "2026-11-21 23:42",
+   "last_run_utc": "2026-11-21 23:43",
    "runs_24h": 1439,
    "entries_24h": 1,
    "errors_24h": 0,
@@ -81,9 +81,9 @@
    "market": "USD/JPY",
    "enabled": true,
    "last_run_utc": "2026-11-21 01:44",
-   "runs_24h": 121,
+   "runs_24h": 120,
    "entries_24h": 0,
-   "errors_24h": 121,
+   "errors_24h": 120,
    "closed_trades": 27,
    "win_pct": 37,
    "total_pct_after_fees": -0.04,
@@ -103,9 +103,9 @@
    "market": "GBP/USD",
    "enabled": true,
    "last_run_utc": "2026-11-21 01:44",
-   "runs_24h": 121,
+   "runs_24h": 120,
    "entries_24h": 0,
-   "errors_24h": 121,
+   "errors_24h": 120,
    "closed_trades": 24,
    "win_pct": 38,
    "total_pct_after_fees": 0.11,
@@ -125,9 +125,9 @@
    "market": "EUR/USD",
    "enabled": true,
    "last_run_utc": "2026-11-21 01:44",
-   "runs_24h": 121,
+   "runs_24h": 120,
    "entries_24h": 0,
-   "errors_24h": 121,
+   "errors_24h": 120,
    "closed_trades": 27,
    "win_pct": 37,
    "total_pct_after_fees": -0.04,
@@ -147,9 +147,9 @@
    "market": "EUR/GBP",
    "enabled": true,
    "last_run_utc": "2026-11-21 01:44",
-   "runs_24h": 121,
+   "runs_24h": 120,
    "entries_24h": 0,
-   "errors_24h": 121,
+   "errors_24h": 120,
    "closed_trades": 25,
    "win_pct": 24,
    "total_pct_after_fees": -0.45,
@@ -171,7 +171,7 @@
   {
    "market": "USD/JPY",
    "text": "OANDA position 520: temporary gateway error (HTML page)",
-   "count": 66
+   "count": 65
   },
   {
    "market": "USD/JPY",
@@ -181,7 +181,7 @@
   {
    "market": "GBP/USD",
    "text": "OANDA position 520: temporary gateway error (HTML page)",
-   "count": 66
+   "count": 65
   },
   {
    "market": "GBP/USD",
@@ -191,7 +191,7 @@
   {
    "market": "EUR/USD",
    "text": "OANDA position 520: temporary gateway error (HTML page)",
-   "count": 66
+   "count": 65
   },
   {
    "market": "EUR/USD",
@@ -201,7 +201,7 @@
   {
    "market": "EUR/GBP",
    "text": "OANDA position 520: temporary gateway error (HTML page)",
-   "count": 66
+   "count": 65
   },
   {
    "market": "EUR/GBP",
