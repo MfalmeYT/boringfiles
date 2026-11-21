@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-21 22:01 UTC)
+# Bot report (generated 2026-11-21 22:02 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -18,8 +18,8 @@
 |---|---|---|---|---|---|---|---|---|
 | Bitcoin | 11-19 00:24 | 0 | 0 | 0 | 29 | 7 | -18.45 | yes |
 | Bitcoin 1h | 11-19 00:25 | 0 | 0 | 0 | 0 | - | +0.00 |  |
-| Bitcoin 15m | 11-21 22:01 | 1439 | 1 | 0 | 0 | - | +0.00 | yes |
-| Gold USD | 11-21 22:01 | 1439 | 2 | 0 | 12 | 8 | -7.69 | yes |
+| Bitcoin 15m | 11-21 22:02 | 1439 | 1 | 0 | 0 | - | +0.00 | yes |
+| Gold USD | 11-21 22:02 | 1439 | 2 | 0 | 12 | 8 | -7.69 | yes |
 | USD/JPY | 11-21 01:44 | 178 | 0 | 178 | 27 | 37 | -0.04 |  |
 | GBP/USD | 11-21 01:44 | 178 | 0 | 178 | 24 | 38 | +0.11 |  |
 | EUR/USD | 11-21 01:44 | 178 | 0 | 178 | 27 | 37 | -0.04 |  |
@@ -87,8 +87,8 @@
 - EUR/GBP totals: long 18 trades -0.38%, short 7 trades -0.08%
 
 ## Account (latest hourly snapshot)
-- 2026-11-21 21:03 UTC AlpacaCrypto: balance 893.41, equity 981.78, free 893.41
 - 2026-11-21 21:25 UTC Oanda: balance 821.5243, equity 821.5243, free 821.5243
+- 2026-11-21 22:02 UTC AlpacaCrypto: balance 893.41, equity 981.75, free 893.41
 
 ## Recent fills (decision price vs real fill; columns: time_utc,market,action,order_id,decision_price,fill_price,move_pct,fill_qty,position_qty,requested,status,reason)
 - 2026-11-20 18:00,USD/JPY,short,1732,158.772,158.747,-0.0157,5000.0,,5000,filled,conf 4
@@ -119,12 +119,12 @@
 - Bitcoin 11-19 00:23 price 62606.65 holding 0.2%
 - Bitcoin 11-19 00:24 price 62630.6 holding 0.3%
 - Bitcoin 1h 11-19 00:25 price 62607.78 holding 0.2%
-- Bitcoin 15m 11-21 21:59 price 60341.99 holding -0.2%
 - Bitcoin 15m 11-21 22:00 price 60355 holding -0.2%
 - Bitcoin 15m 11-21 22:01 price 60329.08 holding -0.2%
-- Gold USD 11-21 21:59 price 3553.84 holding 0.4%
+- Bitcoin 15m 11-21 22:02 price 60312.73 holding -0.2%
 - Gold USD 11-21 22:00 price 3553.71 holding 0.4%
 - Gold USD 11-21 22:01 price 3553.98 holding 0.4%
+- Gold USD 11-21 22:02 price 3553.82 holding 0.4%
 - USD/JPY 11-21 01:42 price  error OANDA position 503 [req 0]: {"errorMessage":"System under maintenance; please try again la
 - USD/JPY 11-21 01:43 price  error OANDA position 503 [req 0]: {"errorMessage":"System under maintenance; please try again la
 - USD/JPY 11-21 01:44 price  error OANDA position 503 [req 0]: {"errorMessage":"System under maintenance; please try again la
