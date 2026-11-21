@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-21 22:38 UTC)
+# Bot report (generated 2026-11-21 22:39 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -18,8 +18,8 @@
 |---|---|---|---|---|---|---|---|---|
 | Bitcoin | 11-19 00:24 | 0 | 0 | 0 | 29 | 7 | -18.45 | yes |
 | Bitcoin 1h | 11-19 00:25 | 0 | 0 | 0 | 0 | - | +0.00 |  |
-| Bitcoin 15m | 11-21 22:38 | 1439 | 1 | 0 | 0 | - | +0.00 | yes |
-| Gold USD | 11-21 22:38 | 1439 | 2 | 0 | 13 | 15 | -7.66 |  |
+| Bitcoin 15m | 11-21 22:39 | 1439 | 1 | 0 | 0 | - | +0.00 | yes |
+| Gold USD | 11-21 22:39 | 1439 | 2 | 0 | 13 | 15 | -7.66 |  |
 | USD/JPY | 11-21 01:44 | 178 | 0 | 178 | 27 | 37 | -0.04 |  |
 | GBP/USD | 11-21 01:44 | 178 | 0 | 178 | 24 | 38 | +0.11 |  |
 | EUR/USD | 11-21 01:44 | 178 | 0 | 178 | 27 | 37 | -0.04 |  |
@@ -119,12 +119,12 @@
 - Bitcoin 11-19 00:23 price 62606.65 holding 0.2%
 - Bitcoin 11-19 00:24 price 62630.6 holding 0.3%
 - Bitcoin 1h 11-19 00:25 price 62607.78 holding 0.2%
-- Bitcoin 15m 11-21 22:36 price 60122.97 holding -0.6%
 - Bitcoin 15m 11-21 22:37 price 60121.81 holding -0.6%
 - Bitcoin 15m 11-21 22:38 price 60109.85 holding -0.6%
-- Gold USD 11-21 22:36 price 3541.96 no_trade score below 2
+- Bitcoin 15m 11-21 22:39 price 60077.05 holding -0.6%
 - Gold USD 11-21 22:37 price 3541.63 no_trade score below 2
 - Gold USD 11-21 22:38 price 3542.59 no_trade score below 2
+- Gold USD 11-21 22:39 price 3542.76 no_trade score below 2
 - USD/JPY 11-21 01:42 price  error OANDA position 503 [req 0]: {"errorMessage":"System under maintenance; please try again la
 - USD/JPY 11-21 01:43 price  error OANDA position 503 [req 0]: {"errorMessage":"System under maintenance; please try again la
 - USD/JPY 11-21 01:44 price  error OANDA position 503 [req 0]: {"errorMessage":"System under maintenance; please try again la
