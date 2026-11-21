@@ -2371,3 +2371,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-21 14:20,60114.92,2,rsi_in_range,no,no_trade,Gemini cooldown
 2026-11-21 14:21,60181.29,2,rsi_in_range,no,no_trade,Gemini cooldown
 2026-11-21 14:22,60384.32,2,rsi_in_range,no,buy,conf 3: Strong uptrend but overbought RSI 78 indicates potential short-term exhaustion
+2026-11-21 14:23,60318.72,2,rsi_in_range,yes,holding,-0.2%
