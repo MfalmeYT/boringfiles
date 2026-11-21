@@ -1,5 +1,5 @@
-# Status (2026-11-21 09:30 UTC)
-- last bot run: 2026-11-21 09:30 UTC (0 min ago)
+# Status (2026-11-21 09:31 UTC)
+- last bot run: 2026-11-21 09:31 UTC (0 min ago)
 - open now: Bitcoin long, Gold USD long
 - closed trades: 144, win 26%, sum of results -26.56% (sum of %, not account balance)
 - errors last 24h: 712 (OANDA 401: 1)
