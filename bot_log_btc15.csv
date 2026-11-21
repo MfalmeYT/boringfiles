@@ -2271,3 +2271,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-21 12:40,58750.23,2,rsi_in_range,no,no_trade,1Hour trend not up
 2026-11-21 12:41,58693.86,2,rsi_in_range,no,no_trade,1Hour trend not up
 2026-11-21 12:42,58686.95,2,rsi_in_range,no,no_trade,1Hour trend not up
+2026-11-21 12:43,58888.69,2,rsi_in_range,no,no_trade,1Hour trend not up
