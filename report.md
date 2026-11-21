@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-21 07:15 UTC)
+# Bot report (generated 2026-11-21 07:16 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -18,12 +18,12 @@
 |---|---|---|---|---|---|---|---|---|
 | Bitcoin | 11-19 00:24 | 0 | 0 | 0 | 29 | 7 | -18.45 | yes |
 | Bitcoin 1h | 11-19 00:25 | 0 | 0 | 0 | 0 | - | +0.00 |  |
-| Bitcoin 15m | 11-21 07:15 | 1439 | 0 | 0 | 0 | - | +0.00 |  |
-| Gold USD | 11-21 07:15 | 1439 | 2 | 0 | 12 | 8 | -7.69 |  |
-| USD/JPY | 11-21 01:44 | 1061 | 2 | 178 | 27 | 37 | -0.04 |  |
-| GBP/USD | 11-21 01:44 | 1061 | 2 | 178 | 24 | 38 | +0.11 |  |
-| EUR/USD | 11-21 01:44 | 1061 | 2 | 178 | 27 | 37 | -0.04 |  |
-| EUR/GBP | 11-21 01:44 | 1061 | 1 | 178 | 25 | 24 | -0.45 |  |
+| Bitcoin 15m | 11-21 07:16 | 1439 | 0 | 0 | 0 | - | +0.00 |  |
+| Gold USD | 11-21 07:16 | 1439 | 3 | 0 | 12 | 8 | -7.69 | yes |
+| USD/JPY | 11-21 01:44 | 1060 | 2 | 178 | 27 | 37 | -0.04 |  |
+| GBP/USD | 11-21 01:44 | 1060 | 2 | 178 | 24 | 38 | +0.11 |  |
+| EUR/USD | 11-21 01:44 | 1060 | 2 | 178 | 27 | 37 | -0.04 |  |
+| EUR/GBP | 11-21 01:44 | 1060 | 1 | 178 | 25 | 24 | -0.45 |  |
 
 ## Raw log files (full history, one row per run)
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log.csv
@@ -91,7 +91,6 @@
 - 2026-11-21 06:40 UTC Oanda: balance 821.5243, equity 821.5243, free 821.5243
 
 ## Recent fills (decision price vs real fill; columns: time_utc,market,action,order_id,decision_price,fill_price,move_pct,fill_qty,position_qty,requested,status,reason)
-- 2026-11-20 16:15,GBP/USD,short,1724,1.31018,1.31011,-0.0053,2500.0,,2500,filled,conf 4
 - 2026-11-20 17:44,EUR/USD,sell,broker,,1.09747,,,,,filled,closed by broker stop/TP; P/L -15.9000
 - 2026-11-20 18:00,USD/JPY,short,1732,158.772,158.747,-0.0157,5000.0,,5000,filled,conf 4
 - 2026-11-20 21:30,USD/JPY,cover,1738,158.592,158.614,0.0139,5000.0,5000.0,,filled,WEEKEND FLATTEN (0.1%)
@@ -99,13 +98,14 @@
 - 2026-11-20 21:30,EUR/GBP,sell,1746,0.83837,0.83827,-0.0119,5000.0,5000.0,,filled,WEEKEND FLATTEN (0.1%)
 - 2026-11-20 22:47,Gold USD,buy,43f1175e-3b7b-4e1b-9015-e41fa4b53ee2,3532.824,3550.91,0.5119,0.012424356,,45,filled,conf 4
 - 2026-11-21 03:32,Gold USD,sell,53750fe8-2f6a-41c8-b093-8538a3ce855a,3521.2825,3512.01,-0.2633,0.012393295,0.012393295,,filled,SIGNAL EXIT; score 0/3 (-0.8%)
+- 2026-11-21 07:16,Gold USD,buy,728e4d4e-1a84-4d9f-9c50-f37ec473d47e,3524.3,3540.5,0.4597,0.012462816,,45,filled,conf 5
 
 ## Recent Gemini decisions
-- 2026-11-20 13:25,EUR/GBP,buy,long,0.83764,0.00014,0.837241,0.837136,0.837255,56.8,0.000447,3,5,+0.16% (take profit) or -0.11% (stop loss); set from recent volatility,Fresh bullish EMA crossover with p
 - 2026-11-20 15:37,EUR/USD,buy,long,1.09827,0.00015,1.098373,1.098024,1.097752,53.5,0.000785,3,4,+0.21% (take profit) or -0.14% (stop loss); set from recent volatility,Bullish alignment and RSI support 
 - 2026-11-20 16:15,GBP/USD,short,short,1.31018,0.00018,1.31089,1.310945,1.310759,44.5,0.000989,3,4,a 0.23% fall (take profit) or a 0.15% rise (stop loss); set from recent volatility,Fresh bear crossover
 - 2026-11-20 18:00,USD/JPY,short,short,158.772,0.013,158.7438,158.768,158.8975,49.0,0.1164,3,4,a 0.22% fall (take profit) or a 0.15% rise (stop loss); set from recent volatility,Weak downtrend alignment
 - 2026-11-20 22:47,Gold USD,buy,long,3532.82,,3526.741,3526.165,3537.258,53.0,20.662,2,4,+1.50% (take profit) or -1.00% (stop loss),Fresh bullish crossover with RSI neutral; but EMA50 acts as overhead r
+- 2026-11-21 07:16,Gold USD,buy,long,3524.3,,3517.516,3517.404,3523.607,56.3,27.499,3,5,+1.50% (take profit) or -1.00% (stop loss),Fresh bullish EMA crossover with price above trend and healthy RSI.
 
 ## Data files
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/data/fills.csv
@@ -119,12 +119,12 @@
 - Bitcoin 11-19 00:23 price 62606.65 holding 0.2%
 - Bitcoin 11-19 00:24 price 62630.6 holding 0.3%
 - Bitcoin 1h 11-19 00:25 price 62607.78 holding 0.2%
-- Bitcoin 15m 11-21 07:13 price 57971.59 no_trade short-term trend not up
 - Bitcoin 15m 11-21 07:14 price 58060.14 no_trade short-term trend not up
 - Bitcoin 15m 11-21 07:15 price 58073.34 no_trade short-term trend not up
-- Gold USD 11-21 07:13 price 3524.99 no_trade short-term trend not up
+- Bitcoin 15m 11-21 07:16 price 58025.03 no_trade short-term trend not up
 - Gold USD 11-21 07:14 price 3524.69 no_trade short-term trend not up
 - Gold USD 11-21 07:15 price 3524.72 no_trade short-term trend not up
+- Gold USD 11-21 07:16 price 3524.3 buy conf 5: Fresh bullish EMA crossover with price above trend and healthy RSI.
 - USD/JPY 11-21 01:42 price  error OANDA position 503 [req 0]: {"errorMessage":"System under maintenance; please try again la
 - USD/JPY 11-21 01:43 price  error OANDA position 503 [req 0]: {"errorMessage":"System under maintenance; please try again la
 - USD/JPY 11-21 01:44 price  error OANDA position 503 [req 0]: {"errorMessage":"System under maintenance; please try again la
