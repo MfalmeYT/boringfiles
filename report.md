@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-21 17:06 UTC)
+# Bot report (generated 2026-11-21 17:07 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -18,12 +18,12 @@
 |---|---|---|---|---|---|---|---|---|
 | Bitcoin | 11-19 00:24 | 0 | 0 | 0 | 29 | 7 | -18.45 | yes |
 | Bitcoin 1h | 11-19 00:25 | 0 | 0 | 0 | 0 | - | +0.00 |  |
-| Bitcoin 15m | 11-21 17:06 | 1439 | 1 | 0 | 0 | - | +0.00 | yes |
-| Gold USD | 11-21 17:06 | 1439 | 2 | 0 | 12 | 8 | -7.69 | yes |
-| USD/JPY | 11-21 01:44 | 470 | 1 | 178 | 27 | 37 | -0.04 |  |
-| GBP/USD | 11-21 01:44 | 470 | 0 | 178 | 24 | 38 | +0.11 |  |
-| EUR/USD | 11-21 01:44 | 470 | 0 | 178 | 27 | 37 | -0.04 |  |
-| EUR/GBP | 11-21 01:44 | 470 | 0 | 178 | 25 | 24 | -0.45 |  |
+| Bitcoin 15m | 11-21 17:07 | 1439 | 1 | 0 | 0 | - | +0.00 | yes |
+| Gold USD | 11-21 17:07 | 1439 | 2 | 0 | 12 | 8 | -7.69 | yes |
+| USD/JPY | 11-21 01:44 | 469 | 1 | 178 | 27 | 37 | -0.04 |  |
+| GBP/USD | 11-21 01:44 | 469 | 0 | 178 | 24 | 38 | +0.11 |  |
+| EUR/USD | 11-21 01:44 | 469 | 0 | 178 | 27 | 37 | -0.04 |  |
+| EUR/GBP | 11-21 01:44 | 469 | 0 | 178 | 25 | 24 | -0.45 |  |
 
 ## Raw log files (full history, one row per run)
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log.csv
@@ -87,8 +87,8 @@
 - EUR/GBP totals: long 18 trades -0.38%, short 7 trades -0.08%
 
 ## Account (latest hourly snapshot)
-- 2026-11-21 16:08 UTC AlpacaCrypto: balance 893.41, equity 981.29, free 893.41
 - 2026-11-21 16:30 UTC Oanda: balance 821.5243, equity 821.5243, free 821.5243
+- 2026-11-21 17:07 UTC AlpacaCrypto: balance 893.41, equity 981.03, free 893.41
 
 ## Recent fills (decision price vs real fill; columns: time_utc,market,action,order_id,decision_price,fill_price,move_pct,fill_qty,position_qty,requested,status,reason)
 - 2026-11-20 18:00,USD/JPY,short,1732,158.772,158.747,-0.0157,5000.0,,5000,filled,conf 4
@@ -119,12 +119,12 @@
 - Bitcoin 11-19 00:23 price 62606.65 holding 0.2%
 - Bitcoin 11-19 00:24 price 62630.6 holding 0.3%
 - Bitcoin 1h 11-19 00:25 price 62607.78 holding 0.2%
-- Bitcoin 15m 11-21 17:04 price 60076.96 holding -0.6%
 - Bitcoin 15m 11-21 17:05 price 60059.6 holding -0.7%
 - Bitcoin 15m 11-21 17:06 price 60071.39 holding -0.6%
-- Gold USD 11-21 17:04 price 3548.95 holding 0.2%
+- Bitcoin 15m 11-21 17:07 price 60051.43 holding -0.7%
 - Gold USD 11-21 17:05 price 3549.08 holding 0.2%
 - Gold USD 11-21 17:06 price 3549.08 holding 0.2%
+- Gold USD 11-21 17:07 price 3549.08 holding 0.2%
 - USD/JPY 11-21 01:42 price  error OANDA position 503 [req 0]: {"errorMessage":"System under maintenance; please try again la
 - USD/JPY 11-21 01:43 price  error OANDA position 503 [req 0]: {"errorMessage":"System under maintenance; please try again la
 - USD/JPY 11-21 01:44 price  error OANDA position 503 [req 0]: {"errorMessage":"System under maintenance; please try again la
