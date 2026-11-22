@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-22 21:00 UTC)
+# Bot report (generated 2026-11-22 21:01 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -18,8 +18,8 @@
 |---|---|---|---|---|---|---|---|---|
 | Bitcoin | 11-19 00:24 | 0 | 0 | 0 | 29 | 7 | -18.45 | yes |
 | Bitcoin 1h | 11-19 00:25 | 0 | 0 | 0 | 0 | - | +0.00 |  |
-| Bitcoin 15m | 11-22 21:00 | 1440 | 1 | 0 | 1 | 0 | -2.45 | yes |
-| Gold USD | 11-22 21:00 | 1440 | 2 | 0 | 15 | 13 | -8.74 |  |
+| Bitcoin 15m | 11-22 21:01 | 1440 | 1 | 0 | 1 | 0 | -2.45 | yes |
+| Gold USD | 11-22 21:01 | 1440 | 2 | 0 | 15 | 13 | -8.74 |  |
 | USD/JPY | 11-21 23:46 | 1 | 0 | 1 | 27 | 37 | -0.04 |  |
 | GBP/USD | 11-21 01:44 | 0 | 0 | 0 | 24 | 38 | +0.11 |  |
 | EUR/USD | 11-21 01:44 | 0 | 0 | 0 | 27 | 37 | -0.04 |  |
@@ -79,8 +79,8 @@
 - EUR/GBP totals: long 18 trades -0.38%, short 7 trades -0.08%
 
 ## Account (latest hourly snapshot)
-- 2026-11-22 20:02 UTC Oanda: balance 821.5243, equity 821.5243, free 821.5243
 - 2026-11-22 20:39 UTC AlpacaCrypto: balance 934.55, equity 978.87, free 934.55
+- 2026-11-22 21:01 UTC Oanda: balance 821.5243, equity 821.5243, free 821.5243
 
 ## Recent fills (decision price vs real fill; columns: time_utc,market,action,order_id,decision_price,fill_price,move_pct,fill_qty,position_qty,requested,status,reason)
 - 2026-11-21 14:22,Bitcoin 15m,buy,ad109ffc-31a9-4a2a-9116-3abd40aad4fe,60384.316,60458.862,0.1235,0.000729932,,45,filled,conf 3
@@ -111,12 +111,12 @@
 - Bitcoin 11-19 00:23 price 62606.65 holding 0.2%
 - Bitcoin 11-19 00:24 price 62630.6 holding 0.3%
 - Bitcoin 1h 11-19 00:25 price 62607.78 holding 0.2%
-- Bitcoin 15m 11-22 20:58 price 60842.91 holding 1.2%
 - Bitcoin 15m 11-22 20:59 price 60828.8 holding 1.2%
 - Bitcoin 15m 11-22 21:00 price 60827.7 holding 1.2%
-- Gold USD 11-22 20:58 price 3537.16 no_trade score below 2
+- Bitcoin 15m 11-22 21:01 price 60831.04 holding 1.2%
 - Gold USD 11-22 20:59 price 3537.41 no_trade score below 2
 - Gold USD 11-22 21:00 price 3537.43 no_trade score below 2
+- Gold USD 11-22 21:01 price 3537.43 no_trade score below 2
 - USD/JPY 11-21 01:43 price  error OANDA position 503 [req 0]: {"errorMessage":"System under maintenance; please try again la
 - USD/JPY 11-21 01:44 price  error OANDA position 503 [req 0]: {"errorMessage":"System under maintenance; please try again la
 - USD/JPY 11-21 23:46 price  error OANDA position 401 [req 61573249626792112]: {"errorMessage":"Insufficient authorization to
