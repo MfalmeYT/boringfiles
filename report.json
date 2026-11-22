@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-11-22 16:05",
+ "generated_utc": "2026-11-22 16:06",
  "markets": [
   {
    "market": "Bitcoin",
@@ -42,7 +42,7 @@
   {
    "market": "Bitcoin 15m",
    "enabled": true,
-   "last_run_utc": "2026-11-22 16:05",
+   "last_run_utc": "2026-11-22 16:06",
    "runs_24h": 1440,
    "entries_24h": 1,
    "errors_24h": 0,
@@ -60,7 +60,7 @@
   {
    "market": "Gold USD",
    "enabled": true,
-   "last_run_utc": "2026-11-22 16:05",
+   "last_run_utc": "2026-11-22 16:06",
    "runs_24h": 1440,
    "entries_24h": 2,
    "errors_24h": 0,
@@ -177,7 +177,7 @@
   }
  ],
  "account": {
-  "Oanda": "2026-11-22 15:07 UTC Oanda: balance 821.5243, equity 821.5243, free 821.5243",
-  "AlpacaCrypto": "2026-11-22 15:44 UTC AlpacaCrypto: balance 891.07, equity 979.7, free 891.07"
+  "AlpacaCrypto": "2026-11-22 15:44 UTC AlpacaCrypto: balance 891.07, equity 979.7, free 891.07",
+  "Oanda": "2026-11-22 16:06 UTC Oanda: balance 821.5243, equity 821.5243, free 821.5243"
  }
 }
