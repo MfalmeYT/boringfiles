@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-22 01:31 UTC)
+# Bot report (generated 2026-11-22 01:32 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -18,12 +18,12 @@
 |---|---|---|---|---|---|---|---|---|
 | Bitcoin | 11-19 00:24 | 0 | 0 | 0 | 29 | 7 | -18.45 | yes |
 | Bitcoin 1h | 11-19 00:25 | 0 | 0 | 0 | 0 | - | +0.00 |  |
-| Bitcoin 15m | 11-22 01:31 | 1440 | 1 | 0 | 0 | - | +0.00 | yes |
-| Gold USD | 11-22 01:31 | 1440 | 2 | 0 | 13 | 15 | -7.66 | yes |
-| USD/JPY | 11-21 23:46 | 14 | 0 | 14 | 27 | 37 | -0.04 |  |
-| GBP/USD | 11-21 01:44 | 13 | 0 | 13 | 24 | 38 | +0.11 |  |
-| EUR/USD | 11-21 01:44 | 13 | 0 | 13 | 27 | 37 | -0.04 |  |
-| EUR/GBP | 11-21 01:44 | 13 | 0 | 13 | 25 | 24 | -0.45 |  |
+| Bitcoin 15m | 11-22 01:32 | 1440 | 1 | 0 | 0 | - | +0.00 | yes |
+| Gold USD | 11-22 01:32 | 1440 | 2 | 0 | 13 | 15 | -7.66 | yes |
+| USD/JPY | 11-21 23:46 | 13 | 0 | 13 | 27 | 37 | -0.04 |  |
+| GBP/USD | 11-21 01:44 | 12 | 0 | 12 | 24 | 38 | +0.11 |  |
+| EUR/USD | 11-21 01:44 | 12 | 0 | 12 | 27 | 37 | -0.04 |  |
+| EUR/GBP | 11-21 01:44 | 12 | 0 | 12 | 25 | 24 | -0.45 |  |
 
 ## Raw log files (full history, one row per run)
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log.csv
@@ -36,10 +36,10 @@
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log_eurgbp.csv
 
 ## Errors in the last 24h (grouped)
-- x13 USD/JPY: OANDA position 503 [req 0]: {"errorMessage":"System under maintenance; please try again later."}
-- x13 GBP/USD: OANDA position 503 [req 0]: {"errorMessage":"System under maintenance; please try again later."}
-- x13 EUR/USD: OANDA position 503 [req 0]: {"errorMessage":"System under maintenance; please try again later."}
-- x12 EUR/GBP: OANDA position 503 [req 0]: {"errorMessage":"System under maintenance; please try again later."}
+- x12 USD/JPY: OANDA position 503 [req 0]: {"errorMessage":"System under maintenance; please try again later."}
+- x12 GBP/USD: OANDA position 503 [req 0]: {"errorMessage":"System under maintenance; please try again later."}
+- x12 EUR/USD: OANDA position 503 [req 0]: {"errorMessage":"System under maintenance; please try again later."}
+- x11 EUR/GBP: OANDA position 503 [req 0]: {"errorMessage":"System under maintenance; please try again later."}
 - x1 USD/JPY: OANDA position 401 [req #]: {"errorMessage":"Insufficient authorization to perform request."}
 - x1 EUR/GBP: OANDA position 401 [req #]: {"errorMessage":"Insufficient authorization to perform request."}
 
@@ -115,12 +115,12 @@
 - Bitcoin 11-19 00:23 price 62606.65 holding 0.2%
 - Bitcoin 11-19 00:24 price 62630.6 holding 0.3%
 - Bitcoin 1h 11-19 00:25 price 62607.78 holding 0.2%
-- Bitcoin 15m 11-22 01:29 price 60003.75 holding -0.8%
 - Bitcoin 15m 11-22 01:30 price 60007.15 holding -0.7%
 - Bitcoin 15m 11-22 01:31 price 59963.43 holding -0.8%
-- Gold USD 11-22 01:29 price 3551.34 no_trade re-entry cooldown
+- Bitcoin 15m 11-22 01:32 price 59978.89 holding -0.8%
 - Gold USD 11-22 01:30 price 3551.77 no_trade re-entry cooldown
 - Gold USD 11-22 01:31 price 3551.42 buy conf 4: Bullish alignment and EMA support; but momentum is currently flat
+- Gold USD 11-22 01:32 price 3550.72 holding -0.5%
 - USD/JPY 11-21 01:43 price  error OANDA position 503 [req 0]: {"errorMessage":"System under maintenance; please try again la
 - USD/JPY 11-21 01:44 price  error OANDA position 503 [req 0]: {"errorMessage":"System under maintenance; please try again la
 - USD/JPY 11-21 23:46 price  error OANDA position 401 [req 61573249626792112]: {"errorMessage":"Insufficient authorization to
