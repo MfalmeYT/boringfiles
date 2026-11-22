@@ -3690,3 +3690,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-22 12:19,61310.38,2,rsi_in_range,yes,holding,2.0%
 2026-11-22 12:20,61333.08,2,rsi_in_range,yes,holding,2.0%
 2026-11-22 12:21,61332.29,2,rsi_in_range,yes,holding,2.0%
+2026-11-22 12:22,61258.18,2,rsi_in_range,yes,holding,1.9%
