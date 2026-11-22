@@ -12558,3 +12558,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-21 01:43,,,,,error,OANDA position 503 [req 0]: {"errorMessage":"System under maintenance; please try again later."}
 2026-11-21 01:44,,,,,error,OANDA position 503 [req 0]: {"errorMessage":"System under maintenance; please try again later."}
 2026-11-22 23:00,1.09736,2,price_below_trend_ema,no,no_trade,max 3 open positions reached
+2026-11-22 23:01,1.09736,2,price_below_trend_ema,no,no_trade,max 3 open positions reached
