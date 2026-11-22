@@ -11847,3 +11847,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-22 02:37,3546.03,0,fast_above_slow|price_above_trend_ema|rsi_in_range,yes,holding,-0.7%
 2026-11-22 02:38,3545.98,0,fast_above_slow|price_above_trend_ema|rsi_in_range,yes,holding,-0.7%
 2026-11-22 02:39,3545.33,0,fast_above_slow|price_above_trend_ema|rsi_in_range,yes,holding,-0.7%
+2026-11-22 02:40,3544.02,0,fast_above_slow|price_above_trend_ema|rsi_in_range,yes,holding,-0.7%
