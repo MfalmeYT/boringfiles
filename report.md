@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-22 23:02 UTC)
+# Bot report (generated 2026-11-22 23:03 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -18,12 +18,12 @@
 |---|---|---|---|---|---|---|---|---|
 | Bitcoin | 11-19 00:24 | 0 | 0 | 0 | 29 | 7 | -18.45 | yes |
 | Bitcoin 1h | 11-19 00:25 | 0 | 0 | 0 | 0 | - | +0.00 |  |
-| Bitcoin 15m | 11-22 23:02 | 1440 | 1 | 0 | 1 | 0 | -2.45 | yes |
-| Gold USD | 11-22 23:02 | 1440 | 2 | 0 | 15 | 13 | -8.74 |  |
-| USD/JPY | 11-22 23:02 | 4 | 1 | 1 | 27 | 37 | -0.04 | yes |
-| GBP/USD | 11-22 23:02 | 3 | 1 | 0 | 24 | 38 | +0.11 | yes |
-| EUR/USD | 11-22 23:02 | 3 | 0 | 0 | 27 | 37 | -0.04 |  |
-| EUR/GBP | 11-22 23:02 | 3 | 0 | 0 | 25 | 24 | -0.45 |  |
+| Bitcoin 15m | 11-22 23:03 | 1440 | 1 | 0 | 1 | 0 | -2.45 | yes |
+| Gold USD | 11-22 23:03 | 1440 | 2 | 0 | 15 | 13 | -8.74 |  |
+| USD/JPY | 11-22 23:03 | 5 | 1 | 1 | 27 | 37 | -0.04 | yes |
+| GBP/USD | 11-22 23:03 | 4 | 1 | 0 | 24 | 38 | +0.11 | yes |
+| EUR/USD | 11-22 23:03 | 4 | 0 | 0 | 27 | 37 | -0.04 |  |
+| EUR/GBP | 11-22 23:03 | 4 | 0 | 0 | 25 | 24 | -0.45 |  |
 
 ## Raw log files (full history, one row per run)
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log.csv
@@ -111,21 +111,21 @@
 - Bitcoin 11-19 00:23 price 62606.65 holding 0.2%
 - Bitcoin 11-19 00:24 price 62630.6 holding 0.3%
 - Bitcoin 1h 11-19 00:25 price 62607.78 holding 0.2%
-- Bitcoin 15m 11-22 23:00 price 61009.85 holding 1.5%
 - Bitcoin 15m 11-22 23:01 price 61109.5 holding 1.6%
 - Bitcoin 15m 11-22 23:02 price 61147.84 holding 1.7%
-- Gold USD 11-22 23:00 price 3538.7 no_trade score below 2
+- Bitcoin 15m 11-22 23:03 price 61076.87 holding 1.6%
 - Gold USD 11-22 23:01 price 3548.11 no_trade short-term trend not up
 - Gold USD 11-22 23:02 price 3555.93 no_trade short-term trend not up
-- USD/JPY 11-22 23:00 price 158.562 short conf 4: Trend signals align short; but price consolidation lowers immediate momentum.
+- Gold USD 11-22 23:03 price 3554.05 no_trade short-term trend not up
 - USD/JPY 11-22 23:01 price 158.562 holding SHORT -0.0%
 - USD/JPY 11-22 23:02 price 158.562 holding SHORT -0.0%
-- GBP/USD 11-22 23:00 price 1.30954 short conf 2: Price is rising with EMA9 crossing above EMA21; opposing short. | 2500 units (redu
+- USD/JPY 11-22 23:03 price 158.562 holding SHORT -0.0%
 - GBP/USD 11-22 23:01 price 1.30954 holding SHORT -0.0%
 - GBP/USD 11-22 23:02 price 1.30954 holding SHORT -0.0%
-- EUR/USD 11-22 23:00 price 1.09736 no_trade max 3 open positions reached
+- GBP/USD 11-22 23:03 price 1.30954 holding SHORT -0.0%
 - EUR/USD 11-22 23:01 price 1.09736 no_trade max 3 open positions reached
 - EUR/USD 11-22 23:02 price 1.09736 no_trade max 3 open positions reached
-- EUR/GBP 11-22 23:00 price 0.83796 no_trade max 3 open positions reached
+- EUR/USD 11-22 23:03 price 1.09736 no_trade max 3 open positions reached
 - EUR/GBP 11-22 23:01 price 0.83796 no_trade max 3 open positions reached
 - EUR/GBP 11-22 23:02 price 0.83796 no_trade max 3 open positions reached
+- EUR/GBP 11-22 23:03 price 0.83796 no_trade max 3 open positions reached
