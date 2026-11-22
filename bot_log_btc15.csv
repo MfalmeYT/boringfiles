@@ -3466,3 +3466,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-22 08:35,59775.8,3,,no,no_trade,1Hour trend not up
 2026-11-22 08:36,60218.88,2,rsi_in_range,no,buy,conf 4: Strong momentum and crossover offset by overbought RSI above 70
 2026-11-22 08:37,60270.8,2,rsi_in_range,yes,holding,0.2%
+2026-11-22 08:38,60173.45,2,rsi_in_range,yes,holding,0.1%
