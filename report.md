@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-22 01:30 UTC)
+# Bot report (generated 2026-11-22 01:31 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -18,12 +18,12 @@
 |---|---|---|---|---|---|---|---|---|
 | Bitcoin | 11-19 00:24 | 0 | 0 | 0 | 29 | 7 | -18.45 | yes |
 | Bitcoin 1h | 11-19 00:25 | 0 | 0 | 0 | 0 | - | +0.00 |  |
-| Bitcoin 15m | 11-22 01:30 | 1440 | 1 | 0 | 0 | - | +0.00 | yes |
-| Gold USD | 11-22 01:30 | 1440 | 1 | 0 | 13 | 15 | -7.66 |  |
-| USD/JPY | 11-21 23:46 | 15 | 0 | 15 | 27 | 37 | -0.04 |  |
-| GBP/USD | 11-21 01:44 | 14 | 0 | 14 | 24 | 38 | +0.11 |  |
-| EUR/USD | 11-21 01:44 | 14 | 0 | 14 | 27 | 37 | -0.04 |  |
-| EUR/GBP | 11-21 01:44 | 14 | 0 | 14 | 25 | 24 | -0.45 |  |
+| Bitcoin 15m | 11-22 01:31 | 1440 | 1 | 0 | 0 | - | +0.00 | yes |
+| Gold USD | 11-22 01:31 | 1440 | 2 | 0 | 13 | 15 | -7.66 | yes |
+| USD/JPY | 11-21 23:46 | 14 | 0 | 14 | 27 | 37 | -0.04 |  |
+| GBP/USD | 11-21 01:44 | 13 | 0 | 13 | 24 | 38 | +0.11 |  |
+| EUR/USD | 11-21 01:44 | 13 | 0 | 13 | 27 | 37 | -0.04 |  |
+| EUR/GBP | 11-21 01:44 | 13 | 0 | 13 | 25 | 24 | -0.45 |  |
 
 ## Raw log files (full history, one row per run)
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log.csv
@@ -36,10 +36,10 @@
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log_eurgbp.csv
 
 ## Errors in the last 24h (grouped)
-- x14 USD/JPY: OANDA position 503 [req 0]: {"errorMessage":"System under maintenance; please try again later."}
-- x14 GBP/USD: OANDA position 503 [req 0]: {"errorMessage":"System under maintenance; please try again later."}
-- x14 EUR/USD: OANDA position 503 [req 0]: {"errorMessage":"System under maintenance; please try again later."}
-- x13 EUR/GBP: OANDA position 503 [req 0]: {"errorMessage":"System under maintenance; please try again later."}
+- x13 USD/JPY: OANDA position 503 [req 0]: {"errorMessage":"System under maintenance; please try again later."}
+- x13 GBP/USD: OANDA position 503 [req 0]: {"errorMessage":"System under maintenance; please try again later."}
+- x13 EUR/USD: OANDA position 503 [req 0]: {"errorMessage":"System under maintenance; please try again later."}
+- x12 EUR/GBP: OANDA position 503 [req 0]: {"errorMessage":"System under maintenance; please try again later."}
 - x1 USD/JPY: OANDA position 401 [req #]: {"errorMessage":"Insufficient authorization to perform request."}
 - x1 EUR/GBP: OANDA position 401 [req #]: {"errorMessage":"Insufficient authorization to perform request."}
 
@@ -87,7 +87,6 @@
 - 2026-11-22 01:21 UTC Oanda: balance 821.5243, equity 821.5243, free 821.5243
 
 ## Recent fills (decision price vs real fill; columns: time_utc,market,action,order_id,decision_price,fill_price,move_pct,fill_qty,position_qty,requested,status,reason)
-- 2026-11-20 21:30,USD/JPY,cover,1738,158.592,158.614,0.0139,5000.0,5000.0,,filled,WEEKEND FLATTEN (0.1%)
 - 2026-11-20 21:30,GBP/USD,cover,1742,1.30774,1.30785,0.0084,2500.0,2500.0,,filled,WEEKEND FLATTEN (0.2%)
 - 2026-11-20 21:30,EUR/GBP,sell,1746,0.83837,0.83827,-0.0119,5000.0,5000.0,,filled,WEEKEND FLATTEN (0.1%)
 - 2026-11-20 22:47,Gold USD,buy,43f1175e-3b7b-4e1b-9015-e41fa4b53ee2,3532.824,3550.91,0.5119,0.012424356,,45,filled,conf 4
@@ -95,13 +94,14 @@
 - 2026-11-21 07:16,Gold USD,buy,728e4d4e-1a84-4d9f-9c50-f37ec473d47e,3524.3,3540.5,0.4597,0.012462816,,45,filled,conf 5
 - 2026-11-21 14:22,Bitcoin 15m,buy,ad109ffc-31a9-4a2a-9116-3abd40aad4fe,60384.316,60458.862,0.1235,0.000729932,,45,filled,conf 3
 - 2026-11-21 22:31,Gold USD,sell,b0f86a01-0fac-4658-98a6-20bbd1cb74ad,3542.75,3524.78,-0.5072,0.012431658,0.012431658,,filled,SIGNAL EXIT; score 0/3 (0.1%)
+- 2026-11-22 01:31,Gold USD,buy,4d386986-ea23-44d5-8d23-7356a8ef4e2a,3551.42,3569.5,0.5091,0.012358611,,45,filled,conf 4
 
 ## Recent Gemini decisions
-- 2026-11-21 07:16,Gold USD,buy,long,3524.3,,3517.516,3517.404,3523.607,56.3,27.499,3,5,+1.50% (take profit) or -1.00% (stop loss),Fresh bullish EMA crossover with price above trend and healthy RSI.
 - 2026-11-21 13:37,Bitcoin 15m,gemini_hold,long,60268.03,14.286,59022.282,58441.793,58196.943,82.6,462.641,2,2,+3.00% (take profit) or -2.00% (stop loss),Extremely overbought RSI at 82.6 indicates high 
 - 2026-11-21 13:52,Bitcoin 15m,gemini_hold,long,60613.7,18.8,59350.658,58644.45,58293.697,84.4,477.05,2,2,+3.00% (take profit) or -2.00% (stop loss),RSI at 84.4 signals an exhausted overbought spike vul
 - 2026-11-21 14:07,Bitcoin 15m,gemini_hold,long,60458.48,17.47,59547.293,58796.482,58371.948,83.6,473.825,2,2,+3.00% (take profit) or -2.00% (stop loss),RSI overbought at 83.6 with momentum exhausting n
 - 2026-11-21 14:22,Bitcoin 15m,buy,long,60384.32,18.214,59670.997,58918.257,58440.365,78.0,486.792,2,3,+3.00% (take profit) or -2.00% (stop loss),Strong uptrend but overbought RSI 78 indicates potential
+- 2026-11-22 01:31,Gold USD,buy,long,3551.42,,3551.043,3550.628,3547.036,52.9,23.864,3,4,+1.50% (take profit) or -1.00% (stop loss),Bullish alignment and EMA support; but momentum is currently flat
 
 ## Data files
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/data/fills.csv
@@ -115,12 +115,12 @@
 - Bitcoin 11-19 00:23 price 62606.65 holding 0.2%
 - Bitcoin 11-19 00:24 price 62630.6 holding 0.3%
 - Bitcoin 1h 11-19 00:25 price 62607.78 holding 0.2%
-- Bitcoin 15m 11-22 01:28 price 60038.18 holding -0.7%
 - Bitcoin 15m 11-22 01:29 price 60003.75 holding -0.8%
 - Bitcoin 15m 11-22 01:30 price 60007.15 holding -0.7%
-- Gold USD 11-22 01:28 price 3552.18 no_trade re-entry cooldown
+- Bitcoin 15m 11-22 01:31 price 59963.43 holding -0.8%
 - Gold USD 11-22 01:29 price 3551.34 no_trade re-entry cooldown
 - Gold USD 11-22 01:30 price 3551.77 no_trade re-entry cooldown
+- Gold USD 11-22 01:31 price 3551.42 buy conf 4: Bullish alignment and EMA support; but momentum is currently flat
 - USD/JPY 11-21 01:43 price  error OANDA position 503 [req 0]: {"errorMessage":"System under maintenance; please try again la
 - USD/JPY 11-21 01:44 price  error OANDA position 503 [req 0]: {"errorMessage":"System under maintenance; please try again la
 - USD/JPY 11-21 23:46 price  error OANDA position 401 [req 61573249626792112]: {"errorMessage":"Insufficient authorization to
