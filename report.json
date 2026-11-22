@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-11-22 16:24",
+ "generated_utc": "2026-11-22 16:25",
  "markets": [
   {
    "market": "Bitcoin",
@@ -42,8 +42,8 @@
   {
    "market": "Bitcoin 15m",
    "enabled": true,
-   "last_run_utc": "2026-11-22 16:24",
-   "runs_24h": 1441,
+   "last_run_utc": "2026-11-22 16:25",
+   "runs_24h": 1440,
    "entries_24h": 1,
    "errors_24h": 0,
    "closed_trades": 1,
@@ -60,8 +60,8 @@
   {
    "market": "Gold USD",
    "enabled": true,
-   "last_run_utc": "2026-11-22 16:24",
-   "runs_24h": 1441,
+   "last_run_utc": "2026-11-22 16:25",
+   "runs_24h": 1440,
    "entries_24h": 2,
    "errors_24h": 0,
    "closed_trades": 14,
