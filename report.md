@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-22 01:43 UTC)
+# Bot report (generated 2026-11-22 01:44 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -18,12 +18,12 @@
 |---|---|---|---|---|---|---|---|---|
 | Bitcoin | 11-19 00:24 | 0 | 0 | 0 | 29 | 7 | -18.45 | yes |
 | Bitcoin 1h | 11-19 00:25 | 0 | 0 | 0 | 0 | - | +0.00 |  |
-| Bitcoin 15m | 11-22 01:43 | 1440 | 1 | 0 | 0 | - | +0.00 | yes |
-| Gold USD | 11-22 01:43 | 1440 | 2 | 0 | 13 | 15 | -7.66 | yes |
-| USD/JPY | 11-21 23:46 | 2 | 0 | 2 | 27 | 37 | -0.04 |  |
-| GBP/USD | 11-21 01:44 | 1 | 0 | 1 | 24 | 38 | +0.11 |  |
-| EUR/USD | 11-21 01:44 | 1 | 0 | 1 | 27 | 37 | -0.04 |  |
-| EUR/GBP | 11-21 01:44 | 1 | 0 | 1 | 25 | 24 | -0.45 |  |
+| Bitcoin 15m | 11-22 01:44 | 1440 | 1 | 0 | 0 | - | +0.00 | yes |
+| Gold USD | 11-22 01:44 | 1440 | 2 | 0 | 13 | 15 | -7.66 | yes |
+| USD/JPY | 11-21 23:46 | 1 | 0 | 1 | 27 | 37 | -0.04 |  |
+| GBP/USD | 11-21 01:44 | 0 | 0 | 0 | 24 | 38 | +0.11 |  |
+| EUR/USD | 11-21 01:44 | 0 | 0 | 0 | 27 | 37 | -0.04 |  |
+| EUR/GBP | 11-21 01:44 | 0 | 0 | 0 | 25 | 24 | -0.45 |  |
 
 ## Raw log files (full history, one row per run)
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log.csv
@@ -36,14 +36,10 @@
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log_eurgbp.csv
 
 ## Errors in the last 24h (grouped)
-- x1 USD/JPY: OANDA position 503 [req 0]: {"errorMessage":"System under maintenance; please try again later."}
 - x1 USD/JPY: OANDA position 401 [req #]: {"errorMessage":"Insufficient authorization to perform request."}
-- x1 GBP/USD: OANDA position 503 [req 0]: {"errorMessage":"System under maintenance; please try again later."}
-- x1 EUR/USD: OANDA position 503 [req 0]: {"errorMessage":"System under maintenance; please try again later."}
-- x1 EUR/GBP: OANDA position 401 [req #]: {"errorMessage":"Insufficient authorization to perform request."}
 
 ## OANDA 401 errors, last 24h
-- count: 2; request IDs for OANDA support: 61573249626792112, 61572916982061566
+- count: 1; request IDs for OANDA support: 61573249626792112
 
 ## Latest closed trades
 - Bitcoin: long +0.57%
@@ -114,12 +110,12 @@
 - Bitcoin 11-19 00:23 price 62606.65 holding 0.2%
 - Bitcoin 11-19 00:24 price 62630.6 holding 0.3%
 - Bitcoin 1h 11-19 00:25 price 62607.78 holding 0.2%
-- Bitcoin 15m 11-22 01:41 price 59915.86 holding -0.9%
 - Bitcoin 15m 11-22 01:42 price 59917.43 holding -0.9%
 - Bitcoin 15m 11-22 01:43 price 59920.67 holding -0.9%
-- Gold USD 11-22 01:41 price 3550.68 holding -0.5%
+- Bitcoin 15m 11-22 01:44 price 59944.6 holding -0.9%
 - Gold USD 11-22 01:42 price 3551.45 holding -0.5%
 - Gold USD 11-22 01:43 price 3550.8 holding -0.5%
+- Gold USD 11-22 01:44 price 3550.62 holding -0.5%
 - USD/JPY 11-21 01:43 price  error OANDA position 503 [req 0]: {"errorMessage":"System under maintenance; please try again la
 - USD/JPY 11-21 01:44 price  error OANDA position 503 [req 0]: {"errorMessage":"System under maintenance; please try again la
 - USD/JPY 11-21 23:46 price  error OANDA position 401 [req 61573249626792112]: {"errorMessage":"Insufficient authorization to
