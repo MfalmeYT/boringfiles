@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-11-21 23:59",
+ "generated_utc": "2026-11-22 00:00",
  "markets": [
   {
    "market": "Bitcoin",
@@ -42,7 +42,7 @@
   {
    "market": "Bitcoin 15m",
    "enabled": true,
-   "last_run_utc": "2026-11-21 23:59",
+   "last_run_utc": "2026-11-22 00:00",
    "runs_24h": 1439,
    "entries_24h": 1,
    "errors_24h": 0,
@@ -52,13 +52,13 @@
    "open": "long",
    "closed_today": 0,
    "result_today_pct": 0,
-   "entries_today": 1,
+   "entries_today": 0,
    "last_trades_pct": []
   },
   {
    "market": "Gold USD",
    "enabled": true,
-   "last_run_utc": "2026-11-21 23:59",
+   "last_run_utc": "2026-11-22 00:00",
    "runs_24h": 1439,
    "entries_24h": 1,
    "errors_24h": 0,
@@ -66,9 +66,9 @@
    "win_pct": 15,
    "total_pct_after_fees": -7.66,
    "open": null,
-   "closed_today": 2,
-   "result_today_pct": -0.8,
-   "entries_today": 1,
+   "closed_today": 0,
+   "result_today_pct": 0,
+   "entries_today": 0,
    "last_trades_pct": [
     -0.77,
     -1.11,
@@ -81,9 +81,9 @@
    "market": "USD/JPY",
    "enabled": true,
    "last_run_utc": "2026-11-21 23:46",
-   "runs_24h": 105,
+   "runs_24h": 104,
    "entries_24h": 0,
-   "errors_24h": 105,
+   "errors_24h": 104,
    "closed_trades": 27,
    "win_pct": 37,
    "total_pct_after_fees": -0.04,
@@ -103,9 +103,9 @@
    "market": "GBP/USD",
    "enabled": true,
    "last_run_utc": "2026-11-21 01:44",
-   "runs_24h": 104,
+   "runs_24h": 103,
    "entries_24h": 0,
-   "errors_24h": 104,
+   "errors_24h": 103,
    "closed_trades": 24,
    "win_pct": 38,
    "total_pct_after_fees": 0.11,
@@ -125,9 +125,9 @@
    "market": "EUR/USD",
    "enabled": true,
    "last_run_utc": "2026-11-21 01:44",
-   "runs_24h": 104,
+   "runs_24h": 103,
    "entries_24h": 0,
-   "errors_24h": 104,
+   "errors_24h": 103,
    "closed_trades": 27,
    "win_pct": 37,
    "total_pct_after_fees": -0.04,
@@ -147,9 +147,9 @@
    "market": "EUR/GBP",
    "enabled": true,
    "last_run_utc": "2026-11-21 01:44",
-   "runs_24h": 104,
+   "runs_24h": 103,
    "entries_24h": 0,
-   "errors_24h": 104,
+   "errors_24h": 103,
    "closed_trades": 25,
    "win_pct": 24,
    "total_pct_after_fees": -0.45,
@@ -171,7 +171,7 @@
   {
    "market": "USD/JPY",
    "text": "OANDA position 520: temporary gateway error (HTML page)",
-   "count": 49
+   "count": 48
   },
   {
    "market": "USD/JPY",
@@ -186,7 +186,7 @@
   {
    "market": "GBP/USD",
    "text": "OANDA position 520: temporary gateway error (HTML page)",
-   "count": 49
+   "count": 48
   },
   {
    "market": "GBP/USD",
@@ -196,7 +196,7 @@
   {
    "market": "EUR/USD",
    "text": "OANDA position 520: temporary gateway error (HTML page)",
-   "count": 49
+   "count": 48
   },
   {
    "market": "EUR/USD",
@@ -206,7 +206,7 @@
   {
    "market": "EUR/GBP",
    "text": "OANDA position 520: temporary gateway error (HTML page)",
-   "count": 49
+   "count": 48
   },
   {
    "market": "EUR/GBP",
@@ -220,7 +220,7 @@
   }
  ],
  "account": {
-  "AlpacaCrypto": "2026-11-21 23:01 UTC AlpacaCrypto: balance 937.12, equity 980.82, free 937.12",
-  "Oanda": "2026-11-21 23:23 UTC Oanda: balance 821.5243, equity 821.5243, free 821.5243"
+  "Oanda": "2026-11-21 23:23 UTC Oanda: balance 821.5243, equity 821.5243, free 821.5243",
+  "AlpacaCrypto": "2026-11-22 00:00 UTC AlpacaCrypto: balance 937.12, equity 980.91, free 937.12"
  }
 }
