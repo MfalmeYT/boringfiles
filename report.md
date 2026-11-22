@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-22 19:00 UTC)
+# Bot report (generated 2026-11-22 19:01 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -18,8 +18,8 @@
 |---|---|---|---|---|---|---|---|---|
 | Bitcoin | 11-19 00:24 | 0 | 0 | 0 | 29 | 7 | -18.45 | yes |
 | Bitcoin 1h | 11-19 00:25 | 0 | 0 | 0 | 0 | - | +0.00 |  |
-| Bitcoin 15m | 11-22 19:00 | 1440 | 1 | 0 | 1 | 0 | -2.45 | yes |
-| Gold USD | 11-22 19:00 | 1440 | 2 | 0 | 14 | 14 | -8.45 | yes |
+| Bitcoin 15m | 11-22 19:01 | 1440 | 1 | 0 | 1 | 0 | -2.45 | yes |
+| Gold USD | 11-22 19:01 | 1440 | 2 | 0 | 15 | 13 | -8.74 |  |
 | USD/JPY | 11-21 23:46 | 1 | 0 | 1 | 27 | 37 | -0.04 |  |
 | GBP/USD | 11-21 01:44 | 0 | 0 | 0 | 24 | 38 | +0.11 |  |
 | EUR/USD | 11-21 01:44 | 0 | 0 | 0 | 27 | 37 | -0.04 |  |
@@ -48,11 +48,11 @@
 - Bitcoin: long -0.68%
 - Bitcoin: long -1.11%
 - Bitcoin 15m: long -2.45%
-- Gold USD: long -1.11%
 - Gold USD: long -1.14%
 - Gold USD: long -0.83%
 - Gold USD: long +0.02%
 - Gold USD: long -0.79%
+- Gold USD: long -0.29%
 - USD/JPY: short -0.09%
 - USD/JPY: short -0.04%
 - USD/JPY: short +0.20%
@@ -83,7 +83,6 @@
 - 2026-11-22 18:41 UTC AlpacaCrypto: balance 891.07, equity 979.69, free 891.07
 
 ## Recent fills (decision price vs real fill; columns: time_utc,market,action,order_id,decision_price,fill_price,move_pct,fill_qty,position_qty,requested,status,reason)
-- 2026-11-21 07:16,Gold USD,buy,728e4d4e-1a84-4d9f-9c50-f37ec473d47e,3524.3,3540.5,0.4597,0.012462816,,45,filled,conf 5
 - 2026-11-21 14:22,Bitcoin 15m,buy,ad109ffc-31a9-4a2a-9116-3abd40aad4fe,60384.316,60458.862,0.1235,0.000729932,,45,filled,conf 3
 - 2026-11-21 22:31,Gold USD,sell,b0f86a01-0fac-4658-98a6-20bbd1cb74ad,3542.75,3524.78,-0.5072,0.012431658,0.012431658,,filled,SIGNAL EXIT; score 0/3 (0.1%)
 - 2026-11-22 01:31,Gold USD,buy,4d386986-ea23-44d5-8d23-7356a8ef4e2a,3551.42,3569.5,0.5091,0.012358611,,45,filled,conf 4
@@ -91,6 +90,7 @@
 - 2026-11-22 03:05,Bitcoin 15m,sell,b9db1cf1-e7c6-461d-8283-70e1f2861050,59206.436,59224.2,0.03,0.000728107,0.000728107,,filled,STOP LOSS (-2.1%)
 - 2026-11-22 08:36,Bitcoin 15m,buy,4e204d33-7b34-41b4-b1cb-a80b24d2bcf0,60218.875,60130.721,-0.1464,0.000734047,,45,filled,conf 4
 - 2026-11-22 08:42,Gold USD,buy,33ac03bf-ea33-4ef8-84ce-20afba30e4f1,3539.78,3559.135402049,0.5468,0.012400643,,45,filled,conf 5
+- 2026-11-22 19:01,Gold USD,sell,492c167d-75d8-441a-8329-e6465fd1568f,3547.28,3523.581,-0.6681,0.01236964,0.01236964,,filled,SIGNAL EXIT; score 0/3 (-0.3%)
 
 ## Recent Gemini decisions
 - 2026-11-21 14:07,Bitcoin 15m,gemini_hold,long,60458.48,17.47,59547.293,58796.482,58371.948,83.6,473.825,2,2,+3.00% (take profit) or -2.00% (stop loss),RSI overbought at 83.6 with momentum exhausting n
@@ -111,12 +111,12 @@
 - Bitcoin 11-19 00:23 price 62606.65 holding 0.2%
 - Bitcoin 11-19 00:24 price 62630.6 holding 0.3%
 - Bitcoin 1h 11-19 00:25 price 62607.78 holding 0.2%
-- Bitcoin 15m 11-22 18:58 price 60719 holding 1.0%
 - Bitcoin 15m 11-22 18:59 price 60688.87 holding 0.9%
 - Bitcoin 15m 11-22 19:00 price 60671.3 holding 0.9%
-- Gold USD 11-22 18:58 price 3546.35 holding -0.4%
+- Bitcoin 15m 11-22 19:01 price 60662.85 holding 0.9%
 - Gold USD 11-22 18:59 price 3547.31 holding -0.3%
 - Gold USD 11-22 19:00 price 3546.6 holding -0.4%
+- Gold USD 11-22 19:01 price 3547.28 sell SIGNAL EXIT; score 0/3 (-0.3%)
 - USD/JPY 11-21 01:43 price  error OANDA position 503 [req 0]: {"errorMessage":"System under maintenance; please try again la
 - USD/JPY 11-21 01:44 price  error OANDA position 503 [req 0]: {"errorMessage":"System under maintenance; please try again la
 - USD/JPY 11-21 23:46 price  error OANDA position 401 [req 61573249626792112]: {"errorMessage":"Insufficient authorization to
