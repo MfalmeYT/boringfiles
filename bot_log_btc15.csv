@@ -3065,3 +3065,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-22 01:54,60026.75,2,fast_above_slow,yes,holding,-0.7%
 2026-11-22 01:55,60029.7,2,fast_above_slow,yes,holding,-0.7%
 2026-11-22 01:56,60010.31,2,fast_above_slow,yes,holding,-0.7%
+2026-11-22 01:57,59988.87,1,fast_above_slow|rsi_in_range,yes,holding,-0.8%
