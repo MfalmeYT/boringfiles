@@ -21,3 +21,4 @@ time_utc,market,action,side,price,spread,ema_fast,ema_slow,ema_trend,rsi,atr,sco
 2026-11-21 14:22,Bitcoin 15m,buy,long,60384.32,18.214,59670.997,58918.257,58440.365,78.0,486.792,2,3,+3.00% (take profit) or -2.00% (stop loss),Strong uptrend but overbought RSI 78 indicates potential short-term exhaustion
 2026-11-22 01:31,Gold USD,buy,long,3551.42,,3551.043,3550.628,3547.036,52.9,23.864,3,4,+1.50% (take profit) or -1.00% (stop loss),Bullish alignment and EMA support; but momentum is currently flat
 2026-11-22 08:36,Bitcoin 15m,buy,long,60218.88,14.91,59385.111,59294.021,59420.68,72.2,283.953,2,4,+3.00% (take profit) or -2.00% (stop loss),Strong momentum and crossover offset by overbought RSI above 70
+2026-11-22 08:42,Gold USD,buy,long,3539.78,,3535.513,3535.457,3538.494,57.2,23.533,3,5,+1.50% (take profit) or -1.00% (stop loss),Fresh bullish EMA crossover with price trending up and solid RSI
