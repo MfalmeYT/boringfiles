@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-22 08:35 UTC)
+# Bot report (generated 2026-11-22 08:36 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -18,8 +18,8 @@
 |---|---|---|---|---|---|---|---|---|
 | Bitcoin | 11-19 00:24 | 0 | 0 | 0 | 29 | 7 | -18.45 | yes |
 | Bitcoin 1h | 11-19 00:25 | 0 | 0 | 0 | 0 | - | +0.00 |  |
-| Bitcoin 15m | 11-22 08:35 | 1440 | 1 | 0 | 1 | 0 | -2.45 |  |
-| Gold USD | 11-22 08:35 | 1440 | 1 | 0 | 14 | 14 | -8.45 |  |
+| Bitcoin 15m | 11-22 08:36 | 1440 | 2 | 0 | 1 | 0 | -2.45 | yes |
+| Gold USD | 11-22 08:36 | 1440 | 1 | 0 | 14 | 14 | -8.45 |  |
 | USD/JPY | 11-21 23:46 | 1 | 0 | 1 | 27 | 37 | -0.04 |  |
 | GBP/USD | 11-21 01:44 | 0 | 0 | 0 | 24 | 38 | +0.11 |  |
 | EUR/USD | 11-21 01:44 | 0 | 0 | 0 | 27 | 37 | -0.04 |  |
@@ -83,7 +83,6 @@
 - 2026-11-22 08:14 UTC Oanda: balance 821.5243, equity 821.5243, free 821.5243
 
 ## Recent fills (decision price vs real fill; columns: time_utc,market,action,order_id,decision_price,fill_price,move_pct,fill_qty,position_qty,requested,status,reason)
-- 2026-11-20 22:47,Gold USD,buy,43f1175e-3b7b-4e1b-9015-e41fa4b53ee2,3532.824,3550.91,0.5119,0.012424356,,45,filled,conf 4
 - 2026-11-21 03:32,Gold USD,sell,53750fe8-2f6a-41c8-b093-8538a3ce855a,3521.2825,3512.01,-0.2633,0.012393295,0.012393295,,filled,SIGNAL EXIT; score 0/3 (-0.8%)
 - 2026-11-21 07:16,Gold USD,buy,728e4d4e-1a84-4d9f-9c50-f37ec473d47e,3524.3,3540.5,0.4597,0.012462816,,45,filled,conf 5
 - 2026-11-21 14:22,Bitcoin 15m,buy,ad109ffc-31a9-4a2a-9116-3abd40aad4fe,60384.316,60458.862,0.1235,0.000729932,,45,filled,conf 3
@@ -91,13 +90,14 @@
 - 2026-11-22 01:31,Gold USD,buy,4d386986-ea23-44d5-8d23-7356a8ef4e2a,3551.42,3569.5,0.5091,0.012358611,,45,filled,conf 4
 - 2026-11-22 03:01,Gold USD,sell,3ebd617e-170d-4461-995c-aaaab8148b41,3541.2585,3522.77,-0.5221,0.012327714,0.012327714,,filled,SIGNAL EXIT; score 0/3 (-0.8%)
 - 2026-11-22 03:05,Bitcoin 15m,sell,b9db1cf1-e7c6-461d-8283-70e1f2861050,59206.436,59224.2,0.03,0.000728107,0.000728107,,filled,STOP LOSS (-2.1%)
+- 2026-11-22 08:36,Bitcoin 15m,buy,4e204d33-7b34-41b4-b1cb-a80b24d2bcf0,60218.875,60130.721,-0.1464,0.000734047,,45,filled,conf 4
 
 ## Recent Gemini decisions
-- 2026-11-21 13:37,Bitcoin 15m,gemini_hold,long,60268.03,14.286,59022.282,58441.793,58196.943,82.6,462.641,2,2,+3.00% (take profit) or -2.00% (stop loss),Extremely overbought RSI at 82.6 indicates high 
 - 2026-11-21 13:52,Bitcoin 15m,gemini_hold,long,60613.7,18.8,59350.658,58644.45,58293.697,84.4,477.05,2,2,+3.00% (take profit) or -2.00% (stop loss),RSI at 84.4 signals an exhausted overbought spike vul
 - 2026-11-21 14:07,Bitcoin 15m,gemini_hold,long,60458.48,17.47,59547.293,58796.482,58371.948,83.6,473.825,2,2,+3.00% (take profit) or -2.00% (stop loss),RSI overbought at 83.6 with momentum exhausting n
 - 2026-11-21 14:22,Bitcoin 15m,buy,long,60384.32,18.214,59670.997,58918.257,58440.365,78.0,486.792,2,3,+3.00% (take profit) or -2.00% (stop loss),Strong uptrend but overbought RSI 78 indicates potential
 - 2026-11-22 01:31,Gold USD,buy,long,3551.42,,3551.043,3550.628,3547.036,52.9,23.864,3,4,+1.50% (take profit) or -1.00% (stop loss),Bullish alignment and EMA support; but momentum is currently flat
+- 2026-11-22 08:36,Bitcoin 15m,buy,long,60218.88,14.91,59385.111,59294.021,59420.68,72.2,283.953,2,4,+3.00% (take profit) or -2.00% (stop loss),Strong momentum and crossover offset by overbought RSI abo
 
 ## Data files
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/data/fills.csv
@@ -111,12 +111,12 @@
 - Bitcoin 11-19 00:23 price 62606.65 holding 0.2%
 - Bitcoin 11-19 00:24 price 62630.6 holding 0.3%
 - Bitcoin 1h 11-19 00:25 price 62607.78 holding 0.2%
-- Bitcoin 15m 11-22 08:33 price 59709.28 no_trade 1Hour trend not up
 - Bitcoin 15m 11-22 08:34 price 59767.83 no_trade 1Hour trend not up
 - Bitcoin 15m 11-22 08:35 price 59775.8 no_trade 1Hour trend not up
-- Gold USD 11-22 08:33 price 3537.64 no_trade score below 2
+- Bitcoin 15m 11-22 08:36 price 60218.88 buy conf 4: Strong momentum and crossover offset by overbought RSI above 70
 - Gold USD 11-22 08:34 price 3536.92 no_trade score below 2
 - Gold USD 11-22 08:35 price 3534.72 no_trade score below 2
+- Gold USD 11-22 08:36 price 3534.72 no_trade score below 2
 - USD/JPY 11-21 01:43 price  error OANDA position 503 [req 0]: {"errorMessage":"System under maintenance; please try again la
 - USD/JPY 11-21 01:44 price  error OANDA position 503 [req 0]: {"errorMessage":"System under maintenance; please try again la
 - USD/JPY 11-21 23:46 price  error OANDA position 401 [req 61573249626792112]: {"errorMessage":"Insufficient authorization to

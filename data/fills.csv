@@ -38,3 +38,4 @@ time_utc,market,action,order_id,decision_price,fill_price,move_pct,fill_qty,posi
 2026-11-22 01:31,Gold USD,buy,4d386986-ea23-44d5-8d23-7356a8ef4e2a,3551.42,3569.5,0.5091,0.012358611,,45,filled,conf 4
 2026-11-22 03:01,Gold USD,sell,3ebd617e-170d-4461-995c-aaaab8148b41,3541.2585,3522.77,-0.5221,0.012327714,0.012327714,,filled,SIGNAL EXIT; score 0/3 (-0.8%)
 2026-11-22 03:05,Bitcoin 15m,sell,b9db1cf1-e7c6-461d-8283-70e1f2861050,59206.436,59224.2,0.03,0.000728107,0.000728107,,filled,STOP LOSS (-2.1%)
+2026-11-22 08:36,Bitcoin 15m,buy,4e204d33-7b34-41b4-b1cb-a80b24d2bcf0,60218.875,60130.721,-0.1464,0.000734047,,45,filled,conf 4
