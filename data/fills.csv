@@ -49,3 +49,4 @@ time_utc,market,action,order_id,decision_price,fill_price,move_pct,fill_qty,posi
 2026-11-23 00:28,GBP/USD,cover,broker,,1.3104,,,,,filled,closed by broker stop/TP; P/L -3.6250
 2026-11-23 00:34,EUR/USD,cover,1770,1.09782,1.09788,0.0055,10000.0,10000.0,,filled,SIGNAL EXIT; score 0/3 (-0.1%)
 2026-11-23 00:35,EUR/GBP,short,1772,0.83794,0.83778,-0.0191,10000.0,,10000,filled,conf 4
+2026-11-23 02:27,USD/JPY,buy,1780,158.914,158.881,-0.0208,2500.0,,2500,filled,conf 4
