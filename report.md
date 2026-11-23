@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-23 22:12 UTC)
+# Bot report (generated 2026-11-23 22:13 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -13,7 +13,7 @@
 
 | market | last run UTC | runs | entries | errors | closed trades (all time) | win % | total % after fees | open |
 |---|---|---|---|---|---|---|---|---|
-| Bitcoin 15m | 11-23 22:12 | 1439 | 1 | 0 | 3 | 33 | -1.93 |  |
+| Bitcoin 15m | 11-23 22:13 | 1439 | 1 | 0 | 3 | 33 | -1.93 |  |
 | USD/JPY | 11-23 21:58 | 1378 | 3 | 0 | 30 | 37 | -0.07 |  |
 | GBP/USD | 11-23 21:58 | 1378 | 4 | 0 | 27 | 37 | +0.17 | yes |
 | EUR/USD | 11-23 21:58 | 1378 | 3 | 0 | 30 | 37 | -0.06 |  |
@@ -62,8 +62,8 @@
 - EUR/GBP totals: long 18 trades -0.38%, short 9 trades +0.02%
 
 ## Account (latest hourly snapshot)
-- 2026-11-23 21:14 UTC AlpacaCrypto: balance 934.67, equity 979.01, free 934.67
 - 2026-11-23 21:36 UTC Oanda: balance 777.8879, equity 785.5991, free 0.0000
+- 2026-11-23 22:13 UTC AlpacaCrypto: balance 934.67, equity 979.44, free 934.67
 
 ## Recent fills (decision price vs real fill; columns: time_utc,market,action,order_id,decision_price,fill_price,move_pct,fill_qty,position_qty,requested,status,reason)
 - 2026-11-23 13:53,EUR/GBP,cover,broker,,0.83584,,,,,filled,closed by broker stop/TP; P/L 11.7609
@@ -90,9 +90,9 @@
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/report.json
 
 ## Latest log rows
-- Bitcoin 15m 11-23 22:10 price 61198.42 no_trade score below 2
 - Bitcoin 15m 11-23 22:11 price 61173.25 no_trade score below 2
 - Bitcoin 15m 11-23 22:12 price 61182.47 no_trade score below 2
+- Bitcoin 15m 11-23 22:13 price 61189.25 no_trade score below 2
 - USD/JPY 11-23 21:56 price 158.987 no_trade Gemini cooldown
 - USD/JPY 11-23 21:57 price 158.987 no_trade Gemini cooldown
 - USD/JPY 11-23 21:58 price 158.987 no_trade no margin for a trade (balance 778; free margin 0)
