@@ -13155,3 +13155,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-23 00:25,3566.66,3,,no,no_trade,max 3 open positions reached
 2026-11-23 00:26,3566.66,3,,no,no_trade,max 3 open positions reached
 2026-11-23 00:27,3566.66,3,,no,no_trade,max 3 open positions reached
+2026-11-23 00:28,3566.66,3,,no,buy,conf 4: Uptrend and score 3/3; but RSI 64.5 lacks fresh crossover momentum
