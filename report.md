@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-23 22:35 UTC)
+# Bot report (generated 2026-11-23 22:36 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -13,7 +13,7 @@
 
 | market | last run UTC | runs | entries | errors | closed trades (all time) | win % | total % after fees | open |
 |---|---|---|---|---|---|---|---|---|
-| Bitcoin 15m | 11-23 22:35 | 1439 | 1 | 0 | 3 | 33 | -1.93 |  |
+| Bitcoin 15m | 11-23 22:36 | 1439 | 1 | 0 | 3 | 33 | -1.93 |  |
 | USD/JPY | 11-23 21:58 | 1378 | 3 | 0 | 30 | 37 | -0.07 |  |
 | GBP/USD | 11-23 21:58 | 1378 | 4 | 0 | 27 | 37 | +0.17 | yes |
 | EUR/USD | 11-23 21:58 | 1378 | 3 | 0 | 30 | 37 | -0.06 |  |
@@ -90,9 +90,9 @@
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/report.json
 
 ## Latest log rows
-- Bitcoin 15m 11-23 22:33 price 61126.68 no_trade score below 2
 - Bitcoin 15m 11-23 22:34 price 61100.31 no_trade score below 2
 - Bitcoin 15m 11-23 22:35 price 61087.85 no_trade score below 2
+- Bitcoin 15m 11-23 22:36 price 61121.6 no_trade score below 2
 - USD/JPY 11-23 21:56 price 158.987 no_trade Gemini cooldown
 - USD/JPY 11-23 21:57 price 158.987 no_trade Gemini cooldown
 - USD/JPY 11-23 21:58 price 158.987 no_trade no margin for a trade (balance 778; free margin 0)
