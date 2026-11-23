@@ -151,3 +151,4 @@ time_utc,broker,balance,equity,free_margin,extra
 2026-11-23 00:57,Oanda,799.9883,799.3330,250.3930,
 2026-11-23 01:34,AlpacaCrypto,890.43,979.26,890.43,[{"id": "20261123000000000::c5312771-fa38-4697-b990-bf6772a7cb0a"; "activity_type": "CFEE"; "date": "2026-11-23"; "created_at": "2026-11-21T07:16:24.820649Z"; "net_amount": "0"; "description": "Coin Pair Transaction Fee (Non USD)"; "symbol": "PAXGUSD"; "cusip": "PAXG12345"; "qty": "-0.000031158"; "p
 2026-11-23 01:56,Oanda,799.9883,798.6771,249.4771,
+2026-11-23 02:33,AlpacaCrypto,890.43,978.96,890.43,[{"id": "20261123000000000::c5312771-fa38-4697-b990-bf6772a7cb0a"; "activity_type": "CFEE"; "date": "2026-11-23"; "created_at": "2026-11-21T07:16:24.820649Z"; "net_amount": "0"; "description": "Coin Pair Transaction Fee (Non USD)"; "symbol": "PAXGUSD"; "cusip": "PAXG12345"; "qty": "-0.000031158"; "p
