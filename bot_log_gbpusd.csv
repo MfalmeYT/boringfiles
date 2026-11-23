@@ -13082,3 +13082,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-23 07:13,1.31275,2,rsi_in_range,no,no_trade,max 3 open positions reached
 2026-11-23 07:14,1.31275,2,rsi_in_range,no,no_trade,max 3 open positions reached
 2026-11-23 07:15,1.31239,3,,no,no_trade,max 3 open positions reached
+2026-11-23 07:16,1.31239,3,,no,buy,conf 4: Uptrend intact but minor pullback from peak adds slight uncertainty
