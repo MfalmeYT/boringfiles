@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-23 08:02 UTC)
+# Bot report (generated 2026-11-23 08:03 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -13,11 +13,11 @@
 
 | market | last run UTC | runs | entries | errors | closed trades (all time) | win % | total % after fees | open |
 |---|---|---|---|---|---|---|---|---|
-| Bitcoin 15m | 11-23 08:02 | 1440 | 1 | 0 | 1 | 0 | -2.45 | yes |
-| USD/JPY | 11-23 08:02 | 543 | 2 | 0 | 28 | 36 | -0.12 | yes |
-| GBP/USD | 11-23 08:02 | 543 | 2 | 0 | 25 | 36 | +0.04 | yes |
-| EUR/USD | 11-23 08:02 | 543 | 1 | 0 | 28 | 36 | -0.08 |  |
-| EUR/GBP | 11-23 08:02 | 543 | 1 | 0 | 26 | 23 | -0.48 |  |
+| Bitcoin 15m | 11-23 08:03 | 1440 | 1 | 0 | 1 | 0 | -2.45 | yes |
+| USD/JPY | 11-23 08:03 | 544 | 2 | 0 | 28 | 36 | -0.12 | yes |
+| GBP/USD | 11-23 08:03 | 544 | 2 | 0 | 26 | 35 | -0.01 |  |
+| EUR/USD | 11-23 08:03 | 544 | 2 | 0 | 28 | 36 | -0.08 | yes |
+| EUR/GBP | 11-23 08:03 | 544 | 1 | 0 | 26 | 23 | -0.48 |  |
 
 ## Raw log files (full history, one row per run)
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log_btc15.csv
@@ -40,12 +40,12 @@
 - USD/JPY: short +0.11%
 - USD/JPY: short -0.08%
 - USD/JPY totals: long 12 trades -0.14%, short 16 trades +0.02%
-- GBP/USD: short -0.08%
 - GBP/USD: long -0.06%
 - GBP/USD: short -0.17%
 - GBP/USD: short +0.19%
 - GBP/USD: short -0.07%
-- GBP/USD totals: long 11 trades +0.06%, short 14 trades -0.02%
+- GBP/USD: long -0.05%
+- GBP/USD totals: long 12 trades +0.01%, short 14 trades -0.02%
 - EUR/USD: long -0.09%
 - EUR/USD: long +0.10%
 - EUR/USD: short -0.11%
@@ -64,21 +64,21 @@
 - 2026-11-23 07:50 UTC Oanda: balance 794.0230, equity 792.6264, free 11.2264
 
 ## Recent fills (decision price vs real fill; columns: time_utc,market,action,order_id,decision_price,fill_price,move_pct,fill_qty,position_qty,requested,status,reason)
-- 2026-11-22 23:04,EUR/USD,short,1762,1.09736,1.09712,-0.0219,10000.0,,10000,filled,conf 3
-- 2026-11-23 00:28,Gold USD,buy,c8f05e3b-5410-42f7-8d08-1b89a41d7206,3566.665,3580.95,0.4005,0.012320095,,45,filled,conf 4
 - 2026-11-23 00:28,GBP/USD,cover,broker,,1.3104,,,,,filled,closed by broker stop/TP; P/L -3.6250
 - 2026-11-23 00:34,EUR/USD,cover,1770,1.09782,1.09788,0.0055,10000.0,10000.0,,filled,SIGNAL EXIT; score 0/3 (-0.1%)
 - 2026-11-23 00:35,EUR/GBP,short,1772,0.83794,0.83778,-0.0191,10000.0,,10000,filled,conf 4
 - 2026-11-23 02:27,USD/JPY,buy,1780,158.914,158.881,-0.0208,2500.0,,2500,filled,conf 4
 - 2026-11-23 07:15,EUR/GBP,cover,1786,0.83814,0.83823,0.0107,10000.0,10000.0,,filled,SIGNAL EXIT; score 0/3 (-0.0%)
 - 2026-11-23 07:16,GBP/USD,buy,1788,1.31239,1.31281,0.032,10000.0,,10000,filled,conf 4
+- 2026-11-23 08:03,GBP/USD,sell,broker,,1.31173,,,,,filled,closed by broker stop/TP; P/L -10.8000
+- 2026-11-23 08:03,EUR/USD,buy,1794,1.09974,1.09943,-0.0282,10000.0,,10000,filled,conf 4
 
 ## Recent Gemini decisions
-- 2026-11-22 23:04,EUR/USD,short,short,1.09736,0.00017,1.096955,1.097021,1.097265,52.9,0.000619,2,3,a 0.17% fall (take profit) or a 0.11% rise (stop loss); set from recent volatility,Price above EMA50 o
 - 2026-11-23 00:28,Gold USD,buy,long,3566.66,,3558.779,3552.364,3549.354,64.5,22.75,3,4,+1.50% (take profit) or -1.00% (stop loss),Uptrend and score 3/3; but RSI 64.5 lacks fresh crossover momentum
 - 2026-11-23 00:35,EUR/GBP,short,short,0.83794,0.00014,0.838017,0.838038,0.837923,47.4,0.000292,2,4,a 0.10% fall (take profit) or a 0.07% rise (stop loss); set from recent volatility,Fresh EMA crossover
 - 2026-11-23 02:27,USD/JPY,buy,long,158.914,0.012,158.8811,158.8095,158.7902,58.9,0.0961,3,4,+0.18% (take profit) or -0.12% (stop loss); set from recent volatility,Strong EMA trend and perfect checks; b
 - 2026-11-23 07:16,GBP/USD,buy,long,1.31239,0.0002,1.312141,1.311511,1.310832,65.3,0.000542,3,4,+0.12% (take profit) or -0.08% (stop loss); set from recent volatility,Uptrend intact but minor pullback f
+- 2026-11-23 08:03,EUR/USD,buy,long,1.09974,0.00016,1.099699,1.099132,1.09847,63.1,0.000478,3,4,+0.13% (take profit) or -0.09% (stop loss); set from recent volatility,Uptrend intact but price pulled bac
 
 ## Data files
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/data/fills.csv
@@ -88,18 +88,18 @@
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/report.json
 
 ## Latest log rows
-- Bitcoin 15m 11-23 08:00 price 61374.49 holding 2.1%
 - Bitcoin 15m 11-23 08:01 price 61404.01 holding 2.1%
 - Bitcoin 15m 11-23 08:02 price 61415.72 holding 2.1%
-- USD/JPY 11-23 08:00 price 159.008 holding 0.1%
+- Bitcoin 15m 11-23 08:03 price 61371.09 holding 2.1%
 - USD/JPY 11-23 08:01 price 159.008 holding 0.1%
 - USD/JPY 11-23 08:02 price 159.008 holding 0.1%
-- GBP/USD 11-23 08:00 price 1.31229 holding -0.0%
+- USD/JPY 11-23 08:03 price 159.008 holding 0.1%
 - GBP/USD 11-23 08:01 price 1.31229 holding -0.0%
 - GBP/USD 11-23 08:02 price 1.31229 holding -0.0%
-- EUR/USD 11-23 08:00 price 1.09974 no_trade max 3 open positions reached
+- GBP/USD 11-23 08:03 price 1.31173 sell closed by broker stop/TP; P/L -10.8000
 - EUR/USD 11-23 08:01 price 1.09974 no_trade max 3 open positions reached
 - EUR/USD 11-23 08:02 price 1.09974 no_trade max 3 open positions reached
-- EUR/GBP 11-23 08:00 price 0.83804 no_trade re-entry cooldown
+- EUR/USD 11-23 08:03 price 1.09974 buy conf 4: Uptrend intact but price pulled back slightly at key resistance.
 - EUR/GBP 11-23 08:01 price 0.83804 no_trade re-entry cooldown
 - EUR/GBP 11-23 08:02 price 0.83804 no_trade re-entry cooldown
+- EUR/GBP 11-23 08:03 price 0.83804 no_trade re-entry cooldown
