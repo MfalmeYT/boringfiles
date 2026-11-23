@@ -13366,3 +13366,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-23 12:26,1.09624,2,rsi_in_short_range,no,no_trade,max 3 open positions reached
 2026-11-23 12:27,1.09624,2,rsi_in_short_range,no,no_trade,max 3 open positions reached
 2026-11-23 12:28,1.09624,2,rsi_in_short_range,no,no_trade,max 3 open positions reached
+2026-11-23 12:29,1.09624,2,rsi_in_short_range,no,no_trade,max 3 open positions reached
