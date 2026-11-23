@@ -1,10 +1,10 @@
-# Status (2026-11-23 13:55 UTC)
-- last bot run: 2026-11-23 13:55 UTC (0 min ago)
-- open now: Bitcoin 15m long, USD/JPY short, EUR/USD short
-- closed trades: 113, win 34%, sum of results -2.80% (sum of %, not account balance)
+# Status (2026-11-23 13:56 UTC)
+- last bot run: 2026-11-23 13:56 UTC (0 min ago)
+- open now: Bitcoin 15m long
+- closed trades: 115, win 34%, sum of results -2.77% (sum of %, not account balance)
 - errors last 24h: 0 (OANDA 401: 0)
-- per market (trades / win% / total after fees): Bitcoin 15m 1/0%/-2.45%; USD/JPY 29/38%/+0.04%; GBP/USD 27/37%/+0.17%; EUR/USD 29/34%/-0.20%; EUR/GBP 27/26%/-0.36%
+- per market (trades / win% / total after fees): Bitcoin 15m 1/0%/-2.45%; USD/JPY 30/37%/-0.07%; GBP/USD 27/37%/+0.17%; EUR/USD 30/37%/-0.06%; EUR/GBP 27/26%/-0.36%
 - 2026-11-23 13:22 UTC AlpacaCrypto: balance 890.43, equity 979.42, free 890.43
 - 2026-11-23 13:44 UTC Oanda: balance 783.6010, equity 779.5013, free 107.4963
-- latest closed: EUR/GBP short +0.12%
+- latest closed: USD/JPY short -0.11%
 - full report: https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/report.md
