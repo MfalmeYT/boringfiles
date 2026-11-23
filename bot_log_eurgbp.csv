@@ -13429,3 +13429,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-23 13:52,0.8369,3,,yes,holding,SHORT -0.0%
 2026-11-23 13:53,0.83584,1,fast_above_slow|price_above_trend_ema,no,cover,closed by broker stop/TP; P/L 11.7609
 2026-11-23 13:54,0.8369,3,,no,no_trade,re-entry cooldown
+2026-11-23 13:55,0.8369,3,,no,no_trade,re-entry cooldown
