@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-23 20:31 UTC)
+# Bot report (generated 2026-11-23 20:32 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -13,11 +13,11 @@
 
 | market | last run UTC | runs | entries | errors | closed trades (all time) | win % | total % after fees | open |
 |---|---|---|---|---|---|---|---|---|
-| Bitcoin 15m | 11-23 20:31 | 1439 | 1 | 0 | 3 | 33 | -1.93 |  |
-| USD/JPY | 11-23 20:31 | 1291 | 3 | 0 | 30 | 37 | -0.07 |  |
-| GBP/USD | 11-23 20:31 | 1291 | 4 | 0 | 27 | 37 | +0.17 | yes |
-| EUR/USD | 11-23 20:31 | 1291 | 3 | 0 | 30 | 37 | -0.06 |  |
-| EUR/GBP | 11-23 20:31 | 1291 | 3 | 0 | 27 | 26 | -0.36 | yes |
+| Bitcoin 15m | 11-23 20:32 | 1439 | 1 | 0 | 3 | 33 | -1.93 |  |
+| USD/JPY | 11-23 20:32 | 1292 | 3 | 0 | 30 | 37 | -0.07 |  |
+| GBP/USD | 11-23 20:32 | 1292 | 4 | 0 | 27 | 37 | +0.17 | yes |
+| EUR/USD | 11-23 20:32 | 1292 | 3 | 0 | 30 | 37 | -0.06 |  |
+| EUR/GBP | 11-23 20:32 | 1292 | 3 | 0 | 27 | 26 | -0.36 | yes |
 
 ## Raw log files (full history, one row per run)
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log_btc15.csv
@@ -90,18 +90,18 @@
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/report.json
 
 ## Latest log rows
-- Bitcoin 15m 11-23 20:29 price 61128.92 no_trade score below 2
 - Bitcoin 15m 11-23 20:30 price 61128.74 no_trade score below 2
 - Bitcoin 15m 11-23 20:31 price 61224.16 no_trade score below 2
-- USD/JPY 11-23 20:29 price 158.928 no_trade Gemini cooldown
+- Bitcoin 15m 11-23 20:32 price 61239.04 no_trade score below 2
 - USD/JPY 11-23 20:30 price 158.934 no_trade Gemini cooldown
 - USD/JPY 11-23 20:31 price 158.934 no_trade Gemini cooldown
-- GBP/USD 11-23 20:29 price 1.30342 holding SHORT 0.1%
+- USD/JPY 11-23 20:32 price 158.934 no_trade Gemini cooldown
 - GBP/USD 11-23 20:30 price 1.30359 holding SHORT 0.0%
 - GBP/USD 11-23 20:31 price 1.30359 holding SHORT 0.0%
-- EUR/USD 11-23 20:29 price 1.09022 no_trade Gemini cooldown
+- GBP/USD 11-23 20:32 price 1.30359 holding SHORT 0.0%
 - EUR/USD 11-23 20:30 price 1.09043 no_trade Gemini cooldown
 - EUR/USD 11-23 20:31 price 1.09043 no_trade Gemini cooldown
-- EUR/GBP 11-23 20:29 price 0.83643 holding SHORT 0.0%
+- EUR/USD 11-23 20:32 price 1.09043 no_trade Gemini cooldown
 - EUR/GBP 11-23 20:30 price 0.8365 holding SHORT -0.0%
 - EUR/GBP 11-23 20:31 price 0.8365 holding SHORT -0.0%
+- EUR/GBP 11-23 20:32 price 0.8365 holding SHORT -0.0%
