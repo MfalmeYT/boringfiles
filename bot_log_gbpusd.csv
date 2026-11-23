@@ -13592,3 +13592,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-23 15:44,1.30446,2,rsi_in_short_range,no,no_trade,re-entry cooldown
 2026-11-23 15:45,1.3046,2,rsi_in_short_range,no,no_trade,re-entry cooldown
 2026-11-23 15:46,1.3046,2,rsi_in_short_range,no,short,conf 2: RSI oversold at 29.4 indicates extreme exhaustion risking rebound
+2026-11-23 15:47,1.3046,2,rsi_in_short_range,yes,holding,SHORT -0.0%
