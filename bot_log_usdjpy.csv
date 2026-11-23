@@ -13799,3 +13799,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-23 18:56,159.176,2,price_below_trend_ema,no,no_trade,Gemini cooldown
 2026-11-23 18:57,159.176,2,price_below_trend_ema,no,no_trade,Gemini cooldown
 2026-11-23 18:58,159.176,2,price_below_trend_ema,no,no_trade,no margin for a trade (balance 778; free margin 7)
+2026-11-23 18:59,159.176,2,price_below_trend_ema,no,no_trade,Gemini cooldown
