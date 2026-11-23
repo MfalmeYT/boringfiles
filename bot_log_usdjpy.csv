@@ -12811,3 +12811,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-23 02:27,158.914,3,,no,buy,conf 4: Strong EMA trend and perfect checks; but current price action is sideways | 2500 units (reduced for margin)
 2026-11-23 02:28,158.914,3,,yes,holding,0.0%
 2026-11-23 02:29,158.914,3,,yes,holding,0.0%
+2026-11-23 02:30,158.83,3,,yes,holding,-0.0%
