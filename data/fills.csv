@@ -67,3 +67,4 @@ time_utc,market,action,order_id,decision_price,fill_price,move_pct,fill_qty,posi
 2026-11-23 13:57,Bitcoin 15m,sell,9d9483f8-e1f8-4b26-a61f-ae4118b3ba18,62347.05,62202.567,-0.2317,0.000732211,0.000732211,,filled,TAKE PROFIT (3.7%)
 2026-11-23 15:46,GBP/USD,short,1834,1.3046,1.30424,-0.0276,10000.0,,10000,filled,conf 2
 2026-11-23 15:57,Bitcoin 15m,buy,17cd6d10-09f3-4007-a917-ad0e5e933acb,62697.2715,62720.23,0.0366,0.000703403,,45,filled,conf 4
+2026-11-23 16:53,EUR/GBP,short,1842,0.83679,0.83645,-0.0406,2500.0,,2500,filled,conf 4
