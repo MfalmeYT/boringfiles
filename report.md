@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-23 22:59 UTC)
+# Bot report (generated 2026-11-23 23:00 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -13,11 +13,11 @@
 
 | market | last run UTC | runs | entries | errors | closed trades (all time) | win % | total % after fees | open |
 |---|---|---|---|---|---|---|---|---|
-| Bitcoin 15m | 11-23 22:59 | 1439 | 1 | 0 | 3 | 33 | -1.93 |  |
-| USD/JPY | 11-23 21:58 | 1378 | 3 | 0 | 30 | 37 | -0.07 |  |
-| GBP/USD | 11-23 21:58 | 1378 | 4 | 0 | 27 | 37 | +0.17 | yes |
-| EUR/USD | 11-23 21:58 | 1378 | 3 | 0 | 30 | 37 | -0.06 |  |
-| EUR/GBP | 11-23 21:58 | 1378 | 3 | 0 | 27 | 26 | -0.36 | yes |
+| Bitcoin 15m | 11-23 23:00 | 1439 | 1 | 0 | 3 | 33 | -1.93 |  |
+| USD/JPY | 11-23 23:00 | 1378 | 2 | 0 | 30 | 37 | -0.07 |  |
+| GBP/USD | 11-23 23:00 | 1378 | 3 | 0 | 27 | 37 | +0.17 | yes |
+| EUR/USD | 11-23 23:00 | 1378 | 3 | 0 | 30 | 37 | -0.06 |  |
+| EUR/GBP | 11-23 23:00 | 1378 | 3 | 0 | 28 | 25 | -0.36 |  |
 
 ## Raw log files (full history, one row per run)
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log_btc15.csv
@@ -54,19 +54,18 @@
 - EUR/USD: long -0.12%
 - EUR/USD: short +0.13%
 - EUR/USD totals: long 17 trades -0.67%, short 13 trades +0.61%
-- EUR/GBP: long -0.08%
 - EUR/GBP: long -0.05%
 - EUR/GBP: long +0.09%
 - EUR/GBP: short -0.02%
 - EUR/GBP: short +0.12%
-- EUR/GBP totals: long 18 trades -0.38%, short 9 trades +0.02%
+- EUR/GBP: short -0.00%
+- EUR/GBP totals: long 18 trades -0.38%, short 10 trades +0.01%
 
 ## Account (latest hourly snapshot)
 - 2026-11-23 22:13 UTC AlpacaCrypto: balance 934.67, equity 979.44, free 934.67
 - 2026-11-23 22:35 UTC Oanda: balance 777.1939, equity 779.9071, free 0.0000
 
 ## Recent fills (decision price vs real fill; columns: time_utc,market,action,order_id,decision_price,fill_price,move_pct,fill_qty,position_qty,requested,status,reason)
-- 2026-11-23 13:53,EUR/GBP,cover,broker,,0.83584,,,,,filled,closed by broker stop/TP; P/L 11.7609
 - 2026-11-23 13:56,USD/JPY,cover,broker,,159.129,,,,,filled,closed by broker stop/TP; P/L -2.1740
 - 2026-11-23 13:56,EUR/USD,cover,broker,,1.09245,,,,,filled,closed by broker stop/TP; P/L -15.3000
 - 2026-11-23 13:57,Bitcoin 15m,sell,9d9483f8-e1f8-4b26-a61f-ae4118b3ba18,62347.05,62202.567,-0.2317,0.000732211,0.000732211,,filled,TAKE PROFIT (3.7%)
@@ -74,6 +73,7 @@
 - 2026-11-23 15:57,Bitcoin 15m,buy,17cd6d10-09f3-4007-a917-ad0e5e933acb,62697.2715,62720.23,0.0366,0.000703403,,45,filled,conf 4
 - 2026-11-23 16:53,EUR/GBP,short,1842,0.83679,0.83645,-0.0406,2500.0,,2500,filled,conf 4
 - 2026-11-23 17:42,Bitcoin 15m,sell,e9f33994-3504-46ff-9817-92c2c4f9b96e,61436.07,61339.2,-0.1577,0.000701644,0.000701644,,filled,STOP LOSS (-2.0%)
+- 2026-11-23 23:00,EUR/GBP,cover,2154,0.83682,0.83704,0.0263,2500.0,2500.0,,filled,SIGNAL EXIT; score 0/3 (-0.0%)
 
 ## Recent Gemini decisions
 - 2026-11-23 12:46,USD/JPY,short,short,158.96,0.013,159.0435,159.0539,158.9934,39.8,0.0712,3,5,a 0.13% fall (take profit) or a 0.09% rise (stop loss); set from recent volatility,Strong bearish momentum 
@@ -90,18 +90,18 @@
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/report.json
 
 ## Latest log rows
-- Bitcoin 15m 11-23 22:57 price 61136.82 no_trade score below 2
 - Bitcoin 15m 11-23 22:58 price 61120.47 no_trade score below 2
 - Bitcoin 15m 11-23 22:59 price 61142.55 no_trade score below 2
-- USD/JPY 11-23 21:56 price 158.987 no_trade Gemini cooldown
+- Bitcoin 15m 11-23 23:00 price 61176.01 no_trade score below 2
 - USD/JPY 11-23 21:57 price 158.987 no_trade Gemini cooldown
 - USD/JPY 11-23 21:58 price 158.987 no_trade no margin for a trade (balance 778; free margin 0)
-- GBP/USD 11-23 21:56 price 1.30312 holding SHORT 0.1%
+- USD/JPY 11-23 23:00 price 159.009 no_trade no margin for a trade (balance 777; free margin 0)
 - GBP/USD 11-23 21:57 price 1.30312 holding SHORT 0.1%
 - GBP/USD 11-23 21:58 price 1.30312 holding SHORT 0.1%
-- EUR/USD 11-23 21:56 price 1.09014 no_trade Gemini cooldown
+- GBP/USD 11-23 23:00 price 1.303 holding SHORT 0.1%
 - EUR/USD 11-23 21:57 price 1.09014 no_trade Gemini cooldown
 - EUR/USD 11-23 21:58 price 1.09014 no_trade no margin for a trade (balance 778; free margin 0)
-- EUR/GBP 11-23 21:56 price 0.83659 holding SHORT -0.0%
+- EUR/USD 11-23 23:00 price 1.0905 no_trade no margin for a trade (balance 777; free margin 0)
 - EUR/GBP 11-23 21:57 price 0.83659 holding SHORT -0.0%
 - EUR/GBP 11-23 21:58 price 0.83659 holding SHORT -0.0%
+- EUR/GBP 11-23 23:00 price 0.83682 cover SIGNAL EXIT; score 0/3 (-0.0%)
