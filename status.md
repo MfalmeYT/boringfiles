@@ -1,6 +1,6 @@
-# Status (2026-11-23 11:02 UTC)
-- last bot run: 2026-11-23 11:02 UTC (0 min ago)
-- open now: Bitcoin 15m long, EUR/GBP short
+# Status (2026-11-23 11:03 UTC)
+- last bot run: 2026-11-23 11:03 UTC (0 min ago)
+- open now: Bitcoin 15m long, GBP/USD short, EUR/GBP short
 - closed trades: 111, win 32%, sum of results -3.10% (sum of %, not account balance)
 - errors last 24h: 0 (OANDA 401: 0)
 - per market (trades / win% / total after fees): Bitcoin 15m 1/0%/-2.45%; USD/JPY 29/38%/+0.04%; GBP/USD 26/35%/-0.01%; EUR/USD 29/34%/-0.20%; EUR/GBP 26/23%/-0.48%
