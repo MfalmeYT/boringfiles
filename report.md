@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-23 17:41 UTC)
+# Bot report (generated 2026-11-23 17:42 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -13,11 +13,11 @@
 
 | market | last run UTC | runs | entries | errors | closed trades (all time) | win % | total % after fees | open |
 |---|---|---|---|---|---|---|---|---|
-| Bitcoin 15m | 11-23 17:41 | 1439 | 1 | 0 | 2 | 50 | +0.58 | yes |
-| USD/JPY | 11-23 17:41 | 1121 | 3 | 0 | 30 | 37 | -0.07 |  |
-| GBP/USD | 11-23 17:41 | 1121 | 4 | 0 | 27 | 37 | +0.17 | yes |
-| EUR/USD | 11-23 17:41 | 1121 | 3 | 0 | 30 | 37 | -0.06 |  |
-| EUR/GBP | 11-23 17:41 | 1121 | 3 | 0 | 27 | 26 | -0.36 | yes |
+| Bitcoin 15m | 11-23 17:42 | 1439 | 1 | 0 | 3 | 33 | -1.93 |  |
+| USD/JPY | 11-23 17:42 | 1122 | 3 | 0 | 30 | 37 | -0.07 |  |
+| GBP/USD | 11-23 17:42 | 1122 | 4 | 0 | 27 | 37 | +0.17 | yes |
+| EUR/USD | 11-23 17:42 | 1122 | 3 | 0 | 30 | 37 | -0.06 |  |
+| EUR/GBP | 11-23 17:42 | 1122 | 3 | 0 | 27 | 26 | -0.36 | yes |
 
 ## Raw log files (full history, one row per run)
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log_btc15.csv
@@ -35,6 +35,7 @@
 ## Latest closed trades
 - Bitcoin 15m: long -2.45%
 - Bitcoin 15m: long +3.03%
+- Bitcoin 15m: long -2.51%
 - USD/JPY: short -0.11%
 - USD/JPY: short +0.11%
 - USD/JPY: short -0.08%
@@ -65,7 +66,6 @@
 - 2026-11-23 17:40 UTC Oanda: balance 777.8879, equity 797.5994, free 10.4194
 
 ## Recent fills (decision price vs real fill; columns: time_utc,market,action,order_id,decision_price,fill_price,move_pct,fill_qty,position_qty,requested,status,reason)
-- 2026-11-23 13:53,EUR/USD,short,1826,1.09391,1.09092,-0.2733,10000.0,,10000,filled,conf 2
 - 2026-11-23 13:53,EUR/GBP,cover,broker,,0.83584,,,,,filled,closed by broker stop/TP; P/L 11.7609
 - 2026-11-23 13:56,USD/JPY,cover,broker,,159.129,,,,,filled,closed by broker stop/TP; P/L -2.1740
 - 2026-11-23 13:56,EUR/USD,cover,broker,,1.09245,,,,,filled,closed by broker stop/TP; P/L -15.3000
@@ -73,6 +73,7 @@
 - 2026-11-23 15:46,GBP/USD,short,1834,1.3046,1.30424,-0.0276,10000.0,,10000,filled,conf 2
 - 2026-11-23 15:57,Bitcoin 15m,buy,17cd6d10-09f3-4007-a917-ad0e5e933acb,62697.2715,62720.23,0.0366,0.000703403,,45,filled,conf 4
 - 2026-11-23 16:53,EUR/GBP,short,1842,0.83679,0.83645,-0.0406,2500.0,,2500,filled,conf 4
+- 2026-11-23 17:42,Bitcoin 15m,sell,e9f33994-3504-46ff-9817-92c2c4f9b96e,61436.07,61339.2,-0.1577,0.000701644,0.000701644,,filled,STOP LOSS (-2.0%)
 
 ## Recent Gemini decisions
 - 2026-11-23 12:46,USD/JPY,short,short,158.96,0.013,159.0435,159.0539,158.9934,39.8,0.0712,3,5,a 0.13% fall (take profit) or a 0.09% rise (stop loss); set from recent volatility,Strong bearish momentum 
@@ -89,18 +90,18 @@
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/report.json
 
 ## Latest log rows
-- Bitcoin 15m 11-23 17:39 price 61718.5 holding -1.6%
 - Bitcoin 15m 11-23 17:40 price 61694.43 holding -1.6%
 - Bitcoin 15m 11-23 17:41 price 61618.15 holding -1.8%
-- USD/JPY 11-23 17:39 price 159.303 no_trade max 3 open positions reached
+- Bitcoin 15m 11-23 17:42 price 61436.07 sell STOP LOSS (-2.0%)
 - USD/JPY 11-23 17:40 price 159.303 no_trade max 3 open positions reached
 - USD/JPY 11-23 17:41 price 159.303 no_trade max 3 open positions reached
-- GBP/USD 11-23 17:39 price 1.30194 holding SHORT 0.2%
+- USD/JPY 11-23 17:42 price 159.303 no_trade max 3 open positions reached
 - GBP/USD 11-23 17:40 price 1.30194 holding SHORT 0.2%
 - GBP/USD 11-23 17:41 price 1.30194 holding SHORT 0.2%
-- EUR/USD 11-23 17:39 price 1.0884 no_trade max 3 open positions reached
+- GBP/USD 11-23 17:42 price 1.30194 holding SHORT 0.2%
 - EUR/USD 11-23 17:40 price 1.0884 no_trade max 3 open positions reached
 - EUR/USD 11-23 17:41 price 1.0884 no_trade max 3 open positions reached
-- EUR/GBP 11-23 17:39 price 0.836 holding SHORT 0.1%
+- EUR/USD 11-23 17:42 price 1.0884 no_trade max 3 open positions reached
 - EUR/GBP 11-23 17:40 price 0.836 holding SHORT 0.1%
 - EUR/GBP 11-23 17:41 price 0.836 holding SHORT 0.1%
+- EUR/GBP 11-23 17:42 price 0.836 holding SHORT 0.1%
