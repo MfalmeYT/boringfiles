@@ -13997,3 +13997,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-23 23:15,159.096,2,price_below_trend_ema,no,short,conf 2: Price jumped sharply above all EMAs; signaling strong bullish momentum. | 2500 units (reduced for margin)
 2026-11-23 23:16,159.096,2,price_below_trend_ema,yes,holding,SHORT -0.0%
 2026-11-23 23:17,159.096,2,price_below_trend_ema,yes,holding,SHORT -0.0%
+2026-11-23 23:18,159.096,2,price_below_trend_ema,yes,holding,SHORT -0.0%
