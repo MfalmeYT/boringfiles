@@ -5225,3 +5225,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-23 13:54,61017.44,0,fast_above_slow|price_above_trend_ema|rsi_in_range,yes,holding,1.5%
 2026-11-23 13:55,61068.33,0,fast_above_slow|price_above_trend_ema|rsi_in_range,yes,holding,1.6%
 2026-11-23 13:56,61585.09,3,,yes,holding,2.4%
+2026-11-23 13:57,62347.05,2,rsi_in_range,yes,sell,TAKE PROFIT (3.7%)
