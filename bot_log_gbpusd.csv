@@ -13725,3 +13725,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-23 17:57,1.30179,2,rsi_in_short_range,yes,holding,SHORT 0.2%
 2026-11-23 17:58,1.30179,2,rsi_in_short_range,yes,holding,SHORT 0.2%
 2026-11-23 17:59,1.30179,2,rsi_in_short_range,yes,holding,SHORT 0.2%
+2026-11-23 18:00,1.30159,2,rsi_in_short_range,yes,holding,SHORT 0.2%
