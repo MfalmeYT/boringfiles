@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-11-23 01:33",
+ "generated_utc": "2026-11-23 01:34",
  "markets": [
   {
    "market": "Bitcoin",
@@ -42,7 +42,7 @@
   {
    "market": "Bitcoin 15m",
    "enabled": true,
-   "last_run_utc": "2026-11-23 01:33",
+   "last_run_utc": "2026-11-23 01:34",
    "runs_24h": 1440,
    "entries_24h": 1,
    "errors_24h": 0,
@@ -60,7 +60,7 @@
   {
    "market": "Gold USD",
    "enabled": true,
-   "last_run_utc": "2026-11-23 01:33",
+   "last_run_utc": "2026-11-23 01:34",
    "runs_24h": 1440,
    "entries_24h": 2,
    "errors_24h": 0,
@@ -82,8 +82,8 @@
   {
    "market": "USD/JPY",
    "enabled": true,
-   "last_run_utc": "2026-11-23 01:33",
-   "runs_24h": 154,
+   "last_run_utc": "2026-11-23 01:34",
+   "runs_24h": 155,
    "entries_24h": 1,
    "errors_24h": 0,
    "closed_trades": 28,
@@ -104,8 +104,8 @@
   {
    "market": "GBP/USD",
    "enabled": true,
-   "last_run_utc": "2026-11-23 01:33",
-   "runs_24h": 154,
+   "last_run_utc": "2026-11-23 01:34",
+   "runs_24h": 155,
    "entries_24h": 1,
    "errors_24h": 0,
    "closed_trades": 25,
@@ -126,8 +126,8 @@
   {
    "market": "EUR/USD",
    "enabled": true,
-   "last_run_utc": "2026-11-23 01:33",
-   "runs_24h": 154,
+   "last_run_utc": "2026-11-23 01:34",
+   "runs_24h": 155,
    "entries_24h": 1,
    "errors_24h": 0,
    "closed_trades": 28,
@@ -148,8 +148,8 @@
   {
    "market": "EUR/GBP",
    "enabled": true,
-   "last_run_utc": "2026-11-23 01:33",
-   "runs_24h": 154,
+   "last_run_utc": "2026-11-23 01:34",
+   "runs_24h": 155,
    "entries_24h": 1,
    "errors_24h": 0,
    "closed_trades": 25,
@@ -171,7 +171,7 @@
  "oanda_401_24h": 0,
  "errors_24h": [],
  "account": {
-  "AlpacaCrypto": "2026-11-23 00:35 UTC AlpacaCrypto: balance 890.43, equity 979.27, free 890.43",
-  "Oanda": "2026-11-23 00:57 UTC Oanda: balance 799.9883, equity 799.3330, free 250.3930"
+  "Oanda": "2026-11-23 00:57 UTC Oanda: balance 799.9883, equity 799.3330, free 250.3930",
+  "AlpacaCrypto": "2026-11-23 01:34 UTC AlpacaCrypto: balance 890.43, equity 979.26, free 890.43"
  }
 }
