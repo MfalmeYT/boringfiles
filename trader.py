@@ -1,12 +1,12 @@
 """Multi-market trading framework (paper by default).
 
 One script, one config per market (see MARKETS below). Every run it loops over the enabled markets:
-  1. skips markets that are closed (currency pairs close on weekends, the gold ETF outside US stock hours)
+  1. skips markets that are closed (currency pairs close on weekends)
   2. scores the market with the same 3 checks (EMA trend, longer EMA, RSI)
   3. asks Gemini for a 1-6 confidence on entries, once per cooldown
-  4. places orders through a broker adapter (Alpaca for Bitcoin and gold PAXG, OANDA for currency pairs)
+  4. places orders through a broker adapter (Alpaca for Bitcoin, OANDA for currency pairs)
   5. currency pairs can go LONG (bet on up) or SHORT (bet on down) with mirrored rules. Alpaca can't short crypto, so
-     Bitcoin and Gold stay long-only.
+     Bitcoin stays long-only.
 
 Safety rails (apply to ALL markets):
   - TRADING_ENABLED=false  -> never places orders (kill switch)
@@ -61,21 +61,6 @@ def fx_pair(label, symbol, log, decimals, units=10000):
 
 
 MARKETS = {
-    # Old Bitcoin setup (5-min candles, signal exit). Switched off on 2026-11-18 so its history stays as it was.
-    "btc": {
-        "enabled": False, "label": "Bitcoin", "broker": "alpaca", "symbol": "BTC/USD",
-        "log": "bot_log.csv", "session": "24/7", "timeframe": "5Min", "decimals": 2,
-        "cooldown_min": 5, "size_usd": 45,   # Bitcoin and GLD share one Alpaca cash balance, so each uses a smaller slice
-        "exit": {"mode": "pct", "stop": 0.02, "tp": 0.02},
-    },
-    # 1-hour test (2026-11-18, replaced the next day by the 15-minute test below). Off; its log stays for reference.
-    "btc1h": {
-        "enabled": False, "label": "Bitcoin 1h", "broker": "alpaca", "symbol": "BTC/USD",
-        "log": "bot_log_btc1h.csv", "session": "24/7", "timeframe": "1Hour", "decimals": 2,
-        "cooldown_min": 60, "size_usd": 45, "lookback_hours": 120,   # 120h of 1-hour candles = enough for the 60+ needed
-        "signal_exit": False,
-        "exit": {"mode": "pct", "stop": 0.04, "tp": 0.04},
-    },
     # Bitcoin TEST (from 2026-11-19): 15-minute candles. A trade ends only on stop (2%), target (3%) or a 48h time stop, never
     # on the "checks failed" signal. Alpaca's market-order fee is 0.25% per order (0.5% round trip), so wide exits keep it small.
     # Extra guards: the 1-hour trend must agree, 3 losses in a row pauses entries 12h, bad/stale data or a wide spread skips the trade.
@@ -89,15 +74,6 @@ MARKETS = {
         "max_candle_age_min": 60,                             # refuse to trade on stale candles
         "max_spread_frac": 0.1,                               # skip if bid/ask spread is over 10% of the target distance
         "exit": {"mode": "pct", "stop": 0.02, "tp": 0.03},
-    },
-    # Gold, traded as PAXG/USD (a token backed by 1 oz of gold) on the same Alpaca paper account. Logged as "Gold USD".
-    # PAXG trades thinly, so it uses 15-min candles and looks back 48h to find enough of them.
-    "gold": {
-        "enabled": True, "label": "Gold USD", "broker": "alpaca", "symbol": "PAXG/USD",
-        "log": "bot_log_goldusd.csv", "session": "24/7", "timeframe": "15Min", "decimals": 2,
-        "cooldown_min": 15, "size_usd": 45, "lookback_hours": 48,
-        "min_hold_min": 90, "reentry_min": 180,
-        "exit": {"mode": "pct", "stop": 0.01, "tp": 0.015},   # gold moves less than Bitcoin, so tighter than 2%
     },
     "usdjpy": fx_pair("USD/JPY", "USD_JPY", "bot_log_usdjpy.csv", decimals=3),
     "gbpusd": fx_pair("GBP/USD", "GBP_USD", "bot_log_gbpusd.csv", decimals=5),
