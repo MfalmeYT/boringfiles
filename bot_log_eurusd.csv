@@ -13802,3 +13802,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-23 19:43,1.09004,3,,no,no_trade,no margin for a trade (balance 778; free margin 1)
 2026-11-23 19:44,1.09004,3,,no,no_trade,Gemini cooldown
 2026-11-23 19:45,1.08972,3,,no,no_trade,Gemini cooldown
+2026-11-23 19:46,1.08972,3,,no,no_trade,Gemini cooldown
