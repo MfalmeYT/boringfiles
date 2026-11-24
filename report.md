@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-24 01:31 UTC)
+# Bot report (generated 2026-11-24 01:32 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -13,11 +13,11 @@
 
 | market | last run UTC | runs | entries | errors | closed trades (all time) | win % | total % after fees | open |
 |---|---|---|---|---|---|---|---|---|
-| Bitcoin 15m | 11-24 01:31 | 1439 | 2 | 0 | 3 | 33 | -1.93 | yes |
-| USD/JPY | 11-24 01:31 | 1378 | 3 | 0 | 31 | 39 | +0.06 |  |
-| GBP/USD | 11-24 01:31 | 1378 | 3 | 0 | 28 | 36 | +0.15 |  |
-| EUR/USD | 11-24 01:31 | 1378 | 3 | 0 | 30 | 37 | -0.06 | yes |
-| EUR/GBP | 11-24 01:31 | 1378 | 2 | 0 | 28 | 25 | -0.36 |  |
+| Bitcoin 15m | 11-24 01:32 | 1439 | 2 | 0 | 3 | 33 | -1.93 | yes |
+| USD/JPY | 11-24 01:32 | 1378 | 3 | 0 | 31 | 39 | +0.06 |  |
+| GBP/USD | 11-24 01:32 | 1378 | 3 | 0 | 28 | 36 | +0.15 |  |
+| EUR/USD | 11-24 01:32 | 1378 | 3 | 0 | 30 | 37 | -0.06 | yes |
+| EUR/GBP | 11-24 01:32 | 1378 | 2 | 0 | 28 | 25 | -0.36 |  |
 
 ## Raw log files (full history, one row per run)
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log_btc15.csv
@@ -62,8 +62,8 @@
 - EUR/GBP totals: long 18 trades -0.38%, short 10 trades +0.01%
 
 ## Account (latest hourly snapshot)
-- 2026-11-24 00:33 UTC Oanda: balance 778.3835, equity 784.3335, free 23.6035
 - 2026-11-24 01:10 UTC AlpacaCrypto: balance 934.67, equity 979.85, free 934.67
+- 2026-11-24 01:32 UTC Oanda: balance 773.4835, equity 777.2835, free 668.1145
 
 ## Recent fills (decision price vs real fill; columns: time_utc,market,action,order_id,decision_price,fill_price,move_pct,fill_qty,position_qty,requested,status,reason)
 - 2026-11-23 16:53,EUR/GBP,short,1842,0.83679,0.83645,-0.0406,2500.0,,2500,filled,conf 4
@@ -90,18 +90,18 @@
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/report.json
 
 ## Latest log rows
-- Bitcoin 15m 11-24 01:29 price 61520.25 no_trade short-term trend not up
 - Bitcoin 15m 11-24 01:30 price 61477.73 no_trade short-term trend not up
 - Bitcoin 15m 11-24 01:31 price 61445.19 buy conf 4: Fresh EMA crossover supports upside despite price slightly below EMA50
-- USD/JPY 11-24 01:29 price 158.921 no_trade re-entry cooldown
+- Bitcoin 15m 11-24 01:32 price 61470.1 holding -0.0%
 - USD/JPY 11-24 01:30 price 158.794 no_trade re-entry cooldown
 - USD/JPY 11-24 01:31 price 158.794 no_trade re-entry cooldown
-- GBP/USD 11-24 01:29 price 1.30394 holding SHORT 0.0%
+- USD/JPY 11-24 01:32 price 158.794 no_trade re-entry cooldown
 - GBP/USD 11-24 01:30 price 1.30482 cover SIGNAL EXIT; score 0/3 (-0.0%)
 - GBP/USD 11-24 01:31 price 1.30482 no_trade re-entry cooldown
-- EUR/USD 11-24 01:29 price 1.09098 holding 0.0%
+- GBP/USD 11-24 01:32 price 1.30482 no_trade re-entry cooldown
 - EUR/USD 11-24 01:30 price 1.09205 holding 0.1%
 - EUR/USD 11-24 01:31 price 1.09205 holding 0.1%
-- EUR/GBP 11-24 01:29 price 0.83672 no_trade re-entry cooldown
+- EUR/USD 11-24 01:32 price 1.09205 holding 0.1%
 - EUR/GBP 11-24 01:30 price 0.83692 no_trade re-entry cooldown
 - EUR/GBP 11-24 01:31 price 0.83692 no_trade re-entry cooldown
+- EUR/GBP 11-24 01:32 price 0.83692 no_trade re-entry cooldown
