@@ -14627,3 +14627,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-24 10:00,1.30669,2,rsi_in_range,no,buy,conf 4: Strong momentum and EMA trend support offset by overbought RSI | 5000 units (reduced for margin)
 2026-11-24 10:01,1.30669,2,rsi_in_range,yes,holding,0.0%
 2026-11-24 10:02,1.30669,2,rsi_in_range,yes,holding,0.0%
+2026-11-24 10:03,1.30669,2,rsi_in_range,yes,holding,0.0%

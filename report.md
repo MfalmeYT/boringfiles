@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-24 10:02 UTC)
+# Bot report (generated 2026-11-24 10:03 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -13,11 +13,11 @@
 
 | market | last run UTC | runs | entries | errors | closed trades (all time) | win % | total % after fees | open |
 |---|---|---|---|---|---|---|---|---|
-| Bitcoin 15m | 11-24 10:02 | 1439 | 2 | 0 | 4 | 25 | -4.38 |  |
-| USD/JPY | 11-24 10:02 | 1378 | 4 | 0 | 33 | 36 | -0.11 |  |
-| GBP/USD | 11-24 10:02 | 1378 | 4 | 0 | 29 | 34 | +0.09 | yes |
-| EUR/USD | 11-24 10:02 | 1378 | 3 | 0 | 31 | 35 | -0.12 | yes |
-| EUR/GBP | 11-24 10:02 | 1378 | 4 | 0 | 29 | 24 | -0.39 | yes |
+| Bitcoin 15m | 11-24 10:03 | 1439 | 2 | 0 | 4 | 25 | -4.38 |  |
+| USD/JPY | 11-24 10:03 | 1378 | 4 | 0 | 33 | 36 | -0.11 |  |
+| GBP/USD | 11-24 10:03 | 1378 | 4 | 0 | 29 | 34 | +0.09 | yes |
+| EUR/USD | 11-24 10:03 | 1378 | 3 | 0 | 31 | 35 | -0.12 | yes |
+| EUR/GBP | 11-24 10:03 | 1378 | 4 | 0 | 29 | 24 | -0.39 | yes |
 
 ## Raw log files (full history, one row per run)
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log_btc15.csv
@@ -91,18 +91,18 @@
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/report.json
 
 ## Latest log rows
-- Bitcoin 15m 11-24 10:00 price 59920.31 no_trade score below 2
 - Bitcoin 15m 11-24 10:01 price 59923.94 no_trade score below 2
 - Bitcoin 15m 11-24 10:02 price 59880.35 no_trade score below 2
-- USD/JPY 11-24 10:00 price 159.559 no_trade re-entry cooldown
+- Bitcoin 15m 11-24 10:03 price 59866.55 no_trade score below 2
 - USD/JPY 11-24 10:01 price 159.559 no_trade re-entry cooldown
 - USD/JPY 11-24 10:02 price 159.559 no_trade re-entry cooldown
-- GBP/USD 11-24 10:00 price 1.30669 buy conf 4: Strong momentum and EMA trend support offset by overbought RSI | 5000 units (reduc
+- USD/JPY 11-24 10:03 price 159.559 no_trade re-entry cooldown
 - GBP/USD 11-24 10:01 price 1.30669 holding 0.0%
 - GBP/USD 11-24 10:02 price 1.30669 holding 0.0%
-- EUR/USD 11-24 10:00 price 1.09346 buy conf 2: Severe RSI overbought condition following an exhausted upward price spike
+- GBP/USD 11-24 10:03 price 1.30669 holding 0.0%
 - EUR/USD 11-24 10:01 price 1.09346 holding 0.0%
 - EUR/USD 11-24 10:02 price 1.09346 holding 0.0%
-- EUR/GBP 11-24 10:00 price 0.83682 holding SHORT -0.0%
+- EUR/USD 11-24 10:03 price 1.09346 holding 0.0%
 - EUR/GBP 11-24 10:01 price 0.83682 holding SHORT -0.0%
 - EUR/GBP 11-24 10:02 price 0.83682 holding SHORT -0.0%
+- EUR/GBP 11-24 10:03 price 0.83682 holding SHORT -0.0%
