@@ -15011,3 +15011,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-24 16:10,159.082,3,,no,no_trade,re-entry cooldown
 2026-11-24 16:11,159.082,3,,no,short,conf 5: Fresh EMA crossover and strong indicators support short entry momentum. | 1250 units (reduced for margin)
 2026-11-24 16:12,159.082,3,,yes,holding,SHORT -0.0%
+2026-11-24 16:13,159.082,3,,yes,holding,SHORT -0.0%
