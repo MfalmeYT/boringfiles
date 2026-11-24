@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-24 22:50 UTC)
+# Bot report (generated 2026-11-24 22:51 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -13,7 +13,7 @@
 
 | market | last run UTC | runs | entries | errors | closed trades (all time) | win % | total % after fees | open |
 |---|---|---|---|---|---|---|---|---|
-| Bitcoin 15m | 11-24 22:50 | 1440 | 1 | 0 | 4 | 25 | -4.38 |  |
+| Bitcoin 15m | 11-24 22:51 | 1440 | 1 | 0 | 4 | 25 | -4.38 |  |
 | USD/JPY | 11-24 21:58 | 1379 | 5 | 0 | 35 | 34 | -0.30 |  |
 | GBP/USD | 11-24 21:58 | 1379 | 3 | 0 | 30 | 37 | +0.26 | yes |
 | EUR/USD | 11-24 21:58 | 1379 | 4 | 0 | 33 | 36 | -0.02 | yes |
@@ -91,9 +91,9 @@
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/report.json
 
 ## Latest log rows
-- Bitcoin 15m 11-24 22:48 price 59971.94 no_trade 1Hour trend not up
 - Bitcoin 15m 11-24 22:49 price 59969.18 no_trade 1Hour trend not up
 - Bitcoin 15m 11-24 22:50 price 59937.19 no_trade 1Hour trend not up
+- Bitcoin 15m 11-24 22:51 price 59928.07 no_trade 1Hour trend not up
 - USD/JPY 11-24 21:56 price 159.242 no_trade max 3 open positions reached
 - USD/JPY 11-24 21:57 price 159.242 no_trade max 3 open positions reached
 - USD/JPY 11-24 21:58 price 159.242 no_trade max 3 open positions reached
