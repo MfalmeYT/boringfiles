@@ -1,11 +1,11 @@
 {
- "generated_utc": "2026-11-24 16:59",
+ "generated_utc": "2026-11-24 17:01",
  "markets": [
   {
    "market": "Bitcoin 15m",
    "enabled": true,
-   "last_run_utc": "2026-11-24 16:59",
-   "runs_24h": 1439,
+   "last_run_utc": "2026-11-24 17:00",
+   "runs_24h": 1438,
    "entries_24h": 1,
    "errors_24h": 0,
    "closed_trades": 4,
@@ -25,8 +25,8 @@
   {
    "market": "USD/JPY",
    "enabled": true,
-   "last_run_utc": "2026-11-24 16:59",
-   "runs_24h": 1378,
+   "last_run_utc": "2026-11-24 17:00",
+   "runs_24h": 1377,
    "entries_24h": 5,
    "errors_24h": 0,
    "closed_trades": 34,
@@ -47,8 +47,8 @@
   {
    "market": "GBP/USD",
    "enabled": true,
-   "last_run_utc": "2026-11-24 16:59",
-   "runs_24h": 1378,
+   "last_run_utc": "2026-11-24 17:00",
+   "runs_24h": 1377,
    "entries_24h": 3,
    "errors_24h": 0,
    "closed_trades": 30,
@@ -69,8 +69,8 @@
   {
    "market": "EUR/USD",
    "enabled": true,
-   "last_run_utc": "2026-11-24 16:59",
-   "runs_24h": 1378,
+   "last_run_utc": "2026-11-24 17:00",
+   "runs_24h": 1377,
    "entries_24h": 3,
    "errors_24h": 0,
    "closed_trades": 33,
@@ -91,10 +91,10 @@
   {
    "market": "EUR/GBP",
    "enabled": true,
-   "last_run_utc": "2026-11-24 16:59",
-   "runs_24h": 1378,
+   "last_run_utc": "2026-11-24 17:01",
+   "runs_24h": 1377,
    "entries_24h": 3,
-   "errors_24h": 0,
+   "errors_24h": 1,
    "closed_trades": 31,
    "win_pct": 23,
    "total_pct_after_fees": -0.51,
@@ -112,7 +112,13 @@
   }
  ],
  "oanda_401_24h": 0,
- "errors_24h": [],
+ "errors_24h": [
+  {
+   "market": "EUR/GBP",
+   "text": "OANDA candles 504: temporary gateway error (HTML page)",
+   "count": 1
+  }
+ ],
  "account": {
   "Oanda": "2026-11-24 16:17 UTC Oanda: balance 749.9139, equity 754.7082, free 36.3982",
   "AlpacaCrypto": "2026-11-24 16:54 UTC AlpacaCrypto: balance 933.52, equity 977.49, free 933.52"
