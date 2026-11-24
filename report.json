@@ -1,10 +1,10 @@
 {
- "generated_utc": "2026-11-24 22:47",
+ "generated_utc": "2026-11-24 22:48",
  "markets": [
   {
    "market": "Bitcoin 15m",
    "enabled": true,
-   "last_run_utc": "2026-11-24 22:47",
+   "last_run_utc": "2026-11-24 22:48",
    "runs_24h": 1440,
    "entries_24h": 1,
    "errors_24h": 0,
@@ -120,7 +120,7 @@
   }
  ],
  "account": {
-  "AlpacaCrypto": "2026-11-24 21:49 UTC AlpacaCrypto: balance 933.52, equity 976.98, free 933.52",
-  "Oanda": "2026-11-24 22:11 UTC Oanda: balance 745.8997, equity 742.5497, free 59.4117"
+  "Oanda": "2026-11-24 22:11 UTC Oanda: balance 745.8997, equity 742.5497, free 59.4117",
+  "AlpacaCrypto": "2026-11-24 22:48 UTC AlpacaCrypto: balance 933.52, equity 977.01, free 933.52"
  }
 }
