@@ -15057,3 +15057,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-24 18:02,0.83628,3,,no,no_trade,re-entry cooldown
 2026-11-24 18:03,0.83628,3,,no,no_trade,re-entry cooldown
 2026-11-24 18:04,0.83628,3,,no,no_trade,re-entry cooldown
+2026-11-24 18:05,0.83628,3,,no,no_trade,no margin for a trade (balance 750; free margin 40)
