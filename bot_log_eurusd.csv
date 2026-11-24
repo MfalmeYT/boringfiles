@@ -15085,3 +15085,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-24 18:07,1.09734,3,,no,no_trade,re-entry cooldown
 2026-11-24 18:08,1.09734,3,,no,no_trade,re-entry cooldown
 2026-11-24 18:09,1.09734,3,,no,no_trade,re-entry cooldown
+2026-11-24 18:10,1.09734,3,,no,buy,conf 4: Strong alignment with EMAs; but low volatility risks slow momentum | 1250 units (reduced for margin)
