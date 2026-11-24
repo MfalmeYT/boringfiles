@@ -5918,3 +5918,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-24 01:28,61505.36,2,fast_above_slow,no,no_trade,short-term trend not up
 2026-11-24 01:29,61520.25,2,fast_above_slow,no,no_trade,short-term trend not up
 2026-11-24 01:30,61477.73,2,fast_above_slow,no,no_trade,short-term trend not up
+2026-11-24 01:31,61445.19,2,price_above_trend_ema,no,buy,conf 4: Fresh EMA crossover supports upside despite price slightly below EMA50
