@@ -14742,3 +14742,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-24 11:55,1.30821,2,rsi_in_range,yes,holding,0.1%
 2026-11-24 11:56,1.30821,2,rsi_in_range,yes,holding,0.1%
 2026-11-24 11:57,1.30892,2,rsi_in_range,no,sell,closed by broker stop/TP; P/L 11.4000
+2026-11-24 11:58,1.30821,2,rsi_in_range,no,no_trade,re-entry cooldown
