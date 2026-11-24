@@ -14467,3 +14467,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-24 08:12,0.83644,3,,no,no_trade,re-entry cooldown
 2026-11-24 08:13,0.83644,3,,no,no_trade,re-entry cooldown
 2026-11-24 08:14,0.83644,3,,no,no_trade,re-entry cooldown
+2026-11-24 08:15,0.83665,2,price_below_trend_ema,no,short,conf 2: Price rose above all EMAs with RSI neutral; short momentum absent | 2500 units (reduced for margin)
