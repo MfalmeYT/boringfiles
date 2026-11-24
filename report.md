@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-24 05:15 UTC)
+# Bot report (generated 2026-11-24 05:16 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -13,11 +13,11 @@
 
 | market | last run UTC | runs | entries | errors | closed trades (all time) | win % | total % after fees | open |
 |---|---|---|---|---|---|---|---|---|
-| Bitcoin 15m | 11-24 05:15 | 1439 | 2 | 0 | 4 | 25 | -4.38 |  |
-| USD/JPY | 11-24 05:15 | 1378 | 3 | 0 | 32 | 38 | -0.02 |  |
-| GBP/USD | 11-24 05:15 | 1378 | 3 | 0 | 28 | 36 | +0.15 |  |
-| EUR/USD | 11-24 05:15 | 1378 | 3 | 0 | 30 | 37 | -0.06 | yes |
-| EUR/GBP | 11-24 05:15 | 1378 | 3 | 0 | 29 | 24 | -0.39 |  |
+| Bitcoin 15m | 11-24 05:16 | 1439 | 2 | 0 | 4 | 25 | -4.38 |  |
+| USD/JPY | 11-24 05:16 | 1378 | 3 | 0 | 32 | 38 | -0.02 |  |
+| GBP/USD | 11-24 05:16 | 1378 | 4 | 0 | 28 | 36 | +0.15 | yes |
+| EUR/USD | 11-24 05:16 | 1378 | 3 | 0 | 30 | 37 | -0.06 | yes |
+| EUR/GBP | 11-24 05:16 | 1378 | 3 | 0 | 29 | 24 | -0.39 |  |
 
 ## Raw log files (full history, one row per run)
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log_btc15.csv
@@ -67,7 +67,6 @@
 - 2026-11-24 05:06 UTC AlpacaCrypto: balance 933.52, equity 978.22, free 933.52
 
 ## Recent fills (decision price vs real fill; columns: time_utc,market,action,order_id,decision_price,fill_price,move_pct,fill_qty,position_qty,requested,status,reason)
-- 2026-11-24 00:15,EUR/USD,buy,2200,1.09078,1.09076,-0.0018,5000.0,,5000,filled,conf 4
 - 2026-11-24 01:30,GBP/USD,cover,2206,1.30482,1.30473,-0.0069,10000.0,10000.0,,filled,SIGNAL EXIT; score 0/3 (-0.0%)
 - 2026-11-24 01:31,Bitcoin 15m,buy,14cdb219-e99e-4f89-bccb-1d99e8056778,61445.195,61476.8,0.0514,0.000717737,,45,filled,conf 4
 - 2026-11-24 02:00,EUR/GBP,buy,2208,0.83672,0.83683,0.0131,10000.0,,10000,filled,conf 4
@@ -75,13 +74,14 @@
 - 2026-11-24 03:11,USD/JPY,short,2218,158.942,158.913,-0.0182,1250.0,,1250,filled,conf 4
 - 2026-11-24 05:15,USD/JPY,cover,2224,159.061,159.079,0.0113,1250.0,1250.0,,filled,SIGNAL EXIT; score 0/3 (-0.1%)
 - 2026-11-24 05:15,EUR/GBP,sell,2228,0.83654,0.83644,-0.012,10000.0,10000.0,,filled,SIGNAL EXIT; score 0/3 (-0.0%)
+- 2026-11-24 05:16,GBP/USD,buy,2230,1.30392,1.30396,0.0031,10000.0,,10000,filled,conf 3
 
 ## Recent Gemini decisions
-- 2026-11-23 23:15,USD/JPY,short,short,159.096,0.015,159.0181,159.044,159.0752,54.7,0.067,2,2,a 0.13% fall (take profit) or a 0.08% rise (stop loss); set from recent volatility,Price jumped sharply abov
 - 2026-11-24 00:15,EUR/USD,buy,long,1.09078,0.00015,1.090553,1.090428,1.091529,53.9,0.000469,2,4,+0.13% (take profit) or -0.09% (stop loss); set from recent volatility,Short-term momentum is bullish; bu
 - 2026-11-24 01:31,Bitcoin 15m,buy,long,61445.19,12.58,61338.693,61334.255,61459.59,52.6,267.157,2,4,+3.00% (take profit) or -2.00% (stop loss),Fresh EMA crossover supports upside despite price slightly
 - 2026-11-24 02:00,EUR/GBP,buy,long,0.83672,0.00015,0.836758,0.836701,0.836718,51.4,0.000237,3,4,+0.09% (take profit) or -0.06% (stop loss); set from recent volatility,Slight bullish bias but extremely 
 - 2026-11-24 03:11,USD/JPY,short,short,158.942,0.014,158.9112,158.9453,159.0097,48.5,0.0955,3,4,a 0.18% fall (take profit) or a 0.12% rise (stop loss); set from recent volatility,Favorable score and ind
+- 2026-11-24 05:16,GBP/USD,buy,long,1.30392,0.00021,1.303888,1.303867,1.304251,51.0,0.000427,2,3,+0.10% (take profit) or -0.07% (stop loss); set from recent volatility,Flat EMAs and mixed trend signals 
 
 ## Data files
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/data/fills.csv
@@ -91,18 +91,18 @@
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/report.json
 
 ## Latest log rows
-- Bitcoin 15m 11-24 05:13 price 60508.08 no_trade score below 2
 - Bitcoin 15m 11-24 05:14 price 60480.84 no_trade score below 2
 - Bitcoin 15m 11-24 05:15 price 60509.62 no_trade score below 2
-- USD/JPY 11-24 05:13 price 158.982 holding SHORT -0.0%
+- Bitcoin 15m 11-24 05:16 price 60530.74 no_trade score below 2
 - USD/JPY 11-24 05:14 price 158.982 holding SHORT -0.0%
 - USD/JPY 11-24 05:15 price 159.061 cover SIGNAL EXIT; score 0/3 (-0.1%)
-- GBP/USD 11-24 05:13 price 1.30394 no_trade max 3 open positions reached
+- USD/JPY 11-24 05:16 price 159.061 no_trade re-entry cooldown
 - GBP/USD 11-24 05:14 price 1.30394 no_trade max 3 open positions reached
 - GBP/USD 11-24 05:15 price 1.30392 no_trade max 3 open positions reached
-- EUR/USD 11-24 05:13 price 1.09106 holding 0.0%
+- GBP/USD 11-24 05:16 price 1.30392 buy conf 3: Flat EMAs and mixed trend signals indicate low-momentum coin flip
 - EUR/USD 11-24 05:14 price 1.09106 holding 0.0%
 - EUR/USD 11-24 05:15 price 1.09078 holding 0.0%
-- EUR/GBP 11-24 05:13 price 0.83676 holding -0.0%
+- EUR/USD 11-24 05:16 price 1.09078 holding 0.0%
 - EUR/GBP 11-24 05:14 price 0.83676 holding -0.0%
 - EUR/GBP 11-24 05:15 price 0.83654 sell SIGNAL EXIT; score 0/3 (-0.0%)
+- EUR/GBP 11-24 05:16 price 0.83654 no_trade re-entry cooldown
