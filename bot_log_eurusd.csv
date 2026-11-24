@@ -14012,3 +14012,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-24 00:14,1.0908,2,price_above_trend_ema,no,no_trade,Gemini cooldown
 2026-11-24 00:15,1.09078,2,price_above_trend_ema,no,buy,conf 4: Short-term momentum is bullish; but EMA50 poses overhead resistance. | 5000 units (reduced for margin)
 2026-11-24 00:16,1.09078,2,price_above_trend_ema,yes,holding,0.0%
+2026-11-24 00:17,1.09078,2,price_above_trend_ema,yes,holding,0.0%
