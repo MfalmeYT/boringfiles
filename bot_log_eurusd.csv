@@ -14521,3 +14521,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-24 08:43,1.09086,3,,no,no_trade,re-entry cooldown
 2026-11-24 08:44,1.09086,3,,no,no_trade,re-entry cooldown
 2026-11-24 08:45,1.09136,2,fast_above_slow,no,no_trade,no long or short setup
+2026-11-24 08:46,1.09136,2,fast_above_slow,no,no_trade,no long or short setup
