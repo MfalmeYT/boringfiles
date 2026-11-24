@@ -6957,3 +6957,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-24 18:47,60018.94,2,price_above_trend_ema,no,no_trade,max 3 open positions reached
 2026-11-24 18:48,60028.23,2,price_above_trend_ema,no,no_trade,max 3 open positions reached
 2026-11-24 18:49,59965.41,2,price_above_trend_ema,no,no_trade,max 3 open positions reached
+2026-11-24 18:50,60007.29,2,price_above_trend_ema,no,no_trade,max 3 open positions reached
