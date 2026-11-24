@@ -14994,3 +14994,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-24 17:01,,,,,error,OANDA candles 504: temporary gateway error (HTML page)
 2026-11-24 17:01,0.8364,3,,no,no_trade,re-entry cooldown
 2026-11-24 17:02,0.8364,3,,no,no_trade,re-entry cooldown
+2026-11-24 17:03,0.8364,3,,no,no_trade,re-entry cooldown
