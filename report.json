@@ -4,7 +4,7 @@
   {
    "market": "Bitcoin 15m",
    "enabled": true,
-   "last_run_utc": "2026-11-24 16:00",
+   "last_run_utc": "2026-11-24 16:01",
    "runs_24h": 1439,
    "entries_24h": 1,
    "errors_24h": 0,
@@ -25,7 +25,7 @@
   {
    "market": "USD/JPY",
    "enabled": true,
-   "last_run_utc": "2026-11-24 16:00",
+   "last_run_utc": "2026-11-24 16:01",
    "runs_24h": 1378,
    "entries_24h": 4,
    "errors_24h": 0,
@@ -47,7 +47,7 @@
   {
    "market": "GBP/USD",
    "enabled": true,
-   "last_run_utc": "2026-11-24 16:00",
+   "last_run_utc": "2026-11-24 16:01",
    "runs_24h": 1378,
    "entries_24h": 3,
    "errors_24h": 0,
@@ -69,7 +69,7 @@
   {
    "market": "EUR/USD",
    "enabled": true,
-   "last_run_utc": "2026-11-24 16:00",
+   "last_run_utc": "2026-11-24 16:01",
    "runs_24h": 1378,
    "entries_24h": 3,
    "errors_24h": 0,

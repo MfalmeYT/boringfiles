@@ -13,10 +13,10 @@
 
 | market | last run UTC | runs | entries | errors | closed trades (all time) | win % | total % after fees | open |
 |---|---|---|---|---|---|---|---|---|
-| Bitcoin 15m | 11-24 16:00 | 1439 | 1 | 0 | 4 | 25 | -4.38 |  |
-| USD/JPY | 11-24 16:00 | 1378 | 4 | 0 | 34 | 35 | -0.15 |  |
-| GBP/USD | 11-24 16:00 | 1378 | 3 | 0 | 30 | 37 | +0.26 | yes |
-| EUR/USD | 11-24 16:00 | 1378 | 3 | 0 | 33 | 36 | -0.02 |  |
+| Bitcoin 15m | 11-24 16:01 | 1439 | 1 | 0 | 4 | 25 | -4.38 |  |
+| USD/JPY | 11-24 16:01 | 1378 | 4 | 0 | 34 | 35 | -0.15 |  |
+| GBP/USD | 11-24 16:01 | 1378 | 3 | 0 | 30 | 37 | +0.26 | yes |
+| EUR/USD | 11-24 16:01 | 1378 | 3 | 0 | 33 | 36 | -0.02 |  |
 | EUR/GBP | 11-24 16:01 | 1378 | 4 | 0 | 31 | 23 | -0.51 |  |
 
 ## Raw log files (full history, one row per run)
@@ -93,16 +93,16 @@
 ## Latest log rows
 - Bitcoin 15m 11-24 15:58 price 59780.6 no_trade score below 2
 - Bitcoin 15m 11-24 15:59 price 59713.61 no_trade score below 2
-- Bitcoin 15m 11-24 16:00 price 59644.55 no_trade score below 2
+- Bitcoin 15m 11-24 16:01 price 59605.95 no_trade score below 2
 - USD/JPY 11-24 15:58 price 159.23 no_trade re-entry cooldown
 - USD/JPY 11-24 15:59 price 159.23 no_trade re-entry cooldown
-- USD/JPY 11-24 16:00 price 159.082 no_trade re-entry cooldown
+- USD/JPY 11-24 16:01 price 159.082 no_trade re-entry cooldown
 - GBP/USD 11-24 15:58 price 1.31025 holding -0.1%
 - GBP/USD 11-24 15:59 price 1.31025 holding -0.1%
-- GBP/USD 11-24 16:00 price 1.31162 holding 0.0%
+- GBP/USD 11-24 16:01 price 1.31162 holding 0.0%
 - EUR/USD 11-24 15:58 price 1.09619 no_trade re-entry cooldown
 - EUR/USD 11-24 15:59 price 1.09619 no_trade re-entry cooldown
-- EUR/USD 11-24 16:00 price 1.0971 no_trade re-entry cooldown
+- EUR/USD 11-24 16:01 price 1.0971 no_trade re-entry cooldown
 - EUR/GBP 11-24 15:58 price 0.83664 no_trade re-entry cooldown
 - EUR/GBP 11-24 15:59 price 0.83664 no_trade re-entry cooldown
 - EUR/GBP 11-24 16:01 price 0.83645 no_trade re-entry cooldown
