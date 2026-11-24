@@ -14877,3 +14877,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-24 15:02,0.83682,2,price_above_trend_ema,yes,holding,-0.0%
 2026-11-24 15:03,0.83682,2,price_above_trend_ema,yes,holding,-0.0%
 2026-11-24 15:04,0.83682,2,price_above_trend_ema,yes,holding,-0.0%
+2026-11-24 15:05,0.83648,2,price_above_trend_ema,no,sell,closed by broker stop/TP; P/L -8.0793
