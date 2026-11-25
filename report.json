@@ -1,11 +1,11 @@
 {
- "generated_utc": "2026-11-25 19:48",
+ "generated_utc": "2026-11-25 19:50",
  "markets": [
   {
    "market": "Bitcoin 15m",
    "enabled": true,
-   "last_run_utc": "2026-11-25 19:48",
-   "runs_24h": 1422,
+   "last_run_utc": "2026-11-25 19:50",
+   "runs_24h": 1421,
    "entries_24h": 1,
    "errors_24h": 0,
    "closed_trades": 4,
@@ -25,8 +25,8 @@
   {
    "market": "USD/JPY",
    "enabled": true,
-   "last_run_utc": "2026-11-25 19:48",
-   "runs_24h": 1361,
+   "last_run_utc": "2026-11-25 19:50",
+   "runs_24h": 1360,
    "entries_24h": 6,
    "errors_24h": 0,
    "closed_trades": 40,
@@ -47,8 +47,8 @@
   {
    "market": "GBP/USD",
    "enabled": true,
-   "last_run_utc": "2026-11-25 19:48",
-   "runs_24h": 1361,
+   "last_run_utc": "2026-11-25 19:50",
+   "runs_24h": 1360,
    "entries_24h": 3,
    "errors_24h": 0,
    "closed_trades": 33,
@@ -69,8 +69,8 @@
   {
    "market": "EUR/USD",
    "enabled": true,
-   "last_run_utc": "2026-11-25 19:48",
-   "runs_24h": 1361,
+   "last_run_utc": "2026-11-25 19:50",
+   "runs_24h": 1360,
    "entries_24h": 3,
    "errors_24h": 0,
    "closed_trades": 37,
@@ -91,8 +91,8 @@
   {
    "market": "EUR/GBP",
    "enabled": true,
-   "last_run_utc": "2026-11-25 19:48",
-   "runs_24h": 1361,
+   "last_run_utc": "2026-11-25 19:50",
+   "runs_24h": 1360,
    "entries_24h": 4,
    "errors_24h": 0,
    "closed_trades": 36,
@@ -114,7 +114,7 @@
  "oanda_401_24h": 0,
  "errors_24h": [],
  "account": {
-  "Oanda": "2026-11-25 18:50 UTC Oanda: balance 727.8164, equity 727.8164, free 727.8164",
-  "AlpacaCrypto": "2026-11-25 19:27 UTC AlpacaCrypto: balance 889.38, equity 977.51, free 889.38"
+  "AlpacaCrypto": "2026-11-25 19:27 UTC AlpacaCrypto: balance 889.38, equity 977.51, free 889.38",
+  "Oanda": "2026-11-25 19:50 UTC Oanda: balance 727.8164, equity 722.7965, free 3.9815"
  }
 }
