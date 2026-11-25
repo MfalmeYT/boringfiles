@@ -16155,3 +16155,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-25 12:14,159.298,2,price_above_trend_ema,yes,holding,0.0%
 2026-11-25 12:15,159.211,0,fast_above_slow|price_above_trend_ema|rsi_in_range,yes,sell,SIGNAL EXIT; score 0/3 (-0.1%)
 2026-11-25 12:16,159.211,3,,no,no_trade,re-entry cooldown
+2026-11-25 12:17,159.211,3,,no,no_trade,re-entry cooldown

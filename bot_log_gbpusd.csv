@@ -16140,3 +16140,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-25 12:14,1.30596,3,,no,no_trade,Gemini cooldown
 2026-11-25 12:15,1.30726,3,,no,short,conf 4: All indicators align for short; but strong momentum candle opposes entry | 5000 units (reduced for margin)
 2026-11-25 12:16,1.30726,3,,yes,holding,SHORT -0.0%
+2026-11-25 12:17,1.30726,3,,yes,holding,SHORT -0.0%
