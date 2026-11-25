@@ -16621,3 +16621,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-25 21:26,0.83666,3,,no,short,conf 4: Downtrend intact with low RSI; but price momentum has stalled. | 5000 units (reduced for margin)
 2026-11-25 21:27,0.83666,3,,yes,holding,SHORT 0.0%
 2026-11-25 21:28,0.83666,3,,yes,holding,SHORT 0.0%
+2026-11-25 21:29,0.83666,3,,yes,holding,SHORT 0.0%
