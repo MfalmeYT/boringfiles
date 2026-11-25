@@ -15579,3 +15579,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-25 03:22,1.09523,3,,no,no_trade,re-entry cooldown
 2026-11-25 03:23,1.09523,3,,no,no_trade,re-entry cooldown
 2026-11-25 03:24,1.09523,3,,no,no_trade,re-entry cooldown
+2026-11-25 03:25,1.09523,3,,no,short,conf 4: Strong downtrend alignment; but RSI approaching oversold territory near 35. | 5000 units (reduced for margin)
