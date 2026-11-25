@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-25 22:18 UTC)
+# Bot report (generated 2026-11-25 22:19 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -13,7 +13,7 @@
 
 | market | last run UTC | runs | entries | errors | closed trades (all time) | win % | total % after fees | open |
 |---|---|---|---|---|---|---|---|---|
-| Bitcoin 15m | 11-25 22:18 | 1421 | 1 | 0 | 4 | 25 | -4.38 | yes |
+| Bitcoin 15m | 11-25 22:19 | 1421 | 1 | 0 | 4 | 25 | -4.38 | yes |
 | USD/JPY | 11-25 21:58 | 1360 | 6 | 0 | 41 | 32 | -0.56 |  |
 | GBP/USD | 11-25 21:58 | 1360 | 3 | 0 | 34 | 35 | +0.10 |  |
 | EUR/USD | 11-25 21:58 | 1360 | 4 | 0 | 37 | 38 | +0.08 | yes |
@@ -91,9 +91,9 @@
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/report.json
 
 ## Latest log rows
-- Bitcoin 15m 11-25 22:16 price 60057.39 holding 0.6%
 - Bitcoin 15m 11-25 22:17 price 60083.27 holding 0.7%
 - Bitcoin 15m 11-25 22:18 price 60027.47 holding 0.6%
+- Bitcoin 15m 11-25 22:19 price 60080.2 holding 0.7%
 - USD/JPY 11-25 21:56 price 159.201 no_trade re-entry cooldown
 - USD/JPY 11-25 21:57 price 159.201 no_trade re-entry cooldown
 - USD/JPY 11-25 21:58 price 159.201 no_trade re-entry cooldown
