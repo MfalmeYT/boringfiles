@@ -16585,3 +16585,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-25 19:42,159.134,3,,no,no_trade,re-entry cooldown
 2026-11-25 19:43,159.134,3,,no,short,conf 2: Divergence between strong upward price action and weak EMA indicators | 1250 units (reduced for margin)
 2026-11-25 19:44,159.134,3,,yes,holding,SHORT 0.0%
+2026-11-25 19:45,159.17,2,price_below_trend_ema,yes,holding,SHORT -0.0%
