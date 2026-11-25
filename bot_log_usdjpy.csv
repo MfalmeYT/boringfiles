@@ -16335,3 +16335,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-25 15:14,159.27,3,,no,no_trade,re-entry cooldown
 2026-11-25 15:15,159.194,3,,no,short,conf 4: Strong EMA crossover aligns with short; but price bounced off low. | 5000 units (reduced for margin)
 2026-11-25 15:16,159.194,3,,yes,holding,SHORT -0.0%
+2026-11-25 15:17,159.194,3,,yes,holding,SHORT -0.0%
