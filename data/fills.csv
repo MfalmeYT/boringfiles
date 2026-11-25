@@ -135,3 +135,4 @@ time_utc,market,action,order_id,decision_price,fill_price,move_pct,fill_qty,posi
 2026-11-25 17:41,Bitcoin 15m,buy,1c8df5c3-ac97-4a5e-b0f3-2cd28821391c,59628.35,59681.97,0.0899,0.000739579,,45,filled,conf 5
 2026-11-25 18:26,EUR/GBP,sell,broker,,0.83673,,,,,filled,closed by broker stop/TP; P/L -13.5234
 2026-11-25 19:42,GBP/USD,buy,2514,1.31284,1.31293,0.0069,10000.0,,10000,filled,conf 4
+2026-11-25 19:43,USD/JPY,short,2524,159.134,159.15,0.0101,1250.0,,1250,filled,conf 2
