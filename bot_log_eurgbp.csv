@@ -15745,3 +15745,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-25 06:31,0.83608,2,price_above_trend_ema,no,buy,conf 3: Price is capped by EMAs despite neutral RSI and flat momentum | 5000 units (reduced for margin)
 2026-11-25 06:32,0.83608,2,price_above_trend_ema,yes,holding,-0.0%
 2026-11-25 06:33,0.83608,2,price_above_trend_ema,yes,holding,-0.0%
+2026-11-25 06:34,0.83608,2,price_above_trend_ema,yes,holding,-0.0%
