@@ -15866,3 +15866,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-25 07:25,159.298,2,price_above_trend_ema,no,no_trade,re-entry cooldown
 2026-11-25 07:26,159.298,2,price_above_trend_ema,no,buy,conf 2: Downtrend intact; price below all EMAs despite fast crossover. | 2500 units (reduced for margin)
 2026-11-25 07:27,159.298,2,price_above_trend_ema,yes,holding,0.1%
+2026-11-25 07:28,159.298,2,price_above_trend_ema,yes,holding,0.1%
