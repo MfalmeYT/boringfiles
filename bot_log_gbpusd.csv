@@ -15765,3 +15765,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-25 05:59,1.30848,2,rsi_in_short_range,no,no_trade,re-entry cooldown
 2026-11-25 06:00,1.3085,2,rsi_in_short_range,no,short,conf 2: RSI at 26.6 indicates oversold conditions; risking a upward bounce. | 5000 units (reduced for margin)
 2026-11-25 06:01,1.3085,2,rsi_in_short_range,yes,holding,SHORT -0.0%
+2026-11-25 06:02,1.3085,2,rsi_in_short_range,yes,holding,SHORT -0.0%

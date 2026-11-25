@@ -1,10 +1,10 @@
 {
- "generated_utc": "2026-11-25 06:01",
+ "generated_utc": "2026-11-25 06:02",
  "markets": [
   {
    "market": "Bitcoin 15m",
    "enabled": true,
-   "last_run_utc": "2026-11-25 06:01",
+   "last_run_utc": "2026-11-25 06:02",
    "runs_24h": 1440,
    "entries_24h": 0,
    "errors_24h": 0,
@@ -25,7 +25,7 @@
   {
    "market": "USD/JPY",
    "enabled": true,
-   "last_run_utc": "2026-11-25 06:01",
+   "last_run_utc": "2026-11-25 06:02",
    "runs_24h": 1379,
    "entries_24h": 5,
    "errors_24h": 0,
@@ -47,7 +47,7 @@
   {
    "market": "GBP/USD",
    "enabled": true,
-   "last_run_utc": "2026-11-25 06:01",
+   "last_run_utc": "2026-11-25 06:02",
    "runs_24h": 1379,
    "entries_24h": 3,
    "errors_24h": 0,
@@ -69,29 +69,29 @@
   {
    "market": "EUR/USD",
    "enabled": true,
-   "last_run_utc": "2026-11-25 06:01",
+   "last_run_utc": "2026-11-25 06:02",
    "runs_24h": 1379,
    "entries_24h": 4,
    "errors_24h": 0,
-   "closed_trades": 34,
-   "win_pct": 35,
-   "total_pct_after_fees": -0.15,
-   "open": "short",
-   "closed_today": 1,
-   "result_today_pct": -0.14,
+   "closed_trades": 35,
+   "win_pct": 37,
+   "total_pct_after_fees": -0.05,
+   "open": null,
+   "closed_today": 2,
+   "result_today_pct": -0.03,
    "entries_today": 1,
    "last_trades_pct": [
-    0.13,
     -0.06,
     0.15,
     -0.04,
-    -0.14
+    -0.14,
+    0.1
    ]
   },
   {
    "market": "EUR/GBP",
    "enabled": true,
-   "last_run_utc": "2026-11-25 06:01",
+   "last_run_utc": "2026-11-25 06:02",
    "runs_24h": 1379,
    "entries_24h": 4,
    "errors_24h": 1,
