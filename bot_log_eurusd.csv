@@ -16299,3 +16299,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-25 15:22,1.09397,2,price_above_trend_ema,no,buy,conf 3: Price below EMA50 with flat indicators suggests a tight coin-flip range. | 5000 units (reduced for margin)
 2026-11-25 15:23,1.09397,2,price_above_trend_ema,yes,holding,-0.0%
 2026-11-25 15:24,1.09397,2,price_above_trend_ema,yes,holding,-0.0%
+2026-11-25 15:25,1.09397,2,price_above_trend_ema,yes,holding,-0.0%
