@@ -1,10 +1,10 @@
-# Status (2026-11-25 02:06 UTC)
-- last bot run: 2026-11-25 02:06 UTC (0 min ago)
+# Status (2026-11-25 02:07 UTC)
+- last bot run: 2026-11-25 02:07 UTC (0 min ago)
 - open now: GBP/USD long, EUR/GBP short
 - closed trades: 136, win 32%, sum of results -5.28% (sum of %, not account balance)
 - errors last 24h: 1 (OANDA 401: 0)
 - per market (trades / win% / total after fees): Bitcoin 15m 4/25%/-4.38%; USD/JPY 36/33%/-0.36%; GBP/USD 30/37%/+0.26%; EUR/USD 34/35%/-0.15%; EUR/GBP 32/22%/-0.65%
-- 2026-11-25 01:08 UTC Oanda: balance 743.2033, equity 741.1033, free 85.6333
 - 2026-11-25 01:45 UTC AlpacaCrypto: balance 933.52, equity 977.2, free 933.52
+- 2026-11-25 02:07 UTC Oanda: balance 743.2033, equity 741.6903, free 17.6728
 - latest closed: EUR/USD long -0.14%
 - full report: https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/report.md
