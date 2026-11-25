@@ -16763,3 +16763,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-25 23:42,159.144,2,price_above_trend_ema,no,no_trade,re-entry cooldown
 2026-11-25 23:43,159.144,2,price_above_trend_ema,no,no_trade,re-entry cooldown
 2026-11-25 23:44,159.144,2,price_above_trend_ema,no,no_trade,re-entry cooldown
+2026-11-25 23:45,159.217,3,,no,buy,conf 4: Price bouncing off lows with bullish EMAs; but lacks strong momentum. | 5000 units (reduced for margin)
