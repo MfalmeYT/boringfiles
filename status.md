@@ -1,5 +1,5 @@
-# Status (2026-11-25 07:30 UTC)
-- last bot run: 2026-11-25 07:30 UTC (0 min ago)
+# Status (2026-11-25 07:31 UTC)
+- last bot run: 2026-11-25 07:31 UTC (0 min ago)
 - open now: USD/JPY long, GBP/USD short, EUR/GBP long
 - closed trades: 140, win 31%, sum of results -5.43% (sum of %, not account balance)
 - errors last 24h: 1 (OANDA 401: 0)
