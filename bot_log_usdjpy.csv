@@ -16059,3 +16059,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-25 10:38,159.272,2,price_above_trend_ema,no,buy,conf 3: Price fell below all EMAs and RSI is below 50
 2026-11-25 10:39,159.272,2,price_above_trend_ema,yes,holding,-0.0%
 2026-11-25 10:40,159.272,2,price_above_trend_ema,yes,holding,-0.0%
+2026-11-25 10:41,159.272,2,price_above_trend_ema,yes,holding,-0.0%
