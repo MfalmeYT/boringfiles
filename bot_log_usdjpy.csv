@@ -15612,3 +15612,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-25 03:11,159.124,3,,no,no_trade,re-entry cooldown
 2026-11-25 03:12,159.124,3,,no,no_trade,re-entry cooldown
 2026-11-25 03:13,159.124,3,,no,short,conf 4: Strong bearish alignment; but low RSI risks short-term oversold bounce
+2026-11-25 03:14,159.124,3,,yes,holding,SHORT 0.0%
