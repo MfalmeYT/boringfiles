@@ -16388,3 +16388,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-25 17:32,0.83762,3,,no,no_trade,re-entry cooldown
 2026-11-25 17:33,0.83762,3,,no,no_trade,re-entry cooldown
 2026-11-25 17:34,0.83762,3,,no,no_trade,re-entry cooldown
+2026-11-25 17:35,0.83762,3,,no,buy,conf 3: Flat price action with fast EMA below slow EMA contradicts check
