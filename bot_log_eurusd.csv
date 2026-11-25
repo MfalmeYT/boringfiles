@@ -15916,3 +15916,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-25 08:59,1.09436,3,,no,no_trade,re-entry cooldown
 2026-11-25 09:00,1.0943,3,,no,no_trade,re-entry cooldown
 2026-11-25 09:01,1.0943,3,,no,no_trade,re-entry cooldown
+2026-11-25 09:02,1.0943,3,,no,short,conf 4: All checks align; but price is near the 21 EMA.
