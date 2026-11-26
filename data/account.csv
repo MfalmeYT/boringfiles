@@ -327,3 +327,4 @@ time_utc,broker,balance,equity,free_margin,extra
 2026-11-26 15:30,Oanda,678.0419,677.4522,403.1272,
 2026-11-26 16:06,AlpacaCrypto,889.38,977.76,889.38,[{"id": "20261125000000000::0a09ab1b-8690-4dc6-8989-be1df066ce6d"; "activity_type": "CFEE"; "date": "2026-11-25"; "created_at": "2026-11-25T17:41:19.52292Z"; "net_amount": "0"; "description": "Coin Pair Transaction Fee (Non USD)"; "symbol": "BTCUSD"; "cusip": "BTC123456"; "qty": "-0.000001849"; "pri
 2026-11-26 16:29,Oanda,674.2016,674.2016,674.2016,
+2026-11-26 17:05,AlpacaCrypto,889.38,978.07,889.38,[{"id": "20261125000000000::0a09ab1b-8690-4dc6-8989-be1df066ce6d"; "activity_type": "CFEE"; "date": "2026-11-25"; "created_at": "2026-11-25T17:41:19.52292Z"; "net_amount": "0"; "description": "Coin Pair Transaction Fee (Non USD)"; "symbol": "BTCUSD"; "cusip": "BTC123456"; "qty": "-0.000001849"; "pri
