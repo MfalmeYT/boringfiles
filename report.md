@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-26 22:58 UTC)
+# Bot report (generated 2026-11-26 22:59 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -13,7 +13,7 @@
 
 | market | last run UTC | runs | entries | errors | closed trades (all time) | win % | total % after fees | open |
 |---|---|---|---|---|---|---|---|---|
-| Bitcoin 15m | 11-26 22:58 | 1440 | 0 | 0 | 4 | 25 | -4.38 | yes |
+| Bitcoin 15m | 11-26 22:59 | 1440 | 0 | 0 | 4 | 25 | -4.38 | yes |
 | USD/JPY | 11-26 21:58 | 1379 | 3 | 0 | 43 | 33 | -0.63 | yes |
 | GBP/USD | 11-26 21:58 | 1379 | 4 | 0 | 38 | 32 | -0.15 |  |
 | EUR/USD | 11-26 21:58 | 1379 | 3 | 0 | 40 | 38 | +0.09 | yes |
@@ -63,8 +63,8 @@
 - EUR/GBP totals: long 25 trades -0.48%, short 15 trades -0.34%
 
 ## Account (latest hourly snapshot)
-- 2026-11-26 22:00 UTC AlpacaCrypto: balance 889.38, equity 978.2, free 889.38
 - 2026-11-26 22:23 UTC Oanda: balance 671.2502, equity 669.7502, free 450.3942
+- 2026-11-26 22:59 UTC AlpacaCrypto: balance 889.38, equity 977.95, free 889.38
 
 ## Recent fills (decision price vs real fill; columns: time_utc,market,action,order_id,decision_price,fill_price,move_pct,fill_qty,position_qty,requested,status,reason)
 - 2026-11-26 14:06,EUR/USD,sell,broker,,1.09874,,,,,filled,closed by broker stop/TP; P/L 16.7000
@@ -91,9 +91,9 @@
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/report.json
 
 ## Latest log rows
-- Bitcoin 15m 11-26 22:56 price 60413.87 holding 1.2%
 - Bitcoin 15m 11-26 22:57 price 60399.82 holding 1.2%
 - Bitcoin 15m 11-26 22:58 price 60407.97 holding 1.2%
+- Bitcoin 15m 11-26 22:59 price 60451.58 holding 1.3%
 - USD/JPY 11-26 21:56 price 159.28 holding -0.0%
 - USD/JPY 11-26 21:57 price 159.28 holding -0.0%
 - USD/JPY 11-26 21:58 price 159.28 holding -0.0%
