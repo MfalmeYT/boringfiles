@@ -17388,3 +17388,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-26 10:22,1.31089,3,,no,no_trade,re-entry cooldown
 2026-11-26 10:23,1.31089,3,,no,no_trade,re-entry cooldown
 2026-11-26 10:24,1.31089,3,,no,no_trade,re-entry cooldown
+2026-11-26 10:25,1.31089,3,,no,buy,conf 4: Moving averages aligned upward; but low momentum near 9 EMA | 5000 units (reduced for margin)
