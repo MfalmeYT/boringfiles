@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-26 13:08 UTC)
+# Bot report (generated 2026-11-26 13:09 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -13,11 +13,11 @@
 
 | market | last run UTC | runs | entries | errors | closed trades (all time) | win % | total % after fees | open |
 |---|---|---|---|---|---|---|---|---|
-| Bitcoin 15m | 11-26 13:08 | 1421 | 1 | 0 | 4 | 25 | -4.38 | yes |
-| USD/JPY | 11-26 13:08 | 1360 | 4 | 0 | 42 | 31 | -0.64 | yes |
-| GBP/USD | 11-26 13:08 | 1360 | 4 | 0 | 37 | 32 | -0.06 |  |
-| EUR/USD | 11-26 13:08 | 1360 | 4 | 0 | 39 | 36 | -0.04 | yes |
-| EUR/GBP | 11-26 13:08 | 1360 | 4 | 0 | 39 | 23 | -0.76 |  |
+| Bitcoin 15m | 11-26 13:09 | 1421 | 1 | 0 | 4 | 25 | -4.38 | yes |
+| USD/JPY | 11-26 13:09 | 1360 | 4 | 0 | 42 | 31 | -0.64 | yes |
+| GBP/USD | 11-26 13:09 | 1360 | 4 | 0 | 37 | 32 | -0.06 |  |
+| EUR/USD | 11-26 13:09 | 1360 | 4 | 0 | 39 | 36 | -0.04 | yes |
+| EUR/GBP | 11-26 13:09 | 1360 | 4 | 0 | 39 | 23 | -0.76 |  |
 
 ## Raw log files (full history, one row per run)
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log_btc15.csv
@@ -63,8 +63,8 @@
 - EUR/GBP totals: long 24 trades -0.42%, short 15 trades -0.34%
 
 ## Account (latest hourly snapshot)
-- 2026-11-26 12:10 UTC AlpacaCrypto: balance 889.38, equity 978.2, free 889.38
 - 2026-11-26 12:33 UTC Oanda: balance 667.9140, equity 670.1977, free 200.7457
+- 2026-11-26 13:09 UTC AlpacaCrypto: balance 889.38, equity 977.65, free 889.38
 
 ## Recent fills (decision price vs real fill; columns: time_utc,market,action,order_id,decision_price,fill_price,move_pct,fill_qty,position_qty,requested,status,reason)
 - 2026-11-26 07:25,GBP/USD,cover,broker,,1.31096,,,,,filled,closed by broker stop/TP; P/L -4.3500
@@ -91,18 +91,18 @@
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/report.json
 
 ## Latest log rows
-- Bitcoin 15m 11-26 13:06 price 60737.78 holding 1.8%
 - Bitcoin 15m 11-26 13:07 price 60752.66 holding 1.8%
 - Bitcoin 15m 11-26 13:08 price 60779.96 holding 1.8%
-- USD/JPY 11-26 13:06 price 159.256 holding 0.0%
+- Bitcoin 15m 11-26 13:09 price 60787.93 holding 1.9%
 - USD/JPY 11-26 13:07 price 159.256 holding 0.0%
 - USD/JPY 11-26 13:08 price 159.256 holding 0.0%
-- GBP/USD 11-26 13:06 price 1.31078 no_trade re-entry cooldown
+- USD/JPY 11-26 13:09 price 159.256 holding 0.0%
 - GBP/USD 11-26 13:07 price 1.31078 no_trade re-entry cooldown
 - GBP/USD 11-26 13:08 price 1.31078 no_trade re-entry cooldown
-- EUR/USD 11-26 13:06 price 1.0978 holding 0.1%
+- GBP/USD 11-26 13:09 price 1.31078 no_trade re-entry cooldown
 - EUR/USD 11-26 13:07 price 1.0978 holding 0.1%
 - EUR/USD 11-26 13:08 price 1.0978 holding 0.1%
-- EUR/GBP 11-26 13:06 price 0.83752 no_trade re-entry cooldown
+- EUR/USD 11-26 13:09 price 1.0978 holding 0.1%
 - EUR/GBP 11-26 13:07 price 0.83752 no_trade re-entry cooldown
 - EUR/GBP 11-26 13:08 price 0.83752 no_trade re-entry cooldown
+- EUR/GBP 11-26 13:09 price 0.83752 no_trade re-entry cooldown
