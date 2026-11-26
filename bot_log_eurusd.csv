@@ -17416,3 +17416,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-26 11:19,1.09724,3,,no,no_trade,re-entry cooldown
 2026-11-26 11:20,1.09724,3,,no,no_trade,re-entry cooldown
 2026-11-26 11:21,1.09724,3,,no,no_trade,re-entry cooldown
+2026-11-26 11:22,1.09724,3,,no,buy,conf 4: Price is consolidated with favorable EMAs and RSI near neutral.
