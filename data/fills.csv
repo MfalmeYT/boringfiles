@@ -152,3 +152,4 @@ time_utc,market,action,order_id,decision_price,fill_price,move_pct,fill_qty,posi
 2026-11-26 06:16,EUR/GBP,cover,broker,,0.83688,,,,,filled,closed by broker stop/TP; P/L -2.6464
 2026-11-26 07:25,GBP/USD,cover,broker,,1.31096,,,,,filled,closed by broker stop/TP; P/L -4.3500
 2026-11-26 07:30,EUR/USD,buy,2594,1.09714,1.09744,0.0273,10000.0,,10000,filled,conf 4
+2026-11-26 08:22,EUR/USD,sell,broker,,1.09669,,,,,filled,closed by broker stop/TP; P/L -7.5000
