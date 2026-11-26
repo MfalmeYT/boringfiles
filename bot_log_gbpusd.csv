@@ -18089,3 +18089,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-26 23:04,1.31054,3,,no,short,conf 4: Good trend alignment and high score; but RSI shows modest momentum. | 5000 units (reduced for margin)
 2026-11-26 23:05,1.31054,3,,yes,holding,SHORT -0.0%
 2026-11-26 23:06,1.31054,3,,yes,holding,SHORT -0.0%
+2026-11-26 23:07,1.31054,3,,yes,holding,SHORT -0.0%
