@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-26 07:30 UTC)
+# Bot report (generated 2026-11-26 07:31 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -13,11 +13,11 @@
 
 | market | last run UTC | runs | entries | errors | closed trades (all time) | win % | total % after fees | open |
 |---|---|---|---|---|---|---|---|---|
-| Bitcoin 15m | 11-26 07:30 | 1421 | 1 | 0 | 4 | 25 | -4.38 | yes |
-| USD/JPY | 11-26 07:30 | 1360 | 5 | 0 | 42 | 31 | -0.64 | yes |
-| GBP/USD | 11-26 07:30 | 1360 | 4 | 0 | 36 | 33 | +0.01 |  |
-| EUR/USD | 11-26 07:30 | 1360 | 4 | 0 | 38 | 37 | -0.00 | yes |
-| EUR/GBP | 11-26 07:30 | 1360 | 4 | 0 | 38 | 24 | -0.71 |  |
+| Bitcoin 15m | 11-26 07:31 | 1421 | 1 | 0 | 4 | 25 | -4.38 | yes |
+| USD/JPY | 11-26 07:31 | 1360 | 5 | 0 | 42 | 31 | -0.64 | yes |
+| GBP/USD | 11-26 07:31 | 1360 | 4 | 0 | 36 | 33 | +0.01 |  |
+| EUR/USD | 11-26 07:31 | 1360 | 4 | 0 | 38 | 37 | -0.00 | yes |
+| EUR/GBP | 11-26 07:31 | 1360 | 4 | 0 | 38 | 24 | -0.71 |  |
 
 ## Raw log files (full history, one row per run)
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log_btc15.csv
@@ -91,18 +91,18 @@
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/report.json
 
 ## Latest log rows
-- Bitcoin 15m 11-26 07:28 price 60490.32 holding 1.4%
 - Bitcoin 15m 11-26 07:29 price 60514.53 holding 1.4%
 - Bitcoin 15m 11-26 07:30 price 60497.35 holding 1.4%
-- USD/JPY 11-26 07:28 price 159.127 holding -0.0%
+- Bitcoin 15m 11-26 07:31 price 60417.39 holding 1.2%
 - USD/JPY 11-26 07:29 price 159.127 holding -0.0%
 - USD/JPY 11-26 07:30 price 159.212 holding 0.0%
-- GBP/USD 11-26 07:28 price 1.31048 no_trade re-entry cooldown
+- USD/JPY 11-26 07:31 price 159.212 holding 0.0%
 - GBP/USD 11-26 07:29 price 1.31048 no_trade re-entry cooldown
 - GBP/USD 11-26 07:30 price 1.31089 no_trade no long or short setup
-- EUR/USD 11-26 07:28 price 1.09678 no_trade no long or short setup
+- GBP/USD 11-26 07:31 price 1.31089 no_trade no long or short setup
 - EUR/USD 11-26 07:29 price 1.09678 no_trade no long or short setup
 - EUR/USD 11-26 07:30 price 1.09714 buy conf 4: Fresh bullish crossover with upward momentum; but price is slightly extended
-- EUR/GBP 11-26 07:28 price 0.83692 no_trade re-entry cooldown
+- EUR/USD 11-26 07:31 price 1.09714 holding -0.0%
 - EUR/GBP 11-26 07:29 price 0.83692 no_trade re-entry cooldown
 - EUR/GBP 11-26 07:30 price 0.83696 no_trade re-entry cooldown
+- EUR/GBP 11-26 07:31 price 0.83696 no_trade re-entry cooldown
