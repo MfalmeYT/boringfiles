@@ -16978,3 +16978,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-26 03:17,159.179,3,,no,no_trade,re-entry cooldown
 2026-11-26 03:18,159.179,3,,no,no_trade,re-entry cooldown
 2026-11-26 03:19,159.179,3,,no,no_trade,re-entry cooldown
+2026-11-26 03:20,159.179,3,,no,buy,conf 4: Fresh bullish crossover with decent RSI; but price near resistance. | 5000 units (reduced for margin)
