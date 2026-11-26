@@ -17815,3 +17815,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-26 17:14,159.297,3,,no,no_trade,re-entry cooldown
 2026-11-26 17:15,159.31,3,,no,buy,conf 4: Strong trend alignment and score; but RSI is slightly elevated. | 5000 units (reduced for margin)
 2026-11-26 17:16,159.31,3,,yes,holding,-0.0%
+2026-11-26 17:17,159.31,3,,yes,holding,-0.0%
