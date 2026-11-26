@@ -18045,3 +18045,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-26 23:12,0.83724,2,fast_above_slow,no,no_trade,no long or short setup
 2026-11-26 23:13,0.83724,2,fast_above_slow,no,no_trade,no long or short setup
 2026-11-26 23:14,0.83724,2,fast_above_slow,no,no_trade,no long or short setup
+2026-11-26 23:15,0.83703,3,,no,no_trade,max 3 open positions reached
