@@ -17170,3 +17170,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-26 07:13,1.09648,3,,no,no_trade,max 3 open positions reached
 2026-11-26 07:14,1.09648,3,,no,no_trade,max 3 open positions reached
 2026-11-26 07:15,1.09678,2,fast_above_slow,no,no_trade,no long or short setup
+2026-11-26 07:16,1.09678,2,fast_above_slow,no,no_trade,no long or short setup
