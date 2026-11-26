@@ -18072,3 +18072,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-26 23:39,0.83702,3,,no,no_trade,max 3 open positions reached
 2026-11-26 23:40,0.83702,3,,no,no_trade,spread 0.00016 too wide vs target
 2026-11-26 23:41,0.83702,3,,no,no_trade,spread 0.00018 too wide vs target
+2026-11-26 23:42,0.83702,3,,no,no_trade,spread 0.00014 too wide vs target
