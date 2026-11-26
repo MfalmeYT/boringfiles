@@ -17627,3 +17627,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-26 14:21,1.3119,3,,no,buy,conf 5: Strong EMA crossover and momentum favor take profit over stop loss | 5000 units (reduced for margin)
 2026-11-26 14:22,1.3119,3,,yes,holding,0.0%
 2026-11-26 14:23,1.3119,3,,yes,holding,0.0%
+2026-11-26 14:24,1.3119,3,,yes,holding,0.0%
