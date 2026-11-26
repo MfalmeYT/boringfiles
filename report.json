@@ -1,10 +1,10 @@
 {
- "generated_utc": "2026-11-26 06:15",
+ "generated_utc": "2026-11-26 06:16",
  "markets": [
   {
    "market": "Bitcoin 15m",
    "enabled": true,
-   "last_run_utc": "2026-11-26 06:15",
+   "last_run_utc": "2026-11-26 06:16",
    "runs_24h": 1421,
    "entries_24h": 1,
    "errors_24h": 0,
@@ -25,7 +25,7 @@
   {
    "market": "USD/JPY",
    "enabled": true,
-   "last_run_utc": "2026-11-26 06:15",
+   "last_run_utc": "2026-11-26 06:16",
    "runs_24h": 1360,
    "entries_24h": 6,
    "errors_24h": 0,
@@ -47,17 +47,17 @@
   {
    "market": "GBP/USD",
    "enabled": true,
-   "last_run_utc": "2026-11-26 06:15",
+   "last_run_utc": "2026-11-26 06:16",
    "runs_24h": 1360,
-   "entries_24h": 3,
+   "entries_24h": 4,
    "errors_24h": 0,
    "closed_trades": 35,
    "win_pct": 34,
    "total_pct_after_fees": 0.06,
-   "open": null,
+   "open": "short",
    "closed_today": 1,
    "result_today_pct": -0.04,
-   "entries_today": 1,
+   "entries_today": 2,
    "last_trades_pct": [
     -0.09,
     0.11,
@@ -69,7 +69,7 @@
   {
    "market": "EUR/USD",
    "enabled": true,
-   "last_run_utc": "2026-11-26 06:15",
+   "last_run_utc": "2026-11-26 06:16",
    "runs_24h": 1360,
    "entries_24h": 3,
    "errors_24h": 0,
@@ -91,30 +91,30 @@
   {
    "market": "EUR/GBP",
    "enabled": true,
-   "last_run_utc": "2026-11-26 06:15",
+   "last_run_utc": "2026-11-26 06:16",
    "runs_24h": 1360,
    "entries_24h": 5,
    "errors_24h": 0,
-   "closed_trades": 37,
+   "closed_trades": 38,
    "win_pct": 24,
-   "total_pct_after_fees": -0.67,
-   "open": "short",
-   "closed_today": 0,
-   "result_today_pct": 0,
+   "total_pct_after_fees": -0.71,
+   "open": null,
+   "closed_today": 1,
+   "result_today_pct": -0.04,
    "entries_today": 1,
    "last_trades_pct": [
-    -0.02,
     0.08,
     0.13,
     -0.11,
-    -0.11
+    -0.11,
+    -0.04
    ]
   }
  ],
  "oanda_401_24h": 0,
  "errors_24h": [],
  "account": {
-  "AlpacaCrypto": "2026-11-26 05:17 UTC AlpacaCrypto: balance 889.38, equity 978.5, free 889.38",
-  "Oanda": "2026-11-26 05:40 UTC Oanda: balance 691.5382, equity 689.9894, free 166.0019"
+  "Oanda": "2026-11-26 05:40 UTC Oanda: balance 691.5382, equity 689.9894, free 166.0019",
+  "AlpacaCrypto": "2026-11-26 06:16 UTC AlpacaCrypto: balance 889.38, equity 978.02, free 889.38"
  }
 }
