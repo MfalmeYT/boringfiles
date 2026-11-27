@@ -18561,3 +18561,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-27 06:56,1.3122,3,,no,no_trade,re-entry cooldown
 2026-11-27 06:57,1.3122,3,,no,no_trade,re-entry cooldown
 2026-11-27 06:58,1.3122,3,,no,no_trade,re-entry cooldown
+2026-11-27 06:59,1.3122,3,,no,buy,conf 4: Bullish EMA alignment and healthy RSI offset recent short-term price pullbacks | 5000 units (reduced for margin)
