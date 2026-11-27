@@ -10289,3 +10289,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-27 02:38,61597.65,2,rsi_in_range,no,no_trade,re-entry cooldown
 2026-11-27 02:39,61563.98,2,rsi_in_range,no,no_trade,re-entry cooldown
 2026-11-27 02:40,61575.64,2,rsi_in_range,no,no_trade,re-entry cooldown
+2026-11-27 02:41,61543.33,2,rsi_in_range,no,no_trade,re-entry cooldown
