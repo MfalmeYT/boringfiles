@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-27 09:57 UTC)
+# Bot report (generated 2026-11-27 09:58 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -13,11 +13,11 @@
 
 | market | last run UTC | runs | entries | errors | closed trades (all time) | win % | total % after fees | open |
 |---|---|---|---|---|---|---|---|---|
-| Bitcoin 15m | 11-27 09:57 | 1440 | 1 | 0 | 5 | 40 | -1.65 | yes |
-| USD/JPY | 11-27 09:57 | 1379 | 3 | 0 | 45 | 31 | -0.74 | yes |
-| GBP/USD | 11-27 09:57 | 1379 | 5 | 0 | 41 | 29 | -0.25 |  |
-| EUR/USD | 11-27 09:57 | 1379 | 4 | 0 | 42 | 38 | +0.15 | yes |
-| EUR/GBP | 11-27 09:57 | 1379 | 3 | 0 | 42 | 24 | -0.79 |  |
+| Bitcoin 15m | 11-27 09:58 | 1440 | 1 | 0 | 5 | 40 | -1.65 | yes |
+| USD/JPY | 11-27 09:58 | 1379 | 3 | 0 | 46 | 33 | -0.63 |  |
+| GBP/USD | 11-27 09:58 | 1379 | 5 | 0 | 41 | 29 | -0.25 |  |
+| EUR/USD | 11-27 09:58 | 1379 | 4 | 0 | 42 | 38 | +0.15 | yes |
+| EUR/GBP | 11-27 09:58 | 1379 | 3 | 0 | 42 | 24 | -0.79 |  |
 
 ## Raw log files (full history, one row per run)
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log_btc15.csv
@@ -38,12 +38,12 @@
 - Bitcoin 15m: long -2.51%
 - Bitcoin 15m: long -2.45%
 - Bitcoin 15m: long +2.73%
-- USD/JPY: short -0.06%
 - USD/JPY: long -0.08%
 - USD/JPY: long +0.00%
 - USD/JPY: long -0.06%
 - USD/JPY: short -0.05%
-- USD/JPY totals: long 21 trades -0.54%, short 24 trades -0.20%
+- USD/JPY: long +0.11%
+- USD/JPY totals: long 22 trades -0.43%, short 24 trades -0.20%
 - GBP/USD: long -0.06%
 - GBP/USD: long -0.10%
 - GBP/USD: short -0.03%
@@ -68,7 +68,6 @@
 - 2026-11-27 09:48 UTC AlpacaCrypto: balance 890.49, equity 979.86, free 890.49
 
 ## Recent fills (decision price vs real fill; columns: time_utc,market,action,order_id,decision_price,fill_price,move_pct,fill_qty,position_qty,requested,status,reason)
-- 2026-11-27 05:00,USD/JPY,cover,broker,,159.297,,,,,filled,closed by broker stop/TP; P/L -2.5363
 - 2026-11-27 05:11,EUR/USD,buy,2699,1.09714,1.09755,0.0374,10000.0,,10000,filled,conf 2
 - 2026-11-27 05:33,EUR/USD,sell,broker,,1.09856,,,,,filled,closed by broker stop/TP; P/L 10.1000
 - 2026-11-27 06:59,GBP/USD,buy,2707,1.3122,1.31253,0.0251,5000.0,,5000,filled,conf 4
@@ -76,6 +75,7 @@
 - 2026-11-27 08:06,EUR/GBP,cover,broker,,0.83617,,,,,filled,closed by broker stop/TP; P/L 0.8445
 - 2026-11-27 08:40,GBP/USD,sell,broker,,1.31151,,,,,filled,closed by broker stop/TP; P/L -5.1000
 - 2026-11-27 08:40,EUR/USD,short,2721,1.09656,1.09614,-0.0383,10000.0,,10000,filled,conf 5
+- 2026-11-27 09:58,USD/JPY,sell,broker,,159.517,,,,,filled,closed by broker stop/TP; P/L 4.6544
 
 ## Recent Gemini decisions
 - 2026-11-27 04:27,Bitcoin 15m,buy,long,61394.43,24.98,61307.498,61078.77,60849.155,64.7,222.793,3,4,+3.00% (take profit) or -2.00% (stop loss),Strong EMA alignment offset by recent price consolidation 
@@ -92,18 +92,18 @@
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/report.json
 
 ## Latest log rows
-- Bitcoin 15m 11-27 09:55 price 61563.55 holding 0.2%
 - Bitcoin 15m 11-27 09:56 price 61559.54 holding 0.2%
 - Bitcoin 15m 11-27 09:57 price 61548.9 holding 0.2%
-- USD/JPY 11-27 09:55 price 159.486 holding 0.1%
+- Bitcoin 15m 11-27 09:58 price 61532.42 holding 0.2%
 - USD/JPY 11-27 09:56 price 159.486 holding 0.1%
 - USD/JPY 11-27 09:57 price 159.486 holding 0.1%
-- GBP/USD 11-27 09:55 price 1.31247 no_trade re-entry cooldown
+- USD/JPY 11-27 09:58 price 159.517 sell closed by broker stop/TP; P/L 4.6544
 - GBP/USD 11-27 09:56 price 1.31247 no_trade re-entry cooldown
 - GBP/USD 11-27 09:57 price 1.31247 no_trade re-entry cooldown
-- EUR/USD 11-27 09:55 price 1.09602 holding SHORT 0.0%
+- GBP/USD 11-27 09:58 price 1.31247 no_trade re-entry cooldown
 - EUR/USD 11-27 09:56 price 1.09602 holding SHORT 0.0%
 - EUR/USD 11-27 09:57 price 1.09602 holding SHORT 0.0%
-- EUR/GBP 11-27 09:55 price 0.8351 no_trade re-entry cooldown
+- EUR/USD 11-27 09:58 price 1.09602 holding SHORT 0.0%
 - EUR/GBP 11-27 09:56 price 0.8351 no_trade re-entry cooldown
 - EUR/GBP 11-27 09:57 price 0.8351 no_trade re-entry cooldown
+- EUR/GBP 11-27 09:58 price 0.8351 no_trade re-entry cooldown
