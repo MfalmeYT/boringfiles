@@ -179,3 +179,4 @@ time_utc,market,action,order_id,decision_price,fill_price,move_pct,fill_qty,posi
 2026-11-27 03:59,GBP/USD,sell,broker,,1.3116,,,,,filled,closed by broker stop/TP; P/L -4.5000
 2026-11-27 04:27,Bitcoin 15m,buy,b8aa8a90-2e5e-4d52-b8db-ae39a41932e3,61394.425,61413.74,0.0315,0.000718363,,45,filled,conf 4
 2026-11-27 05:00,USD/JPY,cover,broker,,159.297,,,,,filled,closed by broker stop/TP; P/L -2.5363
+2026-11-27 05:11,EUR/USD,buy,2699,1.09714,1.09755,0.0374,10000.0,,10000,filled,conf 2
