@@ -177,3 +177,4 @@ time_utc,market,action,order_id,decision_price,fill_price,move_pct,fill_qty,posi
 2026-11-27 02:40,GBP/USD,buy,2681,1.31188,1.3125,0.0473,5000.0,,5000,filled,conf 5
 2026-11-27 03:56,EUR/GBP,short,2691,0.83672,0.83669,-0.0036,1250.0,,1250,filled,conf 4
 2026-11-27 03:59,GBP/USD,sell,broker,,1.3116,,,,,filled,closed by broker stop/TP; P/L -4.5000
+2026-11-27 04:27,Bitcoin 15m,buy,b8aa8a90-2e5e-4d52-b8db-ae39a41932e3,61394.425,61413.74,0.0315,0.000718363,,45,filled,conf 4

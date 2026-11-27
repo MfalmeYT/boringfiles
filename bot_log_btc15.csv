@@ -10395,3 +10395,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-27 04:24,61424.54,3,,no,no_trade,re-entry cooldown
 2026-11-27 04:25,61427.53,3,,no,no_trade,re-entry cooldown
 2026-11-27 04:26,61414.11,3,,no,no_trade,re-entry cooldown
+2026-11-27 04:27,61394.43,3,,no,buy,conf 4: Strong EMA alignment offset by recent price consolidation and high RSI
