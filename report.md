@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-27 22:53 UTC)
+# Bot report (generated 2026-11-27 22:54 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -13,7 +13,7 @@
 
 | market | last run UTC | runs | entries | errors | closed trades (all time) | win % | total % after fees | open |
 |---|---|---|---|---|---|---|---|---|
-| Bitcoin 15m | 11-27 22:53 | 1440 | 1 | 0 | 6 | 33 | -4.29 |  |
+| Bitcoin 15m | 11-27 22:54 | 1440 | 1 | 0 | 6 | 33 | -4.29 |  |
 | USD/JPY | 11-27 21:58 | 1379 | 4 | 0 | 48 | 33 | -0.68 |  |
 | GBP/USD | 11-27 21:58 | 1379 | 4 | 0 | 42 | 31 | -0.13 |  |
 | EUR/USD | 11-27 21:58 | 1379 | 3 | 0 | 44 | 41 | +0.39 |  |
@@ -92,9 +92,9 @@
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/report.json
 
 ## Latest log rows
-- Bitcoin 15m 11-27 22:51 price 59769.46 no_trade score below 2
 - Bitcoin 15m 11-27 22:52 price 59762.03 no_trade score below 2
 - Bitcoin 15m 11-27 22:53 price 59792.63 no_trade score below 2
+- Bitcoin 15m 11-27 22:54 price 59802.6 no_trade score below 2
 - USD/JPY 11-27 21:56 price 159.577 no_trade no new entries before weekend
 - USD/JPY 11-27 21:57 price 159.577 no_trade no new entries before weekend
 - USD/JPY 11-27 21:58 price 159.577 no_trade no new entries before weekend
