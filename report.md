@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-27 12:32 UTC)
+# Bot report (generated 2026-11-27 12:33 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -13,11 +13,11 @@
 
 | market | last run UTC | runs | entries | errors | closed trades (all time) | win % | total % after fees | open |
 |---|---|---|---|---|---|---|---|---|
-| Bitcoin 15m | 11-27 12:32 | 1440 | 1 | 0 | 5 | 40 | -1.65 | yes |
-| USD/JPY | 11-27 12:32 | 1379 | 3 | 0 | 46 | 33 | -0.63 |  |
-| GBP/USD | 11-27 12:32 | 1379 | 4 | 0 | 41 | 29 | -0.25 |  |
-| EUR/USD | 11-27 12:32 | 1379 | 3 | 0 | 42 | 38 | +0.15 | yes |
-| EUR/GBP | 11-27 12:32 | 1379 | 4 | 0 | 42 | 24 | -0.79 | yes |
+| Bitcoin 15m | 11-27 12:33 | 1440 | 1 | 0 | 5 | 40 | -1.65 | yes |
+| USD/JPY | 11-27 12:33 | 1379 | 3 | 0 | 46 | 33 | -0.63 |  |
+| GBP/USD | 11-27 12:33 | 1379 | 4 | 0 | 41 | 29 | -0.25 |  |
+| EUR/USD | 11-27 12:33 | 1379 | 3 | 0 | 42 | 38 | +0.15 | yes |
+| EUR/GBP | 11-27 12:33 | 1379 | 4 | 0 | 42 | 24 | -0.79 | yes |
 
 ## Raw log files (full history, one row per run)
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log_btc15.csv
@@ -92,18 +92,18 @@
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/report.json
 
 ## Latest log rows
-- Bitcoin 15m 11-27 12:30 price 61498.07 holding 0.1%
 - Bitcoin 15m 11-27 12:31 price 61460.25 holding 0.1%
 - Bitcoin 15m 11-27 12:32 price 61478.18 holding 0.1%
-- USD/JPY 11-27 12:30 price 159.452 no_trade re-entry cooldown
+- Bitcoin 15m 11-27 12:33 price 61460.21 holding 0.1%
 - USD/JPY 11-27 12:31 price 159.452 no_trade re-entry cooldown
 - USD/JPY 11-27 12:32 price 159.452 no_trade re-entry cooldown
-- GBP/USD 11-27 12:30 price 1.31336 no_trade max 3 open positions reached
+- USD/JPY 11-27 12:33 price 159.452 no_trade re-entry cooldown
 - GBP/USD 11-27 12:31 price 1.31336 no_trade max 3 open positions reached
 - GBP/USD 11-27 12:32 price 1.31336 no_trade max 3 open positions reached
-- EUR/USD 11-27 12:30 price 1.09663 holding SHORT -0.0%
+- GBP/USD 11-27 12:33 price 1.31336 no_trade max 3 open positions reached
 - EUR/USD 11-27 12:31 price 1.09663 holding SHORT -0.0%
 - EUR/USD 11-27 12:32 price 1.09663 holding SHORT -0.0%
-- EUR/GBP 11-27 12:30 price 0.83498 holding SHORT -0.0%
+- EUR/USD 11-27 12:33 price 1.09663 holding SHORT -0.0%
 - EUR/GBP 11-27 12:31 price 0.83498 holding SHORT -0.0%
 - EUR/GBP 11-27 12:32 price 0.83498 holding SHORT -0.0%
+- EUR/GBP 11-27 12:33 price 0.83498 holding SHORT -0.0%
