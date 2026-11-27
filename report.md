@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-27 14:39 UTC)
+# Bot report (generated 2026-11-27 14:40 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -13,11 +13,11 @@
 
 | market | last run UTC | runs | entries | errors | closed trades (all time) | win % | total % after fees | open |
 |---|---|---|---|---|---|---|---|---|
-| Bitcoin 15m | 11-27 14:39 | 1440 | 1 | 0 | 5 | 40 | -1.65 | yes |
-| USD/JPY | 11-27 14:39 | 1379 | 4 | 0 | 47 | 32 | -0.70 |  |
-| GBP/USD | 11-27 14:39 | 1379 | 4 | 0 | 41 | 29 | -0.25 | yes |
-| EUR/USD | 11-27 14:39 | 1379 | 3 | 0 | 43 | 40 | +0.35 |  |
-| EUR/GBP | 11-27 14:39 | 1379 | 3 | 0 | 42 | 24 | -0.79 | yes |
+| Bitcoin 15m | 11-27 14:40 | 1440 | 1 | 0 | 6 | 33 | -4.29 |  |
+| USD/JPY | 11-27 14:40 | 1379 | 4 | 0 | 47 | 32 | -0.70 |  |
+| GBP/USD | 11-27 14:40 | 1379 | 4 | 0 | 41 | 29 | -0.25 | yes |
+| EUR/USD | 11-27 14:40 | 1379 | 3 | 0 | 43 | 40 | +0.35 |  |
+| EUR/GBP | 11-27 14:40 | 1379 | 3 | 0 | 42 | 24 | -0.79 | yes |
 
 ## Raw log files (full history, one row per run)
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log_btc15.csv
@@ -33,11 +33,11 @@
 - count: 0
 
 ## Latest closed trades
-- Bitcoin 15m: long -2.45%
 - Bitcoin 15m: long +3.03%
 - Bitcoin 15m: long -2.51%
 - Bitcoin 15m: long -2.45%
 - Bitcoin 15m: long +2.73%
+- Bitcoin 15m: long -2.64%
 - USD/JPY: long +0.00%
 - USD/JPY: long -0.06%
 - USD/JPY: short -0.05%
@@ -68,7 +68,6 @@
 - 2026-11-27 14:07 UTC Oanda: balance 677.9806, equity 677.1599, free 153.4599
 
 ## Recent fills (decision price vs real fill; columns: time_utc,market,action,order_id,decision_price,fill_price,move_pct,fill_qty,position_qty,requested,status,reason)
-- 2026-11-27 08:40,GBP/USD,sell,broker,,1.31151,,,,,filled,closed by broker stop/TP; P/L -5.1000
 - 2026-11-27 08:40,EUR/USD,short,2721,1.09656,1.09614,-0.0383,10000.0,,10000,filled,conf 5
 - 2026-11-27 09:58,USD/JPY,sell,broker,,159.517,,,,,filled,closed by broker stop/TP; P/L 4.6544
 - 2026-11-27 11:06,EUR/GBP,short,2729,0.83516,0.83489,-0.0323,5000.0,,5000,filled,conf 4
@@ -76,6 +75,7 @@
 - 2026-11-27 13:30,EUR/USD,cover,broker,,1.09441,,,,,filled,closed by broker stop/TP; P/L 17.3000
 - 2026-11-27 14:35,USD/JPY,sell,broker,,159.449,,,,,filled,closed by broker stop/TP; P/L -3.4837
 - 2026-11-27 14:35,GBP/USD,short,2745,1.31106,1.31159,0.0404,5000.0,,5000,filled,conf 4
+- 2026-11-27 14:40,Bitcoin 15m,sell,a278da25-19c0-44bb-9810-41edd5899e34,60081.511,60188.81,0.1786,0.000716567,0.000716567,,filled,STOP LOSS (-2.2%)
 
 ## Recent Gemini decisions
 - 2026-11-27 08:06,USD/JPY,buy,long,159.344,0.016,159.327,159.3051,159.2837,58.4,0.0499,3,4,+0.09% (take profit) or -0.06% (stop loss); set from recent volatility,Solid trend alignment and RSI; but low 
@@ -92,18 +92,18 @@
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/report.json
 
 ## Latest log rows
-- Bitcoin 15m 11-27 14:37 price 60702.42 holding -1.2%
 - Bitcoin 15m 11-27 14:38 price 60515.79 holding -1.5%
 - Bitcoin 15m 11-27 14:39 price 60358.15 holding -1.7%
-- USD/JPY 11-27 14:37 price 159.522 no_trade re-entry cooldown
+- Bitcoin 15m 11-27 14:40 price 60081.51 sell STOP LOSS (-2.2%)
 - USD/JPY 11-27 14:38 price 159.522 no_trade re-entry cooldown
 - USD/JPY 11-27 14:39 price 159.522 no_trade re-entry cooldown
-- GBP/USD 11-27 14:37 price 1.31106 holding SHORT 0.0%
+- USD/JPY 11-27 14:40 price 159.522 no_trade re-entry cooldown
 - GBP/USD 11-27 14:38 price 1.31106 holding SHORT 0.0%
 - GBP/USD 11-27 14:39 price 1.31106 holding SHORT 0.0%
-- EUR/USD 11-27 14:37 price 1.09466 no_trade re-entry cooldown
+- GBP/USD 11-27 14:40 price 1.31106 holding SHORT 0.0%
 - EUR/USD 11-27 14:38 price 1.09466 no_trade re-entry cooldown
 - EUR/USD 11-27 14:39 price 1.09466 no_trade re-entry cooldown
-- EUR/GBP 11-27 14:37 price 0.83494 holding SHORT -0.0%
+- EUR/USD 11-27 14:40 price 1.09466 no_trade re-entry cooldown
 - EUR/GBP 11-27 14:38 price 0.83494 holding SHORT -0.0%
 - EUR/GBP 11-27 14:39 price 0.83494 holding SHORT -0.0%
+- EUR/GBP 11-27 14:40 price 0.83494 holding SHORT -0.0%
