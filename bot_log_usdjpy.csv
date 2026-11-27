@@ -18967,3 +18967,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-27 13:27,159.572,3,,no,no_trade,max 3 open positions reached
 2026-11-27 13:28,159.572,3,,no,no_trade,max 3 open positions reached
 2026-11-27 13:29,159.572,3,,no,no_trade,max 3 open positions reached
+2026-11-27 13:30,159.552,3,,no,buy,conf 4: Strong trend and EMAs aligned; but RSI near overbought zone | 5000 units (reduced for margin)
