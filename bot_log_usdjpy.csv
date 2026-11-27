@@ -19032,3 +19032,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-27 14:32,159.522,3,,yes,holding,-0.0%
 2026-11-27 14:33,159.522,3,,yes,holding,-0.0%
 2026-11-27 14:34,159.522,3,,yes,holding,-0.0%
+2026-11-27 14:35,159.449,3,,no,sell,closed by broker stop/TP; P/L -3.4837
