@@ -19382,3 +19382,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-27 21:29,0.83499,2,fast_below_slow,yes,holding,SHORT -0.0%
 2026-11-27 21:30,0.83504,2,fast_below_slow,yes,cover,WEEKEND FLATTEN (-0.0%)
 2026-11-27 21:31,0.83504,2,price_above_trend_ema,no,no_trade,no new entries before weekend
+2026-11-27 21:32,0.83504,2,price_above_trend_ema,no,no_trade,no new entries before weekend
