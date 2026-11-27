@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-27 21:27 UTC)
+# Bot report (generated 2026-11-27 21:28 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -13,11 +13,11 @@
 
 | market | last run UTC | runs | entries | errors | closed trades (all time) | win % | total % after fees | open |
 |---|---|---|---|---|---|---|---|---|
-| Bitcoin 15m | 11-27 21:27 | 1440 | 1 | 0 | 6 | 33 | -4.29 |  |
-| USD/JPY | 11-27 21:27 | 1379 | 4 | 0 | 47 | 32 | -0.70 | yes |
-| GBP/USD | 11-27 21:27 | 1379 | 4 | 0 | 42 | 31 | -0.13 |  |
-| EUR/USD | 11-27 21:27 | 1379 | 3 | 0 | 43 | 40 | +0.35 | yes |
-| EUR/GBP | 11-27 21:27 | 1379 | 3 | 0 | 42 | 24 | -0.79 | yes |
+| Bitcoin 15m | 11-27 21:28 | 1440 | 1 | 0 | 6 | 33 | -4.29 |  |
+| USD/JPY | 11-27 21:28 | 1379 | 4 | 0 | 47 | 32 | -0.70 | yes |
+| GBP/USD | 11-27 21:28 | 1379 | 4 | 0 | 42 | 31 | -0.13 |  |
+| EUR/USD | 11-27 21:28 | 1379 | 3 | 0 | 43 | 40 | +0.35 | yes |
+| EUR/GBP | 11-27 21:28 | 1379 | 3 | 0 | 42 | 24 | -0.79 | yes |
 
 ## Raw log files (full history, one row per run)
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log_btc15.csv
@@ -92,18 +92,18 @@
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/report.json
 
 ## Latest log rows
-- Bitcoin 15m 11-27 21:25 price 59783.83 no_trade score below 2
 - Bitcoin 15m 11-27 21:26 price 59777.5 no_trade score below 2
 - Bitcoin 15m 11-27 21:27 price 59743.56 no_trade score below 2
-- USD/JPY 11-27 21:25 price 159.576 holding 0.0%
+- Bitcoin 15m 11-27 21:28 price 59773.53 no_trade score below 2
 - USD/JPY 11-27 21:26 price 159.576 holding 0.0%
 - USD/JPY 11-27 21:27 price 159.576 holding 0.0%
-- GBP/USD 11-27 21:25 price 1.30946 no_trade no new entries before weekend
+- USD/JPY 11-27 21:28 price 159.576 holding 0.0%
 - GBP/USD 11-27 21:26 price 1.30946 no_trade no new entries before weekend
 - GBP/USD 11-27 21:27 price 1.30946 no_trade no new entries before weekend
-- EUR/USD 11-27 21:25 price 1.09338 holding SHORT 0.0%
+- GBP/USD 11-27 21:28 price 1.30946 no_trade no new entries before weekend
 - EUR/USD 11-27 21:26 price 1.09338 holding SHORT 0.0%
 - EUR/USD 11-27 21:27 price 1.09338 holding SHORT 0.0%
-- EUR/GBP 11-27 21:25 price 0.83499 holding SHORT -0.0%
+- EUR/USD 11-27 21:28 price 1.09338 holding SHORT 0.0%
 - EUR/GBP 11-27 21:26 price 0.83499 holding SHORT -0.0%
 - EUR/GBP 11-27 21:27 price 0.83499 holding SHORT -0.0%
+- EUR/GBP 11-27 21:28 price 0.83499 holding SHORT -0.0%
