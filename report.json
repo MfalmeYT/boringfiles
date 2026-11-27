@@ -1,10 +1,10 @@
 {
- "generated_utc": "2026-11-27 21:29",
+ "generated_utc": "2026-11-27 21:30",
  "markets": [
   {
    "market": "Bitcoin 15m",
    "enabled": true,
-   "last_run_utc": "2026-11-27 21:29",
+   "last_run_utc": "2026-11-27 21:30",
    "runs_24h": 1440,
    "entries_24h": 1,
    "errors_24h": 0,
@@ -26,29 +26,29 @@
   {
    "market": "USD/JPY",
    "enabled": true,
-   "last_run_utc": "2026-11-27 21:29",
+   "last_run_utc": "2026-11-27 21:30",
    "runs_24h": 1379,
    "entries_24h": 4,
    "errors_24h": 0,
-   "closed_trades": 47,
-   "win_pct": 32,
-   "total_pct_after_fees": -0.7,
-   "open": "long",
-   "closed_today": 3,
-   "result_today_pct": -0.0,
+   "closed_trades": 48,
+   "win_pct": 33,
+   "total_pct_after_fees": -0.68,
+   "open": null,
+   "closed_today": 4,
+   "result_today_pct": 0.01,
    "entries_today": 4,
    "last_trades_pct": [
-    0.0,
     -0.06,
     -0.05,
     0.11,
-    -0.06
+    -0.06,
+    0.01
    ]
   },
   {
    "market": "GBP/USD",
    "enabled": true,
-   "last_run_utc": "2026-11-27 21:29",
+   "last_run_utc": "2026-11-27 21:30",
    "runs_24h": 1379,
    "entries_24h": 4,
    "errors_24h": 0,
@@ -70,45 +70,45 @@
   {
    "market": "EUR/USD",
    "enabled": true,
-   "last_run_utc": "2026-11-27 21:29",
+   "last_run_utc": "2026-11-27 21:30",
    "runs_24h": 1379,
    "entries_24h": 3,
    "errors_24h": 0,
-   "closed_trades": 43,
-   "win_pct": 40,
-   "total_pct_after_fees": 0.35,
-   "open": "short",
-   "closed_today": 3,
-   "result_today_pct": 0.26,
+   "closed_trades": 44,
+   "win_pct": 41,
+   "total_pct_after_fees": 0.39,
+   "open": null,
+   "closed_today": 4,
+   "result_today_pct": 0.3,
    "entries_today": 3,
    "last_trades_pct": [
-    -0.04,
     0.14,
     -0.07,
     0.13,
-    0.2
+    0.2,
+    0.05
    ]
   },
   {
    "market": "EUR/GBP",
    "enabled": true,
-   "last_run_utc": "2026-11-27 21:29",
+   "last_run_utc": "2026-11-27 21:30",
    "runs_24h": 1379,
    "entries_24h": 3,
    "errors_24h": 0,
-   "closed_trades": 42,
-   "win_pct": 24,
-   "total_pct_after_fees": -0.79,
-   "open": "short",
-   "closed_today": 2,
-   "result_today_pct": 0.03,
+   "closed_trades": 43,
+   "win_pct": 26,
+   "total_pct_after_fees": -0.78,
+   "open": null,
+   "closed_today": 3,
+   "result_today_pct": 0.04,
    "entries_today": 2,
    "last_trades_pct": [
-    -0.04,
     -0.05,
     -0.06,
     -0.04,
-    0.07
+    0.07,
+    0.01
    ]
   }
  ],
