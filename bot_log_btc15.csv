@@ -10275,3 +10275,4 @@ time_utc,price,score,failing_checks,position,action,note
 2026-11-27 02:24,61273.18,2,rsi_in_range,yes,holding,2.7%
 2026-11-27 02:25,61342.12,2,rsi_in_range,yes,holding,2.8%
 2026-11-27 02:26,61444.76,2,rsi_in_range,yes,holding,3.0%
+2026-11-27 02:27,61553.71,2,rsi_in_range,yes,sell,TAKE PROFIT (3.1%)
