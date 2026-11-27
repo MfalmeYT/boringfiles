@@ -1,6 +1,6 @@
-# Status (2026-11-27 16:29 UTC)
-- last bot run: 2026-11-27 16:29 UTC (0 min ago)
-- open now: GBP/USD short, EUR/GBP short
+# Status (2026-11-27 16:30 UTC)
+- last bot run: 2026-11-27 16:30 UTC (0 min ago)
+- open now: GBP/USD short, EUR/USD short, EUR/GBP short
 - closed trades: 179, win 31%, sum of results -5.68% (sum of %, not account balance)
 - errors last 24h: 0 (OANDA 401: 0)
 - per market (trades / win% / total after fees): Bitcoin 15m 6/33%/-4.29%; USD/JPY 47/32%/-0.70%; GBP/USD 41/29%/-0.25%; EUR/USD 43/40%/+0.35%; EUR/GBP 42/24%/-0.79%
