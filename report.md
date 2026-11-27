@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-27 16:04 UTC)
+# Bot report (generated 2026-11-27 16:05 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -13,11 +13,11 @@
 
 | market | last run UTC | runs | entries | errors | closed trades (all time) | win % | total % after fees | open |
 |---|---|---|---|---|---|---|---|---|
-| Bitcoin 15m | 11-27 16:04 | 1440 | 1 | 0 | 6 | 33 | -4.29 |  |
-| USD/JPY | 11-27 16:04 | 1379 | 4 | 0 | 47 | 32 | -0.70 |  |
-| GBP/USD | 11-27 16:04 | 1379 | 4 | 0 | 41 | 29 | -0.25 | yes |
-| EUR/USD | 11-27 16:04 | 1379 | 3 | 0 | 43 | 40 | +0.35 |  |
-| EUR/GBP | 11-27 16:04 | 1379 | 3 | 0 | 42 | 24 | -0.79 | yes |
+| Bitcoin 15m | 11-27 16:05 | 1440 | 1 | 0 | 6 | 33 | -4.29 |  |
+| USD/JPY | 11-27 16:05 | 1379 | 4 | 0 | 47 | 32 | -0.70 |  |
+| GBP/USD | 11-27 16:05 | 1379 | 4 | 0 | 41 | 29 | -0.25 | yes |
+| EUR/USD | 11-27 16:05 | 1379 | 3 | 0 | 43 | 40 | +0.35 |  |
+| EUR/GBP | 11-27 16:05 | 1379 | 3 | 0 | 42 | 24 | -0.79 | yes |
 
 ## Raw log files (full history, one row per run)
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log_btc15.csv
@@ -64,8 +64,8 @@
 - EUR/GBP totals: long 25 trades -0.48%, short 17 trades -0.32%
 
 ## Account (latest hourly snapshot)
-- 2026-11-27 15:06 UTC Oanda: balance 674.4969, equity 676.2413, free 74.8888
 - 2026-11-27 15:42 UTC AlpacaCrypto: balance 933.51, equity 977.74, free 933.51
+- 2026-11-27 16:05 UTC Oanda: balance 674.4969, equity 682.1955, free 81.3755
 
 ## Recent fills (decision price vs real fill; columns: time_utc,market,action,order_id,decision_price,fill_price,move_pct,fill_qty,position_qty,requested,status,reason)
 - 2026-11-27 08:40,EUR/USD,short,2721,1.09656,1.09614,-0.0383,10000.0,,10000,filled,conf 5
@@ -92,18 +92,18 @@
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/report.json
 
 ## Latest log rows
-- Bitcoin 15m 11-27 16:02 price 59980.44 no_trade score below 2
 - Bitcoin 15m 11-27 16:03 price 59933.83 no_trade score below 2
 - Bitcoin 15m 11-27 16:04 price 59927.73 no_trade score below 2
-- USD/JPY 11-27 16:02 price 159.55 no_trade re-entry cooldown
+- Bitcoin 15m 11-27 16:05 price 59966.24 no_trade score below 2
 - USD/JPY 11-27 16:03 price 159.55 no_trade re-entry cooldown
 - USD/JPY 11-27 16:04 price 159.55 no_trade re-entry cooldown
-- GBP/USD 11-27 16:02 price 1.31054 holding SHORT 0.1%
+- USD/JPY 11-27 16:05 price 159.55 no_trade re-entry cooldown
 - GBP/USD 11-27 16:03 price 1.31054 holding SHORT 0.1%
 - GBP/USD 11-27 16:04 price 1.31054 holding SHORT 0.1%
-- EUR/USD 11-27 16:02 price 1.09402 no_trade re-entry cooldown
+- GBP/USD 11-27 16:05 price 1.31054 holding SHORT 0.1%
 - EUR/USD 11-27 16:03 price 1.09402 no_trade re-entry cooldown
 - EUR/USD 11-27 16:04 price 1.09402 no_trade re-entry cooldown
-- EUR/GBP 11-27 16:02 price 0.83478 holding SHORT 0.0%
+- EUR/USD 11-27 16:05 price 1.09402 no_trade re-entry cooldown
 - EUR/GBP 11-27 16:03 price 0.83478 holding SHORT 0.0%
 - EUR/GBP 11-27 16:04 price 0.83478 holding SHORT 0.0%
+- EUR/GBP 11-27 16:05 price 0.83478 holding SHORT 0.0%
