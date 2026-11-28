@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-28 09:23 UTC)
+# Bot report (generated 2026-11-28 09:24 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -13,11 +13,11 @@
 
 | market | last run UTC | runs | entries | errors | closed trades (all time) | win % | total % after fees | open |
 |---|---|---|---|---|---|---|---|---|
-| Bitcoin 15m | 11-28 09:23 | 1440 | 0 | 0 | 6 | 33 | -4.29 |  |
-| USD/JPY | 11-27 21:58 | 755 | 2 | 0 | 48 | 33 | -0.68 |  |
-| GBP/USD | 11-27 21:58 | 755 | 1 | 0 | 42 | 31 | -0.13 |  |
-| EUR/USD | 11-27 21:58 | 755 | 1 | 0 | 44 | 41 | +0.39 |  |
-| EUR/GBP | 11-27 21:58 | 755 | 1 | 0 | 43 | 26 | -0.78 |  |
+| Bitcoin 15m | 11-28 09:24 | 1440 | 0 | 0 | 6 | 33 | -4.29 |  |
+| USD/JPY | 11-27 21:58 | 754 | 2 | 0 | 48 | 33 | -0.68 |  |
+| GBP/USD | 11-27 21:58 | 754 | 1 | 0 | 42 | 31 | -0.13 |  |
+| EUR/USD | 11-27 21:58 | 754 | 1 | 0 | 44 | 41 | +0.39 |  |
+| EUR/GBP | 11-27 21:58 | 754 | 1 | 0 | 43 | 26 | -0.78 |  |
 
 ## Raw log files (full history, one row per run)
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log_btc15.csv
@@ -64,8 +64,8 @@
 - EUR/GBP totals: long 25 trades -0.48%, short 18 trades -0.30%
 
 ## Account (latest hourly snapshot)
-- 2026-11-28 08:25 UTC AlpacaCrypto: balance 933.51, equity 978.54, free 933.51
 - 2026-11-28 08:48 UTC Oanda: balance 684.4854, equity 684.4854, free 684.4854
+- 2026-11-28 09:24 UTC AlpacaCrypto: balance 933.51, equity 978.1, free 933.51
 
 ## Recent fills (decision price vs real fill; columns: time_utc,market,action,order_id,decision_price,fill_price,move_pct,fill_qty,position_qty,requested,status,reason)
 - 2026-11-27 14:35,GBP/USD,short,2745,1.31106,1.31159,0.0404,5000.0,,5000,filled,conf 4
@@ -92,9 +92,9 @@
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/report.json
 
 ## Latest log rows
-- Bitcoin 15m 11-28 09:21 price 59545.61 no_trade score below 2
 - Bitcoin 15m 11-28 09:22 price 59567.05 no_trade score below 2
 - Bitcoin 15m 11-28 09:23 price 59531.92 no_trade score below 2
+- Bitcoin 15m 11-28 09:24 price 59530.07 no_trade score below 2
 - USD/JPY 11-27 21:56 price 159.577 no_trade no new entries before weekend
 - USD/JPY 11-27 21:57 price 159.577 no_trade no new entries before weekend
 - USD/JPY 11-27 21:58 price 159.577 no_trade no new entries before weekend
