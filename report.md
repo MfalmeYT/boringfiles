@@ -1,4 +1,4 @@
-# Bot report (generated 2026-11-28 05:00 UTC)
+# Bot report (generated 2026-11-28 05:01 UTC)
 
 ## Settings (read from trader.py)
 - trading enabled: True; shorting enabled: True; max open positions: 3
@@ -13,11 +13,11 @@
 
 | market | last run UTC | runs | entries | errors | closed trades (all time) | win % | total % after fees | open |
 |---|---|---|---|---|---|---|---|---|
-| Bitcoin 15m | 11-28 05:00 | 1440 | 0 | 0 | 6 | 33 | -4.29 |  |
-| USD/JPY | 11-27 21:58 | 1018 | 3 | 0 | 48 | 33 | -0.68 |  |
-| GBP/USD | 11-27 21:58 | 1018 | 2 | 0 | 42 | 31 | -0.13 |  |
-| EUR/USD | 11-27 21:58 | 1018 | 3 | 0 | 44 | 41 | +0.39 |  |
-| EUR/GBP | 11-27 21:58 | 1018 | 1 | 0 | 43 | 26 | -0.78 |  |
+| Bitcoin 15m | 11-28 05:01 | 1440 | 0 | 0 | 6 | 33 | -4.29 |  |
+| USD/JPY | 11-27 21:58 | 1017 | 3 | 0 | 48 | 33 | -0.68 |  |
+| GBP/USD | 11-27 21:58 | 1017 | 2 | 0 | 42 | 31 | -0.13 |  |
+| EUR/USD | 11-27 21:58 | 1017 | 3 | 0 | 44 | 41 | +0.39 |  |
+| EUR/GBP | 11-27 21:58 | 1017 | 1 | 0 | 43 | 26 | -0.78 |  |
 
 ## Raw log files (full history, one row per run)
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/bot_log_btc15.csv
@@ -92,9 +92,9 @@
 - https://raw.githubusercontent.com/MfalmeYT/boringfiles/main/report.json
 
 ## Latest log rows
-- Bitcoin 15m 11-28 04:58 price 59926.07 no_trade 1Hour trend not up
 - Bitcoin 15m 11-28 04:59 price 59928.66 no_trade 1Hour trend not up
 - Bitcoin 15m 11-28 05:00 price 59929.93 no_trade 1Hour trend not up
+- Bitcoin 15m 11-28 05:01 price 59888.23 no_trade 1Hour trend not up
 - USD/JPY 11-27 21:56 price 159.577 no_trade no new entries before weekend
 - USD/JPY 11-27 21:57 price 159.577 no_trade no new entries before weekend
 - USD/JPY 11-27 21:58 price 159.577 no_trade no new entries before weekend
